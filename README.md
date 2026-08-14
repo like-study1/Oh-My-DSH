@@ -24,26 +24,26 @@ DeepSeek Harness（以下简称 DSH）是由深度求索（DeepSeek AI）开源�
 ## 二、生态统计
 
 <!-- OMD:stats:START -->
-截至 2026-08-14 17:19（北京时间），本目录收录精选插件 **399** 个，监测生态仓库 **988** 个，累计获得 Star **233996**。
+截至 2026-08-15 01:10（北京时间），本目录收录精选插件 **591** 个，监测生态仓库 **1000** 个，累计获得 Star **257057**。
 
 ### 精选插件十强
 
 | 序号 | 插件 | Star | 类型 | 说明 |
 |---|---|---|---|---|
-| 1 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | 85886 | 渠道 | 🎨 The open-source Claude Design alternative. 🖥️ Local-first desktop… |
-| 2 | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 82129 | 项目 | DeepSeek Harness 官方仓库：Everything is a Plugin. |
-| 3 | [titanwings/colleague-skill](https://github.com/titanwings/colleague-skill) | 21755 | 项目 | 「同事」Skill：将离别化为温暖的数字生命 1.0 |
-| 4 | [tt-a1i/archify](https://github.com/tt-a1i/archify) | 12234 | 插件 | Agent skill for beautiful, verifiable architecture, workflow, seque… |
-| 5 | [Devin-AXIS/iPolloWork](https://github.com/Devin-AXIS/iPolloWork) | 3828 | 项目 | 下一代开源 AI 工作台：自进化 Agent 运行时，集成 DSH 子代理 |
-| 6 | [imsai-sh/zhuzhiliao](https://github.com/imsai-sh/zhuzhiliao) | 2727 | 插件 | 竹知了 —— 一转就哇哇叫的传统玩具，Web 模拟版。零依赖单文件，真实录音采样，移动端优先。 |
-| 7 | [foryourhealth111-pixel/Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) | 2714 | 技能 | VibeSkills is a general-purpose Skill that automatically routes loc… |
-| 8 | [whiteguo233/OpenBiliClaw](https://github.com/whiteguo233/OpenBiliClaw) | 2245 | 项目 | 本地优先的跨平台 AI 内容发现 Agent：B站、小红书、抖音、YouTube、X、知乎、Reddit |
-| 9 | [zhu1090093659/dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui) | 1416 | 合集 | DSH Web UI 插件与皮肤合集：任务面板、Git 图、右侧面板、移动端 UI、宠物、实时 Token 统计、皮肤中心 |
-| 10 | [paean-ai/deeptide](https://github.com/paean-ai/deeptide) | 1043 | 项目 | DeepSeek 官方风格 Swift 原生 macOS 编程 Agent |
+| 1 | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 93170 | 项目 | DeepSeek Harness 官方仓库：Everything is a Plugin. |
+| 2 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | 86216 | 渠道 | 🎨 The open-source Claude Design alternative. 🖥️ Local-first desktop… |
+| 3 | [titanwings/colleague-skill](https://github.com/titanwings/colleague-skill) | 21980 | 项目 | 「同事」Skill：将离别化为温暖的数字生命 1.0 |
+| 4 | [tt-a1i/archify](https://github.com/tt-a1i/archify) | 12449 | 插件 | Agent skill for beautiful, verifiable architecture, workflow, seque… |
+| 5 | [Devin-AXIS/iPolloWork](https://github.com/Devin-AXIS/iPolloWork) | 3935 | 项目 | 下一代开源 AI 工作台：自进化 Agent 运行时，集成 DSH 子代理 |
+| 6 | [crafter-station/petdex](https://github.com/crafter-station/petdex) | 3784 | 插件 | A public gallery of animated pets for Codex, Claude Code, DeepSeek … |
+| 7 | [imsai-sh/zhuzhiliao](https://github.com/imsai-sh/zhuzhiliao) | 2763 | 插件 | 竹知了 —— 一转就哇哇叫的传统玩具，Web 模拟版。零依赖单文件，真实录音采样，移动端优先。 |
+| 8 | [foryourhealth111-pixel/Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) | 2743 | 技能 | VibeSkills is a general-purpose Skill that automatically routes loc… |
+| 9 | [whiteguo233/OpenBiliClaw](https://github.com/whiteguo233/OpenBiliClaw) | 2349 | 项目 | 本地优先的跨平台 AI 内容发现 Agent：B站、小红书、抖音、YouTube、X、知乎、Reddit |
+| 10 | [zhu1090093659/dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui) | 1863 | 合集 | DSH Web UI 插件与皮肤合集：任务面板、Git 图、右侧面板、移动端 UI、宠物、实时 Token 统计、皮肤中心 |
 
 ### 分类构成
 
-`消息通讯 33` · `视觉与多模态 18` · `浏览器与网络 21` · `Web UI 增强 87` · `皮肤与娱乐 26` · `Agent 能力 105` · `编码开发 35` · `文件与数据 20` · `开发工具与教程 18` · `精选合集与发行版 18` · `生态项目 18`
+`消息通讯 63` · `视觉与多模态 33` · `浏览器与网络 30` · `Web UI 增强 142` · `皮肤与娱乐 46` · `Agent 能力 143` · `编码开发 47` · `文件与数据 25` · `开发工具与教程 21` · `精选合集与发行版 23` · `生态项目 18`
 
 <!-- OMD:stats:END -->
 
