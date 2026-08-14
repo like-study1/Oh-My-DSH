@@ -1,0 +1,57 @@
+name: Sync Plugin Index
+
+on:
+  schedule:
+    - cron: "17 */8 * * *"   # every 8 hours
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["scripts/**", "data/**", ".github/workflows/**"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run sync script
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/sync_plugins.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md PLUGINS.md CHANGELOG.md data docs
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: auto-sync plugin index $(date -u +'%Y-%m-%d')"
+            git push
+          fi
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

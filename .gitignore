@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+.venv/
+candidate_list.txt
+.DS_Store
+Thumbs.db

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oh-My-DSH ? DeepSeek Harness ??????</title>
+<meta name="description" content="Oh-My-DSH ? DeepSeek Harness (DSH) ?????????????????????????????Everything is a Plugin.">
+<meta property="og:title" content="Oh-My-DSH ? DeepSeek Harness ??????">
+<meta property="og:description" content="?? DSH ???? ? ???? dsh-plugin ?? ? Everything is a Plugin.">
+<style>
+:root{
+  --bg:#0b1020; --bg2:#111936; --card:#151e3d; --card2:#1b2647;
+  --line:#2a3560; --text:#e8ecf8; --muted:#93a0c4; --blue:#4d6bfe;
+  --cyan:#38bdf8; --green:#34d399; --yellow:#fbbf24; --red:#fb7185; --orange:#fb923c;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(1200px 600px at 80% -10%,rgba(77,107,254,.25),transparent 60%),radial-gradient(900px 500px at 10% 110%,rgba(56,189,248,.12),transparent 60%),var(--bg);color:var(--text);font:16px/1.6 -apple-system,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;min-height:100vh}
+a{color:var(--cyan);text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+header{padding:64px 0 30px;text-align:center}
+.logo{font-size:58px;line-height:1;filter:drop-shadow(0 4px 24px rgba(77,107,254,.5))}
+h1{font-size:44px;margin:14px 0 6px;letter-spacing:.5px;background:linear-gradient(90deg,#fff,#9db4ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.tagline{color:var(--muted);font-size:18px;max-width:640px;margin:0 auto}
+.stats{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:26px 0 8px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 22px;min-width:120px}
+.stat b{display:block;font-size:26px;color:var(--blue)}
+.stat span{font-size:13px;color:var(--muted)}
+.sub{color:var(--muted);font-size:13px;margin-top:10px}
+.controls{position:sticky;top:0;z-index:10;background:rgba(11,16,32,.92);backdrop-filter:blur(8px);padding:14px 0;border-bottom:1px solid var(--line)}
+.search{width:100%;max-width:560px;display:block;margin:0 auto 10px;padding:12px 18px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--text);font-size:15px;outline:none}
+.search:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(77,107,254,.25)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.chip{cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--muted);padding:6px 13px;border-radius:999px;font-size:13px;transition:.15s}
+.chip:hover,.chip.on{background:var(--blue);border-color:var(--blue);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px;padding:26px 0 60px}
+.card{display:block;background:linear-gradient(180deg,var(--card),var(--card2));border:1px solid var(--line);border-radius:14px;padding:16px 18px;transition:.18s;color:var(--text)}
+.card:hover{transform:translateY(-3px);border-color:var(--blue);box-shadow:0 10px 30px rgba(77,107,254,.18)}
+.card-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.name{font-weight:600;font-size:15.5px;word-break:break-all}
+.stars{color:var(--yellow);font-weight:600;white-space:nowrap;font-size:14px}
+.card-meta{display:flex;align-items:center;gap:8px;margin:9px 0;flex-wrap:wrap}
+.tag{font-size:11.5px;padding:2px 9px;border-radius:999px;background:rgba(77,107,254,.15);color:#aebdff;border:1px solid rgba(77,107,254,.35)}
+.lang{font-size:11.5px;color:var(--muted);border:1px solid var(--line);padding:2px 8px;border-radius:999px}
+.act{font-size:11.5px}
+.act-active{color:var(--green)} .act-watch{color:var(--yellow)} .act-slow{color:var(--orange)} .act-stale{color:var(--red)} .act-none{color:var(--muted)}
+.desc{color:var(--muted);font-size:13.5px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:60px}
+.empty{text-align:center;color:var(--muted);padding:60px 0;display:none}
+footer{border-top:1px solid var(--line);padding:26px 0 40px;text-align:center;color:var(--muted);font-size:13px}
+footer a{color:var(--cyan)}
+.badge-inline{display:inline-block;background:rgba(52,211,153,.12);color:var(--green);border:1px solid rgba(52,211,153,.35);padding:2px 10px;border-radius:999px;font-size:12px;margin:12px 4px 0}
+@media(max-width:640px){h1{font-size:32px}.logo{font-size:44px}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div class="logo">??</div>
+  <h1>Oh-My-DSH</h1>
+  <p class="tagline">DeepSeek Harness ?????? ?? Everything is a Plugin.<br>?????? ? ???? ? ?????</p>
+  <div class="stats">
+    <div class="stat"><b>{{OMD_COUNT}}</b><span>????</span></div>
+    <div class="stat"><b>{{OMD_TOTAL}}</b><span>????</span></div>
+    <div class="stat"><b>{{OMD_STARS}}</b><span>? Star</span></div>
+  </div>
+  <div>
+    <span class="badge-inline">? ??? GitHub Actions ? 8 ??????</span>
+    <span class="badge-inline">?? ??? {{OMD_UPDATED}}</span>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="wrap">
+    <input class="search" id="q" type="search" placeholder="????? / ?? / ???" autocomplete="off">
+    <div class="chips" id="chips">
+      <button class="chip on" data-cat="all" onclick="filterCat('all')">? ??</button>
+      {{OMD_CATS}}
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="grid" id="grid">{{OMD_CARDS}}</div>
+  <div class="empty" id="empty">??????? ?? ????????</div>
+</main>
+
+<footer class="wrap">
+  <p><a href="https://github.com/like-study1/Oh-My-DSH">? Oh-My-DSH on GitHub</a> ? ?????? / PR / Issue</p>
+  <p style="margin-top:6px">? <code>scripts/sync_plugins.py</code> ???? ? ???????????????????</p>
+</footer>
+
+<script>
+let cat='all';
+function filterCat(c){cat=c;document.querySelectorAll('.chip').forEach(b=>b.classList.toggle('on',b.dataset.cat===c));render()}
+document.getElementById('q').addEventListener('input',render);
+function render(){
+  const q=document.getElementById('q').value.trim().toLowerCase();
+  let shown=0;
+  document.querySelectorAll('.card').forEach(card=>{
+    const okCat=cat==='all'||card.dataset.cat===cat;
+    const okQ=!q||card.dataset.q.includes(q);
+    card.style.display=okCat&&okQ?'':'none';
+    if(okCat&&okQ)shown++;
+  });
+  document.getElementById('empty').style.display=shown?'none':'block';
+}
+</script>
+</body>
+</html>

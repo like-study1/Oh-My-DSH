@@ -1,0 +1,3379 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oh-My-DSH ? DeepSeek Harness ??????</title>
+<meta name="description" content="Oh-My-DSH ? DeepSeek Harness (DSH) ?????????????????????????????Everything is a Plugin.">
+<meta property="og:title" content="Oh-My-DSH ? DeepSeek Harness ??????">
+<meta property="og:description" content="?? DSH ???? ? ???? dsh-plugin ?? ? Everything is a Plugin.">
+<style>
+:root{
+  --bg:#0b1020; --bg2:#111936; --card:#151e3d; --card2:#1b2647;
+  --line:#2a3560; --text:#e8ecf8; --muted:#93a0c4; --blue:#4d6bfe;
+  --cyan:#38bdf8; --green:#34d399; --yellow:#fbbf24; --red:#fb7185; --orange:#fb923c;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(1200px 600px at 80% -10%,rgba(77,107,254,.25),transparent 60%),radial-gradient(900px 500px at 10% 110%,rgba(56,189,248,.12),transparent 60%),var(--bg);color:var(--text);font:16px/1.6 -apple-system,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;min-height:100vh}
+a{color:var(--cyan);text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+header{padding:64px 0 30px;text-align:center}
+.logo{font-size:58px;line-height:1;filter:drop-shadow(0 4px 24px rgba(77,107,254,.5))}
+h1{font-size:44px;margin:14px 0 6px;letter-spacing:.5px;background:linear-gradient(90deg,#fff,#9db4ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.tagline{color:var(--muted);font-size:18px;max-width:640px;margin:0 auto}
+.stats{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:26px 0 8px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 22px;min-width:120px}
+.stat b{display:block;font-size:26px;color:var(--blue)}
+.stat span{font-size:13px;color:var(--muted)}
+.sub{color:var(--muted);font-size:13px;margin-top:10px}
+.controls{position:sticky;top:0;z-index:10;background:rgba(11,16,32,.92);backdrop-filter:blur(8px);padding:14px 0;border-bottom:1px solid var(--line)}
+.search{width:100%;max-width:560px;display:block;margin:0 auto 10px;padding:12px 18px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--text);font-size:15px;outline:none}
+.search:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(77,107,254,.25)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.chip{cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--muted);padding:6px 13px;border-radius:999px;font-size:13px;transition:.15s}
+.chip:hover,.chip.on{background:var(--blue);border-color:var(--blue);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px;padding:26px 0 60px}
+.card{display:block;background:linear-gradient(180deg,var(--card),var(--card2));border:1px solid var(--line);border-radius:14px;padding:16px 18px;transition:.18s;color:var(--text)}
+.card:hover{transform:translateY(-3px);border-color:var(--blue);box-shadow:0 10px 30px rgba(77,107,254,.18)}
+.card-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.name{font-weight:600;font-size:15.5px;word-break:break-all}
+.stars{color:var(--yellow);font-weight:600;white-space:nowrap;font-size:14px}
+.card-meta{display:flex;align-items:center;gap:8px;margin:9px 0;flex-wrap:wrap}
+.tag{font-size:11.5px;padding:2px 9px;border-radius:999px;background:rgba(77,107,254,.15);color:#aebdff;border:1px solid rgba(77,107,254,.35)}
+.lang{font-size:11.5px;color:var(--muted);border:1px solid var(--line);padding:2px 8px;border-radius:999px}
+.act{font-size:11.5px}
+.act-active{color:var(--green)} .act-watch{color:var(--yellow)} .act-slow{color:var(--orange)} .act-stale{color:var(--red)} .act-none{color:var(--muted)}
+.desc{color:var(--muted);font-size:13.5px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:60px}
+.empty{text-align:center;color:var(--muted);padding:60px 0;display:none}
+footer{border-top:1px solid var(--line);padding:26px 0 40px;text-align:center;color:var(--muted);font-size:13px}
+footer a{color:var(--cyan)}
+.badge-inline{display:inline-block;background:rgba(52,211,153,.12);color:var(--green);border:1px solid rgba(52,211,153,.35);padding:2px 10px;border-radius:999px;font-size:12px;margin:12px 4px 0}
+@media(max-width:640px){h1{font-size:32px}.logo{font-size:44px}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div class="logo">??</div>
+  <h1>Oh-My-DSH</h1>
+  <p class="tagline">DeepSeek Harness ?????? ?? Everything is a Plugin.<br>?????? ? ???? ? ?????</p>
+  <div class="stats">
+    <div class="stat"><b>251</b><span>????</span></div>
+    <div class="stat"><b>757</b><span>????</span></div>
+    <div class="stat"><b>87243</b><span>? Star</span></div>
+  </div>
+  <div>
+    <span class="badge-inline">? ??? GitHub Actions ? 8 ??????</span>
+    <span class="badge-inline">?? ??? 2026-08-14 01:31 UTC</span>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="wrap">
+    <input class="search" id="q" type="search" placeholder="????? / ?? / ???" autocomplete="off">
+    <div class="chips" id="chips">
+      <button class="chip on" data-cat="all" onclick="filterCat('all')">? ??</button>
+      <button class="chip" data-cat="channel" onclick="filterCat('channel')">?? ???? 11</button>
+<button class="chip" data-cat="vision" onclick="filterCat('vision')">??? ?????? 11</button>
+<button class="chip" data-cat="browser" onclick="filterCat('browser')">?? ?????? 11</button>
+<button class="chip" data-cat="webui" onclick="filterCat('webui')">?? Web UI ?? 54</button>
+<button class="chip" data-cat="skin" onclick="filterCat('skin')">?? ????? 18</button>
+<button class="chip" data-cat="agent" onclick="filterCat('agent')">?? Agent ?? 63</button>
+<button class="chip" data-cat="code" onclick="filterCat('code')">?? ???? 22</button>
+<button class="chip" data-cat="data" onclick="filterCat('data')">??? ????? 18</button>
+<button class="chip" data-cat="devtools" onclick="filterCat('devtools')">??? ??????? 14</button>
+<button class="chip" data-cat="collection" onclick="filterCat('collection')">?? ???????? 11</button>
+<button class="chip" data-cat="eco" onclick="filterCat('eco')">?? ???? 18</button>
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="grid" id="grid">
+      <a class="card" href="https://github.com/deepseek-ai/deepseek-harness" target="_blank" rel="noopener" data-cat="eco" data-q="deepseek-ai/deepseek-harness deepseek harness 官方仓库：everything is a plugin.">
+        <div class="card-top">
+          <span class="name">deepseek-ai/deepseek-harness</span>
+          <span class="stars">★ 50294</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-eco">?? 项目</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">DeepSeek Harness 官方仓库：Everything is a Plugin.</p>
+      </a>
+
+      <a class="card" href="https://github.com/titanwings/colleague-skill" target="_blank" rel="noopener" data-cat="eco" data-q="titanwings/colleague-skill 「同事」skill：将离别化为温暖的数字生命 1.0">
+        <div class="card-top">
+          <span class="name">titanwings/colleague-skill</span>
+          <span class="stars">★ 21200</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-eco">?? 项目</span>
+          <span class="lang">Python</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">「同事」Skill：将离别化为温暖的数字生命 1.0</p>
+      </a>
+
+      <a class="card" href="https://github.com/Devin-AXIS/iPolloWork" target="_blank" rel="noopener" data-cat="eco" data-q="devin-axis/ipollowork 下一代开源 ai 工作台：自进化 agent 运行时，集成 dsh 子代理">
+        <div class="card-top">
+          <span class="name">Devin-AXIS/iPolloWork</span>
+          <span class="stars">★ 3637</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-eco">?? 项目</span>
+          <span class="lang">HTML</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">下一代开源 AI 工作台：自进化 Agent 运行时，集成 DSH 子代理</p>
+      </a>
+
+      <a class="card" href="https://github.com/whiteguo233/OpenBiliClaw" target="_blank" rel="noopener" data-cat="eco" data-q="whiteguo233/openbiliclaw 本地优先的跨平台 ai 内容发现 agent：b站、小红书、抖音、youtube、x、知乎、reddit">
+        <div class="card-top">
+          <span class="name">whiteguo233/OpenBiliClaw</span>
+          <span class="stars">★ 1974</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-eco">?? 项目</span>
+          <span class="lang">Python</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">本地优先的跨平台 AI 内容发现 Agent：B站、小红书、抖音、YouTube、X、知乎、Reddit</p>
+      </a>
+
+      <a class="card" href="https://github.com/paean-ai/deeptide" target="_blank" rel="noopener" data-cat="eco" data-q="paean-ai/deeptide deepseek 官方风格 swift 原生 macos 编程 agent">
+        <div class="card-top">
+          <span class="name">paean-ai/deeptide</span>
+          <span class="stars">★ 1022</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-eco">?? 项目</span>
+          <span class="lang">Rust</span>
+          <span class="act act-🟡" title="最近更新 2026-07-08">🟡 关注</span>
+        </div>
+        <p class="desc">DeepSeek 官方风格 Swift 原生 macOS 编程 Agent</p>
+      </a>
+
+      <a class="card" href="https://github.com/nutshellai-tech/mobius" target="_blank" rel="noopener" data-cat="eco" data-q="nutshellai-tech/mobius 首个自进化开源 agent os：连接团队、ai agent、设备与算力">
+        <div class="card-top">
+          <span class="name">nutshellai-tech/mobius</span>
+          <span class="stars">★ 918</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-eco">?? 项目</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">首个自进化开源 Agent OS：连接团队、AI Agent、设备与算力</p>
+      </a>
+
+      <a class="card" href="https://github.com/liustack/modlens" target="_blank" rel="noopener" data-cat="vision" data-q="liustack/modlens dsh 首个视觉插件：纯文本模型的视觉桥梁">
+        <div class="card-top">
+          <span class="name">liustack/modlens</span>
+          <span class="stars">★ 750</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-vision">??? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">DSH 首个视觉插件：纯文本模型的视觉桥梁</p>
+      </a>
+
+      <a class="card" href="https://github.com/hellowind777/helloagents" target="_blank" rel="noopener" data-cat="agent" data-q="hellowind777/helloagents 一个自主的高级智能伙伴，不仅分析问题，更持续工作直到完成实现和验证。">
+        <div class="card-top">
+          <span class="name">hellowind777/helloagents</span>
+          <span class="stars">★ 658</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟡" title="最近更新 2026-07-29">🟡 关注</span>
+        </div>
+        <p class="desc">一个自主的高级智能伙伴，不仅分析问题，更持续工作直到完成实现和验证。</p>
+      </a>
+
+      <a class="card" href="https://github.com/zhu1090093659/dsh-web-ui" target="_blank" rel="noopener" data-cat="collection" data-q="zhu1090093659/dsh-web-ui dsh web ui 插件与皮肤合集：任务面板、git 图、右侧面板、移动端 ui、宠物、实时 token 统计、皮肤中心">
+        <div class="card-top">
+          <span class="name">zhu1090093659/dsh-web-ui</span>
+          <span class="stars">★ 625</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-collection">?? 合集</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">DSH Web UI 插件与皮肤合集：任务面板、Git 图、右侧面板、移动端 UI、宠物、实时 Token 统计、皮肤中心</p>
+      </a>
+
+      <a class="card" href="https://github.com/Anionex/agent-vision-toolkit" target="_blank" rel="noopener" data-cat="vision" data-q="anionex/agent-vision-toolkit 为纯文本模型设计的视觉工具箱：多图理解、长截图 ocr、前端 ui 还原、gui 自动化，可接入 codex/claude code/pi/oh my pi/opencode">
+        <div class="card-top">
+          <span class="name">Anionex/agent-vision-toolkit</span>
+          <span class="stars">★ 561</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-vision">??? 插件</span>
+          <span class="lang">Python</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">为纯文本模型设计的视觉工具箱：多图理解、长截图 OCR、前端 UI 还原、GUI 自动化，可接入 Codex/Claude Code/Pi/Oh My Pi/OpenCode</p>
+      </a>
+
+      <a class="card" href="https://github.com/AdamPlatin123/awesome-dsh-plugins" target="_blank" rel="noopener" data-cat="collection" data-q="adamplatin123/awesome-dsh-plugins dsh 插件兼容性雷达：每天自动扫描 286+ 候选，四维检查 + 运行级实测">
+        <div class="card-top">
+          <span class="name">AdamPlatin123/awesome-dsh-plugins</span>
+          <span class="stars">★ 364</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-collection">?? 合集</span>
+          <span class="lang">Shell</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">DSH 插件兼容性雷达：每天自动扫描 286+ 候选，四维检查 + 运行级实测</p>
+      </a>
+
+      <a class="card" href="https://github.com/linhay/harmony-next.skills" target="_blank" rel="noopener" data-cat="eco" data-q="linhay/harmony-next.skills harmonyos next (api 12+) 开发专家 skill">
+        <div class="card-top">
+          <span class="name">linhay/harmony-next.skills</span>
+          <span class="stars">★ 294</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-eco">?? 项目</span>
+          <span class="lang">Python</span>
+          <span class="act act-🟡" title="最近更新 2026-07-10">🟡 关注</span>
+        </div>
+        <p class="desc">HarmonyOS NEXT (API 12+) 开发专家 Skill</p>
+      </a>
+
+      <a class="card" href="https://github.com/PM-Shawn/Abu-Cowork" target="_blank" rel="noopener" data-cat="eco" data-q="pm-shawn/abu-cowork claude cowork 的开源替代：本地优先 ai agent 桌面">
+        <div class="card-top">
+          <span class="name">PM-Shawn/Abu-Cowork</span>
+          <span class="stars">★ 293</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-eco">?? 项目</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Claude Cowork 的开源替代：本地优先 AI Agent 桌面</p>
+      </a>
+
+      <a class="card" href="https://github.com/alaliqing/claude-paper" target="_blank" rel="noopener" data-cat="eco" data-q="alaliqing/claude-paper 研究论文自动化研读插件：材料生成、代码演示、交互式 web 查看器">
+        <div class="card-top">
+          <span class="name">alaliqing/claude-paper</span>
+          <span class="stars">★ 280</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-eco">?? 项目</span>
+          <span class="lang">Vue</span>
+          <span class="act act-🟠" title="最近更新 2026-04-03">🟠 放缓</span>
+        </div>
+        <p class="desc">研究论文自动化研读插件：材料生成、代码演示、交互式 Web 查看器</p>
+      </a>
+
+      <a class="card" href="https://github.com/ccch1mneyyy/dsh-TUI" target="_blank" rel="noopener" data-cat="code" data-q="ccch1mneyyy/dsh-tui claude code 风格全屏交互终端：像素鲸鱼顶栏、思考流式展开、双击 esc 回滚、上下文进度条 + tps 仪表">
+        <div class="card-top">
+          <span class="name">ccch1mneyyy/dsh-TUI</span>
+          <span class="stars">★ 274</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-code">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">Claude Code 风格全屏交互终端：像素鲸鱼顶栏、思考流式展开、双击 Esc 回滚、上下文进度条 + TPS 仪表</p>
+      </a>
+
+      <a class="card" href="https://github.com/cofy-x/axern" target="_blank" rel="noopener" data-cat="eco" data-q="cofy-x/axern 开源 ai agent 沙箱：不可信代码执行与持久化服务">
+        <div class="card-top">
+          <span class="name">cofy-x/axern</span>
+          <span class="stars">★ 251</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-eco">?? 项目</span>
+          <span class="lang">Go</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">开源 AI Agent 沙箱：不可信代码执行与持久化服务</p>
+      </a>
+
+      <a class="card" href="https://github.com/SepineTam/mcp-for-stata" target="_blank" rel="noopener" data-cat="eco" data-q="sepinetam/mcp-for-stata stata mcp 服务器：把 stata 接入 agent">
+        <div class="card-top">
+          <span class="name">SepineTam/mcp-for-stata</span>
+          <span class="stars">★ 238</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-eco">?? 项目</span>
+          <span class="lang">Python</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Stata MCP 服务器：把 Stata 接入 Agent</p>
+      </a>
+
+      <a class="card" href="https://github.com/openma-ai/open-managed-agents" target="_blank" rel="noopener" data-cat="eco" data-q="openma-ai/open-managed-agents 开源 claude managed agents api 实现与自托管 agent 运行时">
+        <div class="card-top">
+          <span class="name">openma-ai/open-managed-agents</span>
+          <span class="stars">★ 230</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-eco">?? 项目</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-11">🟢 活跃</span>
+        </div>
+        <p class="desc">开源 Claude Managed Agents API 实现与自托管 Agent 运行时</p>
+      </a>
+
+      <a class="card" href="https://github.com/morluto/rea" target="_blank" rel="noopener" data-cat="eco" data-q="morluto/rea 用 agent 逆向一切：从应用行为到原生二进制">
+        <div class="card-top">
+          <span class="name">morluto/rea</span>
+          <span class="stars">★ 227</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-eco">?? 项目</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-11">🟢 活跃</span>
+        </div>
+        <p class="desc">用 Agent 逆向一切：从应用行为到原生二进制</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/DSH-better-sidebar" target="_blank" rel="noopener" data-cat="webui" data-q="omdsh-dev/dsh-better-sidebar 侧边栏完整工作台：支持三方扩展注册新 tab，内置文件渲染/编辑、终端、git、子代理">
+        <div class="card-top">
+          <span class="name">omdsh-dev/DSH-better-sidebar</span>
+          <span class="stars">★ 188</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">侧边栏完整工作台：支持三方扩展注册新 Tab，内置文件渲染/编辑、终端、Git、子代理</p>
+      </a>
+
+      <a class="card" href="https://github.com/Anionex/dsh-vision-toolkit" target="_blank" rel="noopener" data-cat="vision" data-q="anionex/dsh-vision-toolkit dsh 原生视觉插件：带意图的图片问答、长截图 ocr、ui 还原、grounding、像素级 diff、artifacts 与 web ui">
+        <div class="card-top">
+          <span class="name">Anionex/dsh-vision-toolkit</span>
+          <span class="stars">★ 176</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-vision">??? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">DSH 原生视觉插件：带意图的图片问答、长截图 OCR、UI 还原、grounding、像素级 diff、Artifacts 与 Web UI</p>
+      </a>
+
+      <a class="card" href="https://github.com/0xsline/awesome-deepseek-harness" target="_blank" rel="noopener" data-cat="collection" data-q="0xsline/awesome-deepseek-harness dsh 生态精选目录：插件、工具与基础设施">
+        <div class="card-top">
+          <span class="name">0xsline/awesome-deepseek-harness</span>
+          <span class="stars">★ 168</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-collection">?? 合集</span>
+          <span class="lang">Python</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">DSH 生态精选目录：插件、工具与基础设施</p>
+      </a>
+
+      <a class="card" href="https://github.com/Small-tailqwq/dsh-deep-whale" target="_blank" rel="noopener" data-cat="skin" data-q="small-tailqwq/dsh-deep-whale 鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier），cc by-nc-sa 4.0">
+        <div class="card-top">
+          <span class="name">Small-tailqwq/dsh-deep-whale</span>
+          <span class="stars">★ 149</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-skin">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier），CC BY-NC-SA 4.0</p>
+      </a>
+
+      <a class="card" href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin" target="_blank" rel="noopener" data-cat="collection" data-q="awesome-dsh-plugin/awesome-dsh-plugin deepseek harness 精选插件清单（awesome list）">
+        <div class="card-top">
+          <span class="name">awesome-dsh-plugin/awesome-dsh-plugin</span>
+          <span class="stars">★ 145</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-collection">?? 合集</span>
+          <span class="lang">HTML</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">DeepSeek Harness 精选插件清单（awesome list）</p>
+      </a>
+
+      <a class="card" href="https://github.com/humblebanana/open-record-replay" target="_blank" rel="noopener" data-cat="eco" data-q="humblebanana/open-record-replay macos 开源录制-回放工作流工具（computer use）">
+        <div class="card-top">
+          <span class="name">humblebanana/open-record-replay</span>
+          <span class="stars">★ 133</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-eco">?? 项目</span>
+          <span class="lang">Swift</span>
+          <span class="act act-🟡" title="最近更新 2026-06-22">🟡 关注</span>
+        </div>
+        <p class="desc">macOS 开源录制-回放工作流工具（computer use）</p>
+      </a>
+
+      <a class="card" href="https://github.com/Nagi-ovo/dsh-ads" target="_blank" rel="noopener" data-cat="skin" data-q="nagi-ovo/dsh-ads 2005 年中文站点风格的复古广告插件：侧栏广告 / 对话内信息流 / 角落弹窗">
+        <div class="card-top">
+          <span class="name">Nagi-ovo/dsh-ads</span>
+          <span class="stars">★ 129</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-skin">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">2005 年中文站点风格的复古广告插件：侧栏广告 / 对话内信息流 / 角落弹窗</p>
+      </a>
+
+      <a class="card" href="https://github.com/NanmiCoder/dsh-agent-teams" target="_blank" rel="noopener" data-cat="agent" data-q="nanmicoder/dsh-agent-teams agentteams：多 agent 团队协作插件">
+        <div class="card-top">
+          <span class="name">NanmiCoder/dsh-agent-teams</span>
+          <span class="stars">★ 93</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">AgentTeams：多 Agent 团队协作插件</p>
+      </a>
+
+      <a class="card" href="https://github.com/huiliyi37/dsh-tianshu-tui" target="_blank" rel="noopener" data-cat="code" data-q="huiliyi37/dsh-tianshu-tui dsh-tianshu-tui：dsh 终端 ui">
+        <div class="card-top">
+          <span class="name">huiliyi37/dsh-tianshu-tui</span>
+          <span class="stars">★ 79</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-code">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">dsh-tianshu-tui：DSH 终端 UI</p>
+      </a>
+
+      <a class="card" href="https://github.com/hust-open-atom-club/oh-dsh" target="_blank" rel="noopener" data-cat="collection" data-q="hust-open-atom-club/oh-dsh 一站式 dsh 社区发行版：tui、桌面端与 web ui 三种形态统一体验">
+        <div class="card-top">
+          <span class="name">hust-open-atom-club/oh-dsh</span>
+          <span class="stars">★ 73</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-collection">?? 合集</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">一站式 DSH 社区发行版：TUI、桌面端与 Web UI 三种形态统一体验</p>
+      </a>
+
+      <a class="card" href="https://github.com/pulseaiclub/phi" target="_blank" rel="noopener" data-cat="eco" data-q="pulseaiclub/phi 源自 pi 的 go 编码 agent：子代理、hashline 编辑、权限门">
+        <div class="card-top">
+          <span class="name">pulseaiclub/phi</span>
+          <span class="stars">★ 72</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-eco">?? 项目</span>
+          <span class="lang">Go</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">源自 Pi 的 Go 编码 Agent：子代理、hashline 编辑、权限门</p>
+      </a>
+
+      <a class="card" href="https://github.com/liustack/modsearch" target="_blank" rel="noopener" data-cat="browser" data-q="liustack/modsearch dsh web 搜索插件：纯文本模型的搜索桥梁">
+        <div class="card-top">
+          <span class="name">liustack/modsearch</span>
+          <span class="stars">★ 65</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-browser">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">DSH Web 搜索插件：纯文本模型的搜索桥梁</p>
+      </a>
+
+      <a class="card" href="https://github.com/taxueseek/argo" target="_blank" rel="noopener" data-cat="browser" data-q="taxueseek/argo 为 agent 打造的搜索工具：多语言覆盖中/英/学术/代码/购物/金融/新闻/百科">
+        <div class="card-top">
+          <span class="name">taxueseek/argo</span>
+          <span class="stars">★ 57</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-browser">?? 插件</span>
+          <span class="lang">Python</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">为 Agent 打造的搜索工具：多语言覆盖中/英/学术/代码/购物/金融/新闻/百科</p>
+      </a>
+
+      <a class="card" href="https://github.com/Lyn-77/ProMentor" target="_blank" rel="noopener" data-cat="agent" data-q="lyn-77/promentor ai 编程导师 skill：扫描项目架构、生成阶梯式学习路径">
+        <div class="card-top">
+          <span class="name">Lyn-77/ProMentor</span>
+          <span class="stars">★ 46</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">AI 编程导师 Skill：扫描项目架构、生成阶梯式学习路径</p>
+      </a>
+
+      <a class="card" href="https://github.com/btspoony/mstar-harness" target="_blank" rel="noopener" data-cat="agent" data-q="btspoony/mstar-harness skill 驱动的 harness/loop 工程工作流插件">
+        <div class="card-top">
+          <span class="name">btspoony/mstar-harness</span>
+          <span class="stars">★ 39</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Skill 驱动的 Harness/Loop 工程工作流插件</p>
+      </a>
+
+      <a class="card" href="https://github.com/morluto/jacobian" target="_blank" rel="noopener" data-cat="eco" data-q="morluto/jacobian 面向 agent 的纯数学工具：搜索例子与反例、证明辅助">
+        <div class="card-top">
+          <span class="name">morluto/jacobian</span>
+          <span class="stars">★ 38</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-eco">?? 项目</span>
+          <span class="lang">Python</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">面向 Agent 的纯数学工具：搜索例子与反例、证明辅助</p>
+      </a>
+
+      <a class="card" href="https://github.com/ZSeven-W/dsh-openpencil" target="_blank" rel="noopener" data-cat="webui" data-q="zseven-w/dsh-openpencil openpencil 设计稿预览与编辑插件">
+        <div class="card-top">
+          <span class="name">ZSeven-W/dsh-openpencil</span>
+          <span class="stars">★ 38</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">OpenPencil 设计稿预览与编辑插件</p>
+      </a>
+
+      <a class="card" href="https://github.com/icetomoyo/dsh_workflow" target="_blank" rel="noopener" data-cat="agent" data-q="icetomoyo/dsh_workflow 把 claude code 的 ultracode 模式带给 dsh：可生成、可保存、可治理、可观察、可恢复的工作流">
+        <div class="card-top">
+          <span class="name">icetomoyo/dsh_workflow</span>
+          <span class="stars">★ 37</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">把 Claude Code 的 UltraCode 模式带给 DSH：可生成、可保存、可治理、可观察、可恢复的工作流</p>
+      </a>
+
+      <a class="card" href="https://github.com/Nagi-ovo/dsh-find-plugins" target="_blank" rel="noopener" data-cat="devtools" data-q="nagi-ovo/dsh-find-plugins 在 dsh 内搜索/发现插件的 skill">
+        <div class="card-top">
+          <span class="name">Nagi-ovo/dsh-find-plugins</span>
+          <span class="stars">★ 36</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-devtools">??? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">在 DSH 内搜索/发现插件的 Skill</p>
+      </a>
+
+      <a class="card" href="https://github.com/Nagi-ovo/dsh-visualize" target="_blank" rel="noopener" data-cat="webui" data-q="nagi-ovo/dsh-visualize 对话内生成式 ui：模型把交互式 html 卡片直接画进会话流">
+        <div class="card-top">
+          <span class="name">Nagi-ovo/dsh-visualize</span>
+          <span class="stars">★ 36</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-at-file" target="_blank" rel="noopener" data-cat="webui" data-q="omdsh-dev/dsh-at-file codex 风格 @文件 引用：工作区文件搜索与引用">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-at-file</span>
+          <span class="stars">★ 36</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Codex 风格 @文件 引用：工作区文件搜索与引用</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-open-in-vscode" target="_blank" rel="noopener" data-cat="code" data-q="omdsh-dev/dsh-open-in-vscode 一键在 vs code 中打开 dsh 工作区目录">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-open-in-vscode</span>
+          <span class="stars">★ 33</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-code">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">一键在 VS Code 中打开 DSH 工作区目录</p>
+      </a>
+
+      <a class="card" href="https://github.com/Alex-Yanggg/awesome-DSH-plugin" target="_blank" rel="noopener" data-cat="code" data-q="alex-yanggg/awesome-dsh-plugin a meticulously curated list of useful plugins, extensions, tools and development resources built for dsh, covering productivity enhancement, functional expansion, debugging utilities and custom development modules.">
+        <div class="card-top">
+          <span class="name">Alex-Yanggg/awesome-DSH-plugin</span>
+          <span class="stars">★ 32</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-code">?? 插件</span>
+          <span class="lang">Python</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">A meticulously curated list of useful plugins, extensions, tools and development resources built for DSH, covering productivity enhancement, functional expansion, debugging utilities and custom development modules.</p>
+      </a>
+
+      <a class="card" href="https://github.com/vlln/whale-girl" target="_blank" rel="noopener" data-cat="skin" data-q="vlln/whale-girl 桌面宠物插件（qq 宠物形态）：可拖拽、投喂、玩耍的积累型伙伴">
+        <div class="card-top">
+          <span class="name">vlln/whale-girl</span>
+          <span class="stars">★ 31</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-skin">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">桌面宠物插件（QQ 宠物形态）：可拖拽、投喂、玩耍的积累型伙伴</p>
+      </a>
+
+      <a class="card" href="https://github.com/Electricitysheep/dsh-handbook" target="_blank" rel="noopener" data-cat="devtools" data-q="electricitysheep/dsh-handbook dsh 从 0 到 1 深度手册：安装、插件开发、性能调优、实测案例">
+        <div class="card-top">
+          <span class="name">Electricitysheep/dsh-handbook</span>
+          <span class="stars">★ 30</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-devtools">??? 教程</span>
+          <span class="lang">HTML</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">DSH 从 0 到 1 深度手册：安装、插件开发、性能调优、实测案例</p>
+      </a>
+
+      <a class="card" href="https://github.com/Lum1104/dsh-browser" target="_blank" rel="noopener" data-cat="browser" data-q="lum1104/dsh-browser chrome 侧边栏扩展：让 dsh 直接操控你的浏览器">
+        <div class="card-top">
+          <span class="name">Lum1104/dsh-browser</span>
+          <span class="stars">★ 30</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-browser">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Chrome 侧边栏扩展：让 DSH 直接操控你的浏览器</p>
+      </a>
+
+      <a class="card" href="https://github.com/morluto/flameox" target="_blank" rel="noopener" data-cat="eco" data-q="morluto/flameox 运行时证据：帮助 agent 追踪、剖析并消除性能热点">
+        <div class="card-top">
+          <span class="name">morluto/flameox</span>
+          <span class="stars">★ 30</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-eco">?? 项目</span>
+          <span class="lang">Python</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">运行时证据：帮助 Agent 追踪、剖析并消除性能热点</p>
+      </a>
+
+      <a class="card" href="https://github.com/yuukiLike/zeromd" target="_blank" rel="noopener" data-cat="code" data-q="yuukilike/zeromd obsidian 零成本同步：iphone ↔ mac，github 自动备份。本地优先 + 长期积累。｜local first. zero-cost obsidian sync across iphone, mac & github. let knowledge grow over time.">
+        <div class="card-top">
+          <span class="name">yuukiLike/zeromd</span>
+          <span class="stars">★ 28</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-code">?? 插件</span>
+          <span class="lang">Shell</span>
+          <span class="act act-🟠" title="最近更新 2026-03-20">🟠 放缓</span>
+        </div>
+        <p class="desc">Obsidian 零成本同步：iPhone ↔ Mac，GitHub 自动备份。本地优先 + 长期积累。｜Local First. Zero-cost Obsidian sync across iPhone, Mac & GitHub. Let knowledge grow over time.</p>
+      </a>
+
+      <a class="card" href="https://github.com/Ruler4396/dsh-launcher" target="_blank" rel="noopener" data-cat="devtools" data-q="ruler4396/dsh-launcher windows 轻量 dsh 启动器：登录自启 + 极简 webview2 窗口">
+        <div class="card-top">
+          <span class="name">Ruler4396/dsh-launcher</span>
+          <span class="stars">★ 27</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-devtools">??? 工具</span>
+          <span class="lang">C#</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">Windows 轻量 DSH 启动器：登录自启 + 极简 WebView2 窗口</p>
+      </a>
+
+      <a class="card" href="https://github.com/LaplaceYoung/oh-my-dsh" target="_blank" rel="noopener" data-cat="collection" data-q="laplaceyoung/oh-my-dsh 面向 dsh 的插件生态：100+ 插件，仅通过扩展接口注册，不修改 agent-loop 骨架">
+        <div class="card-top">
+          <span class="name">LaplaceYoung/oh-my-dsh</span>
+          <span class="stars">★ 25</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-collection">?? 合集</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">面向 DSH 的插件生态：100+ 插件，仅通过扩展接口注册，不修改 agent-loop 骨架</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-notification" target="_blank" rel="noopener" data-cat="channel" data-q="omdsh-dev/dsh-notification 回合完成桌面通知：按结果类型控制，支持包含/排除关键词规则">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-notification</span>
+          <span class="stars">★ 25</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-channel">?? 渠道</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">回合完成桌面通知：按结果类型控制，支持包含/排除关键词规则</p>
+      </a>
+
+      <a class="card" href="https://github.com/hanelalo/browser-bridge" target="_blank" rel="noopener" data-cat="browser" data-q="hanelalo/browser-bridge 让 agent 像你一样操控浏览器窗口">
+        <div class="card-top">
+          <span class="name">hanelalo/browser-bridge</span>
+          <span class="stars">★ 24</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-browser">?? 插件</span>
+          <span class="lang">Rust</span>
+          <span class="act act-🟢" title="最近更新 2026-08-10">🟢 活跃</span>
+        </div>
+        <p class="desc">让 Agent 像你一样操控浏览器窗口</p>
+      </a>
+
+      <a class="card" href="https://github.com/openguardrails/openguardrails" target="_blank" rel="noopener" data-cat="eco" data-q="openguardrails/openguardrails ai agent 安全与防护的厂商中立协议 + 中立基准评测">
+        <div class="card-top">
+          <span class="name">openguardrails/openguardrails</span>
+          <span class="stars">★ 24</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-eco">?? 项目</span>
+          <span class="lang">Python</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">AI Agent 安全与防护的厂商中立协议 + 中立基准评测</p>
+      </a>
+
+      <a class="card" href="https://github.com/Anionex/dsh-turn-rewind" target="_blank" rel="noopener" data-cat="agent" data-q="anionex/dsh-turn-rewind 对话与代码状态回退：基于持久化 change ledger 的 rewind">
+        <div class="card-top">
+          <span class="name">Anionex/dsh-turn-rewind</span>
+          <span class="stars">★ 23</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">对话与代码状态回退：基于持久化 Change Ledger 的 rewind</p>
+      </a>
+
+      <a class="card" href="https://github.com/bruc3van/awesome-dsh-plugin" target="_blank" rel="noopener" data-cat="collection" data-q="bruc3van/awesome-dsh-plugin 用 30 秒找到适合你的 deepseek harness 插件。 不只是仓库列表：这里告诉你插件解决什么问题、适合谁，以及从哪里开始。">
+        <div class="card-top">
+          <span class="name">bruc3van/awesome-dsh-plugin</span>
+          <span class="stars">★ 23</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-collection">?? 合集</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">用 30 秒找到适合你的 DeepSeek Harness 插件。 不只是仓库列表：这里告诉你插件解决什么问题、适合谁，以及从哪里开始。</p>
+      </a>
+
+      <a class="card" href="https://github.com/zenx0x/allinluna" target="_blank" rel="noopener" data-cat="agent" data-q="zenx0x/allinluna 资源感知的多 agent 编排（all in flash dsh 插件）">
+        <div class="card-top">
+          <span class="name">zenx0x/allinluna</span>
+          <span class="stars">★ 22</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">Python</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">资源感知的多 Agent 编排（All in Flash DSH 插件）</p>
+      </a>
+
+      <a class="card" href="https://github.com/alingalingling/ui-status-label" target="_blank" rel="noopener" data-cat="webui" data-q="alingalingling/ui-status-label 把鲸鱼娘思考时的 deep diving 自定义成任意样式">
+        <div class="card-top">
+          <span class="name">alingalingling/ui-status-label</span>
+          <span class="stars">★ 21</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">把鲸鱼娘思考时的 deep diving 自定义成任意样式</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-annotation" target="_blank" rel="noopener" data-cat="webui" data-q="omdsh-dev/dsh-annotation 选中批注插件">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-annotation</span>
+          <span class="stars">★ 19</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">选中批注插件</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-custom-tool" target="_blank" rel="noopener" data-cat="devtools" data-q="omdsh-dev/dsh-custom-tool monaco 编辑器创建/管理沙箱化 js 工具，模型驱动的工具生命周期">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-custom-tool</span>
+          <span class="stars">★ 18</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-devtools">??? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Monaco 编辑器创建/管理沙箱化 JS 工具，模型驱动的工具生命周期</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-genui" target="_blank" rel="noopener" data-cat="webui" data-q="omdsh-dev/dsh-genui genui：内联交互式 ui 组件（布局、图表、表单、测验、mermaid、3d 场景）">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-genui</span>
+          <span class="stars">★ 18</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">GenUI：内联交互式 UI 组件（布局、图表、表单、测验、mermaid、3D 场景）</p>
+      </a>
+
+      <a class="card" href="https://github.com/lhh010/dsh-ui-whale" target="_blank" rel="noopener" data-cat="skin" data-q="lhh010/dsh-ui-whale 手绘像素鲸鱼伙伴：标题栏常驻、眨眼、摆尾、思考时动起来">
+        <div class="card-top">
+          <span class="name">lhh010/dsh-ui-whale</span>
+          <span class="stars">★ 17</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-skin">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">手绘像素鲸鱼伙伴：标题栏常驻、眨眼、摆尾、思考时动起来</p>
+      </a>
+
+      <a class="card" href="https://github.com/vlln/plugin-registry" target="_blank" rel="noopener" data-cat="devtools" data-q="vlln/plugin-registry dsh 插件生态基建：薄控制台（浏览器面板管理官方 repository 插件）+ make-dsh-plugin 开发引导">
+        <div class="card-top">
+          <span class="name">vlln/plugin-registry</span>
+          <span class="stars">★ 17</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-devtools">??? 工具</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">DSH 插件生态基建：薄控制台（浏览器面板管理官方 repository 插件）+ make-dsh-plugin 开发引导</p>
+      </a>
+
+      <a class="card" href="https://github.com/Chinesezjc/dsh-interconnect" target="_blank" rel="noopener" data-cat="channel" data-q="chinesezjc/dsh-interconnect 跨实例消息/事件交接插件">
+        <div class="card-top">
+          <span class="name">Chinesezjc/dsh-interconnect</span>
+          <span class="stars">★ 16</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-channel">?? 渠道</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">跨实例消息/事件交接插件</p>
+      </a>
+
+      <a class="card" href="https://github.com/csyangwen/dsh-memory-evolve" target="_blank" rel="noopener" data-cat="agent" data-q="csyangwen/dsh-memory-evolve 跨会话长期记忆 + 后台自我进化：五轨记忆、git 分支感知、回合内自我审查">
+        <div class="card-top">
+          <span class="name">csyangwen/dsh-memory-evolve</span>
+          <span class="stars">★ 16</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">跨会话长期记忆 + 后台自我进化：五轨记忆、git 分支感知、回合内自我审查</p>
+      </a>
+
+      <a class="card" href="https://github.com/YunTaiHua/illusion-agent" target="_blank" rel="noopener" data-cat="browser" data-q="yuntaihua/illusion-agent illusion-agent: where fantasy meets functionality — an ai agent platform for terminal, browser, any model, any os.">
+        <div class="card-top">
+          <span class="name">YunTaiHua/illusion-agent</span>
+          <span class="stars">★ 16</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-browser">?? 插件</span>
+          <span class="lang">Python</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Illusion-Agent: Where fantasy meets functionality — an AI agent platform for terminal, browser, any model, any OS.</p>
+      </a>
+
+      <a class="card" href="https://github.com/huiliyi37/dsh-tianshu-build" target="_blank" rel="noopener" data-cat="code" data-q="huiliyi37/dsh-tianshu-build dsh-tianshu-tui 构建配置">
+        <div class="card-top">
+          <span class="name">huiliyi37/dsh-tianshu-build</span>
+          <span class="stars">★ 15</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-code">?? 插件</span>
+          <span class="lang">—</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">dsh-tianshu-tui 构建配置</p>
+      </a>
+
+      <a class="card" href="https://github.com/morluto/leantoken" target="_blank" rel="noopener" data-cat="code" data-q="morluto/leantoken 代码智能：找到关键代码，保持上下文窗口与 token 精简">
+        <div class="card-top">
+          <span class="name">morluto/leantoken</span>
+          <span class="stars">★ 15</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-code">?? 插件</span>
+          <span class="lang">Rust</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">代码智能：找到关键代码，保持上下文窗口与 token 精简</p>
+      </a>
+
+      <a class="card" href="https://github.com/forrestchang/dsh-multica-runtime" target="_blank" rel="noopener" data-cat="webui" data-q="forrestchang/dsh-multica-runtime support dsh runtime on multica.">
+        <div class="card-top">
+          <span class="name">forrestchang/dsh-multica-runtime</span>
+          <span class="stars">★ 13</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Support dsh runtime on Multica.</p>
+      </a>
+
+      <a class="card" href="https://github.com/Anionex/dsh-computer-use" target="_blank" rel="noopener" data-cat="webui" data-q="anionex/dsh-computer-use 为 deepseek harness 提供电脑控制插件：新鲜 accessibility 观测、过期状态拒绝、作用域权限与安全输入（目前支持macos）｜accessibility-first macos computer use bundle for dsh with fresh observations, stale-state rejection, scoped permissions, and safe input.">
+        <div class="card-top">
+          <span class="name">Anionex/dsh-computer-use</span>
+          <span class="stars">★ 12</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">为 DeepSeek Harness 提供电脑控制插件：新鲜 Accessibility 观测、过期状态拒绝、作用域权限与安全输入（目前支持macos）｜Accessibility-first macOS Computer Use bundle for DSH with fresh observations, stale-state rejection, scoped permissions, and safe input.</p>
+      </a>
+
+      <a class="card" href="https://github.com/Dominic789654/awesome-deepseek-harness" target="_blank" rel="noopener" data-cat="vision" data-q="dominic789654/awesome-deepseek-harness a curated list of plugins, skills, mcp servers, orchestrators & uis for deepseek harness (dsh). visualization · ppt · coding · agents · loops (auto-research) and more. #dsh">
+        <div class="card-top">
+          <span class="name">Dominic789654/awesome-deepseek-harness</span>
+          <span class="stars">★ 12</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-vision">??? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">A curated list of plugins, skills, MCP servers, orchestrators & UIs for DeepSeek Harness (DSH). Visualization · PPT · Coding · Agents · Loops (auto-research) and more. #dsh</p>
+      </a>
+
+      <a class="card" href="https://github.com/hellodigua/dsh-share" target="_blank" rel="noopener" data-cat="channel" data-q="hellodigua/dsh-share 对话分享：一键分享你的对话">
+        <div class="card-top">
+          <span class="name">hellodigua/dsh-share</span>
+          <span class="stars">★ 12</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-channel">?? 渠道</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">对话分享：一键分享你的对话</p>
+      </a>
+
+      <a class="card" href="https://github.com/LoserFox/distill" target="_blank" rel="noopener" data-cat="agent" data-q="loserfox/distill 自动对话蒸馏：后台 subagent 反省 + 技能 create/update">
+        <div class="card-top">
+          <span class="name">LoserFox/distill</span>
+          <span class="stars">★ 12</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">自动对话蒸馏：后台 subagent 反省 + 技能 create/update</p>
+      </a>
+
+      <a class="card" href="https://github.com/Moeblack/dsh-message-edit" target="_blank" rel="noopener" data-cat="webui" data-q="moeblack/dsh-message-edit 基于分支的消息编辑、重掷、重试与版本时间线">
+        <div class="card-top">
+          <span class="name">Moeblack/dsh-message-edit</span>
+          <span class="stars">★ 12</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">基于分支的消息编辑、重掷、重试与版本时间线</p>
+      </a>
+
+      <a class="card" href="https://github.com/SenmuuuuW/dsh-group-photo" target="_blank" rel="noopener" data-cat="agent" data-q="senmuuuuw/dsh-group-photo dsh 内测收官合影墙：github oauth 零权限登录 + 冻结白名单校验的拍立得合影站（含 dsh skill 包装）">
+        <div class="card-top">
+          <span class="name">SenmuuuuW/dsh-group-photo</span>
+          <span class="stars">★ 12</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">HTML</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">DSH 内测收官合影墙：GitHub OAuth 零权限登录 + 冻结白名单校验的拍立得合影站（含 DSH Skill 包装）</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-plugin-check" target="_blank" rel="noopener" data-cat="webui" data-q="omdsh-dev/dsh-plugin-check dsh 插件健康检查工具：扫描插件仓库的清单协议 / patch 格式 / 构建陷阱 / hub 收录状态，零依赖只读，注册 plugin_check 工具">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-plugin-check</span>
+          <span class="stars">★ 11</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">DSH 插件健康检查工具：扫描插件仓库的清单协议 / patch 格式 / 构建陷阱 / hub 收录状态，零依赖只读，注册 plugin_check 工具</p>
+      </a>
+
+      <a class="card" href="https://github.com/william-jin-cmu/dsh-vision" target="_blank" rel="noopener" data-cat="vision" data-q="william-jin-cmu/dsh-vision 给纯文本 deepseek 加视觉：view_image 工具桥接任意 openai 兼容 vlm">
+        <div class="card-top">
+          <span class="name">william-jin-cmu/dsh-vision</span>
+          <span class="stars">★ 11</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-vision">??? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">给纯文本 DeepSeek 加视觉：view_image 工具桥接任意 OpenAI 兼容 VLM</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-toolkit" target="_blank" rel="noopener" data-cat="code" data-q="omdsh-dev/dsh-toolkit dsh 零依赖工具包 collection —— time / encoding / json / calculator / csv / regex / markdown / diff / stat / schema 十个确定性工具，统一入口一键安装">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-toolkit</span>
+          <span class="stars">★ 10</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-code">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">DSH 零依赖工具包 collection —— time / encoding / json / calculator / csv / regex / markdown / diff / stat / schema 十个确定性工具，统一入口一键安装</p>
+      </a>
+
+      <a class="card" href="https://github.com/vibeinging/dsh-work" target="_blank" rel="noopener" data-cat="agent" data-q="vibeinging/dsh-work 让 agent 汇报工作时更结构化">
+        <div class="card-top">
+          <span class="name">vibeinging/dsh-work</span>
+          <span class="stars">★ 10</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">让 agent 汇报工作时更结构化</p>
+      </a>
+
+      <a class="card" href="https://github.com/bobleer/dsh-acp-for-bitfun" target="_blank" rel="noopener" data-cat="webui" data-q="bobleer/dsh-acp-for-bitfun bitfun 与 dsh acp 交互对接 插件">
+        <div class="card-top">
+          <span class="name">bobleer/dsh-acp-for-bitfun</span>
+          <span class="stars">★ 9</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">BitFun 与 DSH ACP 交互对接 插件</p>
+      </a>
+
+      <a class="card" href="https://github.com/ccq1/dsh-side-panel" target="_blank" rel="noopener" data-cat="webui" data-q="ccq1/dsh-side-panel 侧边栏：文件浏览器、终端、git 审查">
+        <div class="card-top">
+          <span class="name">ccq1/dsh-side-panel</span>
+          <span class="stars">★ 9</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-12">🟢 活跃</span>
+        </div>
+        <p class="desc">侧边栏：文件浏览器、终端、Git 审查</p>
+      </a>
+
+      <a class="card" href="https://github.com/titanwings/dsh-automation" target="_blank" rel="noopener" data-cat="agent" data-q="titanwings/dsh-automation 自动化：让 coding 任务按计划在新 agent session 中运行，web/agent 管理定时任务">
+        <div class="card-top">
+          <span class="name">titanwings/dsh-automation</span>
+          <span class="stars">★ 9</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">自动化：让 Coding 任务按计划在新 Agent Session 中运行，Web/Agent 管理定时任务</p>
+      </a>
+
+      <a class="card" href="https://github.com/Totoro-qaq/Cobsidian" target="_blank" rel="noopener" data-cat="agent" data-q="totoro-qaq/cobsidian agent-agnostic workflow skill for maintaining obsidian knowledge bases">
+        <div class="card-top">
+          <span class="name">Totoro-qaq/Cobsidian</span>
+          <span class="stars">★ 9</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">Python</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Agent-agnostic workflow skill for maintaining Obsidian knowledge bases</p>
+      </a>
+
+      <a class="card" href="https://github.com/wess09/DeepSeekHarnessDesktop" target="_blank" rel="noopener" data-cat="devtools" data-q="wess09/deepseekharnessdesktop deepseekharness桌面端打包">
+        <div class="card-top">
+          <span class="name">wess09/DeepSeekHarnessDesktop</span>
+          <span class="stars">★ 9</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-devtools">??? 工具</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">DeepSeekHarness桌面端打包</p>
+      </a>
+
+      <a class="card" href="https://github.com/whiteguo233/dsh-openbiliclaw" target="_blank" rel="noopener" data-cat="agent" data-q="whiteguo233/dsh-openbiliclaw openbiliclaw 是本地运行的跨平台个性化内容推荐 agent，持续理解你的兴趣并主动找内容。本仓库是它的 deepseek harness 插件：dsh 界面常驻第四栏（推荐/内容库/对话/画像/设置），注册 22 个 agent bridge 工具，让 agent 也能读推荐、答探测、闭环学习。">
+        <div class="card-top">
+          <span class="name">whiteguo233/dsh-openbiliclaw</span>
+          <span class="stars">★ 9</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">OpenBiliClaw 是本地运行的跨平台个性化内容推荐 Agent，持续理解你的兴趣并主动找内容。本仓库是它的 DeepSeek Harness 插件：DSH 界面常驻第四栏（推荐/内容库/对话/画像/设置），注册 22 个 Agent Bridge 工具，让 Agent 也能读推荐、答探测、闭环学习。</p>
+      </a>
+
+      <a class="card" href="https://github.com/hellodigua/dsh-emoji" target="_blank" rel="noopener" data-cat="skin" data-q="hellodigua/dsh-emoji 为 ai 回复自动添加表情">
+        <div class="card-top">
+          <span class="name">hellodigua/dsh-emoji</span>
+          <span class="stars">★ 8</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-skin">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">为 AI 回复自动添加表情</p>
+      </a>
+
+      <a class="card" href="https://github.com/morluto/internalcot" target="_blank" rel="noopener" data-cat="agent" data-q="morluto/internalcot make agents show their full chain of thought.">
+        <div class="card-top">
+          <span class="name">morluto/internalcot</span>
+          <span class="stars">★ 8</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-11">🟢 活跃</span>
+        </div>
+        <p class="desc">Make agents show their full chain of thought.</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-plugin-dev" target="_blank" rel="noopener" data-cat="agent" data-q="omdsh-dev/dsh-plugin-dev dsh 插件开发踩坑与做法档案（skill + 文档）：cordis 双副本、tsconfig 三件套、windows junction、多帧 zstd 等实测记录">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-plugin-dev</span>
+          <span class="stars">★ 8</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">—</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">DSH 插件开发踩坑与做法档案（skill + 文档）：cordis 双副本、tsconfig 三件套、Windows junction、多帧 zstd 等实测记录</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-security-audit" target="_blank" rel="noopener" data-cat="devtools" data-q="omdsh-dev/dsh-security-audit 本机安全审计：配置/插件来源/会话/网络暴露面，脱敏风险报告">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-security-audit</span>
+          <span class="stars">★ 8</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-devtools">??? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">本机安全审计：配置/插件来源/会话/网络暴露面，脱敏风险报告</p>
+      </a>
+
+      <a class="card" href="https://github.com/bruc3van/dsh-desktop" target="_blank" rel="noopener" data-cat="devtools" data-q="bruc3van/dsh-desktop 社区维护的非官方桌面客户端：自动复用本机实例、智能连接、托盘常驻">
+        <div class="card-top">
+          <span class="name">bruc3van/dsh-desktop</span>
+          <span class="stars">★ 7</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-devtools">??? 工具</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">社区维护的非官方桌面客户端：自动复用本机实例、智能连接、托盘常驻</p>
+      </a>
+
+      <a class="card" href="https://github.com/CanglongCl/dsh-web-review" target="_blank" rel="noopener" data-cat="webui" data-q="canglongcl/dsh-web-review 网页预览与元素批注：让 ai 根据可视化反馈直接修改前端源码">
+        <div class="card-top">
+          <span class="name">CanglongCl/dsh-web-review</span>
+          <span class="stars">★ 7</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">网页预览与元素批注：让 AI 根据可视化反馈直接修改前端源码</p>
+      </a>
+
+      <a class="card" href="https://github.com/dingyi222666/dsh-focus-chat" target="_blank" rel="noopener" data-cat="webui" data-q="dingyi222666/dsh-focus-chat 「聚焦会话」精简视图：只关注最终产出结果">
+        <div class="card-top">
+          <span class="name">dingyi222666/dsh-focus-chat</span>
+          <span class="stars">★ 7</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">「聚焦会话」精简视图：只关注最终产出结果</p>
+      </a>
+
+      <a class="card" href="https://github.com/lhh010/dsh-minigames" target="_blank" rel="noopener" data-cat="skin" data-q="lhh010/dsh-minigames 右侧小游戏面板：18 款离线小游戏，等待模型回复或修 bug 时的摸鱼神器">
+        <div class="card-top">
+          <span class="name">lhh010/dsh-minigames</span>
+          <span class="stars">★ 7</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-skin">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">右侧小游戏面板：18 款离线小游戏，等待模型回复或修 bug 时的摸鱼神器</p>
+      </a>
+
+      <a class="card" href="https://github.com/LoserFox/dsh-git-identity" target="_blank" rel="noopener" data-cat="code" data-q="loserfox/dsh-git-identity git 提交固定使用环境自身作者身份（优先 gh cli 登录账号）">
+        <div class="card-top">
+          <span class="name">LoserFox/dsh-git-identity</span>
+          <span class="stars">★ 7</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-code">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">git 提交固定使用环境自身作者身份（优先 gh CLI 登录账号）</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-gomoku" target="_blank" rel="noopener" data-cat="skin" data-q="omdsh-dev/dsh-gomoku 在 dsh 中与 ai 下五子棋，也可让 ai 对局">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-gomoku</span>
+          <span class="stars">★ 7</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-skin">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">在 DSH 中与 AI 下五子棋，也可让 AI 对局</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-session-health" target="_blank" rel="noopener" data-cat="agent" data-q="omdsh-dev/dsh-session-health 会话健康检查：多帧 zstd 会话文件帧级扫描诊断">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-session-health</span>
+          <span class="stars">★ 7</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">会话健康检查：多帧 zstd 会话文件帧级扫描诊断</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/fabric" target="_blank" rel="noopener" data-cat="code" data-q="omdsh-dev/fabric 类似 pc fabric 的 hook 处理器">
+        <div class="card-top">
+          <span class="name">omdsh-dev/fabric</span>
+          <span class="stars">★ 7</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-code">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">类似 PC Fabric 的 hook 处理器</p>
+      </a>
+
+      <a class="card" href="https://github.com/ysr666/dsh-vision-router" target="_blank" rel="noopener" data-cat="vision" data-q="ysr666/dsh-vision-router ">
+        <div class="card-top">
+          <span class="name">ysr666/dsh-vision-router</span>
+          <span class="stars">★ 7</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-vision">??? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc"></p>
+      </a>
+
+      <a class="card" href="https://github.com/chen-001/dsh-grok-tui" target="_blank" rel="noopener" data-cat="code" data-q="chen-001/dsh-grok-tui 通过 grok-build 的 tui 使用 dsh">
+        <div class="card-top">
+          <span class="name">chen-001/dsh-grok-tui</span>
+          <span class="stars">★ 6</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-code">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">通过 grok-build 的 TUI 使用 dsh</p>
+      </a>
+
+      <a class="card" href="https://github.com/lhh010/dsh-ui-progress" target="_blank" rel="noopener" data-cat="webui" data-q="lhh010/dsh-ui-progress 会话进度条：todos 真实进度、实时 token 生成速率、中断橘红态">
+        <div class="card-top">
+          <span class="name">lhh010/dsh-ui-progress</span>
+          <span class="stars">★ 6</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">会话进度条：todos 真实进度、实时 token 生成速率、中断橘红态</p>
+      </a>
+
+      <a class="card" href="https://github.com/LoserFox/telegram" target="_blank" rel="noopener" data-cat="channel" data-q="loserfox/telegram telegram bot api 桥接：长轮询、per-chat 会话、html 格式化">
+        <div class="card-top">
+          <span class="name">LoserFox/telegram</span>
+          <span class="stars">★ 6</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-channel">?? 渠道</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Telegram Bot API 桥接：长轮询、per-chat 会话、HTML 格式化</p>
+      </a>
+
+      <a class="card" href="https://github.com/openguardrails/dsh-tui" target="_blank" rel="noopener" data-cat="agent" data-q="openguardrails/dsh-tui claude code-style terminal ui for deepseek harness agents, as an out-of-tree dsh plugin bundle">
+        <div class="card-top">
+          <span class="name">openguardrails/dsh-tui</span>
+          <span class="stars">★ 6</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Claude Code-style terminal UI for DeepSeek Harness agents, as an out-of-tree dsh plugin bundle</p>
+      </a>
+
+      <a class="card" href="https://github.com/Sev7een/ds-api-usage" target="_blank" rel="noopener" data-cat="webui" data-q="sev7een/ds-api-usage ">
+        <div class="card-top">
+          <span class="name">Sev7een/ds-api-usage</span>
+          <span class="stars">★ 6</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc"></p>
+      </a>
+
+      <a class="card" href="https://github.com/unknowbug/RE-Framework" target="_blank" rel="noopener" data-cat="agent" data-q="unknowbug/re-framework modular engineering methodology framework for ai agents — reverse engineering & software development (core + re-binary / re-code / swe modules).">
+        <div class="card-top">
+          <span class="name">unknowbug/RE-Framework</span>
+          <span class="stars">★ 6</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">Python</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Modular engineering methodology framework for AI agents — reverse engineering & software development (core + re-binary / re-code / swe modules).</p>
+      </a>
+
+      <a class="card" href="https://github.com/william-jin-cmu/dsh-stickers" target="_blank" rel="noopener" data-cat="skin" data-q="william-jin-cmu/dsh-stickers webui 贴纸插件：用户与 agent 双向反应">
+        <div class="card-top">
+          <span class="name">william-jin-cmu/dsh-stickers</span>
+          <span class="stars">★ 6</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-skin">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">WebUI 贴纸插件：用户与 Agent 双向反应</p>
+      </a>
+
+      <a class="card" href="https://github.com/yjh051108/dsh-super-injector" target="_blank" rel="noopener" data-cat="agent" data-q="yjh051108/dsh-super-injector 超级注入器">
+        <div class="card-top">
+          <span class="name">yjh051108/dsh-super-injector</span>
+          <span class="stars">★ 6</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">超级注入器</p>
+      </a>
+
+      <a class="card" href="https://github.com/AnacondaKC/dsh-stock-market" target="_blank" rel="noopener" data-cat="webui" data-q="anacondakc/dsh-stock-market 有效解决了写代码的时候账户不能同时亏钱的bug">
+        <div class="card-top">
+          <span class="name">AnacondaKC/dsh-stock-market</span>
+          <span class="stars">★ 5</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">有效解决了写代码的时候账户不能同时亏钱的BUG</p>
+      </a>
+
+      <a class="card" href="https://github.com/bradeGithub/DSH-Plugins-Marketplace" target="_blank" rel="noopener" data-cat="code" data-q="bradegithub/dsh-plugins-marketplace dsh插件市场 / dsh plugin marketplace: 在 deepseek harness web gui 中一键浏览、安装与更新 github topic:dsh-plugin 的全部插件 | browse, install & update all github dsh-plugin plugins in the dsh web gui">
+        <div class="card-top">
+          <span class="name">bradeGithub/DSH-Plugins-Marketplace</span>
+          <span class="stars">★ 5</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-code">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">DSH插件市场 / DSH Plugin Marketplace: 在 DeepSeek Harness Web GUI 中一键浏览、安装与更新 GitHub topic:dsh-plugin 的全部插件 | browse, install & update all GitHub dsh-plugin plugins in the DSH Web GUI</p>
+      </a>
+
+      <a class="card" href="https://github.com/fakechris/dsh-harness-ops" target="_blank" rel="noopener" data-cat="agent" data-q="fakechris/dsh-harness-ops dsh 运维工具箱：升级、重启、故障都不用操心。① 官方每日快照 a/b 双槽轮换——旧插件迁移+构建+验收全过才原子切换，一键回滚，旧版本永远兜底；② 守护 10s 自动拉起 web + agent 断点自动续接，重启无人值守；③ web 全挂（a/b 都坏、agent 不可用）时 dsh-doctor 一条命令自救：九项诊断→机械修复配置→llm 深度检测修复（完整推理实时可见）→拉起 web。install via: git clone + bash scripts/install.sh">
+        <div class="card-top">
+          <span class="name">fakechris/dsh-harness-ops</span>
+          <span class="stars">★ 5</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">Shell</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">DSH 运维工具箱：升级、重启、故障都不用操心。① 官方每日快照 A/B 双槽轮换——旧插件迁移+构建+验收全过才原子切换，一键回滚，旧版本永远兜底；② 守护 10s 自动拉起 web + agent 断点自动续接，重启无人值守；③ web 全挂（A/B 都坏、agent 不可用）时 dsh-doctor 一条命令自救：九项诊断→机械修复配置→LLM 深度检测修复（完整推理实时可见）→拉起 web。install via: git clone + bash scripts/install.sh</p>
+      </a>
+
+      <a class="card" href="https://github.com/HuanLinOTO/dsh-plugin-mineru" target="_blank" rel="noopener" data-cat="data" data-q="huanlinoto/dsh-plugin-mineru mineru 文档解析工具">
+        <div class="card-top">
+          <span class="name">HuanLinOTO/dsh-plugin-mineru</span>
+          <span class="stars">★ 5</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-data">??? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">MineRU 文档解析工具</p>
+      </a>
+
+      <a class="card" href="https://github.com/icodesign/orbis" target="_blank" rel="noopener" data-cat="webui" data-q="icodesign/orbis a mobile client for deepseek harness remote control">
+        <div class="card-top">
+          <span class="name">icodesign/orbis</span>
+          <span class="stars">★ 5</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">A mobile client for deepseek harness remote control</p>
+      </a>
+
+      <a class="card" href="https://github.com/lhh010/dsh-paste-input" target="_blank" rel="noopener" data-cat="webui" data-q="lhh010/dsh-paste-input 文件输入增强：ctrl+v 粘贴 + 拖拽 + 选择文件">
+        <div class="card-top">
+          <span class="name">lhh010/dsh-paste-input</span>
+          <span class="stars">★ 5</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">文件输入增强：Ctrl+V 粘贴 + 拖拽 + 选择文件</p>
+      </a>
+
+      <a class="card" href="https://github.com/Nwflower/dsh-chat-import" target="_blank" rel="noopener" data-cat="data" data-q="nwflower/dsh-chat-import 聊天记录导入">
+        <div class="card-top">
+          <span class="name">Nwflower/dsh-chat-import</span>
+          <span class="stars">★ 5</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-data">??? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">聊天记录导入</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-data-agent" target="_blank" rel="noopener" data-cat="data" data-q="omdsh-dev/dsh-data-agent 让 ai 帮你连数据库、写 sql">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-data-agent</span>
+          <span class="stars">★ 5</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-data">??? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">让 AI 帮你连数据库、写 SQL</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-deep-research" target="_blank" rel="noopener" data-cat="agent" data-q="omdsh-dev/dsh-deep-research 自适应深度研究编排器（官方 workflow）">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-deep-research</span>
+          <span class="stars">★ 5</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-12">🟢 活跃</span>
+        </div>
+        <p class="desc">自适应深度研究编排器（官方 workflow）</p>
+      </a>
+
+      <a class="card" href="https://github.com/unknowbug/anchorlaw" target="_blank" rel="noopener" data-cat="webui" data-q="unknowbug/anchorlaw code verification protocol for vibe coding — every claim must have a verifiable practice anchor.">
+        <div class="card-top">
+          <span class="name">unknowbug/anchorlaw</span>
+          <span class="stars">★ 5</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">Python</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Code verification protocol for vibe coding — every claim must have a verifiable practice anchor.</p>
+      </a>
+
+      <a class="card" href="https://github.com/whitelonng/dshcode" target="_blank" rel="noopener" data-cat="agent" data-q="whitelonng/dshcode community desktop companion for deepseek harness — one-click electron app for macos and windows">
+        <div class="card-top">
+          <span class="name">whitelonng/dshcode</span>
+          <span class="stars">★ 5</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Community desktop companion for DeepSeek Harness — one-click Electron app for macOS and Windows</p>
+      </a>
+
+      <a class="card" href="https://github.com/xiaohai-78/Top" target="_blank" rel="noopener" data-cat="agent" data-q="xiaohai-78/top 📊 daily leaderboard for the dsh-external plugin ecosystem — tracks every repo, ranks by stars, archives daily snapshots, and shows the latest ranking on the homepage.">
+        <div class="card-top">
+          <span class="name">xiaohai-78/Top</span>
+          <span class="stars">★ 5</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">—</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">📊 Daily leaderboard for the dsh-external plugin ecosystem — tracks every repo, ranks by stars, archives daily snapshots, and shows the latest ranking on the homepage.</p>
+      </a>
+
+      <a class="card" href="https://github.com/Zhenyu98/dsh-context-doctor" target="_blank" rel="noopener" data-cat="agent" data-q="zhenyu98/dsh-context-doctor 上下文注入审计：统计 agents.md/技能/tool schema 的 token 成本">
+        <div class="card-top">
+          <span class="name">Zhenyu98/dsh-context-doctor</span>
+          <span class="stars">★ 5</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">上下文注入审计：统计 AGENTS.md/技能/tool schema 的 token 成本</p>
+      </a>
+
+      <a class="card" href="https://github.com/01Virex/dsh-status-rotator" target="_blank" rel="noopener" data-cat="data" data-q="01virex/dsh-status-rotator a deepseek harness (dsh) web plugin that replaces the &quot;deep diving…&quot; turn-status label with phase-aware, typewriter-animated, rainbow-gradient phrases — all configurable from a json file.">
+        <div class="card-top">
+          <span class="name">01Virex/dsh-status-rotator</span>
+          <span class="stars">★ 4</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-data">??? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">A DeepSeek Harness (dsh) web plugin that replaces the &quot;Deep diving…&quot; turn-status label with phase-aware, typewriter-animated, rainbow-gradient phrases — all configurable from a JSON file.</p>
+      </a>
+
+      <a class="card" href="https://github.com/AngelosZou/graphlint" target="_blank" rel="noopener" data-cat="webui" data-q="angeloszou/graphlint ">
+        <div class="card-top">
+          <span class="name">AngelosZou/graphlint</span>
+          <span class="stars">★ 4</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">Python</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc"></p>
+      </a>
+
+      <a class="card" href="https://github.com/bill9109/dsh-web-ui-notify" target="_blank" rel="noopener" data-cat="channel" data-q="bill9109/dsh-web-ui-notify 为 dsh 增加桌面通知提醒">
+        <div class="card-top">
+          <span class="name">bill9109/dsh-web-ui-notify</span>
+          <span class="stars">★ 4</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-channel">?? 渠道</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">为 DSH 增加桌面通知提醒</p>
+      </a>
+
+      <a class="card" href="https://github.com/Degurechaff57/dsh-openapi" target="_blank" rel="noopener" data-cat="webui" data-q="degurechaff57/dsh-openapi safe openapi 3.x discovery and api calling tools for deepseek harness">
+        <div class="card-top">
+          <span class="name">Degurechaff57/dsh-openapi</span>
+          <span class="stars">★ 4</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Safe OpenAPI 3.x discovery and API calling tools for DeepSeek Harness</p>
+      </a>
+
+      <a class="card" href="https://github.com/Fisfzy/ego-browser" target="_blank" rel="noopener" data-cat="browser" data-q="fisfzy/ego-browser dsh（deepseek harness）插件：把 ego-lite 浏览器（给 ai agent 用的 chromium）接入 harness——13 个结构化 ego_* 工具（文本语义快照、语义定位点击、表单填充、截图、cdp 控制、任务空间隔离），内置 ego 运行时，linux + chrome 开箱即用，无需克隆官方仓库或手动构建。">
+        <div class="card-top">
+          <span class="name">Fisfzy/ego-browser</span>
+          <span class="stars">★ 4</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-browser">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">DSH（DeepSeek Harness）插件：把 ego-lite 浏览器（给 AI Agent 用的 Chromium）接入 HARNESS——13 个结构化 ego_* 工具（文本语义快照、语义定位点击、表单填充、截图、CDP 控制、任务空间隔离），内置 ego 运行时，Linux + Chrome 开箱即用，无需克隆官方仓库或手动构建。</p>
+      </a>
+
+      <a class="card" href="https://github.com/gxinxing/deepseek-harness-tui" target="_blank" rel="noopener" data-cat="code" data-q="gxinxing/deepseek-harness-tui terminal-native interactive tui for deepseek harness (dsh) — built with ink, react for terminals">
+        <div class="card-top">
+          <span class="name">gxinxing/deepseek-harness-tui</span>
+          <span class="stars">★ 4</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-code">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Terminal-native interactive TUI for DeepSeek Harness (dsh) — built with Ink, React for terminals</p>
+      </a>
+
+      <a class="card" href="https://github.com/happyren/dsh-agent-messaging" target="_blank" rel="noopener" data-cat="agent" data-q="happyren/dsh-agent-messaging cross-session agent-to-agent messaging for deepseek harness — address another session by name and deliver a message into its inbox.">
+        <div class="card-top">
+          <span class="name">happyren/dsh-agent-messaging</span>
+          <span class="stars">★ 4</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Cross-session agent-to-agent messaging for DeepSeek Harness — address another session by name and deliver a message into its inbox.</p>
+      </a>
+
+      <a class="card" href="https://github.com/HuanLinOTO/dsh-plugin-yet-another-subagent" target="_blank" rel="noopener" data-cat="agent" data-q="huanlinoto/dsh-plugin-yet-another-subagent 又一个子代理插件">
+        <div class="card-top">
+          <span class="name">HuanLinOTO/dsh-plugin-yet-another-subagent</span>
+          <span class="stars">★ 4</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">又一个子代理插件</p>
+      </a>
+
+      <a class="card" href="https://github.com/lhh010/dsh-bash-encoding" target="_blank" rel="noopener" data-cat="code" data-q="lhh010/dsh-bash-encoding bash 输出编码自动识别：utf-16le/utf-8/gbk 正确解码">
+        <div class="card-top">
+          <span class="name">lhh010/dsh-bash-encoding</span>
+          <span class="stars">★ 4</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-code">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">bash 输出编码自动识别：UTF-16LE/UTF-8/GBK 正确解码</p>
+      </a>
+
+      <a class="card" href="https://github.com/lzszq/dsh-scholar" target="_blank" rel="noopener" data-cat="webui" data-q="lzszq/dsh-scholar dsh-scholar">
+        <div class="card-top">
+          <span class="name">lzszq/dsh-scholar</span>
+          <span class="stars">★ 4</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">dsh-scholar</p>
+      </a>
+
+      <a class="card" href="https://github.com/MuziIsabel/dsh-win-notify" target="_blank" rel="noopener" data-cat="channel" data-q="muziisabel/dsh-win-notify dsh plugin: windows toast notification with sound when an agent task completes">
+        <div class="card-top">
+          <span class="name">MuziIsabel/dsh-win-notify</span>
+          <span class="stars">★ 4</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-channel">?? 渠道</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">DSH plugin: Windows toast notification with sound when an agent task completes</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-mygo" target="_blank" rel="noopener" data-cat="webui" data-q="omdsh-dev/dsh-mygo ">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-mygo</span>
+          <span class="stars">★ 4</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc"></p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-plugin-skills" target="_blank" rel="noopener" data-cat="agent" data-q="omdsh-dev/dsh-plugin-skills agent skills for building and testing deepseek harness plugins — from scaffolding a new plugin package to choosing the right test tiers, entirely inside an agent session.">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-plugin-skills</span>
+          <span class="stars">★ 4</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 技能</span>
+          <span class="lang">—</span>
+          <span class="act act-🟢" title="最近更新 2026-08-11">🟢 活跃</span>
+        </div>
+        <p class="desc">Agent skills for building and testing DeepSeek Harness plugins — from scaffolding a new plugin package to choosing the right test tiers, entirely inside an agent session.</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/plugin-template" target="_blank" rel="noopener" data-cat="webui" data-q="omdsh-dev/plugin-template 基于原turtle ui官方仓库创建的plugin模板仓库">
+        <div class="card-top">
+          <span class="name">omdsh-dev/plugin-template</span>
+          <span class="stars">★ 4</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-12">🟢 活跃</span>
+        </div>
+        <p class="desc">基于原turtle ui官方仓库创建的plugin模板仓库</p>
+      </a>
+
+      <a class="card" href="https://github.com/PlutoKeating/dsh-lark-bot" target="_blank" rel="noopener" data-cat="channel" data-q="plutokeating/dsh-lark-bot dsh-lark-bot：把 deepseek harness (dsh) 桥接进飞书/lark 的 bot，含完整项目工作区管理。a bridge bot connecting deepseek harness (dsh) into feishu/lark with full workspace management. deepseek · deepseek harness · feishu · lark · bridge · bot">
+        <div class="card-top">
+          <span class="name">PlutoKeating/dsh-lark-bot</span>
+          <span class="stars">★ 4</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-channel">?? 渠道</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">dsh-lark-bot：把 DeepSeek Harness (dsh) 桥接进飞书/Lark 的 bot，含完整项目工作区管理。A bridge bot connecting DeepSeek Harness (dsh) into Feishu/Lark with full workspace management. deepseek · deepseek harness · feishu · lark · bridge · bot</p>
+      </a>
+
+      <a class="card" href="https://github.com/shinelon/eyes-for-deepseek" target="_blank" rel="noopener" data-cat="webui" data-q="shinelon/eyes-for-deepseek ">
+        <div class="card-top">
+          <span class="name">shinelon/eyes-for-deepseek</span>
+          <span class="stars">★ 4</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc"></p>
+      </a>
+
+      <a class="card" href="https://github.com/Thhoho/reSanity" target="_blank" rel="noopener" data-cat="agent" data-q="thhoho/resanity resanity 散修 — 散户的认知组合管理：查证、避坑、记忆、复盘。一份 skill.md，零依赖。">
+        <div class="card-top">
+          <span class="name">Thhoho/reSanity</span>
+          <span class="stars">★ 4</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">Python</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">reSanity 散修 — 散户的认知组合管理：查证、避坑、记忆、复盘。一份 SKILL.md，零依赖。</p>
+      </a>
+
+      <a class="card" href="https://github.com/THU-MAIC/dsh-openmaic" target="_blank" rel="noopener" data-cat="agent" data-q="thu-maic/dsh-openmaic 生成 openmaic 互动 ai 课程">
+        <div class="card-top">
+          <span class="name">THU-MAIC/dsh-openmaic</span>
+          <span class="stars">★ 4</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">生成 OpenMAIC 互动 AI 课程</p>
+      </a>
+
+      <a class="card" href="https://github.com/vlln/dsh-navbar" target="_blank" rel="noopener" data-cat="webui" data-q="vlln/dsh-navbar 对话节点导航条：右缘节点串快速跳转">
+        <div class="card-top">
+          <span class="name">vlln/dsh-navbar</span>
+          <span class="stars">★ 4</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">对话节点导航条：右缘节点串快速跳转</p>
+      </a>
+
+      <a class="card" href="https://github.com/wangshunnn/oh-my-dsh" target="_blank" rel="noopener" data-cat="collection" data-q="wangshunnn/oh-my-dsh 🐋 deepseek harness plugins.">
+        <div class="card-top">
+          <span class="name">wangshunnn/oh-my-dsh</span>
+          <span class="stars">★ 4</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-collection">?? 合集</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">🐋 Deepseek harness plugins.</p>
+      </a>
+
+      <a class="card" href="https://github.com/wangyang10/image-vision" target="_blank" rel="noopener" data-cat="vision" data-q="wangyang10/image-vision ">
+        <div class="card-top">
+          <span class="name">wangyang10/image-vision</span>
+          <span class="stars">★ 4</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-vision">??? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc"></p>
+      </a>
+
+      <a class="card" href="https://github.com/YYTbit/awesome-dsh-bridges" target="_blank" rel="noopener" data-cat="collection" data-q="yytbit/awesome-dsh-bridges bridge your favorite ai coding tools into deepseek harness">
+        <div class="card-top">
+          <span class="name">YYTbit/awesome-dsh-bridges</span>
+          <span class="stars">★ 4</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-collection">?? 合集</span>
+          <span class="lang">—</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Bridge your favorite AI coding tools into DeepSeek Harness</p>
+      </a>
+
+      <a class="card" href="https://github.com/147228/dsh-xiaoyao-skins" target="_blank" rel="noopener" data-cat="skin" data-q="147228/dsh-xiaoyao-skins 夕小瑶 × dsh web 皮肤合集、安装器与创作工具链">
+        <div class="card-top">
+          <span class="name">147228/dsh-xiaoyao-skins</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-skin">?? 插件</span>
+          <span class="lang">CSS</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">夕小瑶 × DSH Web 皮肤合集、安装器与创作工具链</p>
+      </a>
+
+      <a class="card" href="https://github.com/btspoony/dsh-advisor" target="_blank" rel="noopener" data-cat="agent" data-q="btspoony/dsh-advisor advisor - pair a second model that passively reviews each turn and injects notes.  搭配一个会在每轮对话被动注入见解和审查的副模型。">
+        <div class="card-top">
+          <span class="name">btspoony/dsh-advisor</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Advisor - Pair a second model that passively reviews each turn and injects notes.  搭配一个会在每轮对话被动注入见解和审查的副模型。</p>
+      </a>
+
+      <a class="card" href="https://github.com/Buyi-wsgzg/dsh-sidechain" target="_blank" rel="noopener" data-cat="code" data-q="buyi-wsgzg/dsh-sidechain dsh 侧会话插件：/side 持续性侧会话（codex 风格）与 /btw 一次性侧问（claude 风格）——在临时 fork 中运行、不写入主会话历史；web ui 右侧链面板内嵌对话，主会话保持不变">
+        <div class="card-top">
+          <span class="name">Buyi-wsgzg/dsh-sidechain</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-code">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">DSH 侧会话插件：/side 持续性侧会话（Codex 风格）与 /btw 一次性侧问（Claude 风格）——在临时 fork 中运行、不写入主会话历史；Web UI 右侧链面板内嵌对话，主会话保持不变</p>
+      </a>
+
+      <a class="card" href="https://github.com/chen-001/dsh-chat-width" target="_blank" rel="noopener" data-cat="webui" data-q="chen-001/dsh-chat-width adjust the width of dsh's reply.">
+        <div class="card-top">
+          <span class="name">chen-001/dsh-chat-width</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Adjust the width of dsh's reply.</p>
+      </a>
+
+      <a class="card" href="https://github.com/ChisaAlter/Deepseek-Harness-Desktop" target="_blank" rel="noopener" data-cat="devtools" data-q="chisaalter/deepseek-harness-desktop electron 桌面壳 for dsh web ui">
+        <div class="card-top">
+          <span class="name">ChisaAlter/Deepseek-Harness-Desktop</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-devtools">??? 工具</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">Electron 桌面壳 for DSH Web UI</p>
+      </a>
+
+      <a class="card" href="https://github.com/congchuanling-dot/DSH-Telegram-Relay" target="_blank" rel="noopener" data-cat="channel" data-q="congchuanling-dot/dsh-telegram-relay 通过 telegram 远程与 dsh 对话并接收通知">
+        <div class="card-top">
+          <span class="name">congchuanling-dot/DSH-Telegram-Relay</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-channel">?? 渠道</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">通过 Telegram 远程与 DSH 对话并接收通知</p>
+      </a>
+
+      <a class="card" href="https://github.com/coppynight/dsh-doctor" target="_blank" rel="noopener" data-cat="data" data-q="coppynight/dsh-doctor dsh 插件：flutter-doctor 风格诊断与修复（安装级 + harness 内检查，安全自动修复）。官方 repository-plugin（.dsh-plugin 格式）">
+        <div class="card-top">
+          <span class="name">coppynight/dsh-doctor</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-data">??? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">DSH 插件：flutter-doctor 风格诊断与修复（安装级 + harness 内检查，安全自动修复）。官方 repository-plugin（.dsh-plugin 格式）</p>
+      </a>
+
+      <a class="card" href="https://github.com/DDDFXYqiming/Agent_Extensions" target="_blank" rel="noopener" data-cat="agent" data-q="dddfxyqiming/agent_extensions agent skills 与 dsh 扩展库">
+        <div class="card-top">
+          <span class="name">DDDFXYqiming/Agent_Extensions</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">Python</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Agent Skills 与 DSH 扩展库</p>
+      </a>
+
+      <a class="card" href="https://github.com/Electricitysheep/dsh-tool-turbo" target="_blank" rel="noopener" data-cat="agent" data-q="electricitysheep/dsh-tool-turbo 逐轮 reasoning_effort 优化器">
+        <div class="card-top">
+          <span class="name">Electricitysheep/dsh-tool-turbo</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">逐轮 reasoning_effort 优化器</p>
+      </a>
+
+      <a class="card" href="https://github.com/fakechris/dsh-track" target="_blank" rel="noopener" data-cat="agent" data-q="fakechris/dsh-track 嵌入式任务管理引擎：决策点协议、念头捕获墙">
+        <div class="card-top">
+          <span class="name">fakechris/dsh-track</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">嵌入式任务管理引擎：决策点协议、念头捕获墙</p>
+      </a>
+
+      <a class="card" href="https://github.com/Fisfzy/zotero-harvest" target="_blank" rel="noopener" data-cat="data" data-q="fisfzy/zotero-harvest zotero 文献采集入库插件（dsh external plugin）：多源检索（openalex/arxiv/crossref/europe pmc/semantic scholar）+ oa 下载链接解析（unpaywall）+ 充分性审计 + 入库本地 zotero + 触发 zotero-wave-rag 重建">
+        <div class="card-top">
+          <span class="name">Fisfzy/zotero-harvest</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-data">??? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-08">🟢 活跃</span>
+        </div>
+        <p class="desc">Zotero 文献采集入库插件（DSH external plugin）：多源检索（OpenAlex/arXiv/Crossref/Europe PMC/Semantic Scholar）+ OA 下载链接解析（Unpaywall）+ 充分性审计 + 入库本地 Zotero + 触发 zotero-wave-rag 重建</p>
+      </a>
+
+      <a class="card" href="https://github.com/FlashingChen/dsh-worktree" target="_blank" rel="noopener" data-cat="agent" data-q="flashingchen/dsh-worktree codex-style permanent git worktrees for deepseek harness: worktree_create/list/remove agent tools, a /worktree chat command, and durable per-repo manifests.">
+        <div class="card-top">
+          <span class="name">FlashingChen/dsh-worktree</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Codex-style permanent git worktrees for DeepSeek Harness: worktree_create/list/remove agent tools, a /worktree chat command, and durable per-repo manifests.</p>
+      </a>
+
+      <a class="card" href="https://github.com/Flyvhidbwo/dsh-vision-proxy" target="_blank" rel="noopener" data-cat="vision" data-q="flyvhidbwo/dsh-vision-proxy deepseek harness 插件：deepseek 大脑 + 自动识图。附加图片自动经 qwen vlm 转译成文字后交给 deepseek 作答">
+        <div class="card-top">
+          <span class="name">Flyvhidbwo/dsh-vision-proxy</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-vision">??? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">DeepSeek Harness 插件：DeepSeek 大脑 + 自动识图。附加图片自动经 Qwen VLM 转译成文字后交给 DeepSeek 作答</p>
+      </a>
+
+      <a class="card" href="https://github.com/fuhefei/dsh-sentinel" target="_blank" rel="noopener" data-cat="agent" data-q="fuhefei/dsh-sentinel 条件驱动唤醒：持久化文件/命令监控">
+        <div class="card-top">
+          <span class="name">fuhefei/dsh-sentinel</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">条件驱动唤醒：持久化文件/命令监控</p>
+      </a>
+
+      <a class="card" href="https://github.com/gameswu/dsh-plugin-background" target="_blank" rel="noopener" data-cat="skin" data-q="gameswu/dsh-plugin-background dsh 壁纸插件">
+        <div class="card-top">
+          <span class="name">gameswu/dsh-plugin-background</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-skin">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">DSH 壁纸插件</p>
+      </a>
+
+      <a class="card" href="https://github.com/GiantGKL/dsh-cost" target="_blank" rel="noopener" data-cat="webui" data-q="giantgkl/dsh-cost ">
+        <div class="card-top">
+          <span class="name">GiantGKL/dsh-cost</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc"></p>
+      </a>
+
+      <a class="card" href="https://github.com/hikariming/dshfind" target="_blank" rel="noopener" data-cat="devtools" data-q="hikariming/dshfind dsh 学习与分享社区">
+        <div class="card-top">
+          <span class="name">hikariming/dshfind</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-devtools">??? 插件</span>
+          <span class="lang">MDX</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">DSH 学习与分享社区</p>
+      </a>
+
+      <a class="card" href="https://github.com/HuanLinOTO/dsh-plugin-better-sidebar-plugin-office" target="_blank" rel="noopener" data-cat="webui" data-q="huanlinoto/dsh-plugin-better-sidebar-plugin-office better-sidebar 的 office 扩展">
+        <div class="card-top">
+          <span class="name">HuanLinOTO/dsh-plugin-better-sidebar-plugin-office</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">better-sidebar 的 Office 扩展</p>
+      </a>
+
+      <a class="card" href="https://github.com/HuanLinOTO/dsh-plugin-interpreters" target="_blank" rel="noopener" data-cat="code" data-q="huanlinoto/dsh-plugin-interpreters 解释器">
+        <div class="card-top">
+          <span class="name">HuanLinOTO/dsh-plugin-interpreters</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-code">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">解释器</p>
+      </a>
+
+      <a class="card" href="https://github.com/HuanLinOTO/dsh-plugin-pet-rs" target="_blank" rel="noopener" data-cat="skin" data-q="huanlinoto/dsh-plugin-pet-rs dsh 桌宠（rust 版），5 态鲸鱼 + 双 sse 实时推送 + 透明置顶窗 + 系统托盘，三端支持 | dsh desktop pet (rust edition): 5-state whale + dual sse real-time push + transparent always-on-top window + tray, cross-platform">
+        <div class="card-top">
+          <span class="name">HuanLinOTO/dsh-plugin-pet-rs</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-skin">?? 插件</span>
+          <span class="lang">Rust</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">DSH 桌宠（Rust 版），5 态鲸鱼 + 双 SSE 实时推送 + 透明置顶窗 + 系统托盘，三端支持 | DSH desktop pet (Rust edition): 5-state whale + dual SSE real-time push + transparent always-on-top window + tray, cross-platform</p>
+      </a>
+
+      <a class="card" href="https://github.com/HuanLinOTO/dsh-plugin-sleep" target="_blank" rel="noopener" data-cat="agent" data-q="huanlinoto/dsh-plugin-sleep 睡眠/唤醒控制">
+        <div class="card-top">
+          <span class="name">HuanLinOTO/dsh-plugin-sleep</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">睡眠/唤醒控制</p>
+      </a>
+
+      <a class="card" href="https://github.com/HuanLinOTO/dsh-plugin-ya-workspace-sidebar" target="_blank" rel="noopener" data-cat="webui" data-q="huanlinoto/dsh-plugin-ya-workspace-sidebar 工作区侧边栏">
+        <div class="card-top">
+          <span class="name">HuanLinOTO/dsh-plugin-ya-workspace-sidebar</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">工作区侧边栏</p>
+      </a>
+
+      <a class="card" href="https://github.com/huashenglian/dsh-her-eyes" target="_blank" rel="noopener" data-cat="vision" data-q="huashenglian/dsh-her-eyes 让 ai 自动调用 vlm 进行视觉分析">
+        <div class="card-top">
+          <span class="name">huashenglian/dsh-her-eyes</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-vision">??? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">让 AI 自动调用 VLM 进行视觉分析</p>
+      </a>
+
+      <a class="card" href="https://github.com/jiesou/dsh-stream-rules" target="_blank" rel="noopener" data-cat="agent" data-q="jiesou/dsh-stream-rules 按需注入规则，不浪费上下文">
+        <div class="card-top">
+          <span class="name">jiesou/dsh-stream-rules</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">按需注入规则，不浪费上下文</p>
+      </a>
+
+      <a class="card" href="https://github.com/KitDoesIt/dsh-compaction-instant" target="_blank" rel="noopener" data-cat="agent" data-q="kitdoesit/dsh-compaction-instant llm-free lossless* compaction engine for deepseek harness">
+        <div class="card-top">
+          <span class="name">KitDoesIt/dsh-compaction-instant</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">LLM-free lossless* compaction engine for DeepSeek Harness</p>
+      </a>
+
+      <a class="card" href="https://github.com/Komeiji-Shiki/graycode-for-dsh" target="_blank" rel="noopener" data-cat="webui" data-q="komeiji-shiki/graycode-for-dsh ">
+        <div class="card-top">
+          <span class="name">Komeiji-Shiki/graycode-for-dsh</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc"></p>
+      </a>
+
+      <a class="card" href="https://github.com/LaplaceYoung/dsh-qq2006" target="_blank" rel="noopener" data-cat="skin" data-q="laplaceyoung/dsh-qq2006 qq2006 皮肤：主题注册 + 全局皮肤样式">
+        <div class="card-top">
+          <span class="name">LaplaceYoung/dsh-qq2006</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-skin">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">QQ2006 皮肤：主题注册 + 全局皮肤样式</p>
+      </a>
+
+      <a class="card" href="https://github.com/lhh010/dsh-input-history" target="_blank" rel="noopener" data-cat="webui" data-q="lhh010/dsh-input-history 输入历史：ctrl+up/ctrl+down 终端式召回">
+        <div class="card-top">
+          <span class="name">lhh010/dsh-input-history</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">输入历史：Ctrl+Up/Ctrl+Down 终端式召回</p>
+      </a>
+
+      <a class="card" href="https://github.com/litestartup-com/litestartup-skills" target="_blank" rel="noopener" data-cat="agent" data-q="litestartup-com/litestartup-skills publish blog, docs, website, changelog, send campaign email directly from your ai agent. write content, run one prompt, go live in seconds.">
+        <div class="card-top">
+          <span class="name">litestartup-com/litestartup-skills</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 技能</span>
+          <span class="lang">Shell</span>
+          <span class="act act-🟡" title="最近更新 2026-06-16">🟡 关注</span>
+        </div>
+        <p class="desc">Publish blog, docs, website, changelog, send campaign email directly from your AI agent. Write content, run one prompt, go live in seconds.</p>
+      </a>
+
+      <a class="card" href="https://github.com/longyu065/dsh-desktop" target="_blank" rel="noopener" data-cat="code" data-q="longyu065/dsh-desktop desktop shell for deepseek harness web gui — auto-installs dsh, native macos tray, packaged for macos & windows.">
+        <div class="card-top">
+          <span class="name">longyu065/dsh-desktop</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-code">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Desktop shell for DeepSeek Harness Web GUI — auto-installs dsh, native macOS tray, packaged for macOS & Windows.</p>
+      </a>
+
+      <a class="card" href="https://github.com/lwmxiaobei/dsh-plugins" target="_blank" rel="noopener" data-cat="collection" data-q="lwmxiaobei/dsh-plugins dsh 插件导航与介绍目录">
+        <div class="card-top">
+          <span class="name">lwmxiaobei/dsh-plugins</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-collection">?? 合集</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">DSH 插件导航与介绍目录</p>
+      </a>
+
+      <a class="card" href="https://github.com/moduqishi/GrassVison" target="_blank" rel="noopener" data-cat="vision" data-q="moduqishi/grassvison 给 deepseek 等纯文本大模型外挂图像理解能力的实现无感添加视觉能力。提供 openai 兼容的 api，自动将图片请求交给视觉模型分析，再将结构化结果注入文本模型，使增强后的模型体验接近原生多模态。">
+        <div class="card-top">
+          <span class="name">moduqishi/GrassVison</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-vision">??? 插件</span>
+          <span class="lang">Python</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">给 DeepSeek 等纯文本大模型外挂图像理解能力的实现无感添加视觉能力。提供 OpenAI 兼容的 API，自动将图片请求交给视觉模型分析，再将结构化结果注入文本模型，使增强后的模型体验接近原生多模态。</p>
+      </a>
+
+      <a class="card" href="https://github.com/Mongfayi/dsh-recall" target="_blank" rel="noopener" data-cat="webui" data-q="mongfayi/dsh-recall web ui 消息撤回：一键 undo 按钮">
+        <div class="card-top">
+          <span class="name">Mongfayi/dsh-recall</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Web UI 消息撤回：一键 undo 按钮</p>
+      </a>
+
+      <a class="card" href="https://github.com/morluto/gitcontribute" target="_blank" rel="noopener" data-cat="browser" data-q="morluto/gitcontribute contribution research for agents: check repository guidance, related work, code context, and validation before writing a patch.">
+        <div class="card-top">
+          <span class="name">morluto/gitcontribute</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-browser">?? 插件</span>
+          <span class="lang">Go</span>
+          <span class="act act-🟢" title="最近更新 2026-08-12">🟢 活跃</span>
+        </div>
+        <p class="desc">Contribution research for agents: check repository guidance, related work, code context, and validation before writing a patch.</p>
+      </a>
+
+      <a class="card" href="https://github.com/morluto/smokinggun" target="_blank" rel="noopener" data-cat="agent" data-q="morluto/smokinggun help your agents find the smoking gun they're looking for. optimization evidence for agents: find complexity hotspots.">
+        <div class="card-top">
+          <span class="name">morluto/smokinggun</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-12">🟢 活跃</span>
+        </div>
+        <p class="desc">Help your agents find the smoking gun they're looking for. Optimization evidence for agents: find complexity hotspots.</p>
+      </a>
+
+      <a class="card" href="https://github.com/moxisuki/dsh-lan" target="_blank" rel="noopener" data-cat="channel" data-q="moxisuki/dsh-lan 局域网插件：overlay 把 dsh web 绑定到局域网">
+        <div class="card-top">
+          <span class="name">moxisuki/dsh-lan</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-channel">?? 渠道</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">局域网插件：overlay 把 dsh web 绑定到局域网</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-hub" target="_blank" rel="noopener" data-cat="webui" data-q="omdsh-dev/dsh-hub ">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-hub</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc"></p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-mnemon" target="_blank" rel="noopener" data-cat="agent" data-q="omdsh-dev/dsh-mnemon mnemon 深度集成：运行时记忆、可检索档案与受监督记忆体">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-mnemon</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Mnemon 深度集成：运行时记忆、可检索档案与受监督记忆体</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-tool-calculator" target="_blank" rel="noopener" data-cat="data" data-q="omdsh-dev/dsh-tool-calculator 安全数学表达式求值器：零依赖递归下降解析器">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-tool-calculator</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-data">??? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">安全数学表达式求值器：零依赖递归下降解析器</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-tool-csv" target="_blank" rel="noopener" data-cat="webui" data-q="omdsh-dev/dsh-tool-csv dsh csv 数据工具插件：解析/查询/统计/转换 csv 文本（rfc 4180），零依赖状态机解析器，注册 csv 工具">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-tool-csv</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">DSH CSV 数据工具插件：解析/查询/统计/转换 CSV 文本（RFC 4180），零依赖状态机解析器，注册 csv 工具</p>
+      </a>
+
+      <a class="card" href="https://github.com/opensetk/dsh-xiaohei" target="_blank" rel="noopener" data-cat="skin" data-q="opensetk/dsh-xiaohei 罗小黑主题插件">
+        <div class="card-top">
+          <span class="name">opensetk/dsh-xiaohei</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-skin">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">罗小黑主题插件</p>
+      </a>
+
+      <a class="card" href="https://github.com/paean-ai/8x-skills" target="_blank" rel="noopener" data-cat="agent" data-q="paean-ai/8x-skills ">
+        <div class="card-top">
+          <span class="name">paean-ai/8x-skills</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 技能</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-08">🟢 活跃</span>
+        </div>
+        <p class="desc"></p>
+      </a>
+
+      <a class="card" href="https://github.com/pingfanfan/hello-dsh" target="_blank" rel="noopener" data-cat="devtools" data-q="pingfanfan/hello-dsh 零基础插件开发教程：含 22 个中文技能实例">
+        <div class="card-top">
+          <span class="name">pingfanfan/hello-dsh</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-devtools">??? 教程</span>
+          <span class="lang">Python</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">零基础插件开发教程：含 22 个中文技能实例</p>
+      </a>
+
+      <a class="card" href="https://github.com/runzhliu/deepseek-harness-docker" target="_blank" rel="noopener" data-cat="devtools" data-q="runzhliu/deepseek-harness-docker dsh 社区 docker/kubernetes 打包">
+        <div class="card-top">
+          <span class="name">runzhliu/deepseek-harness-docker</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-devtools">??? 工具</span>
+          <span class="lang">Dockerfile</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">DSH 社区 Docker/Kubernetes 打包</p>
+      </a>
+
+      <a class="card" href="https://github.com/RYun601/dsh-launcher" target="_blank" rel="noopener" data-cat="devtools" data-q="ryun601/dsh-launcher windows 下 deepseek harness web 的启动与管理工具：deepseek 命令一键前台/后台启动、自动打开浏览器、状态查询、停止服务与更新检查，支持一行命令安装">
+        <div class="card-top">
+          <span class="name">RYun601/dsh-launcher</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-devtools">??? 工具</span>
+          <span class="lang">PowerShell</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Windows 下 DeepSeek Harness Web 的启动与管理工具：deepseek 命令一键前台/后台启动、自动打开浏览器、状态查询、停止服务与更新检查，支持一行命令安装</p>
+      </a>
+
+      <a class="card" href="https://github.com/Small-tailqwq/dsh-deepcel" target="_blank" rel="noopener" data-cat="skin" data-q="small-tailqwq/dsh-deepcel 模仿 excel 的 dsh 皮肤">
+        <div class="card-top">
+          <span class="name">Small-tailqwq/dsh-deepcel</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-skin">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">模仿 Excel 的 DSH 皮肤</p>
+      </a>
+
+      <a class="card" href="https://github.com/SnowCrescenter-tech/dsh-milestone" target="_blank" rel="noopener" data-cat="webui" data-q="snowcrescenter-tech/dsh-milestone git 风格里程碑时间线">
+        <div class="card-top">
+          <span class="name">SnowCrescenter-tech/dsh-milestone</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Git 风格里程碑时间线</p>
+      </a>
+
+      <a class="card" href="https://github.com/titanwings/dsh-better-browser" target="_blank" rel="noopener" data-cat="browser" data-q="titanwings/dsh-better-browser 通过 kimi webbridge 让 agent 操作用户已登录的浏览器，提供 13 个 web 工具">
+        <div class="card-top">
+          <span class="name">titanwings/dsh-better-browser</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-browser">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">通过 Kimi WebBridge 让 Agent 操作用户已登录的浏览器，提供 13 个 web 工具</p>
+      </a>
+
+      <a class="card" href="https://github.com/Toukaiteio/dsh-plugin-installer" target="_blank" rel="noopener" data-cat="devtools" data-q="toukaiteio/dsh-plugin-installer 市场插件：快速集成 dsh 插件">
+        <div class="card-top">
+          <span class="name">Toukaiteio/dsh-plugin-installer</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-devtools">??? 工具</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">市场插件：快速集成 DSH 插件</p>
+      </a>
+
+      <a class="card" href="https://github.com/vlln/dsh-task-status" target="_blank" rel="noopener" data-cat="webui" data-q="vlln/dsh-task-status 后台任务状态条：对话页任务进度 + 实时输出 tail">
+        <div class="card-top">
+          <span class="name">vlln/dsh-task-status</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">后台任务状态条：对话页任务进度 + 实时输出 tail</p>
+      </a>
+
+      <a class="card" href="https://github.com/Void0312Aurora/dsh-desktop-electron" target="_blank" rel="noopener" data-cat="code" data-q="void0312aurora/dsh-desktop-electron cross-platform electron desktop shell for the dsh web gui: tray-resident standalone window over your own dsh web, no bundled node runtime">
+        <div class="card-top">
+          <span class="name">Void0312Aurora/dsh-desktop-electron</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-code">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-12">🟢 活跃</span>
+        </div>
+        <p class="desc">Cross-platform Electron desktop shell for the DSH Web GUI: tray-resident standalone window over your own dsh web, no bundled Node runtime</p>
+      </a>
+
+      <a class="card" href="https://github.com/whyihaveyou/dsh-suite" target="_blank" rel="noopener" data-cat="collection" data-q="whyihaveyou/dsh-suite 双语精选 dsh 插件目录">
+        <div class="card-top">
+          <span class="name">whyihaveyou/dsh-suite</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-collection">?? 合集</span>
+          <span class="lang">HTML</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">双语精选 DSH 插件目录</p>
+      </a>
+
+      <a class="card" href="https://github.com/william-jin-cmu/dsh-companion" target="_blank" rel="noopener" data-cat="agent" data-q="william-jin-cmu/dsh-companion deepseek harness 的常驻桌面助手：全局唤起、定时自动化、快捷回复、插件市场">
+        <div class="card-top">
+          <span class="name">william-jin-cmu/dsh-companion</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">DeepSeek Harness 的常驻桌面助手：全局唤起、定时自动化、快捷回复、插件市场</p>
+      </a>
+
+      <a class="card" href="https://github.com/william-jin-cmu/dsh-evolve" target="_blank" rel="noopener" data-cat="agent" data-q="william-jin-cmu/dsh-evolve 自进化插件：会话内给 agent 长出/剪掉能力">
+        <div class="card-top">
+          <span class="name">william-jin-cmu/dsh-evolve</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">自进化插件：会话内给 agent 长出/剪掉能力</p>
+      </a>
+
+      <a class="card" href="https://github.com/wssfk12138/dsh-wechat-notify" target="_blank" rel="noopener" data-cat="channel" data-q="wssfk12138/dsh-wechat-notify wechat_notify 工具：通过本机微信发送通知">
+        <div class="card-top">
+          <span class="name">wssfk12138/dsh-wechat-notify</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-channel">?? 渠道</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">wechat_notify 工具：通过本机微信发送通知</p>
+      </a>
+
+      <a class="card" href="https://github.com/yanglongyun/dsh-ramify" target="_blank" rel="noopener" data-cat="webui" data-q="yanglongyun/dsh-ramify 创意分支画布：树状工作区生成、对比、迭代多个方案">
+        <div class="card-top">
+          <span class="name">yanglongyun/dsh-ramify</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">创意分支画布：树状工作区生成、对比、迭代多个方案</p>
+      </a>
+
+      <a class="card" href="https://github.com/yyh-001/dsh-companion" target="_blank" rel="noopener" data-cat="agent" data-q="yyh-001/dsh-companion 陪伴模式：soul 人格 + hermes 长期记忆，可选 qq 通道">
+        <div class="card-top">
+          <span class="name">yyh-001/dsh-companion</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">陪伴模式：SOUL 人格 + Hermes 长期记忆，可选 QQ 通道</p>
+      </a>
+
+      <a class="card" href="https://github.com/YYTbit/dsh-plugin-cost-tracker" target="_blank" rel="noopener" data-cat="agent" data-q="yytbit/dsh-plugin-cost-tracker token 成本追踪">
+        <div class="card-top">
+          <span class="name">YYTbit/dsh-plugin-cost-tracker</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Token 成本追踪</p>
+      </a>
+
+      <a class="card" href="https://github.com/ZeroHackz/OpenFlowFrames" target="_blank" rel="noopener" data-cat="webui" data-q="zerohackz/openflowframes ">
+        <div class="card-top">
+          <span class="name">ZeroHackz/OpenFlowFrames</span>
+          <span class="stars">★ 3</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">Python</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc"></p>
+      </a>
+
+      <a class="card" href="https://github.com/ccch1mneyyy/dsh-working-activity" target="_blank" rel="noopener" data-cat="webui" data-q="ccch1mneyyy/dsh-working-activity 实时工作状态行：俏皮思考文案、运行中的工具、回合总结">
+        <div class="card-top">
+          <span class="name">ccch1mneyyy/dsh-working-activity</span>
+          <span class="stars">★ 2</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">实时工作状态行：俏皮思考文案、运行中的工具、回合总结</p>
+      </a>
+
+      <a class="card" href="https://github.com/codeAnqiang-ma/dsh-superpowers" target="_blank" rel="noopener" data-cat="agent" data-q="codeanqiang-ma/dsh-superpowers superpowers 保留集成">
+        <div class="card-top">
+          <span class="name">codeAnqiang-ma/dsh-superpowers</span>
+          <span class="stars">★ 2</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Superpowers 保留集成</p>
+      </a>
+
+      <a class="card" href="https://github.com/HuanLinOTO/dsh-plugin-aigc-canvas" target="_blank" rel="noopener" data-cat="webui" data-q="huanlinoto/dsh-plugin-aigc-canvas aigc 画布">
+        <div class="card-top">
+          <span class="name">HuanLinOTO/dsh-plugin-aigc-canvas</span>
+          <span class="stars">★ 2</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">AIGC 画布</p>
+      </a>
+
+      <a class="card" href="https://github.com/HuanLinOTO/dsh-plugin-anti-ads" target="_blank" rel="noopener" data-cat="skin" data-q="huanlinoto/dsh-plugin-anti-ads 反广告插件">
+        <div class="card-top">
+          <span class="name">HuanLinOTO/dsh-plugin-anti-ads</span>
+          <span class="stars">★ 2</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-skin">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">反广告插件</p>
+      </a>
+
+      <a class="card" href="https://github.com/HuanLinOTO/dsh-plugin-auto-blame" target="_blank" rel="noopener" data-cat="code" data-q="huanlinoto/dsh-plugin-auto-blame 自动 blame">
+        <div class="card-top">
+          <span class="name">HuanLinOTO/dsh-plugin-auto-blame</span>
+          <span class="stars">★ 2</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-code">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">自动 blame</p>
+      </a>
+
+      <a class="card" href="https://github.com/lehhair/dsh-diff-viewer" target="_blank" rel="noopener" data-cat="webui" data-q="lehhair/dsh-diff-viewer piui 风格 diff 查看器：替换默认 diffblock">
+        <div class="card-top">
+          <span class="name">lehhair/dsh-diff-viewer</span>
+          <span class="stars">★ 2</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">PiUI 风格 diff 查看器：替换默认 DiffBlock</p>
+      </a>
+
+      <a class="card" href="https://github.com/Moeblack/dsh-prompt-studio" target="_blank" rel="noopener" data-cat="agent" data-q="moeblack/dsh-prompt-studio 编辑 user 与内置 system-prompt 分区，实时预览">
+        <div class="card-top">
+          <span class="name">Moeblack/dsh-prompt-studio</span>
+          <span class="stars">★ 2</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">编辑 user 与内置 system-prompt 分区，实时预览</p>
+      </a>
+
+      <a class="card" href="https://github.com/morlay/session-persistence-rdb" target="_blank" rel="noopener" data-cat="data" data-q="morlay/session-persistence-rdb 会话关系型数据库持久化">
+        <div class="card-top">
+          <span class="name">morlay/session-persistence-rdb</span>
+          <span class="stars">★ 2</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-data">??? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">会话关系型数据库持久化</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-inspect" target="_blank" rel="noopener" data-cat="agent" data-q="omdsh-dev/dsh-inspect 发现问题→修复交付→质量复查的对抗式闭环">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-inspect</span>
+          <span class="stars">★ 2</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-12">🟢 活跃</span>
+        </div>
+        <p class="desc">发现问题→修复交付→质量复查的对抗式闭环</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-tool-encoding" target="_blank" rel="noopener" data-cat="data" data-q="omdsh-dev/dsh-tool-encoding 编码/哈希工具：base64、url、hex、md5、sha、uuid">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-tool-encoding</span>
+          <span class="stars">★ 2</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-data">??? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">编码/哈希工具：base64、url、hex、md5、sha、UUID</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-tool-json" target="_blank" rel="noopener" data-cat="data" data-q="omdsh-dev/dsh-tool-json jmespath 子集 json 查询，零依赖递归下降解析器">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-tool-json</span>
+          <span class="stars">★ 2</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-data">??? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">JMESPath 子集 JSON 查询，零依赖递归下降解析器</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-tool-stat" target="_blank" rel="noopener" data-cat="data" data-q="omdsh-dev/dsh-tool-stat 统计工具：描述统计、百分位数、频数分布、相关性">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-tool-stat</span>
+          <span class="stars">★ 2</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-data">??? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">统计工具：描述统计、百分位数、频数分布、相关性</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-tool-time" target="_blank" rel="noopener" data-cat="data" data-q="omdsh-dev/dsh-tool-time 时间工具：iso 8601 解析、iana 时区转换、utc 日历运算">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-tool-time</span>
+          <span class="stars">★ 2</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-data">??? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">时间工具：ISO 8601 解析、IANA 时区转换、UTC 日历运算</p>
+      </a>
+
+      <a class="card" href="https://github.com/PerryLink/dsh-claude-move" target="_blank" rel="noopener" data-cat="data" data-q="perrylink/dsh-claude-move 迁移 claude code 会话/记忆/技能">
+        <div class="card-top">
+          <span class="name">PerryLink/dsh-claude-move</span>
+          <span class="stars">★ 2</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-data">??? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">迁移 Claude Code 会话/记忆/技能</p>
+      </a>
+
+      <a class="card" href="https://github.com/turtle1999/turtle-ui" target="_blank" rel="noopener" data-cat="webui" data-q="turtle1999/turtle-ui turtle-ui，as is, no warranty">
+        <div class="card-top">
+          <span class="name">turtle1999/turtle-ui</span>
+          <span class="stars">★ 2</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">turtle-ui，as is, no warranty</p>
+      </a>
+
+      <a class="card" href="https://github.com/Tyan66666/billion-context-dsh" target="_blank" rel="noopener" data-cat="agent" data-q="tyan66666/billion-context-dsh 模型驱动的上下文管理（active context pruning / acp）">
+        <div class="card-top">
+          <span class="name">Tyan66666/billion-context-dsh</span>
+          <span class="stars">★ 2</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">模型驱动的上下文管理（Active Context Pruning / ACP）</p>
+      </a>
+
+      <a class="card" href="https://github.com/vibeinging/dsh-trace" target="_blank" rel="noopener" data-cat="data" data-q="vibeinging/dsh-trace 遥测后端：导出 turns、model steps、tool calls">
+        <div class="card-top">
+          <span class="name">vibeinging/dsh-trace</span>
+          <span class="stars">★ 2</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-data">??? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-12">🟢 活跃</span>
+        </div>
+        <p class="desc">遥测后端：导出 turns、model steps、tool calls</p>
+      </a>
+
+      <a class="card" href="https://github.com/vlln/dsh-loop" target="_blank" rel="noopener" data-cat="agent" data-q="vlln/dsh-loop 定时循环：/loop 命令 + loop 工具 + 活动状态条">
+        <div class="card-top">
+          <span class="name">vlln/dsh-loop</span>
+          <span class="stars">★ 2</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">定时循环：/loop 命令 + loop 工具 + 活动状态条</p>
+      </a>
+
+      <a class="card" href="https://github.com/whiteguo233/dsh-cc-connect" target="_blank" rel="noopener" data-cat="code" data-q="whiteguo233/dsh-cc-connect 通过 cc connect 远程使用 dsh">
+        <div class="card-top">
+          <span class="name">whiteguo233/dsh-cc-connect</span>
+          <span class="stars">★ 2</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-code">?? 插件</span>
+          <span class="lang">Go</span>
+          <span class="act act-🟢" title="最近更新 2026-08-12">🟢 活跃</span>
+        </div>
+        <p class="desc">通过 cc connect 远程使用 dsh</p>
+      </a>
+
+      <a class="card" href="https://github.com/AnacondaKC/dsh-custom-css" target="_blank" rel="noopener" data-cat="skin" data-q="anacondakc/dsh-custom-css 自定义 css">
+        <div class="card-top">
+          <span class="name">AnacondaKC/dsh-custom-css</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-skin">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">自定义 CSS</p>
+      </a>
+
+      <a class="card" href="https://github.com/Asaiuta/dsh-session-hub" target="_blank" rel="noopener" data-cat="agent" data-q="asaiuta/dsh-session-hub 跨工具会话互通：显示 opencode/claude code/antigravity 历史会话">
+        <div class="card-top">
+          <span class="name">Asaiuta/dsh-session-hub</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">跨工具会话互通：显示 opencode/Claude Code/Antigravity 历史会话</p>
+      </a>
+
+      <a class="card" href="https://github.com/ben7am1n/dsh-review-skills" target="_blank" rel="noopener" data-cat="agent" data-q="ben7am1n/dsh-review-skills 代码审查 skill 集">
+        <div class="card-top">
+          <span class="name">ben7am1n/dsh-review-skills</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 技能</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">代码审查 Skill 集</p>
+      </a>
+
+      <a class="card" href="https://github.com/ben7am1n/dsh-telegram" target="_blank" rel="noopener" data-cat="channel" data-q="ben7am1n/dsh-telegram telegram 远程渠道">
+        <div class="card-top">
+          <span class="name">ben7am1n/dsh-telegram</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-channel">?? 渠道</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Telegram 远程渠道</p>
+      </a>
+
+      <a class="card" href="https://github.com/bill9109/dsh-drag-and-drop" target="_blank" rel="noopener" data-cat="webui" data-q="bill9109/dsh-drag-and-drop 跨平台文件拖拽与原始路径插入">
+        <div class="card-top">
+          <span class="name">bill9109/dsh-drag-and-drop</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">跨平台文件拖拽与原始路径插入</p>
+      </a>
+
+      <a class="card" href="https://github.com/bill9109/dsh-webbridge" target="_blank" rel="noopener" data-cat="browser" data-q="bill9109/dsh-webbridge kimi webbridge">
+        <div class="card-top">
+          <span class="name">bill9109/dsh-webbridge</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-browser">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Kimi WebBridge</p>
+      </a>
+
+      <a class="card" href="https://github.com/btspoony/dsh-llm-fallbacks" target="_blank" rel="noopener" data-cat="agent" data-q="btspoony/dsh-llm-fallbacks 基于角色的 llm 重试与备用策略">
+        <div class="card-top">
+          <span class="name">btspoony/dsh-llm-fallbacks</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">基于角色的 LLM 重试与备用策略</p>
+      </a>
+
+      <a class="card" href="https://github.com/Fisfzy/zotero-wave-rag" target="_blank" rel="noopener" data-cat="data" data-q="fisfzy/zotero-wave-rag 面向 zotero 论文库的浪潮式 rag 细节检索">
+        <div class="card-top">
+          <span class="name">Fisfzy/zotero-wave-rag</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-data">??? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-07">🟢 活跃</span>
+        </div>
+        <p class="desc">面向 Zotero 论文库的浪潮式 RAG 细节检索</p>
+      </a>
+
+      <a class="card" href="https://github.com/havingautism/dsh-ultra-ui" target="_blank" rel="noopener" data-cat="webui" data-q="havingautism/dsh-ultra-ui ultra ui">
+        <div class="card-top">
+          <span class="name">havingautism/dsh-ultra-ui</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Ultra UI</p>
+      </a>
+
+      <a class="card" href="https://github.com/lehhair/dsh-split-panes" target="_blank" rel="noopener" data-cat="webui" data-q="lehhair/dsh-split-panes 分屏面板">
+        <div class="card-top">
+          <span class="name">lehhair/dsh-split-panes</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">分屏面板</p>
+      </a>
+
+      <a class="card" href="https://github.com/Moeblack/dsh-skins" target="_blank" rel="noopener" data-cat="skin" data-q="moeblack/dsh-skins 官方 themeservice 第三方皮肤：token + ai 生图背景">
+        <div class="card-top">
+          <span class="name">Moeblack/dsh-skins</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-skin">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">官方 ThemeService 第三方皮肤：token + AI 生图背景</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/7d7d" target="_blank" rel="noopener" data-cat="skin" data-q="omdsh-dev/7d7d 7k7k 风格 dsh 小游戏平台：html5 与 flash 小游戏">
+        <div class="card-top">
+          <span class="name">omdsh-dev/7d7d</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-skin">?? 插件</span>
+          <span class="lang">HTML</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">7k7k 风格 DSH 小游戏平台：HTML5 与 Flash 小游戏</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-github-integration" target="_blank" rel="noopener" data-cat="code" data-q="omdsh-dev/dsh-github-integration dsh github 集成插件">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-github-integration</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-code">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">DSH GitHub 集成插件</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-kb-sieve" target="_blank" rel="noopener" data-cat="data" data-q="omdsh-dev/dsh-kb-sieve 知识库插件：可审计 kb 包（references + sqlite fts5）">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-kb-sieve</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-data">??? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-12">🟢 活跃</span>
+        </div>
+        <p class="desc">知识库插件：可审计 KB 包（references + SQLite FTS5）</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-scout" target="_blank" rel="noopener" data-cat="agent" data-q="omdsh-dev/dsh-scout 只读环境探测：运行环境、软件版本、系统资源、端口、服务、硬件">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-scout</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">只读环境探测：运行环境、软件版本、系统资源、端口、服务、硬件</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/dsh-tool-browser" target="_blank" rel="noopener" data-cat="browser" data-q="omdsh-dev/dsh-tool-browser sdk 玩具箱快照：浏览器控制">
+        <div class="card-top">
+          <span class="name">omdsh-dev/dsh-tool-browser</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-browser">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">SDK 玩具箱快照：浏览器控制</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/ex-setting" target="_blank" rel="noopener" data-cat="webui" data-q="omdsh-dev/ex-setting dsh 设置扩展">
+        <div class="card-top">
+          <span class="name">omdsh-dev/ex-setting</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">DSH 设置扩展</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/Qwen-MM-Plugins" target="_blank" rel="noopener" data-cat="vision" data-q="omdsh-dev/qwen-mm-plugins qwen 多模态插件支持">
+        <div class="card-top">
+          <span class="name">omdsh-dev/Qwen-MM-Plugins</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-vision">??? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-09">🟢 活跃</span>
+        </div>
+        <p class="desc">Qwen 多模态插件支持</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/session-teleport" target="_blank" rel="noopener" data-cat="agent" data-q="omdsh-dev/session-teleport postgresql 单写者会话交接">
+        <div class="card-top">
+          <span class="name">omdsh-dev/session-teleport</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">PostgreSQL 单写者会话交接</p>
+      </a>
+
+      <a class="card" href="https://github.com/omdsh-dev/web-components" target="_blank" rel="noopener" data-cat="webui" data-q="omdsh-dev/web-components web-components 支持">
+        <div class="card-top">
+          <span class="name">omdsh-dev/web-components</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-09">🟢 活跃</span>
+        </div>
+        <p class="desc">web-components 支持</p>
+      </a>
+
+      <a class="card" href="https://github.com/pandashere/dsh-kimi-bridge" target="_blank" rel="noopener" data-cat="browser" data-q="pandashere/dsh-kimi-bridge kimi webbridge 集成">
+        <div class="card-top">
+          <span class="name">pandashere/dsh-kimi-bridge</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-browser">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Kimi WebBridge 集成</p>
+      </a>
+
+      <a class="card" href="https://github.com/pandashere/dsh-self-control-guard" target="_blank" rel="noopener" data-cat="agent" data-q="pandashere/dsh-self-control-guard 自控守卫：拦截 host-kill 尝试，教模型控制自己">
+        <div class="card-top">
+          <span class="name">pandashere/dsh-self-control-guard</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">自控守卫：拦截 host-kill 尝试，教模型控制自己</p>
+      </a>
+
+      <a class="card" href="https://github.com/Proton1917/dsh-live-stats" target="_blank" rel="noopener" data-cat="webui" data-q="proton1917/dsh-live-stats 实时输入/输出 token 估算与生成 tps">
+        <div class="card-top">
+          <span class="name">Proton1917/dsh-live-stats</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">实时输入/输出 token 估算与生成 TPS</p>
+      </a>
+
+      <a class="card" href="https://github.com/qyw233/dsh-deeplink" target="_blank" rel="noopener" data-cat="webui" data-q="qyw233/dsh-deeplink 深链：?session=/?workspace= 直接打开指定项目对话">
+        <div class="card-top">
+          <span class="name">qyw233/dsh-deeplink</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">深链：?session=/?workspace= 直接打开指定项目对话</p>
+      </a>
+
+      <a class="card" href="https://github.com/shi275773124/falsify-dsh" target="_blank" rel="noopener" data-cat="agent" data-q="shi275773124/falsify-dsh falsify cli 适配器">
+        <div class="card-top">
+          <span class="name">shi275773124/falsify-dsh</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">Falsify CLI 适配器</p>
+      </a>
+
+      <a class="card" href="https://github.com/Small-tailqwq/dsh-tps" target="_blank" rel="noopener" data-cat="webui" data-q="small-tailqwq/dsh-tps tps 插件">
+        <div class="card-top">
+          <span class="name">Small-tailqwq/dsh-tps</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">TPS 插件</p>
+      </a>
+
+      <a class="card" href="https://github.com/springbrand-lab/dsh-oauth-mcp-client" target="_blank" rel="noopener" data-cat="agent" data-q="springbrand-lab/dsh-oauth-mcp-client oauth 2.1 streamable http mcp 客户端">
+        <div class="card-top">
+          <span class="name">springbrand-lab/dsh-oauth-mcp-client</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">OAuth 2.1 Streamable HTTP MCP 客户端</p>
+      </a>
+
+      <a class="card" href="https://github.com/TwotwoPiggy/dsh-balance" target="_blank" rel="noopener" data-cat="agent" data-q="twotwopiggy/dsh-balance 多模型余额/负载均衡">
+        <div class="card-top">
+          <span class="name">TwotwoPiggy/dsh-balance</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">JavaScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">多模型余额/负载均衡</p>
+      </a>
+
+      <a class="card" href="https://github.com/vibeinging/dsh-agent-budget" target="_blank" rel="noopener" data-cat="agent" data-q="vibeinging/dsh-agent-budget 原生 agent-tree token 预算插件">
+        <div class="card-top">
+          <span class="name">vibeinging/dsh-agent-budget</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-12">🟢 活跃</span>
+        </div>
+        <p class="desc">原生 agent-tree token 预算插件</p>
+      </a>
+
+      <a class="card" href="https://github.com/vibeinging/dsh-tool-search" target="_blank" rel="noopener" data-cat="data" data-q="vibeinging/dsh-tool-search 按需工具发现与渐进式 schema 披露">
+        <div class="card-top">
+          <span class="name">vibeinging/dsh-tool-search</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-data">??? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-12">🟢 活跃</span>
+        </div>
+        <p class="desc">按需工具发现与渐进式 schema 披露</p>
+      </a>
+
+      <a class="card" href="https://github.com/vibeinging/dsh-turn-navigator" target="_blank" rel="noopener" data-cat="webui" data-q="vibeinging/dsh-turn-navigator 回合导航插件">
+        <div class="card-top">
+          <span class="name">vibeinging/dsh-turn-navigator</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-webui">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-12">🟢 活跃</span>
+        </div>
+        <p class="desc">回合导航插件</p>
+      </a>
+
+      <a class="card" href="https://github.com/william-jin-cmu/dsh-artifact" target="_blank" rel="noopener" data-cat="data" data-q="william-jin-cmu/dsh-artifact 文件交付协议：send_artifact 工具，任意客户端可渲染">
+        <div class="card-top">
+          <span class="name">william-jin-cmu/dsh-artifact</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-data">??? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">文件交付协议：send_artifact 工具，任意客户端可渲染</p>
+      </a>
+
+      <a class="card" href="https://github.com/yuezengwu/dsh-explain" target="_blank" rel="noopener" data-cat="agent" data-q="yuezengwu/dsh-explain 本地优先学习模式：跨会话全局学习线程、按来源讲解">
+        <div class="card-top">
+          <span class="name">yuezengwu/dsh-explain</span>
+          <span class="stars">★ 1</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-agent">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-13">🟢 活跃</span>
+        </div>
+        <p class="desc">本地优先学习模式：跨会话全局学习线程、按来源讲解</p>
+      </a>
+
+      <a class="card" href="https://github.com/lonelymoon87/dsh-vscode" target="_blank" rel="noopener" data-cat="code" data-q="lonelymoon87/dsh-vscode vs code 聊天集成">
+        <div class="card-top">
+          <span class="name">lonelymoon87/dsh-vscode</span>
+          <span class="stars">★ 0</span>
+        </div>
+        <div class="card-meta">
+          <span class="tag tag-code">?? 插件</span>
+          <span class="lang">TypeScript</span>
+          <span class="act act-🟢" title="最近更新 2026-08-14">🟢 活跃</span>
+        </div>
+        <p class="desc">VS Code 聊天集成</p>
+      </a></div>
+  <div class="empty" id="empty">??????? ?? ????????</div>
+</main>
+
+<footer class="wrap">
+  <p><a href="https://github.com/like-study1/Oh-My-DSH">? Oh-My-DSH on GitHub</a> ? ?????? / PR / Issue</p>
+  <p style="margin-top:6px">? <code>scripts/sync_plugins.py</code> ???? ? ???????????????????</p>
+</footer>
+
+<script>
+let cat='all';
+function filterCat(c){cat=c;document.querySelectorAll('.chip').forEach(b=>b.classList.toggle('on',b.dataset.cat===c));render()}
+document.getElementById('q').addEventListener('input',render);
+function render(){
+  const q=document.getElementById('q').value.trim().toLowerCase();
+  let shown=0;
+  document.querySelectorAll('.card').forEach(card=>{
+    const okCat=cat==='all'||card.dataset.cat===cat;
+    const okQ=!q||card.dataset.q.includes(q);
+    card.style.display=okCat&&okQ?'':'none';
+    if(okCat&&okQ)shown++;
+  });
+  document.getElementById('empty').style.display=shown?'none':'block';
+}
+</script>
+</body>
+</html>
