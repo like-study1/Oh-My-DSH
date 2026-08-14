@@ -1,6 +1,11 @@
 {
   "min_stars": 3,
   "overrides": {
+    "dsh-feishucard": {
+      "category": "channel",
+      "note": "DSH 飞书桥（自研非 fork）：官方 SDK 长连接 + 流式回复卡片（过程话语内联/工具折叠面板/状态符号/限流退避熔断兜底），每聊天独立会话 + live 复用保上下文，npm dsh-feishucard",
+      "repo": "cmfok/dsh-feishucard"
+    },
     "modlens": {
       "category": "vision",
       "note": "DSH 首个视觉插件：纯文本模型的视觉桥梁",
