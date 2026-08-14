@@ -12,22 +12,22 @@
 DeepSeek Harness（DSH）是一个“万物皆可插件”的开源 Agent 框架，插件生态正以每天几十个的速度爆发。**Oh-My-DSH** 是这个生态的一站式聚合社区：把散落在 GitHub 各处的 `dsh-plugin` 仓库收进同一份**人工策展的精选目录**，用自动化保持新鲜，让你 30 秒找到对的插件。
 
 <!-- OMD:stats:START -->
-**255** 个精选插件 · **785** 个生态仓库 · **90650** ⭐ 总 Star · 更新于 2026-08-14 01:52 UTC
+**255** 个精选插件 · **783** 个生态仓库 · **91127** ⭐ 总 Star · 更新于 2026-08-14 01:55 UTC
 
 ### 🏆 精选 Top 10
 
 | # | 插件 | ⭐ | 类型 | 说明 |
 |---|---|---|---|---|
-| 1 | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 53361 | 项目 | DeepSeek Harness 官方仓库：Everything is a Plugin. |
-| 2 | [titanwings/colleague-skill](https://github.com/titanwings/colleague-skill) | 21251 | 项目 | 「同事」Skill：将离别化为温暖的数字生命 1.0 |
-| 3 | [Devin-AXIS/iPolloWork](https://github.com/Devin-AXIS/iPolloWork) | 3647 | 项目 | 下一代开源 AI 工作台：自进化 Agent 运行时，集成 DSH 子代理 |
-| 4 | [whiteguo233/OpenBiliClaw](https://github.com/whiteguo233/OpenBiliClaw) | 1992 | 项目 | 本地优先的跨平台 AI 内容发现 Agent：B站、小红书、抖音、YouTube、X、知乎、Reddit |
+| 1 | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 53797 | 项目 | DeepSeek Harness 官方仓库：Everything is a Plugin. |
+| 2 | [titanwings/colleague-skill](https://github.com/titanwings/colleague-skill) | 21256 | 项目 | 「同事」Skill：将离别化为温暖的数字生命 1.0 |
+| 3 | [Devin-AXIS/iPolloWork](https://github.com/Devin-AXIS/iPolloWork) | 3649 | 项目 | 下一代开源 AI 工作台：自进化 Agent 运行时，集成 DSH 子代理 |
+| 4 | [whiteguo233/OpenBiliClaw](https://github.com/whiteguo233/OpenBiliClaw) | 1997 | 项目 | 本地优先的跨平台 AI 内容发现 Agent：B站、小红书、抖音、YouTube、X、知乎、Reddit |
 | 5 | [paean-ai/deeptide](https://github.com/paean-ai/deeptide) | 1026 | 项目 | DeepSeek 官方风格 Swift 原生 macOS 编程 Agent |
 | 6 | [nutshellai-tech/mobius](https://github.com/nutshellai-tech/mobius) | 922 | 项目 | 首个自进化开源 Agent OS：连接团队、AI Agent、设备与算力 |
 | 7 | [liustack/modlens](https://github.com/liustack/modlens) | 763 | 插件 | DSH 首个视觉插件：纯文本模型的视觉桥梁 |
-| 8 | [zhu1090093659/dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui) | 665 | 合集 | DSH Web UI 插件与皮肤合集：任务面板、Git 图、右侧面板、移动端 UI、宠物、实时 Token 统计、皮肤中心 |
+| 8 | [zhu1090093659/dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui) | 670 | 合集 | DSH Web UI 插件与皮肤合集：任务面板、Git 图、右侧面板、移动端 UI、宠物、实时 Token 统计、皮肤中心 |
 | 9 | [hellowind777/helloagents](https://github.com/hellowind777/helloagents) | 659 | 插件 | 一个自主的高级智能伙伴，不仅分析问题，更持续工作直到完成实现和验证。 |
-| 10 | [Anionex/agent-vision-toolkit](https://github.com/Anionex/agent-vision-toolkit) | 571 | 插件 | 为纯文本模型设计的视觉工具箱：多图理解、长截图 OCR、前端 UI 还原、GUI 自动化，可接入 Codex/Claude Code/… |
+| 10 | [Anionex/agent-vision-toolkit](https://github.com/Anionex/agent-vision-toolkit) | 574 | 插件 | 为纯文本模型设计的视觉工具箱：多图理解、长截图 OCR、前端 UI 还原、GUI 自动化，可接入 Codex/Claude Code/… |
 
 ### 📊 分类分布
 
