@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Oh-My-DSH ? DeepSeek Harness ??????</title>
-<meta name="description" content="Oh-My-DSH ? DeepSeek Harness (DSH) ?????????????????????????????Everything is a Plugin.">
-<meta property="og:title" content="Oh-My-DSH ? DeepSeek Harness ??????">
-<meta property="og:description" content="?? DSH ???? ? ???? dsh-plugin ?? ? Everything is a Plugin.">
+<title>Oh-My-DSH · DeepSeek Harness 插件聚合社区</title>
+<meta name="description" content="Oh-My-DSH — DeepSeek Harness (DSH) 插件聚合社区：精选插件目录、生态雷达与自动维护的插件索引。Everything is a Plugin.">
+<meta property="og:title" content="Oh-My-DSH · DeepSeek Harness 插件聚合社区">
+<meta property="og:description" content="精选 DSH 插件目录 · 自动同步 dsh-plugin 生态 · Everything is a Plugin.">
 <style>
 :root{
   --bg:#0b1020; --bg2:#111936; --card:#151e3d; --card2:#1b2647;
@@ -53,25 +53,25 @@ footer a{color:var(--cyan)}
 </head>
 <body>
 <header class="wrap">
-  <div class="logo">??</div>
+  <div class="logo">🐳</div>
   <h1>Oh-My-DSH</h1>
-  <p class="tagline">DeepSeek Harness ?????? ?? Everything is a Plugin.<br>?????? ? ???? ? ?????</p>
+  <p class="tagline">DeepSeek Harness 插件聚合社区 —— Everything is a Plugin.<br>精选插件目录 · 生态雷达 · 全自动维护</p>
   <div class="stats">
-    <div class="stat"><b>{{OMD_COUNT}}</b><span>????</span></div>
-    <div class="stat"><b>{{OMD_TOTAL}}</b><span>????</span></div>
-    <div class="stat"><b>{{OMD_STARS}}</b><span>? Star</span></div>
+    <div class="stat"><b>{{OMD_COUNT}}</b><span>精选插件</span></div>
+    <div class="stat"><b>{{OMD_TOTAL}}</b><span>生态仓库</span></div>
+    <div class="stat"><b>{{OMD_STARS}}</b><span>总 Star</span></div>
   </div>
   <div>
-    <span class="badge-inline">? ??? GitHub Actions ? 8 ??????</span>
-    <span class="badge-inline">?? ??? {{OMD_UPDATED}}</span>
+    <span class="badge-inline">✅ 数据由 GitHub Actions 每 8 小时自动同步</span>
+    <span class="badge-inline">🕐 更新于 {{OMD_UPDATED}}</span>
   </div>
 </header>
 
 <div class="controls">
   <div class="wrap">
-    <input class="search" id="q" type="search" placeholder="????? / ?? / ???" autocomplete="off">
+    <input class="search" id="q" type="search" placeholder="搜索插件名 / 功能 / 描述…" autocomplete="off">
     <div class="chips" id="chips">
-      <button class="chip on" data-cat="all" onclick="filterCat('all')">? ??</button>
+      <button class="chip on" data-cat="all" onclick="filterCat('all')">✨ 全部</button>
       {{OMD_CATS}}
     </div>
   </div>
@@ -79,12 +79,12 @@ footer a{color:var(--cyan)}
 
 <main class="wrap">
   <div class="grid" id="grid">{{OMD_CARDS}}</div>
-  <div class="empty" id="empty">??????? ?? ????????</div>
+  <div class="empty" id="empty">没有匹配的插件 🐳 换个关键词试试？</div>
 </main>
 
 <footer class="wrap">
-  <p><a href="https://github.com/like-study1/Oh-My-DSH">? Oh-My-DSH on GitHub</a> ? ?????? / PR / Issue</p>
-  <p style="margin-top:6px">? <code>scripts/sync_plugins.py</code> ???? ? ???????????????????</p>
+  <p><a href="https://github.com/like-study1/Oh-My-DSH">⭐ Oh-My-DSH on GitHub</a> · 欢迎提交插件 / PR / Issue</p>
+  <p style="margin-top:6px">由 <code>scripts/sync_plugins.py</code> 自动生成 · 收录不等于兼容，安装前请自查源码与权限</p>
 </footer>
 
 <script>

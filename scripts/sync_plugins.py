@@ -22,17 +22,17 @@ API = "https://api.github.com"
 UA = "oh-my-dsh-sync"
 
 CATEGORIES = [
-    ("channel",   "??", "????",       "Telegram / ?? / QQ / ?????????????"),
-    ("vision",    "???", "??????",   "???VLM?OCR?????? UI ??"),
-    ("browser",   "??", "??????",   "????????????????"),
-    ("webui",     "??", "Web UI ??",    "???????????????? Web ????"),
-    ("skin",      "??", "?????",     "??????????????????"),
-    ("agent",     "??", "Agent ??",     "???????????????????????"),
-    ("code",      "??", "????",       "???Git??? / TUI???????"),
-    ("data",      "???", "?????",     "??????????????????"),
-    ("devtools",  "???", "???????", "?????????????????"),
-    ("collection","??", "????????", "?????????????"),
-    ("eco",       "??", "????",       "?? / ?? DSH ??????????"),
+    ("channel",   "📡", "消息通讯",       "Telegram / 微信 / QQ / 飞书等远程渠道、通知与分享"),
+    ("vision",    "👁️", "视觉与多模态",   "视觉、VLM、OCR、图像理解与 UI 还原"),
+    ("browser",   "🌐", "浏览器与网络",   "浏览器操控、搜索、抓取与网络工具"),
+    ("webui",     "🔌", "Web UI 增强",    "界面、输入、侧栏、面板、状态栏等 Web 体验增强"),
+    ("skin",      "🎨", "皮肤与娱乐",     "皮肤主题、桌面宠物、小游戏与趣味插件"),
+    ("agent",     "🤖", "Agent 能力",     "记忆、上下文、会话、规划、子代理、工作流与技能"),
+    ("code",      "💻", "编码开发",       "代码、Git、终端 / TUI、编辑器与构建"),
+    ("data",      "🗂️", "文件与数据",     "文件、数据、知识库、文档解析与持久化"),
+    ("devtools",  "🛠️", "开发工具与教程", "插件开发、安装器、桌面端与学习手册"),
+    ("collection","📚", "精选合集与发行版", "多插件合集、发行版与目录站"),
+    ("eco",       "🌊", "生态项目",       "基于 / 围绕 DSH 构建的独立项目与基建"),
 ]
 CAT_EMOJI = {c: e for c, e, _, _ in CATEGORIES}
 
@@ -292,7 +292,9 @@ def generate_plugins_md(curated, total, now):
         if not group:
             continue
         lines.append("")
-        lines.append(f"## {emoji} {desc}（{len(group)}）")
+        lines.append(f"## {emoji} {short}（{len(group)}）")
+        lines.append("")
+        lines.append(f"*{desc}*")
         lines.append("")
         lines.append("| 插件 | 类型 | 活跃 | 语言 | ⭐ | 说明 |")
         lines.append("|---|---|---|---|---|---|")
@@ -375,7 +377,7 @@ def load_site_template():
     return SITE_TPL
 
 def act_cls(e):
-    return {"??": "active", "??": "watch", "??": "slow", "?": "stale"}.get(e["activity"][:1], "none")
+    return {"🟢": "active", "🟡": "watch", "🟠": "slow", "⚫": "stale"}.get(e["activity"][:1], "none")
 
 def generate_site(curated, total, now):
     tpl = load_site_template()
@@ -392,7 +394,7 @@ def generate_site(curated, total, now):
         <div class="card-meta">
           <span class="tag tag-{e['category']}">{CAT_EMOJI.get(e['category'], '🔌')} {e['type']}</span>
           <span class="lang">{lang}</span>
-          <span class="act act-{e['activity'].split(' ')[0] if e['activity'] != '—' else 'none'}" title="最近更新 {e['pushed_at'][:10]}">{e['activity']}</span>
+          <span class="act act-{act_cls(e)}" title="最近更新 {e['pushed_at'][:10]}">{e['activity']}</span>
         </div>
         <p class="desc">{note}</p>
       </a>""")
