@@ -318,7 +318,7 @@ def generate_readme_stats(curated, total, now):
     path = ROOT / "README.md"
     text = path.read_text(encoding="utf-8")
     top = sorted(curated, key=lambda e: -e["stars"])[:10]
-    top_lines = ["| # | 插件 | ⭐ | 类型 | 说明 |", "|---|---|---|---|---|"]
+    top_lines = ["| 序号 | 插件 | Star | 类型 | 说明 |", "|---|---|---|---|---|"]
     for i, e in enumerate(top, 1):
         note = (e.get("note") or e["description"] or "—").replace("|", "\\|").strip()
         if len(note) > 70:
@@ -328,16 +328,16 @@ def generate_readme_stats(curated, total, now):
     for cat, emoji, short, desc in CATEGORIES:
         n = sum(1 for e in curated if e["category"] == cat)
         if n:
-            cats.append(f"`{emoji} {short} {n}`")
+            cats.append(f"`{short} {n}`")
     block = [
         "<!-- OMD:stats:START -->",
-        f"**{len(curated)}** 个精选插件 · **{total}** 个生态仓库 · **{sum(e['stars'] for e in curated)}** ⭐ 总 Star · 更新于 {now.strftime('%Y-%m-%d %H:%M')} UTC",
+        f"截至 {now.strftime('%Y-%m-%d %H:%M')}（UTC），本目录收录精选插件 **{len(curated)}** 个，监测生态仓库 **{total}** 个，累计获得 Star **{sum(e['stars'] for e in curated)}**。",
         "",
-        "### 🏆 精选 Top 10",
+        "### 精选插件十强",
         "",
         *top_lines,
         "",
-        "### 📊 分类分布",
+        "### 分类构成",
         "",
         " · ".join(cats),
         "",
