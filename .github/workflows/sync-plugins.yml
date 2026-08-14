@@ -40,7 +40,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "chore: auto-sync plugin index $(date -u +'%Y-%m-%d')"
+            git commit -m "chore: auto-sync plugin index $(TZ='Asia/Shanghai' date +'%Y-%m-%d')"
             git push
           fi
 

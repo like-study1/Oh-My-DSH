@@ -6,8 +6,8 @@
 
 给插件仓库添加 `dsh-plugin` topic，自动同步会在 **8 小时内**完成收录：
 
-- Star ≥ 3：自动进入分类目录（`PLUGINS.md`）
-- Star < 3：通过下方 PR 方式人工收录
+- 通过自动初筛的条目，经人工策展核验后进入分类目录（`PLUGINS.md`）
+- 其余条目可通过下方 PR 方式申请人工收录
 
 ## 2. 通过 Issue / PR 登记
 
@@ -20,7 +20,7 @@
       "repo": "your-name/your-plugin",
       "category": "webui",   // 可选：channel / vision / browser / webui / skin / agent / code / data / devtools / collection / eco
       "note": "一句话中文简介",
-      "keep": true             // 可选：强制收录（低 Star 也保留）
+      "keep": true             // 可选：强制收录（不受初筛门槛限制）
     }
   }
 }

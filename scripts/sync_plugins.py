@@ -14,12 +14,13 @@ Run locally:  python scripts/sync_plugins.py
 Requires GH_TOKEN (or `gh auth token`) for API access.
 """
 import json, os, re, sys, time, urllib.parse, urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 API = "https://api.github.com"
 UA = "oh-my-dsh-sync"
+BEIJING = timezone(timedelta(hours=8))  # UTC+8
 
 CATEGORIES = [
     ("channel",   "📡", "消息通讯",       "Telegram / 微信 / QQ / 飞书等远程渠道、通知与分享"),
@@ -196,7 +197,7 @@ def main():
         token = subprocess.run(["gh", "auth", "token"], capture_output=True, text=True).stdout.strip()
     if not token:
         sys.exit("GH_TOKEN required")
-    now = datetime.now(timezone.utc)
+    now = datetime.now(BEIJING)
     curated_cfg = load_curated()
     min_stars = curated_cfg.get("min_stars", 3)
     overrides = curated_cfg.get("overrides", {})
@@ -281,7 +282,7 @@ def generate_plugins_md(curated, total, now):
     lines = []
     lines.append("# 📦 Oh-My-DSH 插件目录 · PLUGINS.md")
     lines.append("")
-    lines.append(f"> 由 [`scripts/sync_plugins.py`](scripts/sync_plugins.py) 自动生成 · 更新于 {now.strftime('%Y-%m-%d %H:%M UTC')}")
+    lines.append(f"> 由 [`scripts/sync_plugins.py`](scripts/sync_plugins.py) 自动生成 · 更新于 {now.strftime('%Y-%m-%d %H:%M')}（北京时间）")
     lines.append("")
     lines.append(f"精选条目 **{len(curated)}** · 生态快照 **{total}** 个 `dsh-plugin` 仓库 · 总 Star **{sum(e['stars'] for e in curated)}**")
     lines.append("")
@@ -331,7 +332,7 @@ def generate_readme_stats(curated, total, now):
             cats.append(f"`{short} {n}`")
     block = [
         "<!-- OMD:stats:START -->",
-        f"截至 {now.strftime('%Y-%m-%d %H:%M')}（UTC），本目录收录精选插件 **{len(curated)}** 个，监测生态仓库 **{total}** 个，累计获得 Star **{sum(e['stars'] for e in curated)}**。",
+        f"截至 {now.strftime('%Y-%m-%d %H:%M')}（北京时间），本目录收录精选插件 **{len(curated)}** 个，监测生态仓库 **{total}** 个，累计获得 Star **{sum(e['stars'] for e in curated)}**。",
         "",
         "### 精选插件十强",
         "",
@@ -407,7 +408,7 @@ def generate_site(curated, total, now):
         .replace("{{OMD_COUNT}}", str(len(curated)))
         .replace("{{OMD_TOTAL}}", str(total))
         .replace("{{OMD_STARS}}", str(sum(e["stars"] for e in curated)))
-        .replace("{{OMD_UPDATED}}", now.strftime("%Y-%m-%d %H:%M UTC")))
+        .replace("{{OMD_UPDATED}}", now.strftime("%Y-%m-%d %H:%M") + "（北京时间）"))
     out = ROOT / "docs" / "index.html"
     out.write_text(html, encoding="utf-8")
 
