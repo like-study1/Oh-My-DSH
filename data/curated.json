@@ -51,6 +51,12 @@
       "note": "DeepSeek Harness 精选插件清单（awesome list）",
       "repo": "awesome-dsh-plugin/awesome-dsh-plugin"
     },
+    "dsh-cad-review": {
+      "category": "devtools",
+      "note": "离线检查 ASCII DXF：输出带源文件哈希的实体、图层、坐标与确定性制图规则证据",
+      "repo": "dongsheng123132/dsh-cad-review",
+      "keep": true
+    },
     "dsh-ads": {
       "category": "skin",
       "note": "2005 年中文站点风格的复古广告插件：侧栏广告 / 对话内信息流 / 角落弹窗",
