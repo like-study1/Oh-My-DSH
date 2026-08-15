@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-15T10:05:05.646056+08:00",
- "count": 915,
+ "generated_at": "2026-08-15T10:07:13.375508+08:00",
+ "count": 917,
  "items": [
   {
    "full_name": "deepseek-ai/deepseek-harness",
    "url": "https://github.com/deepseek-ai/deepseek-harness",
    "description": "DeepSeek Harness: Everything is a Plugin.",
-   "stars": 97087,
-   "forks": 9056,
+   "stars": 97128,
+   "forks": 9059,
    "language": "TypeScript",
    "topics": [
     "ai-agents",
@@ -74,7 +74,7 @@
    "full_name": "titanwings/colleague-skill",
    "url": "https://github.com/titanwings/colleague-skill",
    "description": "将冰冷的离别化为温暖的 Skill，欢迎加入数字生命1.0！Transforming cold farewells into warm skills? It's giving rebirth era. Welcome to Digital Life 1.0. 🫶",
-   "stars": 22066,
+   "stars": 22067,
    "forks": 2043,
    "language": "Python",
    "topics": [
@@ -106,7 +106,7 @@
    "full_name": "tt-a1i/archify",
    "url": "https://github.com/tt-a1i/archify",
    "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
-   "stars": 12578,
+   "stars": 12579,
    "forks": 937,
    "language": "HTML",
    "topics": [
@@ -147,7 +147,7 @@
    "full_name": "Devin-AXIS/iPolloWork",
    "url": "https://github.com/Devin-AXIS/iPolloWork",
    "description": "A next-generation, source-available AI workspace with a self-evolving agent runtime for editable code, design, presentations, websites, and video—a Codex alternative that integrates DeepSeek Harness for subagent delegation, combining iPolloWork’s complete AI workbench with DSH’s specialized agents and both plugin ecosystems in one workflow.",
-   "stars": 4017,
+   "stars": 4018,
    "forks": 808,
    "language": "HTML",
    "topics": [
@@ -325,7 +325,7 @@
    "full_name": "whiteguo233/OpenBiliClaw",
    "url": "https://github.com/whiteguo233/OpenBiliClaw",
    "description": "本地私有、开源的自进化跨平台 AI 内容发现 Agent：先理解你，再主动从 B站、小红书、抖音、YouTube、X、知乎、Reddit、微博等平台与开放 Web 寻找内容。（支持 deepseek harness 插件） | Local-first open-source cross-platform AI content discovery agent: understands you, then proactively finds content across Bilibili, Xiaohongshu, Douyin, YouTube, X, Zhihu, Reddit, Weibo and the open web.（support deepseek harness plugin）",
-   "stars": 2375,
+   "stars": 2376,
    "forks": 117,
    "language": "Python",
    "topics": [
@@ -367,7 +367,7 @@
    "full_name": "anywhere-labs/deepseek-harness-desktop",
    "url": "https://github.com/anywhere-labs/deepseek-harness-desktop",
    "description": "为 DeepSeek Harness (DSH) 生态打造的现代化桌面端体验",
-   "stars": 2127,
+   "stars": 2135,
    "forks": 113,
    "language": "TypeScript",
    "topics": [
@@ -395,7 +395,7 @@
    "full_name": "zhu1090093659/dsh-web-ui",
    "url": "https://github.com/zhu1090093659/dsh-web-ui",
    "description": "Plugin and skin collection for DeepSeek Harness (DSH) Web UI - task board, git graph, right-side panel, remote mobile UI, pet, live token stats, and skin center.",
-   "stars": 1983,
+   "stars": 1984,
    "forks": 98,
    "language": "TypeScript",
    "topics": [
@@ -505,8 +505,8 @@
    "full_name": "awesome-dsh-plugin/awesome-dsh-plugin",
    "url": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
    "description": "A curated list of plugins for DeepSeek Harness (dsh) · DeepSeek Harness 插件精选列表",
-   "stars": 1207,
-   "forks": 261,
+   "stars": 1211,
+   "forks": 262,
    "language": "Python",
    "topics": [
     "awesome",
@@ -517,7 +517,7 @@
    ],
    "archived": false,
    "fork": false,
-   "pushed_at": "2026-08-15T01:59:02Z",
+   "pushed_at": "2026-08-15T02:06:34Z",
    "created_at": "2026-08-13T13:55:31Z",
    "license": "CC0-1.0",
    "owner": "awesome-dsh-plugin",
@@ -901,8 +901,8 @@
    "full_name": "xiaobright/dsh-anchored-standard",
    "url": "https://github.com/xiaobright/dsh-anchored-standard",
    "description": "Two-phase DeepSeek Harness preset: Minimal-aligned bootstrap, then full Standard tools (Project2 98/99)",
-   "stars": 505,
-   "forks": 12,
+   "stars": 510,
+   "forks": 13,
    "language": "JavaScript",
    "topics": [
     "deepseek",
@@ -1006,7 +1006,7 @@
    "full_name": "Nagi-ovo/dsh-ads",
    "url": "https://github.com/Nagi-ovo/dsh-ads",
    "description": "把 DSH 变成 2005 年门户网站｜Parody ads, fake games, and popups for the DSH Web UI",
-   "stars": 342,
+   "stars": 343,
    "forks": 2,
    "language": "TypeScript",
    "topics": [
@@ -1403,7 +1403,7 @@
    "full_name": "Electricitysheep/dsh-handbook",
    "url": "https://github.com/Electricitysheep/dsh-handbook",
    "description": "DeepSeek Harness (dsh) 从 0 到 1 深度手册：安装/插件开发/性能调优/实测案例/同模型多 Agent 实测对比（中文 + 英文 PDF）",
-   "stars": 210,
+   "stars": 211,
    "forks": 5,
    "language": "Python",
    "topics": [
@@ -1980,6 +1980,31 @@
    "type": "插件"
   },
   {
+   "full_name": "dsh-market/dsh-market",
+   "url": "https://github.com/dsh-market/dsh-market",
+   "description": "The plugin market inside DeepSeek Harness — browse, search, one-click install · DSH 可视化插件市场",
+   "stars": 73,
+   "forks": 9,
+   "language": "TypeScript",
+   "topics": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "marketplace"
+   ],
+   "archived": false,
+   "fork": false,
+   "pushed_at": "2026-08-15T02:03:12Z",
+   "created_at": "2026-08-14T04:58:15Z",
+   "license": null,
+   "owner": "dsh-market",
+   "homepage": "https://dshmarket.com",
+   "category": "browser",
+   "note": "",
+   "source": "auto",
+   "activity": "🟢 活跃",
+   "type": "插件"
+  },
+  {
    "full_name": "Nagi-ovo/dsh-find-plugins",
    "url": "https://github.com/Nagi-ovo/dsh-find-plugins",
    "description": "帮 DSH 搜索、安装并验证插件的 Skill｜A DSH skill that finds, installs, and verifies GitHub plugins",
@@ -2002,31 +2027,6 @@
    "category": "devtools",
    "note": "在 DSH 内搜索/发现插件的 Skill",
    "source": "topic",
-   "activity": "🟢 活跃",
-   "type": "插件"
-  },
-  {
-   "full_name": "dsh-market/dsh-market",
-   "url": "https://github.com/dsh-market/dsh-market",
-   "description": "The plugin market inside DeepSeek Harness — browse, search, one-click install · DSH 可视化插件市场",
-   "stars": 72,
-   "forks": 9,
-   "language": "TypeScript",
-   "topics": [
-    "deepseek-harness",
-    "dsh-plugin",
-    "marketplace"
-   ],
-   "archived": false,
-   "fork": false,
-   "pushed_at": "2026-08-15T02:03:12Z",
-   "created_at": "2026-08-14T04:58:15Z",
-   "license": null,
-   "owner": "dsh-market",
-   "homepage": "https://dshmarket.com",
-   "category": "browser",
-   "note": "",
-   "source": "auto",
    "activity": "🟢 活跃",
    "type": "插件"
   },
@@ -2133,7 +2133,7 @@
    "full_name": "ChisaAlter/Deepseek-Harness-Desktop",
    "url": "https://github.com/ChisaAlter/Deepseek-Harness-Desktop",
    "description": "DSH桌面端，支持主题和背景图等多种个性化配置。Electron desktop shell for DeepSeek Harness web UI",
-   "stars": 68,
+   "stars": 69,
    "forks": 7,
    "language": "JavaScript",
    "topics": [
@@ -3101,34 +3101,6 @@
    "type": "插件"
   },
   {
-   "full_name": "Sanqi-normal/dsh-webui-market-plugin",
-   "url": "https://github.com/Sanqi-normal/dsh-webui-market-plugin",
-   "description": "dsh Web GUI 社区插件市场：浏览 awesome-dsh-plugin.com 插件目录，一键安装/卸载到 profile。Community plugin market for the DeepSeek Harness (dsh) web GUI: browse, install and uninstall plugins into a profile.",
-   "stars": 28,
-   "forks": 1,
-   "language": "JavaScript",
-   "topics": [
-    "agent-harness",
-    "deepseek",
-    "dsh-plugin",
-    "plugin-market",
-    "ui",
-    "web"
-   ],
-   "archived": false,
-   "fork": false,
-   "pushed_at": "2026-08-14T14:13:11Z",
-   "created_at": "2026-08-13T18:59:30Z",
-   "license": "MIT",
-   "owner": "Sanqi-normal",
-   "homepage": "",
-   "category": "webui",
-   "note": "",
-   "source": "auto",
-   "activity": "🟢 活跃",
-   "type": "插件"
-  },
-  {
    "full_name": "openguardrails/openguardrails",
    "url": "https://github.com/openguardrails/openguardrails",
    "description": "The vendor-neutral protocol for AI agent safety & security — and the neutral benchmark that ranks the vendors.",
@@ -3158,6 +3130,34 @@
    "source": "topic",
    "activity": "🟢 活跃",
    "type": "项目"
+  },
+  {
+   "full_name": "Sanqi-normal/dsh-webui-market-plugin",
+   "url": "https://github.com/Sanqi-normal/dsh-webui-market-plugin",
+   "description": "dsh Web GUI 社区插件市场：浏览 awesome-dsh-plugin.com 插件目录，一键安装/卸载到 profile。Community plugin market for the DeepSeek Harness (dsh) web GUI: browse, install and uninstall plugins into a profile.",
+   "stars": 27,
+   "forks": 1,
+   "language": "JavaScript",
+   "topics": [
+    "agent-harness",
+    "deepseek",
+    "dsh-plugin",
+    "plugin-market",
+    "ui",
+    "web"
+   ],
+   "archived": false,
+   "fork": false,
+   "pushed_at": "2026-08-14T14:13:11Z",
+   "created_at": "2026-08-13T18:59:30Z",
+   "license": "MIT",
+   "owner": "Sanqi-normal",
+   "homepage": "",
+   "category": "webui",
+   "note": "",
+   "source": "auto",
+   "activity": "🟢 活跃",
+   "type": "插件"
   },
   {
    "full_name": "zenx0x/allinluna",
@@ -3448,7 +3448,7 @@
    ],
    "archived": false,
    "fork": false,
-   "pushed_at": "2026-08-15T01:59:24Z",
+   "pushed_at": "2026-08-15T02:05:42Z",
    "created_at": "2026-08-14T01:18:04Z",
    "license": "MIT",
    "owner": "Fishquito7",
@@ -3462,7 +3462,7 @@
   {
    "full_name": "like-study1/Oh-My-DSH",
    "url": "https://github.com/like-study1/Oh-My-DSH",
-   "description": "🐳 DeepSeek Harness 插件聚合社区 — 自动同步 dsh-plugin 生态 · 精选目录 · 每 8 小时自动维护 | Oh-My-DSH: a community-maintained catalog of DeepSeek Harness plugins, auto-synced from the dsh-plugin topic",
+   "description": "🐳 DeepSeek Harness 插件聚合社区 — 自动同步 dsh-plugin 生态 · 精选目录 · 每 4 小时自动维护 | Oh-My-DSH: a community-maintained catalog of DeepSeek Harness plugins, auto-synced from the dsh-plugin topic",
    "stars": 23,
    "forks": 4,
    "language": "Python",
@@ -3479,7 +3479,7 @@
    ],
    "archived": false,
    "fork": false,
-   "pushed_at": "2026-08-15T02:04:32Z",
+   "pushed_at": "2026-08-15T02:06:01Z",
    "created_at": "2026-08-14T01:14:24Z",
    "license": "MIT",
    "owner": "like-study1",
@@ -8025,6 +8025,29 @@
    "type": "插件"
   },
   {
+   "full_name": "YELEBAI/dsh-plugin-marketplace",
+   "url": "https://github.com/YELEBAI/dsh-plugin-marketplace",
+   "description": "Verified plugin marketplace and autonomous registry for DeepSeek Harness",
+   "stars": 7,
+   "forks": 1,
+   "language": "JavaScript",
+   "topics": [
+    "dsh-plugin"
+   ],
+   "archived": false,
+   "fork": false,
+   "pushed_at": "2026-08-15T01:54:02Z",
+   "created_at": "2026-08-13T22:30:42Z",
+   "license": "MIT",
+   "owner": "YELEBAI",
+   "homepage": "",
+   "category": "devtools",
+   "note": "",
+   "source": "auto",
+   "activity": "🟢 活跃",
+   "type": "插件"
+  },
+  {
    "full_name": "Zhenyu98/dsh-context-doctor",
    "url": "https://github.com/Zhenyu98/dsh-context-doctor",
    "description": "DSH 上下文注入审计插件：统计 AGENTS.md 指令链/技能目录/工具 schema 的 token 成本，检测重复与冲突；Web UI 圆环面板 + context_audit 工具。Context Doctor for DeepSeek Harness: audit instruction-chain / skill catalog / tool schemas token cost.",
@@ -8075,6 +8098,34 @@
    "owner": "1841220388zzzcccxxx-star",
    "homepage": "",
    "category": "vision",
+   "note": "",
+   "source": "auto",
+   "activity": "🟢 活跃",
+   "type": "插件"
+  },
+  {
+   "full_name": "AHGGG/dsh-side-chat",
+   "url": "https://github.com/AHGGG/dsh-side-chat",
+   "description": "Codex-style Side Chat for DeepSeek Harness — select text, ask follow-up questions in a focused side conversation, and keep the main chat uninterrupted.",
+   "stars": 6,
+   "forks": 0,
+   "language": "TypeScript",
+   "topics": [
+    "codex",
+    "codex-desktop",
+    "dsh",
+    "dsh-plugin",
+    "side-chat",
+    "sidechat"
+   ],
+   "archived": false,
+   "fork": false,
+   "pushed_at": "2026-08-15T00:49:35Z",
+   "created_at": "2026-08-14T05:03:24Z",
+   "license": "MIT",
+   "owner": "AHGGG",
+   "homepage": "",
+   "category": "code",
    "note": "",
    "source": "auto",
    "activity": "🟢 活跃",
@@ -9015,29 +9066,6 @@
    "type": "插件"
   },
   {
-   "full_name": "YELEBAI/dsh-plugin-marketplace",
-   "url": "https://github.com/YELEBAI/dsh-plugin-marketplace",
-   "description": "Verified plugin marketplace and autonomous registry for DeepSeek Harness",
-   "stars": 6,
-   "forks": 1,
-   "language": "JavaScript",
-   "topics": [
-    "dsh-plugin"
-   ],
-   "archived": false,
-   "fork": false,
-   "pushed_at": "2026-08-15T01:54:02Z",
-   "created_at": "2026-08-13T22:30:42Z",
-   "license": "MIT",
-   "owner": "YELEBAI",
-   "homepage": "",
-   "category": "devtools",
-   "note": "",
-   "source": "auto",
-   "activity": "🟢 活跃",
-   "type": "插件"
-  },
-  {
    "full_name": "yequ172672/dsh-codex-subscription",
    "url": "https://github.com/yequ172672/dsh-codex-subscription",
    "description": "DSH 插件:直接复用 Codex CLI 本地登录订阅凭证,在 DeepSeek Harness 中使用 ChatGPT 订阅模型,无需 API Key | DSH plugin: reuse your Codex CLI local subscription login to use ChatGPT subscription models in DeepSeek Harness, no API key required",
@@ -9246,34 +9274,6 @@
    "source": "auto",
    "activity": "🟢 活跃",
    "type": "渠道"
-  },
-  {
-   "full_name": "AHGGG/dsh-side-chat",
-   "url": "https://github.com/AHGGG/dsh-side-chat",
-   "description": "Codex-style Side Chat for DeepSeek Harness — select text, ask follow-up questions in a focused side conversation, and keep the main chat uninterrupted.",
-   "stars": 5,
-   "forks": 0,
-   "language": "TypeScript",
-   "topics": [
-    "codex",
-    "codex-desktop",
-    "dsh",
-    "dsh-plugin",
-    "side-chat",
-    "sidechat"
-   ],
-   "archived": false,
-   "fork": false,
-   "pushed_at": "2026-08-15T00:49:35Z",
-   "created_at": "2026-08-14T05:03:24Z",
-   "license": "MIT",
-   "owner": "AHGGG",
-   "homepage": "",
-   "category": "code",
-   "note": "",
-   "source": "auto",
-   "activity": "🟢 活跃",
-   "type": "插件"
   },
   {
    "full_name": "amlyczz/dsh-lark-link",
@@ -10158,6 +10158,31 @@
    "owner": "LeemanCheung",
    "homepage": "",
    "category": "webui",
+   "note": "",
+   "source": "auto",
+   "activity": "🟢 活跃",
+   "type": "插件"
+  },
+  {
+   "full_name": "liceses/dsh-gitbash-preset",
+   "url": "https://github.com/liceses/dsh-gitbash-preset",
+   "description": "DeepSeek Harness 插件：一键安装「极简模式 (Git Bash)」agent preset —— 把 DSH 自带极简模式中的 bash 调用映射到 Git for Windows 的 bash（MSYS），让 Windows 上的极简模式真正可用。",
+   "stars": 5,
+   "forks": 0,
+   "language": "JavaScript",
+   "topics": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins"
+   ],
+   "archived": false,
+   "fork": false,
+   "pushed_at": "2026-08-15T01:18:45Z",
+   "created_at": "2026-08-15T01:02:32Z",
+   "license": "MIT",
+   "owner": "liceses",
+   "homepage": "",
+   "category": "agent",
    "note": "",
    "source": "auto",
    "activity": "🟢 活跃",
@@ -13008,31 +13033,6 @@
    "type": "插件"
   },
   {
-   "full_name": "liceses/dsh-gitbash-preset",
-   "url": "https://github.com/liceses/dsh-gitbash-preset",
-   "description": "DeepSeek Harness 插件：一键安装「极简模式 (Git Bash)」agent preset —— 把 DSH 自带极简模式中的 bash 调用映射到 Git for Windows 的 bash（MSYS），让 Windows 上的极简模式真正可用。",
-   "stars": 4,
-   "forks": 0,
-   "language": "JavaScript",
-   "topics": [
-    "dsh",
-    "dsh-plugin",
-    "dsh-plugins"
-   ],
-   "archived": false,
-   "fork": false,
-   "pushed_at": "2026-08-15T01:18:45Z",
-   "created_at": "2026-08-15T01:02:32Z",
-   "license": "MIT",
-   "owner": "liceses",
-   "homepage": "",
-   "category": "agent",
-   "note": "",
-   "source": "auto",
-   "activity": "🟢 活跃",
-   "type": "插件"
-  },
-  {
    "full_name": "linshule/dsh-balance",
    "url": "https://github.com/linshule/dsh-balance",
    "description": "DeepSeek API 账户余额实时显示插件（DSH Web GUI）：可拖拽左下角余额徽章 + 设置页",
@@ -13183,7 +13183,7 @@
    ],
    "archived": false,
    "fork": false,
-   "pushed_at": "2026-08-15T01:48:19Z",
+   "pushed_at": "2026-08-15T02:07:10Z",
    "created_at": "2026-08-14T11:38:54Z",
    "license": "NOASSERTION",
    "owner": "Mars-Sea",
@@ -16050,6 +16050,32 @@
    "type": "渠道"
   },
   {
+   "full_name": "Civitasv/dsh-plugin-diff-review",
+   "url": "https://github.com/Civitasv/dsh-plugin-diff-review",
+   "description": "Diff Review Plugin for DeepSeek Harness",
+   "stars": 3,
+   "forks": 0,
+   "language": "JavaScript",
+   "topics": [
+    "deepseek",
+    "deepseek-harness",
+    "diff",
+    "dsh-plugin"
+   ],
+   "archived": false,
+   "fork": false,
+   "pushed_at": "2026-08-14T19:11:19Z",
+   "created_at": "2026-08-14T13:05:42Z",
+   "license": "MIT",
+   "owner": "Civitasv",
+   "homepage": "",
+   "category": "code",
+   "note": "",
+   "source": "auto",
+   "activity": "🟢 活跃",
+   "type": "插件"
+  },
+  {
    "full_name": "clearkurt/dsh-win-terminal-inspector",
    "url": "https://github.com/clearkurt/dsh-win-terminal-inspector",
    "description": "Windows (win32) terminal inspection for DSH persistent/PTY shells",
@@ -18075,7 +18101,7 @@
    ],
    "archived": false,
    "fork": false,
-   "pushed_at": "2026-08-15T01:52:36Z",
+   "pushed_at": "2026-08-15T02:07:25Z",
    "created_at": "2026-08-14T10:21:45Z",
    "license": "MIT",
    "owner": "Jiao-XXX",
@@ -24487,6 +24513,32 @@
    "type": "渠道"
   },
   {
+   "full_name": "cyzlmh/dsh-cyber-sec",
+   "url": "https://github.com/cyzlmh/dsh-cyber-sec",
+   "description": "Authorized security-assessment profile for DeepSeek Harness: scoped network tools, container-backed shell, authorization guard, durable evidence, 21 security skills, 7 specialist subagents",
+   "stars": 2,
+   "forks": 0,
+   "language": "TypeScript",
+   "topics": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "penetration-testing",
+    "security-assessment"
+   ],
+   "archived": false,
+   "fork": false,
+   "pushed_at": "2026-08-14T06:58:17Z",
+   "created_at": "2026-08-14T06:23:33Z",
+   "license": "Apache-2.0",
+   "owner": "cyzlmh",
+   "homepage": "",
+   "category": "agent",
+   "note": "授权渗透测试 profile bundle：容器化 bash + 授权 guard + SQLite",
+   "source": "topic",
+   "activity": "🟢 活跃",
+   "type": "插件"
+  },
+  {
    "full_name": "dpskh/dsh-checkpoint",
    "url": "https://github.com/dpskh/dsh-checkpoint",
    "description": "Mark an exploration start in the session; pairs with rewind to fold the exploration out of context.",
@@ -24680,7 +24732,7 @@
    "homepage": "",
    "category": "data",
    "note": "会话关系型数据库持久化",
-   "source": "topic",
+   "source": "curated",
    "activity": "🟢 活跃",
    "type": "插件"
   },
@@ -24733,7 +24785,7 @@
    "homepage": "",
    "category": "code",
    "note": "DSH GitHub 集成插件",
-   "source": "topic",
+   "source": "curated",
    "activity": "🟢 活跃",
    "type": "插件"
   },

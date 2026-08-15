@@ -2,7 +2,7 @@ name: Sync Plugin Index
 
 on:
   schedule:
-    - cron: "17 */8 * * *"   # every 8 hours
+    - cron: "17 */4 * * *"   # every 4 hours
   workflow_dispatch:
   push:
     branches: [main]
