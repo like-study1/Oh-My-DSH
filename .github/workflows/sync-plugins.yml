@@ -34,8 +34,8 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "like-study1"
+          git config user.email "kel551384@gmail.com"
           git add README.md PLUGINS.md CHANGELOG.md data docs
           if git diff --cached --quiet; then
             echo "No changes to commit"
