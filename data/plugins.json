@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-15T09:49:00.725575+08:00",
- "count": 910,
+ "generated_at": "2026-08-15T09:49:27.624898+08:00",
+ "count": 912,
  "items": [
   {
    "full_name": "deepseek-ai/deepseek-harness",
    "url": "https://github.com/deepseek-ai/deepseek-harness",
    "description": "DeepSeek Harness: Everything is a Plugin.",
-   "stars": 96767,
-   "forks": 9014,
+   "stars": 96776,
+   "forks": 9017,
    "language": "TypeScript",
    "topics": [
     "ai-agents",
@@ -367,8 +367,8 @@
    "full_name": "anywhere-labs/deepseek-harness-desktop",
    "url": "https://github.com/anywhere-labs/deepseek-harness-desktop",
    "description": "为 DeepSeek Harness (DSH) 生态打造的现代化桌面端体验",
-   "stars": 2081,
-   "forks": 108,
+   "stars": 2082,
+   "forks": 109,
    "language": "TypeScript",
    "topics": [
     "deepseek",
@@ -406,7 +406,7 @@
    ],
    "archived": false,
    "fork": false,
-   "pushed_at": "2026-08-15T01:45:16Z",
+   "pushed_at": "2026-08-15T01:49:19Z",
    "created_at": "2026-08-12T05:15:20Z",
    "license": "Apache-2.0",
    "owner": "zhu1090093659",
@@ -901,7 +901,7 @@
    "full_name": "xiaobright/dsh-anchored-standard",
    "url": "https://github.com/xiaobright/dsh-anchored-standard",
    "description": "Two-phase DeepSeek Harness preset: Minimal-aligned bootstrap, then full Standard tools (Project2 98/99)",
-   "stars": 481,
+   "stars": 482,
    "forks": 12,
    "language": "JavaScript",
    "topics": [
@@ -2247,6 +2247,33 @@
    "type": "插件"
   },
   {
+   "full_name": "ysr666/dsh-vision-router",
+   "url": "https://github.com/ysr666/dsh-vision-router",
+   "description": "Eyes for text-only DeepSeek Harness agents: built-in free vision chain (no key) + pixel-level vision tools (Q&A, grounding, crop, pixel diff, colors, OCR, SVG trace, cutout, screenshots). One-command install, no Python, image turns work like ordinary tool-calling turns.",
+   "stars": 62,
+   "forks": 8,
+   "language": "JavaScript",
+   "topics": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "multimodal",
+    "vision"
+   ],
+   "archived": false,
+   "fork": false,
+   "pushed_at": "2026-08-15T01:27:54Z",
+   "created_at": "2026-08-13T18:57:47Z",
+   "license": "MIT",
+   "owner": "ysr666",
+   "homepage": "https://github.com/ysr666/dsh-vision-router",
+   "category": "vision",
+   "note": "",
+   "source": "auto",
+   "activity": "🟢 活跃",
+   "type": "插件"
+  },
+  {
    "full_name": "hikariming/dshfind",
    "url": "https://github.com/hikariming/dshfind",
    "description": "DSH (DeepSeek Harness) 原理学习、插件市场与最佳实践 · Learn DSH principles, plugin marketplace & best practices",
@@ -2268,33 +2295,6 @@
    "category": "devtools",
    "note": "DSH 学习与分享社区",
    "source": "topic",
-   "activity": "🟢 活跃",
-   "type": "插件"
-  },
-  {
-   "full_name": "ysr666/dsh-vision-router",
-   "url": "https://github.com/ysr666/dsh-vision-router",
-   "description": "Eyes for text-only DeepSeek Harness agents: built-in free vision chain (no key) + pixel-level vision tools (Q&A, grounding, crop, pixel diff, colors, OCR, SVG trace, cutout, screenshots). One-command install, no Python, image turns work like ordinary tool-calling turns.",
-   "stars": 61,
-   "forks": 8,
-   "language": "JavaScript",
-   "topics": [
-    "deepseek-harness",
-    "dsh",
-    "dsh-plugin",
-    "multimodal",
-    "vision"
-   ],
-   "archived": false,
-   "fork": false,
-   "pushed_at": "2026-08-15T01:27:54Z",
-   "created_at": "2026-08-13T18:57:47Z",
-   "license": "MIT",
-   "owner": "ysr666",
-   "homepage": "https://github.com/ysr666/dsh-vision-router",
-   "category": "vision",
-   "note": "",
-   "source": "auto",
    "activity": "🟢 活跃",
    "type": "插件"
   },
@@ -5605,6 +5605,29 @@
    "type": "插件"
   },
   {
+   "full_name": "HuanLinOTO/dsh-plugin-pet-rs",
+   "url": "https://github.com/HuanLinOTO/dsh-plugin-pet-rs",
+   "description": "DSH 桌宠（Rust 版），5 态鲸鱼 + 双 SSE 实时推送 + 透明置顶窗 + 系统托盘，三端支持 | DSH desktop pet (Rust edition): 5-state whale + dual SSE real-time push + transparent always-on-top window + tray, cross-platform",
+   "stars": 10,
+   "forks": 1,
+   "language": "Rust",
+   "topics": [
+    "dsh-plugin"
+   ],
+   "archived": false,
+   "fork": false,
+   "pushed_at": "2026-08-14T06:26:26Z",
+   "created_at": "2026-08-10T05:09:06Z",
+   "license": "NOASSERTION",
+   "owner": "HuanLinOTO",
+   "homepage": "",
+   "category": "skin",
+   "note": "",
+   "source": "auto",
+   "activity": "🟢 活跃",
+   "type": "插件"
+  },
+  {
    "full_name": "isomoes/ikanban",
    "url": "https://github.com/isomoes/ikanban",
    "description": "iKanban 是一个由 OpenCode 驱动的多智能体（multi-agent）编码工作空间。它专为跨项目地驱动、审查和协调并行的智能体工作而构建，将会话管理、差异（diff）审查以及项目感知的导航集于一处。iKanban is a Web interface for the OpenCode AI coding agent. It unifies chat, terminal, and board workflows in a single interface so teams can plan, execute, and track coding tasks.",
@@ -6117,29 +6140,6 @@
    "source": "auto",
    "activity": "🟢 活跃",
    "type": "渠道"
-  },
-  {
-   "full_name": "HuanLinOTO/dsh-plugin-pet-rs",
-   "url": "https://github.com/HuanLinOTO/dsh-plugin-pet-rs",
-   "description": "DSH 桌宠（Rust 版），5 态鲸鱼 + 双 SSE 实时推送 + 透明置顶窗 + 系统托盘，三端支持 | DSH desktop pet (Rust edition): 5-state whale + dual SSE real-time push + transparent always-on-top window + tray, cross-platform",
-   "stars": 9,
-   "forks": 1,
-   "language": "Rust",
-   "topics": [
-    "dsh-plugin"
-   ],
-   "archived": false,
-   "fork": false,
-   "pushed_at": "2026-08-14T06:26:26Z",
-   "created_at": "2026-08-10T05:09:06Z",
-   "license": "NOASSERTION",
-   "owner": "HuanLinOTO",
-   "homepage": "",
-   "category": "skin",
-   "note": "",
-   "source": "auto",
-   "activity": "🟢 活跃",
-   "type": "插件"
   },
   {
    "full_name": "keleus/deepseek-pet",
@@ -16373,9 +16373,9 @@
    "license": "MIT",
    "owner": "dongsheng123132",
    "homepage": "",
-   "category": "agent",
-   "note": "",
-   "source": "auto",
+   "category": "devtools",
+   "note": "证据优先的 ASCII DXF 检视与确定性 CAD 规则审查：源码哈希实体、图层、坐标与绘图规则证据，离线可用",
+   "source": "curated",
    "activity": "🟢 活跃",
    "type": "插件"
   },
@@ -24348,6 +24348,60 @@
    "type": "插件"
   },
   {
+   "full_name": "cmfok/dsh-feishucard",
+   "url": "https://github.com/cmfok/dsh-feishucard",
+   "description": "DeepSeek Harness <-> Feishu (Lark) bridge with streaming reply card / 自研 DSH 飞书桥：长连接 + 流式回复卡片（工具面板/状态符号/限流熔断兜底）",
+   "stars": 2,
+   "forks": 0,
+   "language": "JavaScript",
+   "topics": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "feishu",
+    "lark"
+   ],
+   "archived": false,
+   "fork": false,
+   "pushed_at": "2026-08-14T20:05:27Z",
+   "created_at": "2026-08-14T18:47:45Z",
+   "license": "MIT",
+   "owner": "cmfok",
+   "homepage": "",
+   "category": "channel",
+   "note": "DSH × 飞书桥：官方 SDK 长连接 + 流式回复卡片，per-chat 会话与现场复用保留上下文，npm dsh-feishucard@0.1.0",
+   "source": "curated",
+   "activity": "🟢 活跃",
+   "type": "渠道"
+  },
+  {
+   "full_name": "cyzlmh/dsh-cyber-sec",
+   "url": "https://github.com/cyzlmh/dsh-cyber-sec",
+   "description": "Authorized security-assessment profile for DeepSeek Harness: scoped network tools, container-backed shell, authorization guard, durable evidence, 21 security skills, 7 specialist subagents",
+   "stars": 2,
+   "forks": 0,
+   "language": "TypeScript",
+   "topics": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "penetration-testing",
+    "security-assessment"
+   ],
+   "archived": false,
+   "fork": false,
+   "pushed_at": "2026-08-14T06:58:17Z",
+   "created_at": "2026-08-14T06:23:33Z",
+   "license": "Apache-2.0",
+   "owner": "cyzlmh",
+   "homepage": "",
+   "category": "agent",
+   "note": "授权渗透测试 profile bundle：容器化 bash + 授权 guard + SQLite",
+   "source": "topic",
+   "activity": "🟢 活跃",
+   "type": "插件"
+  },
+  {
    "full_name": "dpskh/dsh-checkpoint",
    "url": "https://github.com/dpskh/dsh-checkpoint",
    "description": "Mark an exploration start in the session; pairs with rewind to fold the exploration out of context.",
@@ -24541,7 +24595,7 @@
    "homepage": "",
    "category": "data",
    "note": "会话关系型数据库持久化",
-   "source": "topic",
+   "source": "curated",
    "activity": "🟢 活跃",
    "type": "插件"
   },
@@ -24594,7 +24648,7 @@
    "homepage": "",
    "category": "code",
    "note": "DSH GitHub 集成插件",
-   "source": "topic",
+   "source": "curated",
    "activity": "🟢 活跃",
    "type": "插件"
   },

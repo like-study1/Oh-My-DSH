@@ -1272,6 +1272,16 @@
       "repo": "WeirdSky924/project-change-router-skill",
       "category": "agent",
       "note": "项目级变更路由与复用治理：面向 AI 编码代理的变更治理技能"
+    },
+    {
+      "repo": "dongsheng123132/dsh-cad-review",
+      "category": "devtools",
+      "note": "证据优先的 ASCII DXF 检视与确定性 CAD 规则审查：源码哈希实体、图层、坐标与绘图规则证据，离线可用"
+    },
+    {
+      "repo": "cmfok/dsh-feishucard",
+      "category": "channel",
+      "note": "DSH × 飞书桥：官方 SDK 长连接 + 流式回复卡片，per-chat 会话与现场复用保留上下文，npm dsh-feishucard@0.1.0"
     }
   ]
 }

@@ -19,7 +19,7 @@ This repository sources data from the GitHub `dsh-plugin` topic, performs period
 ## 2. Ecosystem Statistics
 
 <!-- OMD:stats:START -->
-As of 2026-08-15 09:42 (Beijing Time, UTC+8), this directory curates **909** plugins across **1000** ecosystem repositories, with **267,995** cumulative stars.
+As of 2026-08-15 09:49 (Beijing Time, UTC+8), this directory curates **912** plugins across **1000** ecosystem repositories, with **268,220** cumulative stars.
 
 ### Top 10 Curated Plugins
 
@@ -28,7 +28,7 @@ As of 2026-08-15 09:42 (Beijing Time, UTC+8), this directory curates **909** plu
 
 ### Category Breakdown
 
-`Messaging 106` · `Vision & Multimodal 52` · `Browser & Web 54` · `Web UI Enhancement 215` · `Themes & Fun 73` · `Agent Capabilities 236` · `Coding & Development 70` · `Files & Data 32` · `Dev Tools & Tutorials 27` · `Collections & Distros 25` · `Ecosystem Projects 19`
+`Messaging 108` · `Vision & Multimodal 53` · `Browser & Web 54` · `Web UI Enhancement 215` · `Themes & Fun 73` · `Agent Capabilities 235` · `Coding & Development 70` · `Files & Data 32` · `Dev Tools & Tutorials 28` · `Collections & Distros 25` · `Ecosystem Projects 19`
 
 <!-- OMD:stats:END -->
 
