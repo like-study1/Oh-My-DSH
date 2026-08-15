@@ -26,26 +26,26 @@ DeepSeek Harness（以下简称 DSH）是由深度求索（DeepSeek AI）开源�
 ## 三、生态统计
 
 <!-- OMD:stats:START -->
-截至 2026-08-15 16:46（北京时间），本目录收录精选插件 **1031** 个，监测生态仓库 **1463** 个，累计获得 Star **285307**。
+截至 2026-08-15 21:00（北京时间），本目录收录精选插件 **1092** 个，监测生态仓库 **1510** 个，累计获得 Star **298628**。
 
 ### 精选插件十强
 
 | 序号 | 插件 | Star | 类型 | 说明 |
 |---|---|---|---|---|
-| 1 | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 104396 | 项目 | DeepSeek Harness 官方仓库：Everything is a Plugin. |
-| 2 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | 86576 | 渠道 | 🎨 The open-source Claude Design alternative. 🖥️ Local-first desktop… |
-| 3 | [titanwings/colleague-skill](https://github.com/titanwings/colleague-skill) | 22225 | 项目 | 「同事」Skill：将离别化为温暖的数字生命 1.0 |
-| 4 | [tt-a1i/archify](https://github.com/tt-a1i/archify) | 12738 | 插件 | Agent skill for beautiful, verifiable architecture, workflow, seque… |
-| 5 | [Devin-AXIS/iPolloWork](https://github.com/Devin-AXIS/iPolloWork) | 4067 | 项目 | 下一代开源 AI 工作台：自进化 Agent 运行时，集成 DSH 子代理 |
-| 6 | [crafter-station/petdex](https://github.com/crafter-station/petdex) | 3814 | 插件 | A public gallery of animated pets for Codex, Claude Code, DeepSeek … |
-| 7 | [anywhere-labs/deepseek-harness-desktop](https://github.com/anywhere-labs/deepseek-harness-desktop) | 3563 | 工具 | 为 DeepSeek Harness (DSH) 生态打造的现代化桌面端体验 |
-| 8 | [strukto-ai/mirage](https://github.com/strukto-ai/mirage) | 3429 | 插件 | The World's First Unified Virtual Filesystem For AI Agents |
-| 9 | [foryourhealth111-pixel/Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) | 2793 | 技能 | VibeSkills is a general-purpose Skill that automatically routes loc… |
-| 10 | [imsai-sh/zhuzhiliao](https://github.com/imsai-sh/zhuzhiliao) | 2790 | 插件 | 竹知了 —— 一转就哇哇叫的传统玩具，Web 模拟版。零依赖单文件，真实录音采样，移动端优先。 |
+| 1 | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 108380 | 项目 | DeepSeek Harness 官方仓库：Everything is a Plugin. |
+| 2 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | 86700 | 渠道 | 🎨 The open-source Claude Design alternative. 🖥️ Local-first desktop… |
+| 3 | [titanwings/colleague-skill](https://github.com/titanwings/colleague-skill) | 22313 | 项目 | 「同事」Skill：将离别化为温暖的数字生命 1.0 |
+| 4 | [tt-a1i/archify](https://github.com/tt-a1i/archify) | 12832 | 插件 | Agent skill for beautiful, verifiable architecture, workflow, seque… |
+| 5 | [ZSeven-W/openpencil](https://github.com/ZSeven-W/openpencil) | 4904 | 插件 | The world's first open-source AI-native vector design tool and the … |
+| 6 | [anywhere-labs/deepseek-harness-desktop](https://github.com/anywhere-labs/deepseek-harness-desktop) | 4461 | 工具 | 为 DeepSeek Harness (DSH) 生态打造的现代化桌面端体验 |
+| 7 | [Devin-AXIS/iPolloWork](https://github.com/Devin-AXIS/iPolloWork) | 4090 | 项目 | 下一代开源 AI 工作台：自进化 Agent 运行时，集成 DSH 子代理 |
+| 8 | [crafter-station/petdex](https://github.com/crafter-station/petdex) | 3820 | 插件 | A public gallery of animated pets for Codex, Claude Code, DeepSeek … |
+| 9 | [strukto-ai/mirage](https://github.com/strukto-ai/mirage) | 3438 | 插件 | The World's First Unified Virtual Filesystem For AI Agents |
+| 10 | [foryourhealth111-pixel/Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) | 2802 | 技能 | VibeSkills is a general-purpose Skill that automatically routes loc… |
 
 ### 分类构成
 
-`消息通讯 118` · `视觉与多模态 64` · `浏览器与网络 61` · `Web UI 增强 241` · `皮肤与娱乐 88` · `Agent 能力 268` · `编码开发 77` · `文件与数据 33` · `开发工具与教程 34` · `精选合集与发行版 27` · `生态项目 20`
+`消息通讯 123` · `视觉与多模态 69` · `浏览器与网络 66` · `Web UI 增强 257` · `皮肤与娱乐 95` · `Agent 能力 286` · `编码开发 80` · `文件与数据 33` · `开发工具与教程 35` · `精选合集与发行版 27` · `生态项目 21`
 
 <!-- OMD:stats:END -->
 
