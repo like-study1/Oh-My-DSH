@@ -1237,6 +1237,11 @@
       "note": "OpenCodeGo 剩余额度监视器：输入框右下角呼吸灯（按剩余额度绿/黄/红）+ 液态玻璃面板（滚动/周/月三窗口用量与重置时间），每 30 秒自动刷新，Key 自动读取 DSH 凭据",
       "repo": "BeiZi6/dsh-opencodego-usage",
       "keep": true
+    },
+    "dsh-vision-bridge": {
+      "category": "vision",
+      "note": "把 Composer 附带图片交给 OpenAI 兼容视觉模型自动描述，转成文本交给 DeepSeek 等纯文本模型",
+      "repo": "ximengxiaolan/dsh-vision-bridge"
     }
   },
   "manual": [

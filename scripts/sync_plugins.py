@@ -115,29 +115,33 @@ def api_get(url, token, retries=3):
 
 def fetch_snapshot(token):
     items, seen = [], set()
-    for page in range(1, 11):
-        url = (f"{API}/search/repositories?q=topic:dsh-plugin&sort=stars"
-               f"&order=desc&per_page=100&page={page}")
-        data = api_get(url, token)
-        if not data or not data.get("items"):
-            break
-        for it in data["items"]:
-            if it["full_name"] in seen:
-                continue
-            seen.add(it["full_name"])
-            items.append({
-                "full_name": it["full_name"], "url": it["html_url"],
-                "description": (it.get("description") or "").strip(),
-                "stars": it.get("stargazers_count", 0), "forks": it.get("forks_count", 0),
-                "language": it.get("language"), "topics": it.get("topics", []),
-                "archived": it.get("archived", False), "fork": it.get("fork", False),
-                "pushed_at": it.get("pushed_at", ""), "created_at": it.get("created_at", ""),
-                "license": (it.get("license") or {}).get("spdx_id"),
-                "owner": it["owner"]["login"], "homepage": it.get("homepage") or "",
-            })
-        log(f"  page {page}: cumulative {len(items)}")
-        if len(items) >= data.get("total_count", 0):
-            break
+    queries = ["topic:dsh-plugin", "topic:dsh-plugin stars:0..4"]
+    for query in queries:
+        q_total = None
+        for page in range(1, 11):
+            url = (f"{API}/search/repositories?q={urllib.parse.quote(query)}&sort=stars"
+                   f"&order=desc&per_page=100&page={page}")
+            data = api_get(url, token)
+            if not data or not data.get("items"):
+                break
+            q_total = data.get("total_count", 0)
+            for it in data["items"]:
+                if it["full_name"] in seen:
+                    continue
+                seen.add(it["full_name"])
+                items.append({
+                    "full_name": it["full_name"], "url": it["html_url"],
+                    "description": (it.get("description") or "").strip(),
+                    "stars": it.get("stargazers_count", 0), "forks": it.get("forks_count", 0),
+                    "language": it.get("language"), "topics": it.get("topics", []),
+                    "archived": it.get("archived", False), "fork": it.get("fork", False),
+                    "pushed_at": it.get("pushed_at", ""), "created_at": it.get("created_at", ""),
+                    "license": (it.get("license") or {}).get("spdx_id"),
+                    "owner": it["owner"]["login"], "homepage": it.get("homepage") or "",
+                })
+            log(f"  [{query}] page {page}: cumulative {len(items)}")
+            if page * 100 >= q_total:
+                break
     return items
 
 def repo_entry(data):
@@ -221,12 +225,12 @@ def main():
     dropped = []
     # 1) overrides that live in the snapshot
     for name, ov in overrides.items():
-        ent = snap_by_full.get(ov.get("repo", "").lower()) or snap_by_name.get(name.lower())
+        ent = snap_by_full.get(ov.get("repo", "").lower())
         if ent:
             entries[ent["full_name"]] = {**ent, "category": ov.get("category"), "note": ov.get("note") or "", "source": "topic"}
     # 2) overrides / manual entries outside the snapshot -> repo API
     for name, ov in overrides.items():
-        if snap_by_full.get(ov.get("repo", "").lower()) or name.lower() in snap_by_name:
+        if snap_by_full.get(ov.get("repo", "").lower()):
             continue
         data = api_get(f"{API}/repos/{ov['repo']}", token)
         if not data or data.get("archived"):
@@ -255,6 +259,12 @@ def main():
     log(f"dropped (private/archived): {len(dropped)}")
     if dropped: log("  " + ", ".join(dropped[:20]))
 
+    # sanitize upstream-corrupted descriptions (runs of 3+ question marks)
+    for ent in entries.values():
+        if ent.get("note"):
+            ent["note"] = re.sub(r"\?{3,}", "", ent["note"]).strip()
+        if ent.get("description"):
+            ent["description"] = re.sub(r"\?{3,}", "", ent["description"]).strip()
     # categorize + decorate
     for ent in entries.values():
         ent["category"] = ent.get("category") or classify(ent["full_name"], ent["description"])

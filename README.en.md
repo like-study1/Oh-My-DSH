@@ -19,26 +19,26 @@ This repository sources data from the GitHub `dsh-plugin` topic, performs period
 ## 2. Ecosystem Statistics
 
 <!-- OMD:stats:START -->
-As of 2026-08-15 10:07 (Beijing Time, UTC+8), this directory curates **917** plugins across **1000** ecosystem repositories, with **268,795** cumulative stars.
+As of 2026-08-15 14:10 (Beijing Time, UTC+8), this directory curates **983** plugins across **1430** ecosystem repositories, with **278,146** cumulative stars.
 
 ### Top 10 Curated Plugins
 
 | # | Plugin | Stars | Type | Description |
 |---|---|---|---|---|
-| 1 | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 97128 | Project | DeepSeek Harness 官方仓库：Everything is a Plugin. |
-| 2 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | 86365 | Channel | 🎨 The open-source Claude Design alternative. 🖥️ Local-first desktop… |
-| 3 | [titanwings/colleague-skill](https://github.com/titanwings/colleague-skill) | 22067 | Project | 「同事」Skill：将离别化为温暖的数字生命 1.0 |
-| 4 | [tt-a1i/archify](https://github.com/tt-a1i/archify) | 12579 | Plugin | Agent skill for beautiful, verifiable architecture, workflow, seque… |
-| 5 | [Devin-AXIS/iPolloWork](https://github.com/Devin-AXIS/iPolloWork) | 4018 | Project | 下一代开源 AI 工作台：自进化 Agent 运行时，集成 DSH 子代理 |
-| 6 | [crafter-station/petdex](https://github.com/crafter-station/petdex) | 3793 | Plugin | A public gallery of animated pets for Codex, Claude Code, DeepSeek … |
-| 7 | [strukto-ai/mirage](https://github.com/strukto-ai/mirage) | 3414 | Plugin | The World's First Unified Virtual Filesystem For AI Agents |
-| 8 | [imsai-sh/zhuzhiliao](https://github.com/imsai-sh/zhuzhiliao) | 2776 | Plugin | 竹知了 —— 一转就哇哇叫的传统玩具，Web 模拟版。零依赖单文件，真实录音采样，移动端优先。 |
-| 9 | [foryourhealth111-pixel/Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) | 2765 | Skill | VibeSkills is a general-purpose Skill that automatically routes loc… |
-| 10 | [whiteguo233/OpenBiliClaw](https://github.com/whiteguo233/OpenBiliClaw) | 2376 | Project | 本地优先的跨平台 AI 内容发现 Agent：B站、小红书、抖音、YouTube、X、知乎、Reddit |
+| 1 | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 101462 | Project | DeepSeek Harness 官方仓库：Everything is a Plugin. |
+| 2 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | 86491 | Channel | 🎨 The open-source Claude Design alternative. 🖥️ Local-first desktop… |
+| 3 | [titanwings/colleague-skill](https://github.com/titanwings/colleague-skill) | 22156 | Project | 「同事」Skill：将离别化为温暖的数字生命 1.0 |
+| 4 | [tt-a1i/archify](https://github.com/tt-a1i/archify) | 12673 | Plugin | Agent skill for beautiful, verifiable architecture, workflow, seque… |
+| 5 | [Devin-AXIS/iPolloWork](https://github.com/Devin-AXIS/iPolloWork) | 4045 | Project | 下一代开源 AI 工作台：自进化 Agent 运行时，集成 DSH 子代理 |
+| 6 | [crafter-station/petdex](https://github.com/crafter-station/petdex) | 3803 | Plugin | A public gallery of animated pets for Codex, Claude Code, DeepSeek … |
+| 7 | [strukto-ai/mirage](https://github.com/strukto-ai/mirage) | 3422 | Plugin | The World's First Unified Virtual Filesystem For AI Agents |
+| 8 | [anywhere-labs/deepseek-harness-desktop](https://github.com/anywhere-labs/deepseek-harness-desktop) | 2993 | Tool | 为 DeepSeek Harness (DSH) 生态打造的现代化桌面端体验 |
+| 9 | [imsai-sh/zhuzhiliao](https://github.com/imsai-sh/zhuzhiliao) | 2785 | Plugin | 竹知了 —— 一转就哇哇叫的传统玩具，Web 模拟版。零依赖单文件，真实录音采样，移动端优先。 |
+| 10 | [foryourhealth111-pixel/Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) | 2780 | Skill | VibeSkills is a general-purpose Skill that automatically routes loc… |
 
 ### Category Breakdown
 
-`Messaging 109` · `Vision & Multimodal 53` · `Browser & Web 54` · `Web UI Enhancement 216` · `Themes & Fun 74` · `Agent Capabilities 236` · `Coding & Development 71` · `Files & Data 32` · `Dev Tools & Tutorials 28` · `Collections & Distros 25` · `Ecosystem Projects 19`
+`Messaging 116` · `Vision & Multimodal 59` · `Browser & Web 57` · `Web UI Enhancement 234` · `Themes & Fun 85` · `Agent Capabilities 250` · `Coding & Development 74` · `Files & Data 31` · `Dev Tools & Tutorials 31` · `Collections & Distros 26` · `Ecosystem Projects 20`
 
 <!-- OMD:stats:END -->
 
