@@ -26,18 +26,18 @@ DeepSeek Harness（以下简称 DSH）是由深度求索（DeepSeek AI）开源�
 ## 三、生态统计
 
 <!-- OMD:stats:START -->
-截至 2026-08-15 22:06（北京时间），本目录收录精选插件 **1115** 个，监测生态仓库 **1519** 个，累计获得 Star **301067**。
+截至 2026-08-15 22:11（北京时间），本目录收录精选插件 **1117** 个，监测生态仓库 **1521** 个，累计获得 Star **301295**。
 
 ### 精选插件十强
 
 | 序号 | 插件 | Star | 类型 | 说明 |
 |---|---|---|---|---|
-| 1 | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 109657 | 项目 | DeepSeek Harness 官方仓库：Everything is a Plugin. |
-| 2 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | 86747 | 渠道 | 🎨 The open-source Claude Design alternative. 🖥️ Local-first desktop… |
-| 3 | [titanwings/colleague-skill](https://github.com/titanwings/colleague-skill) | 22338 | 项目 | 「同事」Skill：将离别化为温暖的数字生命 1.0 |
-| 4 | [tt-a1i/archify](https://github.com/tt-a1i/archify) | 12854 | 插件 | Agent skill for beautiful, verifiable architecture, workflow, seque… |
-| 5 | [ZSeven-W/openpencil](https://github.com/ZSeven-W/openpencil) | 4918 | 插件 | The world's first open-source AI-native vector design tool and the … |
-| 6 | [anywhere-labs/deepseek-harness-desktop](https://github.com/anywhere-labs/deepseek-harness-desktop) | 4718 | 工具 | 为 DeepSeek Harness (DSH) 生态打造的现代化桌面端体验 |
+| 1 | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 109767 | 项目 | DeepSeek Harness 官方仓库：Everything is a Plugin. |
+| 2 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | 86749 | 渠道 | 🎨 The open-source Claude Design alternative. 🖥️ Local-first desktop… |
+| 3 | [titanwings/colleague-skill](https://github.com/titanwings/colleague-skill) | 22343 | 项目 | 「同事」Skill：将离别化为温暖的数字生命 1.0 |
+| 4 | [tt-a1i/archify](https://github.com/tt-a1i/archify) | 12856 | 插件 | Agent skill for beautiful, verifiable architecture, workflow, seque… |
+| 5 | [ZSeven-W/openpencil](https://github.com/ZSeven-W/openpencil) | 4920 | 插件 | The world's first open-source AI-native vector design tool and the … |
+| 6 | [anywhere-labs/deepseek-harness-desktop](https://github.com/anywhere-labs/deepseek-harness-desktop) | 4745 | 工具 | 为 DeepSeek Harness (DSH) 生态打造的现代化桌面端体验 |
 | 7 | [Devin-AXIS/iPolloWork](https://github.com/Devin-AXIS/iPolloWork) | 4095 | 项目 | 下一代开源 AI 工作台：自进化 Agent 运行时，集成 DSH 子代理 |
 | 8 | [crafter-station/petdex](https://github.com/crafter-station/petdex) | 3825 | 插件 | A public gallery of animated pets for Codex, Claude Code, DeepSeek … |
 | 9 | [strukto-ai/mirage](https://github.com/strukto-ai/mirage) | 3440 | 插件 | The World's First Unified Virtual Filesystem For AI Agents |
@@ -45,7 +45,7 @@ DeepSeek Harness（以下简称 DSH）是由深度求索（DeepSeek AI）开源�
 
 ### 分类构成
 
-`消息通讯 125` · `视觉与多模态 71` · `浏览器与网络 66` · `Web UI 增强 261` · `皮肤与娱乐 95` · `Agent 能力 292` · `编码开发 82` · `文件与数据 33` · `开发工具与教程 41` · `精选合集与发行版 28` · `生态项目 21`
+`消息通讯 126` · `视觉与多模态 71` · `浏览器与网络 66` · `Web UI 增强 262` · `皮肤与娱乐 95` · `Agent 能力 292` · `编码开发 82` · `文件与数据 33` · `开发工具与教程 41` · `精选合集与发行版 28` · `生态项目 21`
 
 <!-- OMD:stats:END -->
 
