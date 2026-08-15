@@ -328,8 +328,15 @@ TYPE_EN = {
 
 def _stats_block(curated, total, now, lang):
     top = sorted(curated, key=lambda e: -e["stars"])[:10]
+    top_rows = []
+    for i, e in enumerate(top, 1):
+        note = (e.get("note") or e["description"] or "—").replace("|", "\\|").strip()
+        if len(note) > 70:
+            note = note[:67] + "…"
+        t = TYPE_EN.get(e["type"], e["type"]) if lang == "en" else e["type"]
+        top_rows.append(f"| {i} | [{e['full_name']}]({e['url']}) | {e['stars']} | {t} | {note} |")
     if lang == "en":
-        top_lines = ["| # | Plugin | Stars | Type | Description |", "|---|---|---|---|---|"]
+        top_lines = ["| # | Plugin | Stars | Type | Description |", "|---|---|---|---|---|"] + top_rows
         cats = []
         for cat, emoji, short, desc in CATEGORIES:
             n = sum(1 for e in curated if e["category"] == cat)
@@ -350,7 +357,7 @@ def _stats_block(curated, total, now, lang):
             "<!-- OMD:stats:END -->",
         ]
     else:
-        top_lines = ["| 序号 | 插件 | Star | 类型 | 说明 |", "|---|---|---|---|---|"]
+        top_lines = ["| 序号 | 插件 | Star | 类型 | 说明 |", "|---|---|---|---|---|"] + top_rows
         cats = []
         for cat, emoji, short, desc in CATEGORIES:
             n = sum(1 for e in curated if e["category"] == cat)
@@ -370,12 +377,6 @@ def _stats_block(curated, total, now, lang):
             "",
             "<!-- OMD:stats:END -->",
         ]
-    for i, e in enumerate(top, 1):
-        note = (e.get("note") or e["description"] or "—").replace("|", "\\|").strip()
-        if len(note) > 70:
-            note = note[:67] + "…"
-        t = TYPE_EN.get(e["type"], e["type"]) if lang == "en" else e["type"]
-        top_lines.append(f"| {i} | [{e['full_name']}]({e['url']}) | {e['stars']} | {t} | {note} |")
     return "\n".join(block)
 
 def generate_readme_stats(curated, total, now):
