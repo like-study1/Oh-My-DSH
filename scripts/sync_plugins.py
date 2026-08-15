@@ -315,41 +315,81 @@ def generate_plugins_md(curated, total, now):
     lines.append("> 完整生态快照见 [`data/snapshot.json`](data/snapshot.json)，机器可读精选索引见 [`data/plugins.json`](data/plugins.json)。")
     (ROOT / "PLUGINS.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
-def generate_readme_stats(curated, total, now):
-    path = ROOT / "README.md"
-    text = path.read_text(encoding="utf-8")
+CATEGORY_EN = {
+    "channel": "Messaging", "vision": "Vision & Multimodal", "browser": "Browser & Web",
+    "webui": "Web UI Enhancement", "skin": "Themes & Fun", "agent": "Agent Capabilities",
+    "code": "Coding & Development", "data": "Files & Data", "devtools": "Dev Tools & Tutorials",
+    "collection": "Collections & Distros", "eco": "Ecosystem Projects",
+}
+TYPE_EN = {
+    "插件": "Plugin", "渠道": "Channel", "合集": "Collection", "技能": "Skill",
+    "工具": "Tool", "教程": "Tutorial", "项目": "Project",
+}
+
+def _stats_block(curated, total, now, lang):
     top = sorted(curated, key=lambda e: -e["stars"])[:10]
-    top_lines = ["| 序号 | 插件 | Star | 类型 | 说明 |", "|---|---|---|---|---|"]
+    if lang == "en":
+        top_lines = ["| # | Plugin | Stars | Type | Description |", "|---|---|---|---|---|"]
+        cats = []
+        for cat, emoji, short, desc in CATEGORIES:
+            n = sum(1 for e in curated if e["category"] == cat)
+            if n:
+                cats.append(f"`{CATEGORY_EN.get(cat, short)} {n}`")
+        block = [
+            "<!-- OMD:stats:START -->",
+            f"As of {now.strftime('%Y-%m-%d %H:%M')} (Beijing Time, UTC+8), this directory curates **{len(curated)}** plugins across **{total}** ecosystem repositories, with **{sum(e['stars'] for e in curated):,}** cumulative stars.",
+            "",
+            "### Top 10 Curated Plugins",
+            "",
+            *top_lines,
+            "",
+            "### Category Breakdown",
+            "",
+            " · ".join(cats),
+            "",
+            "<!-- OMD:stats:END -->",
+        ]
+    else:
+        top_lines = ["| 序号 | 插件 | Star | 类型 | 说明 |", "|---|---|---|---|---|"]
+        cats = []
+        for cat, emoji, short, desc in CATEGORIES:
+            n = sum(1 for e in curated if e["category"] == cat)
+            if n:
+                cats.append(f"`{short} {n}`")
+        block = [
+            "<!-- OMD:stats:START -->",
+            f"截至 {now.strftime('%Y-%m-%d %H:%M')}（北京时间），本目录收录精选插件 **{len(curated)}** 个，监测生态仓库 **{total}** 个，累计获得 Star **{sum(e['stars'] for e in curated)}**。",
+            "",
+            "### 精选插件十强",
+            "",
+            *top_lines,
+            "",
+            "### 分类构成",
+            "",
+            " · ".join(cats),
+            "",
+            "<!-- OMD:stats:END -->",
+        ]
     for i, e in enumerate(top, 1):
         note = (e.get("note") or e["description"] or "—").replace("|", "\\|").strip()
         if len(note) > 70:
             note = note[:67] + "…"
-        top_lines.append(f"| {i} | [{e['full_name']}]({e['url']}) | {e['stars']} | {e['type']} | {note} |")
-    cats = []
-    for cat, emoji, short, desc in CATEGORIES:
-        n = sum(1 for e in curated if e["category"] == cat)
-        if n:
-            cats.append(f"`{short} {n}`")
-    block = [
-        "<!-- OMD:stats:START -->",
-        f"截至 {now.strftime('%Y-%m-%d %H:%M')}（北京时间），本目录收录精选插件 **{len(curated)}** 个，监测生态仓库 **{total}** 个，累计获得 Star **{sum(e['stars'] for e in curated)}**。",
-        "",
-        "### 精选插件十强",
-        "",
-        *top_lines,
-        "",
-        "### 分类构成",
-        "",
-        " · ".join(cats),
-        "",
-        "<!-- OMD:stats:END -->",
-    ]
-    new_block = "\n".join(block)
-    if "<!-- OMD:stats:START -->" in text:
-        text = re.sub(r"<!-- OMD:stats:START -->.*?<!-- OMD:stats:END -->", new_block, text, flags=re.S)
-    else:
-        text = text + "\n\n" + new_block
-    path.write_text(text, encoding="utf-8")
+        t = TYPE_EN.get(e["type"], e["type"]) if lang == "en" else e["type"]
+        top_lines.append(f"| {i} | [{e['full_name']}]({e['url']}) | {e['stars']} | {t} | {note} |")
+    return "\n".join(block)
+
+def generate_readme_stats(curated, total, now):
+    for filename, lang in (("README.md", "zh"), ("README.en.md", "en")):
+        path = ROOT / filename
+        if not path.exists():
+            continue
+        text = path.read_text(encoding="utf-8")
+        new_block = _stats_block(curated, total, now, lang)
+        if "<!-- OMD:stats:START -->" in text:
+            text = re.sub(r"<!-- OMD:stats:START -->.*?<!-- OMD:stats:END -->", new_block, text, flags=re.S)
+        else:
+            text = text + "\n\n" + new_block
+        path.write_text(text, encoding="utf-8")
 
 def update_changelog(curated, total, now):
     path = ROOT / "CHANGELOG.md"

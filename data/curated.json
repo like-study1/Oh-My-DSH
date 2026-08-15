@@ -1237,6 +1237,41 @@
       "repo": "dsh-external/dsh-chat-thumb",
       "category": null,
       "note": "Chat缩略图"
+    },
+    {
+      "repo": "NoWint/Oh-My-DSH",
+      "category": "collection",
+      "note": "同名兄弟项目：每小时多源扫描（GitHub · GitLab · HN · Reddit · Lobsters · SE）的 DSH 生态目录，已交叉链接"
+    },
+    {
+      "repo": "Aidenwu0209/dsh-PaddleOCR-Skills",
+      "category": "vision",
+      "note": "PaddleOCR 技能：为 DSH 提供原生工具与 GUI 配置的 OCR 能力"
+    },
+    {
+      "repo": "leechen298/Code2Skill",
+      "category": "devtools",
+      "note": "从既有代码生成 Function、MCP、Agent Skill 与离线测试包"
+    },
+    {
+      "repo": "Moximxxx/dsh-find-skill",
+      "category": "devtools",
+      "note": "桥接 vercel-labs/skills 生态的 LLM 驱动技能发现插件"
+    },
+    {
+      "repo": "TohsakaRIN521/dsh-academic-skill",
+      "category": "agent",
+      "note": "学术论文补全技能：补全论文中理论计算数值分析之外的其余部分，减少 AI 引用幻觉"
+    },
+    {
+      "repo": "phoenixlucky/chrome-mcp-bridge-2026-skill",
+      "category": "agent",
+      "note": "为 AI 代理提供稳定可靠的 Streamable HTTP MCP 连接能力"
+    },
+    {
+      "repo": "WeirdSky924/project-change-router-skill",
+      "category": "agent",
+      "note": "项目级变更路由与复用治理：面向 AI 编码代理的变更治理技能"
     }
   ]
 }

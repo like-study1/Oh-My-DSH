@@ -1,9 +1,4 @@
-本帖使用社区开源推广，符合推广要求。我申明并遵循社区要求的以下内容：
-我的帖子已经打上 开源推广 标签： 是
-我的开源项目完整开源，无未开源部分： 是
-我的开源项目已链接认可 LINUX DO 社区： 是
-我帖子内的项目介绍，AI生成、润色内容部分已截图发出： 是
-以上选择我承诺是永久有效的，接受社区和佬友监督： 是
+[**简体中文**](README.md) · [English](README.en.md)
 
 # Oh-My-DSH
 
@@ -24,26 +19,16 @@ DeepSeek Harness（以下简称 DSH）是由深度求索（DeepSeek AI）开源�
 ## 二、生态统计
 
 <!-- OMD:stats:START -->
-截至 2026-08-15 01:10（北京时间），本目录收录精选插件 **591** 个，监测生态仓库 **1000** 个，累计获得 Star **257057**。
+截至 2026-08-15 09:42（北京时间），本目录收录精选插件 **909** 个，监测生态仓库 **1000** 个，累计获得 Star **267995**。
 
 ### 精选插件十强
 
 | 序号 | 插件 | Star | 类型 | 说明 |
 |---|---|---|---|---|
-| 1 | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 93170 | 项目 | DeepSeek Harness 官方仓库：Everything is a Plugin. |
-| 2 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | 86216 | 渠道 | 🎨 The open-source Claude Design alternative. 🖥️ Local-first desktop… |
-| 3 | [titanwings/colleague-skill](https://github.com/titanwings/colleague-skill) | 21980 | 项目 | 「同事」Skill：将离别化为温暖的数字生命 1.0 |
-| 4 | [tt-a1i/archify](https://github.com/tt-a1i/archify) | 12449 | 插件 | Agent skill for beautiful, verifiable architecture, workflow, seque… |
-| 5 | [Devin-AXIS/iPolloWork](https://github.com/Devin-AXIS/iPolloWork) | 3935 | 项目 | 下一代开源 AI 工作台：自进化 Agent 运行时，集成 DSH 子代理 |
-| 6 | [crafter-station/petdex](https://github.com/crafter-station/petdex) | 3784 | 插件 | A public gallery of animated pets for Codex, Claude Code, DeepSeek … |
-| 7 | [imsai-sh/zhuzhiliao](https://github.com/imsai-sh/zhuzhiliao) | 2763 | 插件 | 竹知了 —— 一转就哇哇叫的传统玩具，Web 模拟版。零依赖单文件，真实录音采样，移动端优先。 |
-| 8 | [foryourhealth111-pixel/Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) | 2743 | 技能 | VibeSkills is a general-purpose Skill that automatically routes loc… |
-| 9 | [whiteguo233/OpenBiliClaw](https://github.com/whiteguo233/OpenBiliClaw) | 2349 | 项目 | 本地优先的跨平台 AI 内容发现 Agent：B站、小红书、抖音、YouTube、X、知乎、Reddit |
-| 10 | [zhu1090093659/dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui) | 1863 | 合集 | DSH Web UI 插件与皮肤合集：任务面板、Git 图、右侧面板、移动端 UI、宠物、实时 Token 统计、皮肤中心 |
 
 ### 分类构成
 
-`消息通讯 63` · `视觉与多模态 33` · `浏览器与网络 30` · `Web UI 增强 142` · `皮肤与娱乐 46` · `Agent 能力 143` · `编码开发 47` · `文件与数据 25` · `开发工具与教程 21` · `精选合集与发行版 23` · `生态项目 18`
+`消息通讯 106` · `视觉与多模态 52` · `浏览器与网络 54` · `Web UI 增强 215` · `皮肤与娱乐 73` · `Agent 能力 236` · `编码开发 70` · `文件与数据 32` · `开发工具与教程 27` · `精选合集与发行版 25` · `生态项目 19`
 
 <!-- OMD:stats:END -->
 
@@ -90,7 +75,7 @@ npx @deepseek-ai/dsh web    # 默认地址 http://127.0.0.1:3080
 
 ## 八、致谢
 
-本仓库的建设得到以下项目与组织的支持：deepseek-ai/deepseek-harness（DSH 本体）、AdamPlatin123/awesome-dsh-plugins（生态雷达，交叉参考来源）、0xsline/awesome-deepseek-harness 与 awesome-dsh-plugin/awesome-dsh-plugin（生态清单）、can1357/oh-my-pi（版式参考）。谨致谢忱。
+本仓库的建设得到以下项目与组织的支持：deepseek-ai/deepseek-harness（DSH 本体）、AdamPlatin123/awesome-dsh-plugins（生态雷达，交叉参考来源）、0xsline/awesome-deepseek-harness 与 awesome-dsh-plugin/awesome-dsh-plugin（生态清单）、can1357/oh-my-pi（版式参考）、NoWint/Oh-My-DSH（同名兄弟项目，每小时多源扫描的 DSH 生态目录，已交叉链接）。谨致谢忱。
 
 ## 开源许可
 
