@@ -1242,6 +1242,12 @@
       "category": "vision",
       "note": "把 Composer 附带图片交给 OpenAI 兼容视觉模型自动描述，转成文本交给 DeepSeek 等纯文本模型",
       "repo": "ximengxiaolan/dsh-vision-bridge"
+    },
+    "dsh-plugin-writing-guard": {
+      "category": "agent",
+      "note": "论文写作守卫：本地正则检测修改过程残留、防御性写作与 AI 写作痕迹（破折号滥用、不是X而是Y、LLM 高频词、三连排比）；writing_audit / writing_rules 工具，论文写入后增量自动审计（仅反馈新增/已解决问题）",
+      "repo": "xmutfyh/dsh-plugin-writing-guard",
+      "keep": true
     }
   },
   "manual": [
