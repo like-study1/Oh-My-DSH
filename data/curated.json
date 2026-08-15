@@ -1305,6 +1305,46 @@
       "repo": "cmfok/dsh-feishucard",
       "category": "channel",
       "note": "DSH × 飞书桥：官方 SDK 长连接 + 流式回复卡片，per-chat 会话与现场复用保留上下文，npm dsh-feishucard@0.1.0"
+    },
+    {
+      "repo": "drowned-fish1/deepseek-harness-skillx",
+      "category": "devtools",
+      "note": "安全地发现、审计并复用 Skills 的 DSH 插件"
+    },
+    {
+      "repo": "Jesse-njx/dsh-skillport",
+      "category": "devtools",
+      "note": "把 Claude Code、Codex、Cursor 等既有 Skills 一键迁移到 DSH"
+    },
+    {
+      "repo": "niyongsheng/free-vision-skill",
+      "category": "vision",
+      "note": "macOS 本地化识图技能：纯本地视觉能力，无需云端"
+    },
+    {
+      "repo": "PerryLink/dsh-skill-pack-security",
+      "category": "devtools",
+      "note": "面向 DSH 的安全审计技能包（8 个 agent 技能）"
+    },
+    {
+      "repo": "z-col/dsh-SkillsManagePlugins",
+      "category": "devtools",
+      "note": "在 DSH Web 界面可视化查看、编辑、创建与删除 Skills"
+    },
+    {
+      "repo": "winterhuan/dsh-skills-viewer",
+      "category": "devtools",
+      "note": "DSH Skills 设置页只读查看器"
+    },
+    {
+      "repo": "hexbee/dsh-skill-panel",
+      "category": "devtools",
+      "note": "设置页技能管理插件：查看与管理 agent skills"
+    },
+    {
+      "repo": "akqwpeter-prog/dsh-media-skills",
+      "category": "vision",
+      "note": "免费视觉与图像生成技能：粘贴图片即可识图"
     }
   ]
 }
