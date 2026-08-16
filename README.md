@@ -26,26 +26,26 @@ DeepSeek Harness（以下简称 DSH）是由深度求索（DeepSeek AI）开源�
 ## 三、生态统计
 
 <!-- OMD:stats:START -->
-截至 2026-08-16 04:39（北京时间），本目录收录精选插件 **1185** 个，监测生态仓库 **1579** 个，累计获得 Star **335535**。
+截至 2026-08-16 09:57（北京时间），本目录收录精选插件 **1216** 个，监测生态仓库 **1596** 个，累计获得 Star **403736**。
 
 ### 精选插件十强
 
 | 序号 | 插件 | Star | 类型 | 说明 |
 |---|---|---|---|---|
-| 1 | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 114176 | 项目 | DeepSeek Harness 官方仓库：Everything is a Plugin. |
-| 2 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | 86902 | 渠道 | 🎨 The open-source Claude Design alternative. 🖥️ Local-first desktop… |
-| 3 | [titanwings/colleague-skill](https://github.com/titanwings/colleague-skill) | 22459 | 项目 | 「同事」Skill：将离别化为温暖的数字生命 1.0 |
-| 4 | [tt-a1i/archify](https://github.com/tt-a1i/archify) | 12950 | 插件 | Agent skill for beautiful, verifiable architecture, workflow, seque… |
-| 5 | [freestylefly/awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2) | 10302 | 插件 | Prompt as Code \| GPT-Image2 工业级提示词引擎与模板库，470+ 个案例逆向工程，20+ 套工业级模板，并… |
-| 6 | [YaoApp/yao](https://github.com/YaoApp/yao) | 7568 | 插件 | ✨ All your agents and workspaces in one place, on every device you … |
-| 7 | [anywhere-labs/deepseek-harness-desktop](https://github.com/anywhere-labs/deepseek-harness-desktop) | 5716 | 工具 | 为 DeepSeek Harness (DSH) 生态打造的现代化桌面端体验 |
-| 8 | [Q00/ouroboros](https://github.com/Q00/ouroboros) | 5421 | 插件 | Agent OS: the agent gets smarter on its own. We just hold the line:… |
-| 9 | [ZSeven-W/openpencil](https://github.com/ZSeven-W/openpencil) | 4974 | 插件 | The world's first open-source AI-native vector design tool and the … |
-| 10 | [Devin-AXIS/iPolloWork](https://github.com/Devin-AXIS/iPolloWork) | 4125 | 项目 | 下一代开源 AI 工作台：自进化 Agent 运行时，集成 DSH 子代理 |
+| 1 | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 116209 | 项目 | DeepSeek Harness 官方仓库：Everything is a Plugin. |
+| 2 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | 86960 | 渠道 | 🎨 The open-source Claude Design alternative. 🖥️ Local-first desktop… |
+| 3 | [amruthpillai/reactive-resume](https://github.com/amruthpillai/reactive-resume) | 40383 | 插件 | A one-of-a-kind resume builder that keeps your privacy in mind. Com… |
+| 4 | [titanwings/colleague-skill](https://github.com/titanwings/colleague-skill) | 22493 | 项目 | 「同事」Skill：将离别化为温暖的数字生命 1.0 |
+| 5 | [Nagi-ovo/voyager](https://github.com/Nagi-ovo/voyager) | 19391 | 插件 | Enhancement suite for Gemini, AI Studio, Claude & ChatGPT — plus a … |
+| 6 | [tt-a1i/archify](https://github.com/tt-a1i/archify) | 12979 | 插件 | Agent skill for beautiful, verifiable architecture, workflow, seque… |
+| 7 | [freestylefly/awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2) | 10321 | 插件 | Prompt as Code \| GPT-Image2 工业级提示词引擎与模板库，470+ 个案例逆向工程，20+ 套工业级模板，并… |
+| 8 | [YaoApp/yao](https://github.com/YaoApp/yao) | 7574 | 插件 | ✨ All your agents and workspaces in one place, on every device you … |
+| 9 | [anywhere-labs/deepseek-harness-desktop](https://github.com/anywhere-labs/deepseek-harness-desktop) | 6041 | 工具 | 为 DeepSeek Harness (DSH) 生态打造的现代化桌面端体验 |
+| 10 | [Q00/ouroboros](https://github.com/Q00/ouroboros) | 5425 | 插件 | Agent OS: the agent gets smarter on its own. We just hold the line:… |
 
 ### 分类构成
 
-`消息通讯 131` · `视觉与多模态 76` · `浏览器与网络 70` · `Web UI 增强 281` · `皮肤与娱乐 101` · `Agent 能力 314` · `编码开发 85` · `文件与数据 34` · `开发工具与教程 43` · `精选合集与发行版 28` · `生态项目 22`
+`消息通讯 135` · `视觉与多模态 77` · `浏览器与网络 72` · `Web UI 增强 290` · `皮肤与娱乐 101` · `Agent 能力 324` · `编码开发 88` · `文件与数据 35` · `开发工具与教程 44` · `精选合集与发行版 28` · `生态项目 22`
 
 <!-- OMD:stats:END -->
 
