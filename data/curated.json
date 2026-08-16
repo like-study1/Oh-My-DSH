@@ -1248,6 +1248,12 @@
       "note": "论文写作守卫：本地正则检测修改过程残留、防御性写作与 AI 写作痕迹（破折号滥用、不是X而是Y、LLM 高频词、三连排比）；writing_audit / writing_rules 工具，论文写入后增量自动审计（仅反馈新增/已解决问题）",
       "repo": "xmutfyh/dsh-plugin-writing-guard",
       "keep": true
+    },
+    "dsh-context": {
+      "category": "webui",
+      "note": "上下文洞察面板：查看模型上下文窗口的组成与变化——构成对照窗口大小、按请求历史趋势、压缩/注入事件、消息级 token 统计",
+      "repo": "bowenliang123/dsh-context",
+      "keep": true
     }
   },
   "manual": [
