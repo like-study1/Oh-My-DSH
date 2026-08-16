@@ -1,1398 +1,1398 @@
-{
-  "min_stars": 3,
-  "overrides": {
-    "dsh-ui-font": {
-      "category": "skin",
-      "note": "DSH 字体插件：正文字体/代码字体/显示比例/行高/字体浏览器，中文字形标记，设置一键生效",
-      "repo": "gaozhiwei521/dsh-ui-font",
-      "keep": true
-    },
-    "Deepseek-Harness-Api-monitor": {
-      "category": "devtools",
-      "note": "DeepSeek Harness API 余额监测插件",
-      "repo": "gaozhiwei521/Deepseek-Harness-Api-monitor",
-      "keep": true
-    },
-    "modlens": {
-      "category": "vision",
-      "note": "DSH 首个视觉插件：纯文本模型的视觉桥梁",
-      "repo": "liustack/modlens"
-    },
-    "dsh-web-ui": {
-      "category": "collection",
-      "note": "DSH Web UI 插件与皮肤合集：任务面板、Git 图、右侧面板、移动端 UI、宠物、实时 Token 统计、皮肤中心",
-      "repo": "zhu1090093659/dsh-web-ui"
-    },
-    "agent-vision-toolkit": {
-      "category": "vision",
-      "note": "为纯文本模型设计的视觉工具箱：多图理解、长截图 OCR、前端 UI 还原、GUI 自动化，可接入 Codex/Claude Code/Pi/Oh My Pi/OpenCode",
-      "repo": "Anionex/agent-vision-toolkit"
-    },
-    "awesome-dsh-plugins": {
-      "category": "collection",
-      "note": "DSH 插件兼容性雷达：每天自动扫描 286+ 候选，四维检查 + 运行级实测",
-      "repo": "AdamPlatin123/awesome-dsh-plugins"
-    },
-    "dsh-tui": {
-      "category": "code",
-      "note": "Claude Code 风格全屏交互终端：像素鲸鱼顶栏、思考流式展开、双击 Esc 回滚、上下文进度条 + TPS 仪表",
-      "repo": "ccch1mneyyy/dsh-TUI"
-    },
-    "dsh-better-sidebar": {
-      "category": "webui",
-      "note": "侧边栏完整工作台：支持三方扩展注册新 Tab，内置文件渲染/编辑、终端、Git、子代理",
-      "repo": "omdsh-dev/DSH-better-sidebar"
-    },
-    "dsh-vision-toolkit": {
-      "category": "vision",
-      "note": "DSH 原生视觉插件：带意图的图片问答、长截图 OCR、UI 还原、grounding、像素级 diff、Artifacts 与 Web UI",
-      "repo": "Anionex/dsh-vision-toolkit"
-    },
-    "awesome-deepseek-harness": {
-      "category": "collection",
-      "note": "DSH 生态精选目录：插件、工具与基础设施",
-      "repo": "0xsline/awesome-deepseek-harness"
-    },
-    "dsh-deep-whale": {
-      "category": "skin",
-      "note": "鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier），CC BY-NC-SA 4.0",
-      "repo": "Small-tailqwq/dsh-deep-whale"
-    },
-    "awesome-dsh-plugin": {
-      "category": "collection",
-      "note": "DeepSeek Harness 精选插件清单（awesome list）",
-      "repo": "awesome-dsh-plugin/awesome-dsh-plugin"
-    },
-    "dsh-ads": {
-      "category": "skin",
-      "note": "2005 年中文站点风格的复古广告插件：侧栏广告 / 对话内信息流 / 角落弹窗",
-      "repo": "Nagi-ovo/dsh-ads"
-    },
-    "dsh-agent-teams": {
-      "category": "agent",
-      "note": "AgentTeams：多 Agent 团队协作插件",
-      "repo": "NanmiCoder/dsh-agent-teams"
-    },
-    "dsh-tianshu-tui": {
-      "category": "code",
-      "note": "dsh-tianshu-tui：DSH 终端 UI",
-      "repo": "huiliyi37/dsh-tianshu-tui"
-    },
-    "oh-dsh": {
-      "category": "collection",
-      "note": "一站式 DSH 社区发行版：TUI、桌面端与 Web UI 三种形态统一体验",
-      "repo": "hust-open-atom-club/oh-dsh"
-    },
-    "modsearch": {
-      "category": "browser",
-      "note": "DSH Web 搜索插件：纯文本模型的搜索桥梁",
-      "repo": "liustack/modsearch"
-    },
-    "argo": {
-      "category": "browser",
-      "note": "为 Agent 打造的搜索工具：多语言覆盖中/英/学术/代码/购物/金融/新闻/百科",
-      "repo": "taxueseek/argo"
-    },
-    "promentor": {
-      "category": "agent",
-      "note": "AI 编程导师 Skill：扫描项目架构、生成阶梯式学习路径",
-      "repo": "Lyn-77/ProMentor"
-    },
-    "mstar-harness": {
-      "category": "agent",
-      "note": "Skill 驱动的 Harness/Loop 工程工作流插件",
-      "repo": "btspoony/mstar-harness"
-    },
-    "dsh-openpencil": {
-      "category": "webui",
-      "note": "OpenPencil 设计稿预览与编辑插件",
-      "repo": "ZSeven-W/dsh-openpencil"
-    },
-    "jacobian": {
-      "category": "eco",
-      "note": "面向 Agent 的纯数学工具：搜索例子与反例、证明辅助",
-      "repo": "morluto/jacobian"
-    },
-    "dsh_workflow": {
-      "category": "agent",
-      "note": "把 Claude Code 的 UltraCode 模式带给 DSH：可生成、可保存、可治理、可观察、可恢复的工作流",
-      "repo": "icetomoyo/dsh_workflow"
-    },
-    "dsh-find-plugins": {
-      "category": "devtools",
-      "note": "在 DSH 内搜索/发现插件的 Skill",
-      "repo": "Nagi-ovo/dsh-find-plugins"
-    },
-    "dsh-visualize": {
-      "category": "webui",
-      "note": "对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流",
-      "repo": "Nagi-ovo/dsh-visualize"
-    },
-    "dsh-at-file": {
-      "category": "webui",
-      "note": "Codex 风格 @文件 引用：工作区文件搜索与引用",
-      "repo": "omdsh-dev/dsh-at-file"
-    },
-    "dsh-open-in-vscode": {
-      "category": "code",
-      "note": "一键在 VS Code 中打开 DSH 工作区目录",
-      "repo": "omdsh-dev/dsh-open-in-vscode"
-    },
-    "flameox": {
-      "category": "eco",
-      "note": "运行时证据：帮助 Agent 追踪、剖析并消除性能热点",
-      "repo": "morluto/flameox"
-    },
-    "dsh-browser": {
-      "category": "browser",
-      "note": "Chrome 侧边栏扩展：让 DSH 直接操控你的浏览器",
-      "repo": "Lum1104/dsh-browser"
-    },
-    "whale-girl": {
-      "category": "skin",
-      "note": "桌面宠物插件（QQ 宠物形态）：可拖拽、投喂、玩耍的积累型伙伴",
-      "repo": "vlln/whale-girl"
-    },
-    "dsh-handbook": {
-      "category": "devtools",
-      "note": "DSH 从 0 到 1 深度手册：安装、插件开发、性能调优、实测案例",
-      "repo": "Electricitysheep/dsh-handbook"
-    },
-    "colleague-skill": {
-      "category": "eco",
-      "note": "「同事」Skill：将离别化为温暖的数字生命 1.0",
-      "repo": "titanwings/colleague-skill"
-    },
-    "ipollowork": {
-      "category": "eco",
-      "note": "下一代开源 AI 工作台：自进化 Agent 运行时，集成 DSH 子代理",
-      "repo": "Devin-AXIS/iPolloWork"
-    },
-    "openbiliclaw": {
-      "category": "eco",
-      "note": "本地优先的跨平台 AI 内容发现 Agent：B站、小红书、抖音、YouTube、X、知乎、Reddit",
-      "repo": "whiteguo233/OpenBiliClaw"
-    },
-    "deeptide": {
-      "category": "eco",
-      "note": "DeepSeek 官方风格 Swift 原生 macOS 编程 Agent",
-      "repo": "paean-ai/deeptide"
-    },
-    "mobius": {
-      "category": "eco",
-      "note": "首个自进化开源 Agent OS：连接团队、AI Agent、设备与算力",
-      "repo": "nutshellai-tech/mobius"
-    },
-    "axern": {
-      "category": "eco",
-      "note": "开源 AI Agent 沙箱：不可信代码执行与持久化服务",
-      "repo": "cofy-x/axern"
-    },
-    "mcp-for-stata": {
-      "category": "eco",
-      "note": "Stata MCP 服务器：把 Stata 接入 Agent",
-      "repo": "SepineTam/mcp-for-stata"
-    },
-    "open-managed-agents": {
-      "category": "eco",
-      "note": "开源 Claude Managed Agents API 实现与自托管 Agent 运行时",
-      "repo": "openma-ai/open-managed-agents"
-    },
-    "rea": {
-      "category": "eco",
-      "note": "用 Agent 逆向一切：从应用行为到原生二进制",
-      "repo": "morluto/rea"
-    },
-    "open-record-replay": {
-      "category": "eco",
-      "note": "macOS 开源录制-回放工作流工具（computer use）",
-      "repo": "humblebanana/open-record-replay"
-    },
-    "phi": {
-      "category": "eco",
-      "note": "源自 Pi 的 Go 编码 Agent：子代理、hashline 编辑、权限门",
-      "repo": "pulseaiclub/phi"
-    },
-    "abu-cowork": {
-      "category": "eco",
-      "note": "Claude Cowork 的开源替代：本地优先 AI Agent 桌面",
-      "repo": "PM-Shawn/Abu-Cowork"
-    },
-    "claude-paper": {
-      "category": "eco",
-      "note": "研究论文自动化研读插件：材料生成、代码演示、交互式 Web 查看器",
-      "repo": "alaliqing/claude-paper"
-    },
-    "harmony-next.skills": {
-      "category": "eco",
-      "note": "HarmonyOS NEXT (API 12+) 开发专家 Skill",
-      "repo": "linhay/harmony-next.skills"
-    },
-    "openguardrails": {
-      "category": "eco",
-      "note": "AI Agent 安全与防护的厂商中立协议 + 中立基准评测",
-      "repo": "openguardrails/openguardrails"
-    },
-    "dsh-launcher": {
-      "category": "devtools",
-      "note": "Windows 轻量 DSH 启动器：登录自启 + 极简 WebView2 窗口",
-      "repo": "Ruler4396/dsh-launcher"
-    },
-    "oh-my-dsh": {
-      "category": "collection",
-      "note": "面向 DSH 的插件生态：100+ 插件，仅通过扩展接口注册，不修改 agent-loop 骨架",
-      "repo": "LaplaceYoung/oh-my-dsh"
-    },
-    "dsh-notification": {
-      "category": "channel",
-      "note": "回合完成桌面通知：按结果类型控制，支持包含/排除关键词规则",
-      "repo": "omdsh-dev/dsh-notification"
-    },
-    "browser-bridge": {
-      "category": "browser",
-      "note": "让 Agent 像你一样操控浏览器窗口",
-      "repo": "hanelalo/browser-bridge"
-    },
-    "dsh-turn-rewind": {
-      "category": "agent",
-      "note": "对话与代码状态回退：基于持久化 Change Ledger 的 rewind",
-      "repo": "Anionex/dsh-turn-rewind"
-    },
-    "allinluna": {
-      "category": "agent",
-      "note": "资源感知的多 Agent 编排（All in Flash DSH 插件）",
-      "repo": "zenx0x/allinluna"
-    },
-    "ui-status-label": {
-      "category": "webui",
-      "note": "把鲸鱼娘思考时的 deep diving 自定义成任意样式",
-      "repo": "alingalingling/ui-status-label"
-    },
-    "dsh-annotation": {
-      "category": "webui",
-      "note": "选中批注插件",
-      "repo": "omdsh-dev/dsh-annotation"
-    },
-    "dsh-custom-tool": {
-      "category": "devtools",
-      "note": "Monaco 编辑器创建/管理沙箱化 JS 工具，模型驱动的工具生命周期",
-      "repo": "omdsh-dev/dsh-custom-tool"
-    },
-    "dsh-ui-whale": {
-      "category": "skin",
-      "note": "手绘像素鲸鱼伙伴：标题栏常驻、眨眼、摆尾、思考时动起来",
-      "repo": "lhh010/dsh-ui-whale"
-    },
-    "plugin-registry": {
-      "category": "devtools",
-      "note": "DSH 插件生态基建：薄控制台（浏览器面板管理官方 repository 插件）+ make-dsh-plugin 开发引导",
-      "repo": "vlln/plugin-registry"
-    },
-    "dsh-genui": {
-      "category": "webui",
-      "note": "GenUI：内联交互式 UI 组件（布局、图表、表单、测验、mermaid、3D 场景）",
-      "repo": "omdsh-dev/dsh-genui"
-    },
-    "dsh-memory-evolve": {
-      "category": "agent",
-      "note": "跨会话长期记忆 + 后台自我进化：五轨记忆、git 分支感知、回合内自我审查",
-      "repo": "csyangwen/dsh-memory-evolve"
-    },
-    "dsh-tianshu-build": {
-      "category": "code",
-      "note": "dsh-tianshu-tui 构建配置",
-      "repo": "huiliyi37/dsh-tianshu-build"
-    },
-    "leantoken": {
-      "category": "code",
-      "note": "代码智能：找到关键代码，保持上下文窗口与 token 精简",
-      "repo": "morluto/leantoken"
-    },
-    "dsh-message-edit": {
-      "category": "webui",
-      "note": "基于分支的消息编辑、重掷、重试与版本时间线",
-      "repo": "Moeblack/dsh-message-edit"
-    },
-    "dsh-skill-stats": {
-      "category": "agent",
-      "note": "技能调用统计：历史回放 + 实时订阅，SVG 趋势图",
-      "repo": "dsh-external/dsh-skill-stats"
-    },
-    "dsh-security-audit": {
-      "category": "devtools",
-      "note": "本机安全审计：配置/插件来源/会话/网络暴露面，脱敏风险报告",
-      "repo": "omdsh-dev/dsh-security-audit"
-    },
-    "dsh-emoji": {
-      "category": "skin",
-      "note": "为 AI 回复自动添加表情",
-      "repo": "hellodigua/dsh-emoji"
-    },
-    "dsh-automation": {
-      "category": "agent",
-      "note": "自动化：让 Coding 任务按计划在新 Agent Session 中运行，Web/Agent 管理定时任务",
-      "repo": "titanwings/dsh-automation"
-    },
-    "dsh-git-identity": {
-      "category": "code",
-      "note": "git 提交固定使用环境自身作者身份（优先 gh CLI 登录账号）",
-      "repo": "LoserFox/dsh-git-identity"
-    },
-    "dsh-session-health": {
-      "category": "agent",
-      "note": "会话健康检查：多帧 zstd 会话文件帧级扫描诊断",
-      "repo": "omdsh-dev/dsh-session-health"
-    },
-    "dsh-minigames": {
-      "category": "skin",
-      "note": "右侧小游戏面板：18 款离线小游戏，等待模型回复或修 bug 时的摸鱼神器",
-      "repo": "lhh010/dsh-minigames"
-    },
-    "dsh-web-review": {
-      "category": "webui",
-      "note": "网页预览与元素批注：让 AI 根据可视化反馈直接修改前端源码",
-      "repo": "CanglongCl/dsh-web-review"
-    },
-    "dsh-desktop": {
-      "category": "devtools",
-      "note": "社区维护的非官方桌面客户端：自动复用本机实例、智能连接、托盘常驻",
-      "repo": "bruc3van/dsh-desktop"
-    },
-    "dsh-focus-chat": {
-      "category": "webui",
-      "note": "「聚焦会话」精简视图：只关注最终产出结果",
-      "repo": "dingyi222666/dsh-focus-chat"
-    },
-    "dsh-stickers": {
-      "category": "skin",
-      "note": "WebUI 贴纸插件：用户与 Agent 双向反应",
-      "repo": "william-jin-cmu/dsh-stickers"
-    },
-    "telegram": {
-      "category": "channel",
-      "note": "Telegram Bot API 桥接：长轮询、per-chat 会话、HTML 格式化",
-      "repo": "LoserFox/telegram"
-    },
-    "dsh-ui-progress": {
-      "category": "webui",
-      "note": "会话进度条：todos 真实进度、实时 token 生成速率、中断橘红态",
-      "repo": "lhh010/dsh-ui-progress"
-    },
-    "dsh-grok-tui": {
-      "category": "code",
-      "note": "通过 grok-build 的 TUI 使用 dsh",
-      "repo": "chen-001/dsh-grok-tui"
-    },
-    "dsh-gomoku": {
-      "category": "skin",
-      "note": "在 DSH 中与 AI 下五子棋，也可让 AI 对局",
-      "repo": "omdsh-dev/dsh-gomoku"
-    },
-    "fabric": {
-      "category": "code",
-      "note": "类似 PC Fabric 的 hook 处理器",
-      "repo": "omdsh-dev/fabric"
-    },
-    "dsh-balance": {
-      "category": "agent",
-      "note": "多模型余额/负载均衡",
-      "repo": "TwotwoPiggy/dsh-balance"
-    },
-    "dsh-interconnect": {
-      "category": "channel",
-      "note": "跨实例消息/事件交接插件",
-      "repo": "Chinesezjc/dsh-interconnect"
-    },
-    "dsh-work": {
-      "category": "agent",
-      "note": "让 agent 汇报工作时更结构化",
-      "repo": "vibeinging/dsh-work"
-    },
-    "dsh-her-eyes": {
-      "category": "vision",
-      "note": "让 AI 自动调用 VLM 进行视觉分析",
-      "repo": "huashenglian/dsh-her-eyes"
-    },
-    "dsh-better-browser": {
-      "category": "browser",
-      "note": "通过 Kimi WebBridge 让 Agent 操作用户已登录的浏览器，提供 13 个 web 工具",
-      "repo": "titanwings/dsh-better-browser"
-    },
-    "dsh-task-status": {
-      "category": "webui",
-      "note": "后台任务状态条：对话页任务进度 + 实时输出 tail",
-      "repo": "vlln/dsh-task-status"
-    },
-    "dsh-review-skills": {
-      "category": "agent",
-      "note": "代码审查 Skill 集",
-      "repo": "ben7am1n/dsh-review-skills"
-    },
-    "dsh-chat-import": {
-      "category": "data",
-      "note": "聊天记录导入",
-      "repo": "Nwflower/dsh-chat-import"
-    },
-    "dsh-lan": {
-      "category": "channel",
-      "note": "局域网插件：overlay 把 dsh web 绑定到局域网",
-      "repo": "moxisuki/dsh-lan"
-    },
-    "dsh-sentinel": {
-      "category": "agent",
-      "note": "条件驱动唤醒：持久化文件/命令监控",
-      "repo": "fuhefei/dsh-sentinel"
-    },
-    "dsh-tool-turbo": {
-      "category": "agent",
-      "note": "逐轮 reasoning_effort 优化器",
-      "repo": "Electricitysheep/dsh-tool-turbo"
-    },
-    "dshfind": {
-      "category": "devtools",
-      "note": "DSH 学习与分享社区",
-      "repo": "hikariming/dshfind"
-    },
-    "dsh-plugin-cost-tracker": {
-      "category": "agent",
-      "note": "Token 成本追踪",
-      "repo": "YYTbit/dsh-plugin-cost-tracker"
-    },
-    "dsh-companion": {
-      "category": "agent",
-      "note": "陪伴模式：SOUL 人格 + Hermes 长期记忆，可选 QQ 通道",
-      "repo": "yyh-001/dsh-companion"
-    },
-    "dsh-suite": {
-      "category": "collection",
-      "note": "双语精选 DSH 插件目录",
-      "repo": "whyihaveyou/dsh-suite"
-    },
-    "dsh-recall": {
-      "category": "webui",
-      "note": "Web UI 消息撤回：一键 undo 按钮",
-      "repo": "Mongfayi/dsh-recall"
-    },
-    "dsh-plugin-background": {
-      "category": "skin",
-      "note": "DSH 壁纸插件",
-      "repo": "gameswu/dsh-plugin-background"
-    },
-    "agent_extensions": {
-      "category": "agent",
-      "note": "Agent Skills 与 DSH 扩展库",
-      "repo": "DDDFXYqiming/Agent_Extensions"
-    },
-    "dsh-web-ui-notify": {
-      "category": "channel",
-      "note": "为 DSH 增加桌面通知提醒",
-      "repo": "bill9109/dsh-web-ui-notify"
-    },
-    "dsh-xiaohei": {
-      "category": "skin",
-      "note": "罗小黑主题插件",
-      "repo": "opensetk/dsh-xiaohei"
-    },
-    "dsh-stream-rules": {
-      "category": "agent",
-      "note": "按需注入规则，不浪费上下文",
-      "repo": "jiesou/dsh-stream-rules"
-    },
-    "dsh-ramify": {
-      "category": "webui",
-      "note": "创意分支画布：树状工作区生成、对比、迭代多个方案",
-      "repo": "yanglongyun/dsh-ramify"
-    },
-    "dsh-mnemon": {
-      "category": "agent",
-      "note": "Mnemon 深度集成：运行时记忆、可检索档案与受监督记忆体",
-      "repo": "omdsh-dev/dsh-mnemon"
-    },
-    "dsh-xiaoyao-skins": {
-      "category": "skin",
-      "note": "夕小瑶 × DSH Web 皮肤合集、安装器与创作工具链",
-      "repo": "147228/dsh-xiaoyao-skins"
-    },
-    "dsh-milestone": {
-      "category": "webui",
-      "note": "Git 风格里程碑时间线",
-      "repo": "SnowCrescenter-tech/dsh-milestone"
-    },
-    "dsh-plugin-installer": {
-      "category": "devtools",
-      "note": "市场插件：快速集成 DSH 插件",
-      "repo": "Toukaiteio/dsh-plugin-installer"
-    },
-    "dsh-telegram-relay": {
-      "category": "channel",
-      "note": "通过 Telegram 远程与 DSH 对话并接收通知",
-      "repo": "congchuanling-dot/DSH-Telegram-Relay"
-    },
-    "deepseek-harness-docker": {
-      "category": "devtools",
-      "note": "DSH 社区 Docker/Kubernetes 打包",
-      "repo": "runzhliu/deepseek-harness-docker"
-    },
-    "hello-dsh": {
-      "category": "devtools",
-      "note": "零基础插件开发教程：含 22 个中文技能实例",
-      "repo": "pingfanfan/hello-dsh"
-    },
-    "dsh-wechat-notify": {
-      "category": "channel",
-      "note": "wechat_notify 工具：通过本机微信发送通知",
-      "repo": "wssfk12138/dsh-wechat-notify"
-    },
-    "dsh-plugins": {
-      "category": "collection",
-      "note": "DSH 插件导航与介绍目录",
-      "repo": "lwmxiaobei/dsh-plugins"
-    },
-    "deepseek-harness-desktop": {
-      "category": "devtools",
-      "note": "Electron 桌面壳 for DSH Web UI",
-      "repo": "ChisaAlter/Deepseek-Harness-Desktop"
-    },
-    "dsh-prompt-studio": {
-      "category": "agent",
-      "note": "编辑 user 与内置 system-prompt 分区，实时预览",
-      "repo": "Moeblack/dsh-prompt-studio"
-    },
-    "dsh-track": {
-      "category": "agent",
-      "note": "嵌入式任务管理引擎：决策点协议、念头捕获墙",
-      "repo": "fakechris/dsh-track"
-    },
-    "dsh-issue-filer": {
-      "category": "devtools",
-      "note": "提 issue 技能：自动查重、格式化并创建 issue，本地台账",
-      "repo": "dsh-external/dsh-issue-filer"
-    },
-    "dsh-diff-viewer": {
-      "category": "webui",
-      "note": "PiUI 风格 diff 查看器：替换默认 DiffBlock",
-      "repo": "lehhair/dsh-diff-viewer"
-    },
-    "dsh-bash-encoding": {
-      "category": "code",
-      "note": "bash 输出编码自动识别：UTF-16LE/UTF-8/GBK 正确解码",
-      "repo": "lhh010/dsh-bash-encoding"
-    },
-    "dsh-pty-windows": {
-      "category": "code",
-      "note": "Windows PTY 进程检查器（PowerShell CIM + kill 存活探针）",
-      "repo": "dsh-external/dsh-pty-windows"
-    },
-    "dsh-shell-windows": {
-      "category": "code",
-      "note": "Windows PowerShell 外壳适配器",
-      "repo": "dsh-external/dsh-shell-windows"
-    },
-    "session-persistence-rdb": {
-      "category": "data",
-      "note": "会话关系型数据库持久化",
-      "repo": "morlay/session-persistence-rdb"
-    },
-    "session-chatlog": {
-      "category": "data",
-      "note": "会话聊天记录读取工具",
-      "repo": "dsh-external/session-chatlog"
-    },
-    "dsh-artifact": {
-      "category": "data",
-      "note": "文件交付协议：send_artifact 工具，任意客户端可渲染",
-      "repo": "william-jin-cmu/dsh-artifact"
-    },
-    "dsh-tool-encoding": {
-      "category": "data",
-      "note": "编码/哈希工具：base64、url、hex、md5、sha、UUID",
-      "repo": "omdsh-dev/dsh-tool-encoding"
-    },
-    "dsh-tool-json": {
-      "category": "data",
-      "note": "JMESPath 子集 JSON 查询，零依赖递归下降解析器",
-      "repo": "omdsh-dev/dsh-tool-json"
-    },
-    "dsh-tool-calculator": {
-      "category": "data",
-      "note": "安全数学表达式求值器：零依赖递归下降解析器",
-      "repo": "omdsh-dev/dsh-tool-calculator"
-    },
-    "dsh-tool-time": {
-      "category": "data",
-      "note": "时间工具：ISO 8601 解析、IANA 时区转换、UTC 日历运算",
-      "repo": "omdsh-dev/dsh-tool-time"
-    },
-    "dsh-tool-search": {
-      "category": "data",
-      "note": "按需工具发现与渐进式 schema 披露",
-      "repo": "vibeinging/dsh-tool-search"
-    },
-    "dsh-tool-stat": {
-      "category": "data",
-      "note": "统计工具：描述统计、百分位数、频数分布、相关性",
-      "repo": "omdsh-dev/dsh-tool-stat"
-    },
-    "dsh-agent-budget": {
-      "category": "agent",
-      "note": "原生 agent-tree token 预算插件",
-      "repo": "vibeinging/dsh-agent-budget"
-    },
-    "dsh-checkpoint": {
-      "category": "agent",
-      "note": "标记探索起点，配合 rewind 折叠探索过程",
-      "repo": "dsh-external/dsh-checkpoint"
-    },
-    "dsh-rewind": {
-      "category": "agent",
-      "note": "把 checkpoint 以来的探索折叠为自动生成的报告",
-      "repo": "dsh-external/dsh-rewind"
-    },
-    "dsh-plan-execute": {
-      "category": "agent",
-      "note": "plan/execute 双模型路由：plan 用推理模型，批准后切执行模型",
-      "repo": "dsh-external/dsh-plan-execute"
-    },
-    "dsh-client-ui-plan-execute": {
-      "category": "webui",
-      "note": "Web 设置页「规划/执行模型」设置行插件",
-      "repo": "dsh-external/dsh-client-ui-plan-execute"
-    },
-    "dsh-deeplink": {
-      "category": "webui",
-      "note": "深链：?session=/?workspace= 直接打开指定项目对话",
-      "repo": "qyw233/dsh-deeplink"
-    },
-    "dsh-slice-agent-loop": {
-      "category": "agent",
-      "note": "上下文引擎为有界切片（bounded slice）的 agent loop",
-      "repo": "dsh-external/dsh-slice-agent-loop"
-    },
-    "dsh-alphasolve": {
-      "category": "agent",
-      "note": "会话级 AlphaSolve 工作流",
-      "repo": "dsh-external/dsh-alphasolve"
-    },
-    "dsh-cc-connect": {
-      "category": "code",
-      "note": "通过 cc connect 远程使用 dsh",
-      "repo": "whiteguo233/dsh-cc-connect"
-    },
-    "dsh-github-integration": {
-      "category": "code",
-      "note": "DSH GitHub 集成插件",
-      "repo": "omdsh-dev/dsh-github-integration"
-    },
-    "dsh-kimi-bridge": {
-      "category": "browser",
-      "note": "Kimi WebBridge 集成",
-      "repo": "pandashere/dsh-kimi-bridge"
-    },
-    "dsh-llm-fallbacks": {
-      "category": "agent",
-      "note": "基于角色的 LLM 重试与备用策略",
-      "repo": "btspoony/dsh-llm-fallbacks"
-    },
-    "dsh-easy-ctx-manager": {
-      "category": "agent",
-      "note": "上下文管理：节省、注意力优化、压缩档案馆",
-      "repo": "dsh-external/dsh-easy-ctx-manager"
-    },
-    "dsh-engram-relay": {
-      "category": "agent",
-      "note": "外置 engram 转接模型：<1B 模型实现 100k 上下文等效延展",
-      "repo": "dsh-external/dsh-engram-relay"
-    },
-    "dsh-evolve": {
-      "category": "agent",
-      "note": "自进化插件：会话内给 agent 长出/剪掉能力",
-      "repo": "william-jin-cmu/dsh-evolve"
-    },
-    "dsh-explain": {
-      "category": "agent",
-      "note": "本地优先学习模式：跨会话全局学习线程、按来源讲解",
-      "repo": "yuezengwu/dsh-explain"
-    },
-    "dsh-inspect": {
-      "category": "agent",
-      "note": "发现问题→修复交付→质量复查的对抗式闭环",
-      "repo": "omdsh-dev/dsh-inspect"
-    },
-    "dsh-scout": {
-      "category": "agent",
-      "note": "只读环境探测：运行环境、软件版本、系统资源、端口、服务、硬件",
-      "repo": "omdsh-dev/dsh-scout"
-    },
-    "dsh-self-control-guard": {
-      "category": "agent",
-      "note": "自控守卫：拦截 host-kill 尝试，教模型控制自己",
-      "repo": "pandashere/dsh-self-control-guard"
-    },
-    "dsh-session-cluster": {
-      "category": "channel",
-      "note": "同机跨会话消息（DSH 版 IPC）",
-      "repo": "dsh-external/dsh-session-cluster"
-    },
-    "dsh-session-repair-skill": {
-      "category": "data",
-      "note": "检测并修复损坏的会话历史日志",
-      "repo": "dsh-external/dsh-session-repair-skill"
-    },
-    "dsh-skill-session-recovery": {
-      "category": "data",
-      "note": "会话丢失事故的定位/无损修复/安全重启 skill",
-      "repo": "dsh-external/dsh-skill-session-recovery"
-    },
-    "dsh-sleep": {
-      "category": "agent",
-      "note": "睡眠/唤醒控制",
-      "repo": "dsh-external/dsh-sleep"
-    },
-    "dsh-super-injector": {
-      "category": "agent",
-      "note": "超级注入器",
-      "repo": "yjh051108/dsh-super-injector"
-    },
-    "dsh-turn-navigator": {
-      "category": "webui",
-      "note": "回合导航插件",
-      "repo": "vibeinging/dsh-turn-navigator"
-    },
-    "dsh-voice-chat": {
-      "category": "webui",
-      "note": "实时语音对话：WebUI 内语音输入/输出，边说话边编程",
-      "repo": "dsh-external/dsh-voice-chat"
-    },
-    "dsh-web-panel": {
-      "category": "webui",
-      "note": "内嵌交互式终端：底部终端 + 侧边栏代码审查（xterm.js + node-pty）",
-      "repo": "dsh-external/dsh-web-panel"
-    },
-    "dsh-browser-panel": {
-      "category": "browser",
-      "note": "WebUI 内嵌完整有头浏览器视图",
-      "repo": "dsh-external/dsh-browser-panel"
-    },
-    "dsh-question-collapse": {
-      "category": "webui",
-      "note": "提问栏折叠：保留问题标题与取消按钮，草稿不丢",
-      "repo": "dsh-external/dsh-question-collapse"
-    },
-    "dsh-input-history": {
-      "category": "webui",
-      "note": "输入历史：Ctrl+Up/Ctrl+Down 终端式召回",
-      "repo": "lhh010/dsh-input-history"
-    },
-    "dsh-paste-input": {
-      "category": "webui",
-      "note": "文件输入增强：Ctrl+V 粘贴 + 拖拽 + 选择文件",
-      "repo": "lhh010/dsh-paste-input"
-    },
-    "dsh-live-stats": {
-      "category": "webui",
-      "note": "实时输入/输出 token 估算与生成 TPS",
-      "repo": "Proton1917/dsh-live-stats"
-    },
-    "dsh-tps": {
-      "category": "webui",
-      "note": "TPS 插件",
-      "repo": "Small-tailqwq/dsh-tps"
-    },
-    "dsh-skins": {
-      "category": "skin",
-      "note": "官方 ThemeService 第三方皮肤：token + AI 生图背景",
-      "repo": "Moeblack/dsh-skins"
-    },
-    "dsh-vision": {
-      "category": "vision",
-      "note": "给纯文本 DeepSeek 加视觉：view_image 工具桥接任意 OpenAI 兼容 VLM",
-      "repo": "william-jin-cmu/dsh-vision"
-    },
-    "dsh-multimedia-webui-input": {
-      "category": "webui",
-      "note": "多媒体文件/文件夹输入：发送进会话工作区临时目录",
-      "repo": "dsh-external/dsh-multimedia-webui-input"
-    },
-    "dsh-feishu-bot": {
-      "category": "channel",
-      "note": "飞书远程渠道",
-      "repo": "dsh-external/dsh-feishu-bot"
-    },
-    "dsh-wecom-bot": {
-      "category": "channel",
-      "note": "企业微信远程渠道",
-      "repo": "dsh-external/dsh-wecom-bot"
-    },
-    "dsh-weixin-bot": {
-      "category": "channel",
-      "note": "微信远程渠道",
-      "repo": "dsh-external/dsh-weixin-bot"
-    },
-    "qqbot": {
-      "category": "channel",
-      "note": "QQ 远程渠道",
-      "repo": "dsh-external/qqbot"
-    },
-    "tg-bot": {
-      "category": "channel",
-      "note": "Telegram 远程渠道",
-      "repo": "dsh-external/tg-bot"
-    },
-    "dsh-telegram": {
-      "category": "channel",
-      "note": "Telegram 远程渠道",
-      "repo": "ben7am1n/dsh-telegram"
-    },
-    "dsh-feishu-notify": {
-      "category": "channel",
-      "note": "飞书通知：会话结束/需要等待输入",
-      "repo": "dsh-external/dsh-feishu-notify"
-    },
-    "dsh-ica": {
-      "category": "channel",
-      "note": "icalingua 前端",
-      "repo": "dsh-external/dsh-ica"
-    },
-    "dsh-share": {
-      "category": "channel",
-      "note": "对话分享：一键分享你的对话",
-      "repo": "hellodigua/dsh-share"
-    },
-    "dsh-suggested-replies": {
-      "category": "webui",
-      "note": "预测回复：AI 回复后生成可点击填入草稿的下一步候选",
-      "repo": "dsh-external/dsh-suggested-replies"
-    },
-    "dsh-webbridge": {
-      "category": "browser",
-      "note": "Kimi WebBridge",
-      "repo": "bill9109/dsh-webbridge"
-    },
-    "dsh-oauth-mcp-client": {
-      "category": "agent",
-      "note": "OAuth 2.1 Streamable HTTP MCP 客户端",
-      "repo": "springbrand-lab/dsh-oauth-mcp-client"
-    },
-    "dsh-deep-research": {
-      "category": "agent",
-      "note": "自适应深度研究编排器（官方 workflow）",
-      "repo": "omdsh-dev/dsh-deep-research"
-    },
-    "dsh-data-agent": {
-      "category": "data",
-      "note": "让 AI 帮你连数据库、写 SQL",
-      "repo": "omdsh-dev/dsh-data-agent"
-    },
-    "dsh-kb-sieve": {
-      "category": "data",
-      "note": "知识库插件：可审计 KB 包（references + SQLite FTS5）",
-      "repo": "omdsh-dev/dsh-kb-sieve"
-    },
-    "dsh-loop": {
-      "category": "agent",
-      "note": "定时循环：/loop 命令 + loop 工具 + 活动状态条",
-      "repo": "vlln/dsh-loop"
-    },
-    "dsh-mineru": {
-      "category": "data",
-      "note": "MineRU 文档解析工具",
-      "repo": "dsh-external/dsh-mineru"
-    },
-    "dsh-navbar": {
-      "category": "webui",
-      "note": "对话节点导航条：右缘节点串快速跳转",
-      "repo": "vlln/dsh-navbar"
-    },
-    "dsh-gh-bridge": {
-      "category": "code",
-      "note": "把 macOS Keychain GitHub token 桥进 gh hosts.yml",
-      "repo": "dsh-external/dsh-gh-bridge"
-    },
-    "dsh-code-map": {
-      "category": "code",
-      "note": "代码地图：symbol 索引、文档符号、调用层级、继承树（LSP 之上）",
-      "repo": "dsh-external/dsh-code-map"
-    },
-    "dsh-latex": {
-      "category": "code",
-      "note": "LaTeX 一键编译 PDF（Windows TeX Live）",
-      "repo": "dsh-external/dsh-latex"
-    },
-    "dsh-tui-front-door": {
-      "category": "code",
-      "note": "独立 TUI 前门：ink REPL + 键位引擎 + 会话 seams",
-      "repo": "dsh-external/dsh-tui-front-door"
-    },
-    "dsh-vscode": {
-      "category": "code",
-      "note": "VS Code 聊天集成",
-      "repo": "lonelymoon87/dsh-vscode"
-    },
-    "zotero-wave-rag": {
-      "category": "data",
-      "note": "面向 Zotero 论文库的浪潮式 RAG 细节检索",
-      "repo": "Fisfzy/zotero-wave-rag"
-    },
-    "official-plugins-port": {
-      "category": "collection",
-      "note": "官方 Claude Code / Codex 插件移植（23 个插件）",
-      "repo": "dsh-external/official-plugins-port"
-    },
-    "dsh-claude-move": {
-      "category": "data",
-      "note": "迁移 Claude Code 会话/记忆/技能",
-      "repo": "PerryLink/dsh-claude-move"
-    },
-    "dsh-cyber-sec": {
-      "category": "agent",
-      "note": "授权渗透测试 profile bundle：容器化 bash + 授权 guard + SQLite",
-      "repo": "dsh-external/dsh-cyber-sec"
-    },
-    "dsh-activity-plugin": {
-      "category": "webui",
-      "note": "活动面板",
-      "repo": "dsh-external/dsh-activity-plugin"
-    },
-    "dsh-agent-rp": {
-      "category": "agent",
-      "note": "SillyTavern 迁移与下一代 Agent RP",
-      "repo": "dsh-external/dsh-agent-rp"
-    },
-    "dsh-a2a": {
-      "category": "agent",
-      "note": "Agent2Agent mesh",
-      "repo": "dsh-external/dsh-a2a"
-    },
-    "dsh-cot-summary": {
-      "category": "agent",
-      "note": "CoT 总结",
-      "repo": "dsh-external/dsh-cot-summary"
-    },
-    "dsh-nowledge-mem": {
-      "category": "agent",
-      "note": "Nowledge Mem™ 集成",
-      "repo": "dsh-external/dsh-nowledge-mem"
-    },
-    "dsh-openmaic": {
-      "category": "agent",
-      "note": "生成 OpenMAIC 互动 AI 课程",
-      "repo": "THU-MAIC/dsh-openmaic"
-    },
-    "dsh-qq2006": {
-      "category": "skin",
-      "note": "QQ2006 皮肤：主题注册 + 全局皮肤样式",
-      "repo": "LaplaceYoung/dsh-qq2006"
-    },
-    "dsh-reuse-first": {
-      "category": "agent",
-      "note": "复用优先 Skill",
-      "repo": "dsh-external/dsh-reuse-first"
-    },
-    "dsh-design": {
-      "category": "agent",
-      "note": "DSH 原生 Web/UI 设计 Agent bundle",
-      "repo": "dsh-external/dsh-design"
-    },
-    "dsh-subagent-tree": {
-      "category": "webui",
-      "note": "工作区侧栏树：子代理分支可视化",
-      "repo": "dsh-external/dsh-subagent-tree"
-    },
-    "deep-standard-skill": {
-      "category": "agent",
-      "note": "把工程规范变成会拒绝违规的程序",
-      "repo": "dsh-external/deep-standard-skill"
-    },
-    "dsh-aigc-canvas": {
-      "category": "webui",
-      "note": "AIGC 画布",
-      "repo": "dsh-external/dsh-aigc-canvas"
-    },
-    "dsh-anti-ads": {
-      "category": "skin",
-      "note": "反广告插件",
-      "repo": "dsh-external/dsh-anti-ads"
-    },
-    "7d7d": {
-      "category": "skin",
-      "note": "7k7k 风格 DSH 小游戏平台：HTML5 与 Flash 小游戏",
-      "repo": "omdsh-dev/7d7d"
-    },
-    "chat-width": {
-      "category": "webui",
-      "note": "自由调节正文与输入框展示宽度",
-      "repo": "dsh-external/chat-width"
-    },
-    "ex-setting": {
-      "category": "webui",
-      "note": "DSH 设置扩展",
-      "repo": "omdsh-dev/ex-setting"
-    },
-    "web-components": {
-      "category": "webui",
-      "note": "web-components 支持",
-      "repo": "omdsh-dev/web-components"
-    },
-    "dsh-split-panes": {
-      "category": "webui",
-      "note": "分屏面板",
-      "repo": "lehhair/dsh-split-panes"
-    },
-    "turtle-ui": {
-      "category": "webui",
-      "note": "turtle-ui，as is, no warranty",
-      "repo": "turtle1999/turtle-ui"
-    },
-    "show-bash-command": {
-      "category": "webui",
-      "note": "显示命令具体内容而不是描述",
-      "repo": "dsh-external/show-bash-command"
-    },
-    "ya-workspace-sidebar": {
-      "category": "webui",
-      "note": "工作区侧边栏",
-      "repo": "dsh-external/ya-workspace-sidebar"
-    },
-    "dsh-side-panel": {
-      "category": "webui",
-      "note": "侧边栏：文件浏览器、终端、Git 审查",
-      "repo": "ccq1/dsh-side-panel"
-    },
-    "dsh-selection-chat": {
-      "category": "webui",
-      "note": "选中会话文本 → 加入输入框（不自动发送）",
-      "repo": "dsh-external/dsh-selection-chat"
-    },
-    "dsh-tavern-plugin": {
-      "category": "skin",
-      "note": "小酒馆 Tavern：角色卡、聊天、记忆与朋友圈",
-      "repo": "dsh-external/dsh-tavern-plugin"
-    },
-    "dsh-ui4a": {
-      "category": "webui",
-      "note": "UI4A (UI for Agent) 的 DSH 实现",
-      "repo": "dsh-external/DSH-UI4A"
-    },
-    "dsh-ultra-ui": {
-      "category": "webui",
-      "note": "Ultra UI",
-      "repo": "havingautism/dsh-ultra-ui"
-    },
-    "dsh-drag-and-drop": {
-      "category": "webui",
-      "note": "跨平台文件拖拽与原始路径插入",
-      "repo": "bill9109/dsh-drag-and-drop"
-    },
-    "dsh-custom-css": {
-      "category": "skin",
-      "note": "自定义 CSS",
-      "repo": "AnacondaKC/dsh-custom-css"
-    },
-    "dsh-deepcel": {
-      "category": "skin",
-      "note": "模仿 Excel 的 DSH 皮肤",
-      "repo": "Small-tailqwq/dsh-deepcel"
-    },
-    "dsh-island": {
-      "category": "webui",
-      "note": "Dynamic Island：macOS 刘海面板，codeisland 复刻",
-      "repo": "dsh-external/dsh-island"
-    },
-    "dsh-better-sidebar-plugin-office": {
-      "category": "webui",
-      "note": "better-sidebar 的 Office 扩展",
-      "repo": "dsh-external/dsh-better-sidebar-plugin-office"
-    },
-    "dsh-club": {
-      "category": "channel",
-      "note": "内测用户排行榜（每日自动采集）",
-      "repo": "dsh-external/dsh-club"
-    },
-    "dsh-teamwork": {
-      "category": "agent",
-      "note": "团队协作",
-      "repo": "dsh-external/dsh-teamwork"
-    },
-    "context-doctor": {
-      "category": "agent",
-      "note": "上下文注入审计：统计 AGENTS.md/技能/tool schema 的 token 成本",
-      "repo": "dsh-external/context-doctor"
-    },
-    "browser4-dsh": {
-      "category": "browser",
-      "note": "浏览器插件",
-      "repo": "dsh-external/browser4-dsh"
-    },
-    "dsh-kimi-browser": {
-      "category": "browser",
-      "note": "Kimi 浏览器",
-      "repo": "dsh-external/dsh-kimi-browser"
-    },
-    "cross-harness-cite": {
-      "category": "data",
-      "note": "跨 Harness 引用 codex/claude code 的历史对话",
-      "repo": "dsh-external/cross-harness-cite"
-    },
-    "dsh-auto-blame": {
-      "category": "code",
-      "note": "自动 blame",
-      "repo": "dsh-external/dsh-auto-blame"
-    },
-    "dsh-office": {
-      "category": "code",
-      "note": "Office 文档",
-      "repo": "dsh-external/dsh-office"
-    },
-    "dsh-interpreters": {
-      "category": "code",
-      "note": "解释器",
-      "repo": "dsh-external/dsh-interpreters"
-    },
-    "dsh-my-rsi": {
-      "category": "eco",
-      "note": "RSI 实验与 Cordis 插件（证据驱动）",
-      "repo": "dsh-external/dsh-my-rsi"
-    },
-    "dsh-tool-browser": {
-      "category": "browser",
-      "note": "SDK 玩具箱快照：浏览器控制",
-      "repo": "omdsh-dev/dsh-tool-browser"
-    },
-    "dsh-working-activity": {
-      "category": "webui",
-      "note": "实时工作状态行：俏皮思考文案、运行中的工具、回合总结",
-      "repo": "ccch1mneyyy/dsh-working-activity"
-    },
-    "dsh-cc-tui": {
-      "category": "code",
-      "note": "Claude Code 风格全屏交互终端",
-      "repo": "dsh-external/dsh-cc-tui"
-    },
-    "dsh-web-workflow-visualizer": {
-      "category": "webui",
-      "note": "Workflow 可视化 + 图工程：多 agent 动态工作流白板编辑",
-      "repo": "dsh-external/dsh-web-workflow-visualizer"
-    },
-    "session-teleport": {
-      "category": "agent",
-      "note": "PostgreSQL 单写者会话交接",
-      "repo": "omdsh-dev/session-teleport"
-    },
-    "yet-another-subagent": {
-      "category": "agent",
-      "note": "又一个子代理插件",
-      "repo": "dsh-external/yet-another-subagent"
-    },
-    "mstar-workflow": {
-      "category": "agent",
-      "note": "Skill 驱动的工作流 Agent",
-      "repo": "dsh-external/mstar-workflow"
-    },
-    "dsh-session-hub": {
-      "category": "agent",
-      "note": "跨工具会话互通：显示 opencode/Claude Code/Antigravity 历史会话",
-      "repo": "Asaiuta/dsh-session-hub"
-    },
-    "dsh-superpowers": {
-      "category": "agent",
-      "note": "Superpowers 保留集成",
-      "repo": "codeAnqiang-ma/dsh-superpowers"
-    },
-    "dsh-trace": {
-      "category": "data",
-      "note": "遥测后端：导出 turns、model steps、tool calls",
-      "repo": "vibeinging/dsh-trace"
-    },
-    "recall": {
-      "category": "agent",
-      "note": "切换 Agent 保留记忆：本地优先的跨会话搜索",
-      "repo": "dsh-external/Recall"
-    },
-    "distill": {
-      "category": "agent",
-      "note": "自动对话蒸馏：后台 subagent 反省 + 技能 create/update",
-      "repo": "LoserFox/distill"
-    },
-    "dsh-skills-manager": {
-      "category": "agent",
-      "note": "WebUI 中列出、禁用启用、编辑 skills",
-      "repo": "dsh-external/dsh-skills-manager"
-    },
-    "dsh-agent-session-sources": {
-      "category": "agent",
-      "note": "provider 中立的 agent-session dock + Claude 适配",
-      "repo": "dsh-external/dsh-agent-session-sources"
-    },
-    "qwen-mm-plugins": {
-      "category": "vision",
-      "note": "Qwen 多模态插件支持",
-      "repo": "omdsh-dev/Qwen-MM-Plugins"
-    },
-    "billion-context-dsh": {
-      "category": "agent",
-      "note": "模型驱动的上下文管理（Active Context Pruning / ACP）",
-      "repo": "Tyan66666/billion-context-dsh"
-    },
-    "falsify-dsh": {
-      "category": "agent",
-      "note": "Falsify CLI 适配器",
-      "repo": "shi275773124/falsify-dsh"
-    },
-    "dsh-theme-plugin": {
-      "category": "skin",
-      "note": "DSH Web GUI 主题工作室：5 套内置预设（codex-warm/nord/solarized/graphite/stock）+ 完全可自定义的浅/深配色（强调色、背景、前景、UI 与代码字体、半透明侧栏、对比度），即时热切换并持久化",
-      "repo": "BeiZi6/dsh-theme-plugin",
-      "keep": true
-    },
-    "dsh-opencodego-usage": {
-      "category": "webui",
-      "note": "OpenCodeGo 剩余额度监视器：输入框右下角呼吸灯（按剩余额度绿/黄/红）+ 液态玻璃面板（滚动/周/月三窗口用量与重置时间），每 30 秒自动刷新，Key 自动读取 DSH 凭据",
-      "repo": "BeiZi6/dsh-opencodego-usage",
-      "keep": true
-    },
-    "dsh-vision-bridge": {
-      "category": "vision",
-      "note": "把 Composer 附带图片交给 OpenAI 兼容视觉模型自动描述，转成文本交给 DeepSeek 等纯文本模型",
-      "repo": "ximengxiaolan/dsh-vision-bridge"
-    },
-    "dsh-plugin-writing-guard": {
-      "category": "agent",
-      "note": "论文写作守卫：本地正则检测修改过程残留、防御性写作与 AI 写作痕迹（破折号滥用、不是X而是Y、LLM 高频词、三连排比）；writing_audit / writing_rules 工具，论文写入后增量自动审计（仅反馈新增/已解决问题）",
-      "repo": "xmutfyh/dsh-plugin-writing-guard",
-      "keep": true
-    },
-    "dsh-context": {
-      "category": "webui",
-      "note": "上下文洞察面板：查看模型上下文窗口的组成与变化——构成对照窗口大小、按请求历史趋势、压缩/注入事件、消息级 token 统计",
-      "repo": "bowenliang123/dsh-context",
-      "keep": true
-    },
-    "dsh-subagent-monitor": {
-      "category": "webui",
-      "note": "子代理实时监视面板：侧栏入口 + 右上角卡片，实时展示子代理运行状态、耗时与历史回填",
-      "repo": "Mombrane/dsh-subagent-monitor",
-      "keep": true
-    },
-    "dsh-persist": {
-      "category": "agent",
-      "note": "持久记忆：对话独有笔记、选择性注入、项目记忆、bge-m3 语义 Vault 检索与自动召回",
-      "repo": "tluoluo/dsh-persist",
-      "keep": true
-    },
-    "dsh-tool-vision": {
-      "category": "vision",
-      "note": "本地优先视觉：图片仅发送给本地 VLM（LM Studio/Ollama/vLLM 等），零 API 成本、数据不出本机，产出结构化 JSON 证据",
-      "repo": "gloryxpnv/dsh-tool-vision",
-      "keep": true
-    },
-    "dsh-github-skills": {
-      "category": "code",
-      "note": "Skill 优先的 GitHub 工作流：PR 模板、分支策略等 GitHub 协作技能",
-      "repo": "Starfie1d1272/dsh-github-skills",
-      "keep": true
-    },
-    "dsh-skill-pack": {
-      "category": "devtools",
-      "note": "11 个可共享的工作流技能包：覆盖常用 Agent 工作流场景",
-      "repo": "jeremy9682/dsh-skill-pack",
-      "keep": true
-    }
-  },
-  "manual": [
-    {
-      "repo": "dsh-external/dsh-pi-adapter",
-      "category": null,
-      "note": "Run pi coding-agent extensions (ExtensionAPI) inside DeepSeek Harness via a cord"
-    },
-    {
-      "repo": "dsh-external/dsh-chat-thumb",
-      "category": null,
-      "note": "Chat缩略图"
-    },
-    {
-      "repo": "NoWint/Oh-My-DSH",
-      "category": "collection",
-      "note": "同名兄弟项目：每小时多源扫描（GitHub · GitLab · HN · Reddit · Lobsters · SE）的 DSH 生态目录，已交叉链接"
-    },
-    {
-      "repo": "Aidenwu0209/dsh-PaddleOCR-Skills",
-      "category": "vision",
-      "note": "PaddleOCR 技能：为 DSH 提供原生工具与 GUI 配置的 OCR 能力"
-    },
-    {
-      "repo": "leechen298/Code2Skill",
-      "category": "devtools",
-      "note": "从既有代码生成 Function、MCP、Agent Skill 与离线测试包"
-    },
-    {
-      "repo": "Moximxxx/dsh-find-skill",
-      "category": "devtools",
-      "note": "桥接 vercel-labs/skills 生态的 LLM 驱动技能发现插件"
-    },
-    {
-      "repo": "TohsakaRIN521/dsh-academic-skill",
-      "category": "agent",
-      "note": "学术论文补全技能：补全论文中理论计算数值分析之外的其余部分，减少 AI 引用幻觉"
-    },
-    {
-      "repo": "phoenixlucky/chrome-mcp-bridge-2026-skill",
-      "category": "agent",
-      "note": "为 AI 代理提供稳定可靠的 Streamable HTTP MCP 连接能力"
-    },
-    {
-      "repo": "WeirdSky924/project-change-router-skill",
-      "category": "agent",
-      "note": "项目级变更路由与复用治理：面向 AI 编码代理的变更治理技能"
-    },
-    {
-      "repo": "dongsheng123132/dsh-cad-review",
-      "category": "devtools",
-      "note": "证据优先的 ASCII DXF 检视与确定性 CAD 规则审查：源码哈希实体、图层、坐标与绘图规则证据，离线可用"
-    },
-    {
-      "repo": "cmfok/dsh-feishucard",
-      "category": "channel",
-      "note": "DSH × 飞书桥：官方 SDK 长连接 + 流式回复卡片，per-chat 会话与现场复用保留上下文，npm dsh-feishucard@0.1.0"
-    },
-    {
-      "repo": "drowned-fish1/deepseek-harness-skillx",
-      "category": "devtools",
-      "note": "安全地发现、审计并复用 Skills 的 DSH 插件"
-    },
-    {
-      "repo": "Jesse-njx/dsh-skillport",
-      "category": "devtools",
-      "note": "把 Claude Code、Codex、Cursor 等既有 Skills 一键迁移到 DSH"
-    },
-    {
-      "repo": "niyongsheng/free-vision-skill",
-      "category": "vision",
-      "note": "macOS 本地化识图技能：纯本地视觉能力，无需云端"
-    },
-    {
-      "repo": "PerryLink/dsh-skill-pack-security",
-      "category": "devtools",
-      "note": "面向 DSH 的安全审计技能包（8 个 agent 技能）"
-    },
-    {
-      "repo": "z-col/dsh-SkillsManagePlugins",
-      "category": "devtools",
-      "note": "在 DSH Web 界面可视化查看、编辑、创建与删除 Skills"
-    },
-    {
-      "repo": "winterhuan/dsh-skills-viewer",
-      "category": "devtools",
-      "note": "DSH Skills 设置页只读查看器"
-    },
-    {
-      "repo": "hexbee/dsh-skill-panel",
-      "category": "devtools",
-      "note": "设置页技能管理插件：查看与管理 agent skills"
-    },
-    {
-      "repo": "akqwpeter-prog/dsh-media-skills",
-      "category": "vision",
-      "note": "免费视觉与图像生成技能：粘贴图片即可识图"
-    }
-  ]
+{
+  "min_stars": 3,
+  "overrides": {
+    "dsh-ui-font": {
+      "category": "skin",
+      "note": "DSH 字体插件：正文字体/代码字体/显示比例/行高/字体浏览器，中文字形标记，设置一键生效",
+      "repo": "linshufan21/dsh-ui-font",
+      "keep": true
+    },
+    "Deepseek-Harness-Api-monitor": {
+      "category": "devtools",
+      "note": "DeepSeek Harness API 余额监测插件",
+      "repo": "linshufan21/Deepseek-Harness-Api-monitor",
+      "keep": true
+    },
+    "modlens": {
+      "category": "vision",
+      "note": "DSH 首个视觉插件：纯文本模型的视觉桥梁",
+      "repo": "liustack/modlens"
+    },
+    "dsh-web-ui": {
+      "category": "collection",
+      "note": "DSH Web UI 插件与皮肤合集：任务面板、Git 图、右侧面板、移动端 UI、宠物、实时 Token 统计、皮肤中心",
+      "repo": "zhu1090093659/dsh-web-ui"
+    },
+    "agent-vision-toolkit": {
+      "category": "vision",
+      "note": "为纯文本模型设计的视觉工具箱：多图理解、长截图 OCR、前端 UI 还原、GUI 自动化，可接入 Codex/Claude Code/Pi/Oh My Pi/OpenCode",
+      "repo": "Anionex/agent-vision-toolkit"
+    },
+    "awesome-dsh-plugins": {
+      "category": "collection",
+      "note": "DSH 插件兼容性雷达：每天自动扫描 286+ 候选，四维检查 + 运行级实测",
+      "repo": "AdamPlatin123/awesome-dsh-plugins"
+    },
+    "dsh-tui": {
+      "category": "code",
+      "note": "Claude Code 风格全屏交互终端：像素鲸鱼顶栏、思考流式展开、双击 Esc 回滚、上下文进度条 + TPS 仪表",
+      "repo": "ccch1mneyyy/dsh-TUI"
+    },
+    "dsh-better-sidebar": {
+      "category": "webui",
+      "note": "侧边栏完整工作台：支持三方扩展注册新 Tab，内置文件渲染/编辑、终端、Git、子代理",
+      "repo": "omdsh-dev/DSH-better-sidebar"
+    },
+    "dsh-vision-toolkit": {
+      "category": "vision",
+      "note": "DSH 原生视觉插件：带意图的图片问答、长截图 OCR、UI 还原、grounding、像素级 diff、Artifacts 与 Web UI",
+      "repo": "Anionex/dsh-vision-toolkit"
+    },
+    "awesome-deepseek-harness": {
+      "category": "collection",
+      "note": "DSH 生态精选目录：插件、工具与基础设施",
+      "repo": "0xsline/awesome-deepseek-harness"
+    },
+    "dsh-deep-whale": {
+      "category": "skin",
+      "note": "鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier），CC BY-NC-SA 4.0",
+      "repo": "Small-tailqwq/dsh-deep-whale"
+    },
+    "awesome-dsh-plugin": {
+      "category": "collection",
+      "note": "DeepSeek Harness 精选插件清单（awesome list）",
+      "repo": "awesome-dsh-plugin/awesome-dsh-plugin"
+    },
+    "dsh-ads": {
+      "category": "skin",
+      "note": "2005 年中文站点风格的复古广告插件：侧栏广告 / 对话内信息流 / 角落弹窗",
+      "repo": "Nagi-ovo/dsh-ads"
+    },
+    "dsh-agent-teams": {
+      "category": "agent",
+      "note": "AgentTeams：多 Agent 团队协作插件",
+      "repo": "NanmiCoder/dsh-agent-teams"
+    },
+    "dsh-tianshu-tui": {
+      "category": "code",
+      "note": "dsh-tianshu-tui：DSH 终端 UI",
+      "repo": "huiliyi37/dsh-tianshu-tui"
+    },
+    "oh-dsh": {
+      "category": "collection",
+      "note": "一站式 DSH 社区发行版：TUI、桌面端与 Web UI 三种形态统一体验",
+      "repo": "hust-open-atom-club/oh-dsh"
+    },
+    "modsearch": {
+      "category": "browser",
+      "note": "DSH Web 搜索插件：纯文本模型的搜索桥梁",
+      "repo": "liustack/modsearch"
+    },
+    "argo": {
+      "category": "browser",
+      "note": "为 Agent 打造的搜索工具：多语言覆盖中/英/学术/代码/购物/金融/新闻/百科",
+      "repo": "taxueseek/argo"
+    },
+    "promentor": {
+      "category": "agent",
+      "note": "AI 编程导师 Skill：扫描项目架构、生成阶梯式学习路径",
+      "repo": "Lyn-77/ProMentor"
+    },
+    "mstar-harness": {
+      "category": "agent",
+      "note": "Skill 驱动的 Harness/Loop 工程工作流插件",
+      "repo": "btspoony/mstar-harness"
+    },
+    "dsh-openpencil": {
+      "category": "webui",
+      "note": "OpenPencil 设计稿预览与编辑插件",
+      "repo": "ZSeven-W/dsh-openpencil"
+    },
+    "jacobian": {
+      "category": "eco",
+      "note": "面向 Agent 的纯数学工具：搜索例子与反例、证明辅助",
+      "repo": "morluto/jacobian"
+    },
+    "dsh_workflow": {
+      "category": "agent",
+      "note": "把 Claude Code 的 UltraCode 模式带给 DSH：可生成、可保存、可治理、可观察、可恢复的工作流",
+      "repo": "icetomoyo/dsh_workflow"
+    },
+    "dsh-find-plugins": {
+      "category": "devtools",
+      "note": "在 DSH 内搜索/发现插件的 Skill",
+      "repo": "Nagi-ovo/dsh-find-plugins"
+    },
+    "dsh-visualize": {
+      "category": "webui",
+      "note": "对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流",
+      "repo": "Nagi-ovo/dsh-visualize"
+    },
+    "dsh-at-file": {
+      "category": "webui",
+      "note": "Codex 风格 @文件 引用：工作区文件搜索与引用",
+      "repo": "omdsh-dev/dsh-at-file"
+    },
+    "dsh-open-in-vscode": {
+      "category": "code",
+      "note": "一键在 VS Code 中打开 DSH 工作区目录",
+      "repo": "omdsh-dev/dsh-open-in-vscode"
+    },
+    "flameox": {
+      "category": "eco",
+      "note": "运行时证据：帮助 Agent 追踪、剖析并消除性能热点",
+      "repo": "morluto/flameox"
+    },
+    "dsh-browser": {
+      "category": "browser",
+      "note": "Chrome 侧边栏扩展：让 DSH 直接操控你的浏览器",
+      "repo": "Lum1104/dsh-browser"
+    },
+    "whale-girl": {
+      "category": "skin",
+      "note": "桌面宠物插件（QQ 宠物形态）：可拖拽、投喂、玩耍的积累型伙伴",
+      "repo": "vlln/whale-girl"
+    },
+    "dsh-handbook": {
+      "category": "devtools",
+      "note": "DSH 从 0 到 1 深度手册：安装、插件开发、性能调优、实测案例",
+      "repo": "Electricitysheep/dsh-handbook"
+    },
+    "colleague-skill": {
+      "category": "eco",
+      "note": "「同事」Skill：将离别化为温暖的数字生命 1.0",
+      "repo": "titanwings/colleague-skill"
+    },
+    "ipollowork": {
+      "category": "eco",
+      "note": "下一代开源 AI 工作台：自进化 Agent 运行时，集成 DSH 子代理",
+      "repo": "Devin-AXIS/iPolloWork"
+    },
+    "openbiliclaw": {
+      "category": "eco",
+      "note": "本地优先的跨平台 AI 内容发现 Agent：B站、小红书、抖音、YouTube、X、知乎、Reddit",
+      "repo": "whiteguo233/OpenBiliClaw"
+    },
+    "deeptide": {
+      "category": "eco",
+      "note": "DeepSeek 官方风格 Swift 原生 macOS 编程 Agent",
+      "repo": "paean-ai/deeptide"
+    },
+    "mobius": {
+      "category": "eco",
+      "note": "首个自进化开源 Agent OS：连接团队、AI Agent、设备与算力",
+      "repo": "nutshellai-tech/mobius"
+    },
+    "axern": {
+      "category": "eco",
+      "note": "开源 AI Agent 沙箱：不可信代码执行与持久化服务",
+      "repo": "cofy-x/axern"
+    },
+    "mcp-for-stata": {
+      "category": "eco",
+      "note": "Stata MCP 服务器：把 Stata 接入 Agent",
+      "repo": "SepineTam/mcp-for-stata"
+    },
+    "open-managed-agents": {
+      "category": "eco",
+      "note": "开源 Claude Managed Agents API 实现与自托管 Agent 运行时",
+      "repo": "openma-ai/open-managed-agents"
+    },
+    "rea": {
+      "category": "eco",
+      "note": "用 Agent 逆向一切：从应用行为到原生二进制",
+      "repo": "morluto/rea"
+    },
+    "open-record-replay": {
+      "category": "eco",
+      "note": "macOS 开源录制-回放工作流工具（computer use）",
+      "repo": "humblebanana/open-record-replay"
+    },
+    "phi": {
+      "category": "eco",
+      "note": "源自 Pi 的 Go 编码 Agent：子代理、hashline 编辑、权限门",
+      "repo": "pulseaiclub/phi"
+    },
+    "abu-cowork": {
+      "category": "eco",
+      "note": "Claude Cowork 的开源替代：本地优先 AI Agent 桌面",
+      "repo": "PM-Shawn/Abu-Cowork"
+    },
+    "claude-paper": {
+      "category": "eco",
+      "note": "研究论文自动化研读插件：材料生成、代码演示、交互式 Web 查看器",
+      "repo": "alaliqing/claude-paper"
+    },
+    "harmony-next.skills": {
+      "category": "eco",
+      "note": "HarmonyOS NEXT (API 12+) 开发专家 Skill",
+      "repo": "linhay/harmony-next.skills"
+    },
+    "openguardrails": {
+      "category": "eco",
+      "note": "AI Agent 安全与防护的厂商中立协议 + 中立基准评测",
+      "repo": "openguardrails/openguardrails"
+    },
+    "dsh-launcher": {
+      "category": "devtools",
+      "note": "Windows 轻量 DSH 启动器：登录自启 + 极简 WebView2 窗口",
+      "repo": "Ruler4396/dsh-launcher"
+    },
+    "oh-my-dsh": {
+      "category": "collection",
+      "note": "面向 DSH 的插件生态：100+ 插件，仅通过扩展接口注册，不修改 agent-loop 骨架",
+      "repo": "LaplaceYoung/oh-my-dsh"
+    },
+    "dsh-notification": {
+      "category": "channel",
+      "note": "回合完成桌面通知：按结果类型控制，支持包含/排除关键词规则",
+      "repo": "omdsh-dev/dsh-notification"
+    },
+    "browser-bridge": {
+      "category": "browser",
+      "note": "让 Agent 像你一样操控浏览器窗口",
+      "repo": "hanelalo/browser-bridge"
+    },
+    "dsh-turn-rewind": {
+      "category": "agent",
+      "note": "对话与代码状态回退：基于持久化 Change Ledger 的 rewind",
+      "repo": "Anionex/dsh-turn-rewind"
+    },
+    "allinluna": {
+      "category": "agent",
+      "note": "资源感知的多 Agent 编排（All in Flash DSH 插件）",
+      "repo": "zenx0x/allinluna"
+    },
+    "ui-status-label": {
+      "category": "webui",
+      "note": "把鲸鱼娘思考时的 deep diving 自定义成任意样式",
+      "repo": "alingalingling/ui-status-label"
+    },
+    "dsh-annotation": {
+      "category": "webui",
+      "note": "选中批注插件",
+      "repo": "omdsh-dev/dsh-annotation"
+    },
+    "dsh-custom-tool": {
+      "category": "devtools",
+      "note": "Monaco 编辑器创建/管理沙箱化 JS 工具，模型驱动的工具生命周期",
+      "repo": "omdsh-dev/dsh-custom-tool"
+    },
+    "dsh-ui-whale": {
+      "category": "skin",
+      "note": "手绘像素鲸鱼伙伴：标题栏常驻、眨眼、摆尾、思考时动起来",
+      "repo": "lhh010/dsh-ui-whale"
+    },
+    "plugin-registry": {
+      "category": "devtools",
+      "note": "DSH 插件生态基建：薄控制台（浏览器面板管理官方 repository 插件）+ make-dsh-plugin 开发引导",
+      "repo": "vlln/plugin-registry"
+    },
+    "dsh-genui": {
+      "category": "webui",
+      "note": "GenUI：内联交互式 UI 组件（布局、图表、表单、测验、mermaid、3D 场景）",
+      "repo": "omdsh-dev/dsh-genui"
+    },
+    "dsh-memory-evolve": {
+      "category": "agent",
+      "note": "跨会话长期记忆 + 后台自我进化：五轨记忆、git 分支感知、回合内自我审查",
+      "repo": "csyangwen/dsh-memory-evolve"
+    },
+    "dsh-tianshu-build": {
+      "category": "code",
+      "note": "dsh-tianshu-tui 构建配置",
+      "repo": "huiliyi37/dsh-tianshu-build"
+    },
+    "leantoken": {
+      "category": "code",
+      "note": "代码智能：找到关键代码，保持上下文窗口与 token 精简",
+      "repo": "morluto/leantoken"
+    },
+    "dsh-message-edit": {
+      "category": "webui",
+      "note": "基于分支的消息编辑、重掷、重试与版本时间线",
+      "repo": "Moeblack/dsh-message-edit"
+    },
+    "dsh-skill-stats": {
+      "category": "agent",
+      "note": "技能调用统计：历史回放 + 实时订阅，SVG 趋势图",
+      "repo": "dsh-external/dsh-skill-stats"
+    },
+    "dsh-security-audit": {
+      "category": "devtools",
+      "note": "本机安全审计：配置/插件来源/会话/网络暴露面，脱敏风险报告",
+      "repo": "omdsh-dev/dsh-security-audit"
+    },
+    "dsh-emoji": {
+      "category": "skin",
+      "note": "为 AI 回复自动添加表情",
+      "repo": "hellodigua/dsh-emoji"
+    },
+    "dsh-automation": {
+      "category": "agent",
+      "note": "自动化：让 Coding 任务按计划在新 Agent Session 中运行，Web/Agent 管理定时任务",
+      "repo": "titanwings/dsh-automation"
+    },
+    "dsh-git-identity": {
+      "category": "code",
+      "note": "git 提交固定使用环境自身作者身份（优先 gh CLI 登录账号）",
+      "repo": "LoserFox/dsh-git-identity"
+    },
+    "dsh-session-health": {
+      "category": "agent",
+      "note": "会话健康检查：多帧 zstd 会话文件帧级扫描诊断",
+      "repo": "omdsh-dev/dsh-session-health"
+    },
+    "dsh-minigames": {
+      "category": "skin",
+      "note": "右侧小游戏面板：18 款离线小游戏，等待模型回复或修 bug 时的摸鱼神器",
+      "repo": "lhh010/dsh-minigames"
+    },
+    "dsh-web-review": {
+      "category": "webui",
+      "note": "网页预览与元素批注：让 AI 根据可视化反馈直接修改前端源码",
+      "repo": "CanglongCl/dsh-web-review"
+    },
+    "dsh-desktop": {
+      "category": "devtools",
+      "note": "社区维护的非官方桌面客户端：自动复用本机实例、智能连接、托盘常驻",
+      "repo": "bruc3van/dsh-desktop"
+    },
+    "dsh-focus-chat": {
+      "category": "webui",
+      "note": "「聚焦会话」精简视图：只关注最终产出结果",
+      "repo": "dingyi222666/dsh-focus-chat"
+    },
+    "dsh-stickers": {
+      "category": "skin",
+      "note": "WebUI 贴纸插件：用户与 Agent 双向反应",
+      "repo": "william-jin-cmu/dsh-stickers"
+    },
+    "telegram": {
+      "category": "channel",
+      "note": "Telegram Bot API 桥接：长轮询、per-chat 会话、HTML 格式化",
+      "repo": "LoserFox/telegram"
+    },
+    "dsh-ui-progress": {
+      "category": "webui",
+      "note": "会话进度条：todos 真实进度、实时 token 生成速率、中断橘红态",
+      "repo": "lhh010/dsh-ui-progress"
+    },
+    "dsh-grok-tui": {
+      "category": "code",
+      "note": "通过 grok-build 的 TUI 使用 dsh",
+      "repo": "chen-001/dsh-grok-tui"
+    },
+    "dsh-gomoku": {
+      "category": "skin",
+      "note": "在 DSH 中与 AI 下五子棋，也可让 AI 对局",
+      "repo": "omdsh-dev/dsh-gomoku"
+    },
+    "fabric": {
+      "category": "code",
+      "note": "类似 PC Fabric 的 hook 处理器",
+      "repo": "omdsh-dev/fabric"
+    },
+    "dsh-balance": {
+      "category": "agent",
+      "note": "多模型余额/负载均衡",
+      "repo": "TwotwoPiggy/dsh-balance"
+    },
+    "dsh-interconnect": {
+      "category": "channel",
+      "note": "跨实例消息/事件交接插件",
+      "repo": "Chinesezjc/dsh-interconnect"
+    },
+    "dsh-work": {
+      "category": "agent",
+      "note": "让 agent 汇报工作时更结构化",
+      "repo": "vibeinging/dsh-work"
+    },
+    "dsh-her-eyes": {
+      "category": "vision",
+      "note": "让 AI 自动调用 VLM 进行视觉分析",
+      "repo": "huashenglian/dsh-her-eyes"
+    },
+    "dsh-better-browser": {
+      "category": "browser",
+      "note": "通过 Kimi WebBridge 让 Agent 操作用户已登录的浏览器，提供 13 个 web 工具",
+      "repo": "titanwings/dsh-better-browser"
+    },
+    "dsh-task-status": {
+      "category": "webui",
+      "note": "后台任务状态条：对话页任务进度 + 实时输出 tail",
+      "repo": "vlln/dsh-task-status"
+    },
+    "dsh-review-skills": {
+      "category": "agent",
+      "note": "代码审查 Skill 集",
+      "repo": "ben7am1n/dsh-review-skills"
+    },
+    "dsh-chat-import": {
+      "category": "data",
+      "note": "聊天记录导入",
+      "repo": "Nwflower/dsh-chat-import"
+    },
+    "dsh-lan": {
+      "category": "channel",
+      "note": "局域网插件：overlay 把 dsh web 绑定到局域网",
+      "repo": "moxisuki/dsh-lan"
+    },
+    "dsh-sentinel": {
+      "category": "agent",
+      "note": "条件驱动唤醒：持久化文件/命令监控",
+      "repo": "fuhefei/dsh-sentinel"
+    },
+    "dsh-tool-turbo": {
+      "category": "agent",
+      "note": "逐轮 reasoning_effort 优化器",
+      "repo": "Electricitysheep/dsh-tool-turbo"
+    },
+    "dshfind": {
+      "category": "devtools",
+      "note": "DSH 学习与分享社区",
+      "repo": "hikariming/dshfind"
+    },
+    "dsh-plugin-cost-tracker": {
+      "category": "agent",
+      "note": "Token 成本追踪",
+      "repo": "YYTbit/dsh-plugin-cost-tracker"
+    },
+    "dsh-companion": {
+      "category": "agent",
+      "note": "陪伴模式：SOUL 人格 + Hermes 长期记忆，可选 QQ 通道",
+      "repo": "yyh-001/dsh-companion"
+    },
+    "dsh-suite": {
+      "category": "collection",
+      "note": "双语精选 DSH 插件目录",
+      "repo": "whyihaveyou/dsh-suite"
+    },
+    "dsh-recall": {
+      "category": "webui",
+      "note": "Web UI 消息撤回：一键 undo 按钮",
+      "repo": "Mongfayi/dsh-recall"
+    },
+    "dsh-plugin-background": {
+      "category": "skin",
+      "note": "DSH 壁纸插件",
+      "repo": "gameswu/dsh-plugin-background"
+    },
+    "agent_extensions": {
+      "category": "agent",
+      "note": "Agent Skills 与 DSH 扩展库",
+      "repo": "DDDFXYqiming/Agent_Extensions"
+    },
+    "dsh-web-ui-notify": {
+      "category": "channel",
+      "note": "为 DSH 增加桌面通知提醒",
+      "repo": "bill9109/dsh-web-ui-notify"
+    },
+    "dsh-xiaohei": {
+      "category": "skin",
+      "note": "罗小黑主题插件",
+      "repo": "opensetk/dsh-xiaohei"
+    },
+    "dsh-stream-rules": {
+      "category": "agent",
+      "note": "按需注入规则，不浪费上下文",
+      "repo": "jiesou/dsh-stream-rules"
+    },
+    "dsh-ramify": {
+      "category": "webui",
+      "note": "创意分支画布：树状工作区生成、对比、迭代多个方案",
+      "repo": "yanglongyun/dsh-ramify"
+    },
+    "dsh-mnemon": {
+      "category": "agent",
+      "note": "Mnemon 深度集成：运行时记忆、可检索档案与受监督记忆体",
+      "repo": "omdsh-dev/dsh-mnemon"
+    },
+    "dsh-xiaoyao-skins": {
+      "category": "skin",
+      "note": "夕小瑶 × DSH Web 皮肤合集、安装器与创作工具链",
+      "repo": "147228/dsh-xiaoyao-skins"
+    },
+    "dsh-milestone": {
+      "category": "webui",
+      "note": "Git 风格里程碑时间线",
+      "repo": "SnowCrescenter-tech/dsh-milestone"
+    },
+    "dsh-plugin-installer": {
+      "category": "devtools",
+      "note": "市场插件：快速集成 DSH 插件",
+      "repo": "Toukaiteio/dsh-plugin-installer"
+    },
+    "dsh-telegram-relay": {
+      "category": "channel",
+      "note": "通过 Telegram 远程与 DSH 对话并接收通知",
+      "repo": "congchuanling-dot/DSH-Telegram-Relay"
+    },
+    "deepseek-harness-docker": {
+      "category": "devtools",
+      "note": "DSH 社区 Docker/Kubernetes 打包",
+      "repo": "runzhliu/deepseek-harness-docker"
+    },
+    "hello-dsh": {
+      "category": "devtools",
+      "note": "零基础插件开发教程：含 22 个中文技能实例",
+      "repo": "pingfanfan/hello-dsh"
+    },
+    "dsh-wechat-notify": {
+      "category": "channel",
+      "note": "wechat_notify 工具：通过本机微信发送通知",
+      "repo": "wssfk12138/dsh-wechat-notify"
+    },
+    "dsh-plugins": {
+      "category": "collection",
+      "note": "DSH 插件导航与介绍目录",
+      "repo": "lwmxiaobei/dsh-plugins"
+    },
+    "deepseek-harness-desktop": {
+      "category": "devtools",
+      "note": "Electron 桌面壳 for DSH Web UI",
+      "repo": "ChisaAlter/Deepseek-Harness-Desktop"
+    },
+    "dsh-prompt-studio": {
+      "category": "agent",
+      "note": "编辑 user 与内置 system-prompt 分区，实时预览",
+      "repo": "Moeblack/dsh-prompt-studio"
+    },
+    "dsh-track": {
+      "category": "agent",
+      "note": "嵌入式任务管理引擎：决策点协议、念头捕获墙",
+      "repo": "fakechris/dsh-track"
+    },
+    "dsh-issue-filer": {
+      "category": "devtools",
+      "note": "提 issue 技能：自动查重、格式化并创建 issue，本地台账",
+      "repo": "dsh-external/dsh-issue-filer"
+    },
+    "dsh-diff-viewer": {
+      "category": "webui",
+      "note": "PiUI 风格 diff 查看器：替换默认 DiffBlock",
+      "repo": "lehhair/dsh-diff-viewer"
+    },
+    "dsh-bash-encoding": {
+      "category": "code",
+      "note": "bash 输出编码自动识别：UTF-16LE/UTF-8/GBK 正确解码",
+      "repo": "lhh010/dsh-bash-encoding"
+    },
+    "dsh-pty-windows": {
+      "category": "code",
+      "note": "Windows PTY 进程检查器（PowerShell CIM + kill 存活探针）",
+      "repo": "dsh-external/dsh-pty-windows"
+    },
+    "dsh-shell-windows": {
+      "category": "code",
+      "note": "Windows PowerShell 外壳适配器",
+      "repo": "dsh-external/dsh-shell-windows"
+    },
+    "session-persistence-rdb": {
+      "category": "data",
+      "note": "会话关系型数据库持久化",
+      "repo": "morlay/session-persistence-rdb"
+    },
+    "session-chatlog": {
+      "category": "data",
+      "note": "会话聊天记录读取工具",
+      "repo": "dsh-external/session-chatlog"
+    },
+    "dsh-artifact": {
+      "category": "data",
+      "note": "文件交付协议：send_artifact 工具，任意客户端可渲染",
+      "repo": "william-jin-cmu/dsh-artifact"
+    },
+    "dsh-tool-encoding": {
+      "category": "data",
+      "note": "编码/哈希工具：base64、url、hex、md5、sha、UUID",
+      "repo": "omdsh-dev/dsh-tool-encoding"
+    },
+    "dsh-tool-json": {
+      "category": "data",
+      "note": "JMESPath 子集 JSON 查询，零依赖递归下降解析器",
+      "repo": "omdsh-dev/dsh-tool-json"
+    },
+    "dsh-tool-calculator": {
+      "category": "data",
+      "note": "安全数学表达式求值器：零依赖递归下降解析器",
+      "repo": "omdsh-dev/dsh-tool-calculator"
+    },
+    "dsh-tool-time": {
+      "category": "data",
+      "note": "时间工具：ISO 8601 解析、IANA 时区转换、UTC 日历运算",
+      "repo": "omdsh-dev/dsh-tool-time"
+    },
+    "dsh-tool-search": {
+      "category": "data",
+      "note": "按需工具发现与渐进式 schema 披露",
+      "repo": "vibeinging/dsh-tool-search"
+    },
+    "dsh-tool-stat": {
+      "category": "data",
+      "note": "统计工具：描述统计、百分位数、频数分布、相关性",
+      "repo": "omdsh-dev/dsh-tool-stat"
+    },
+    "dsh-agent-budget": {
+      "category": "agent",
+      "note": "原生 agent-tree token 预算插件",
+      "repo": "vibeinging/dsh-agent-budget"
+    },
+    "dsh-checkpoint": {
+      "category": "agent",
+      "note": "标记探索起点，配合 rewind 折叠探索过程",
+      "repo": "dsh-external/dsh-checkpoint"
+    },
+    "dsh-rewind": {
+      "category": "agent",
+      "note": "把 checkpoint 以来的探索折叠为自动生成的报告",
+      "repo": "dsh-external/dsh-rewind"
+    },
+    "dsh-plan-execute": {
+      "category": "agent",
+      "note": "plan/execute 双模型路由：plan 用推理模型，批准后切执行模型",
+      "repo": "dsh-external/dsh-plan-execute"
+    },
+    "dsh-client-ui-plan-execute": {
+      "category": "webui",
+      "note": "Web 设置页「规划/执行模型」设置行插件",
+      "repo": "dsh-external/dsh-client-ui-plan-execute"
+    },
+    "dsh-deeplink": {
+      "category": "webui",
+      "note": "深链：?session=/?workspace= 直接打开指定项目对话",
+      "repo": "qyw233/dsh-deeplink"
+    },
+    "dsh-slice-agent-loop": {
+      "category": "agent",
+      "note": "上下文引擎为有界切片（bounded slice）的 agent loop",
+      "repo": "dsh-external/dsh-slice-agent-loop"
+    },
+    "dsh-alphasolve": {
+      "category": "agent",
+      "note": "会话级 AlphaSolve 工作流",
+      "repo": "dsh-external/dsh-alphasolve"
+    },
+    "dsh-cc-connect": {
+      "category": "code",
+      "note": "通过 cc connect 远程使用 dsh",
+      "repo": "whiteguo233/dsh-cc-connect"
+    },
+    "dsh-github-integration": {
+      "category": "code",
+      "note": "DSH GitHub 集成插件",
+      "repo": "omdsh-dev/dsh-github-integration"
+    },
+    "dsh-kimi-bridge": {
+      "category": "browser",
+      "note": "Kimi WebBridge 集成",
+      "repo": "pandashere/dsh-kimi-bridge"
+    },
+    "dsh-llm-fallbacks": {
+      "category": "agent",
+      "note": "基于角色的 LLM 重试与备用策略",
+      "repo": "btspoony/dsh-llm-fallbacks"
+    },
+    "dsh-easy-ctx-manager": {
+      "category": "agent",
+      "note": "上下文管理：节省、注意力优化、压缩档案馆",
+      "repo": "dsh-external/dsh-easy-ctx-manager"
+    },
+    "dsh-engram-relay": {
+      "category": "agent",
+      "note": "外置 engram 转接模型：<1B 模型实现 100k 上下文等效延展",
+      "repo": "dsh-external/dsh-engram-relay"
+    },
+    "dsh-evolve": {
+      "category": "agent",
+      "note": "自进化插件：会话内给 agent 长出/剪掉能力",
+      "repo": "william-jin-cmu/dsh-evolve"
+    },
+    "dsh-explain": {
+      "category": "agent",
+      "note": "本地优先学习模式：跨会话全局学习线程、按来源讲解",
+      "repo": "yuezengwu/dsh-explain"
+    },
+    "dsh-inspect": {
+      "category": "agent",
+      "note": "发现问题→修复交付→质量复查的对抗式闭环",
+      "repo": "omdsh-dev/dsh-inspect"
+    },
+    "dsh-scout": {
+      "category": "agent",
+      "note": "只读环境探测：运行环境、软件版本、系统资源、端口、服务、硬件",
+      "repo": "omdsh-dev/dsh-scout"
+    },
+    "dsh-self-control-guard": {
+      "category": "agent",
+      "note": "自控守卫：拦截 host-kill 尝试，教模型控制自己",
+      "repo": "pandashere/dsh-self-control-guard"
+    },
+    "dsh-session-cluster": {
+      "category": "channel",
+      "note": "同机跨会话消息（DSH 版 IPC）",
+      "repo": "dsh-external/dsh-session-cluster"
+    },
+    "dsh-session-repair-skill": {
+      "category": "data",
+      "note": "检测并修复损坏的会话历史日志",
+      "repo": "dsh-external/dsh-session-repair-skill"
+    },
+    "dsh-skill-session-recovery": {
+      "category": "data",
+      "note": "会话丢失事故的定位/无损修复/安全重启 skill",
+      "repo": "dsh-external/dsh-skill-session-recovery"
+    },
+    "dsh-sleep": {
+      "category": "agent",
+      "note": "睡眠/唤醒控制",
+      "repo": "dsh-external/dsh-sleep"
+    },
+    "dsh-super-injector": {
+      "category": "agent",
+      "note": "超级注入器",
+      "repo": "yjh051108/dsh-super-injector"
+    },
+    "dsh-turn-navigator": {
+      "category": "webui",
+      "note": "回合导航插件",
+      "repo": "vibeinging/dsh-turn-navigator"
+    },
+    "dsh-voice-chat": {
+      "category": "webui",
+      "note": "实时语音对话：WebUI 内语音输入/输出，边说话边编程",
+      "repo": "dsh-external/dsh-voice-chat"
+    },
+    "dsh-web-panel": {
+      "category": "webui",
+      "note": "内嵌交互式终端：底部终端 + 侧边栏代码审查（xterm.js + node-pty）",
+      "repo": "dsh-external/dsh-web-panel"
+    },
+    "dsh-browser-panel": {
+      "category": "browser",
+      "note": "WebUI 内嵌完整有头浏览器视图",
+      "repo": "dsh-external/dsh-browser-panel"
+    },
+    "dsh-question-collapse": {
+      "category": "webui",
+      "note": "提问栏折叠：保留问题标题与取消按钮，草稿不丢",
+      "repo": "dsh-external/dsh-question-collapse"
+    },
+    "dsh-input-history": {
+      "category": "webui",
+      "note": "输入历史：Ctrl+Up/Ctrl+Down 终端式召回",
+      "repo": "lhh010/dsh-input-history"
+    },
+    "dsh-paste-input": {
+      "category": "webui",
+      "note": "文件输入增强：Ctrl+V 粘贴 + 拖拽 + 选择文件",
+      "repo": "lhh010/dsh-paste-input"
+    },
+    "dsh-live-stats": {
+      "category": "webui",
+      "note": "实时输入/输出 token 估算与生成 TPS",
+      "repo": "Proton1917/dsh-live-stats"
+    },
+    "dsh-tps": {
+      "category": "webui",
+      "note": "TPS 插件",
+      "repo": "Small-tailqwq/dsh-tps"
+    },
+    "dsh-skins": {
+      "category": "skin",
+      "note": "官方 ThemeService 第三方皮肤：token + AI 生图背景",
+      "repo": "Moeblack/dsh-skins"
+    },
+    "dsh-vision": {
+      "category": "vision",
+      "note": "给纯文本 DeepSeek 加视觉：view_image 工具桥接任意 OpenAI 兼容 VLM",
+      "repo": "william-jin-cmu/dsh-vision"
+    },
+    "dsh-multimedia-webui-input": {
+      "category": "webui",
+      "note": "多媒体文件/文件夹输入：发送进会话工作区临时目录",
+      "repo": "dsh-external/dsh-multimedia-webui-input"
+    },
+    "dsh-feishu-bot": {
+      "category": "channel",
+      "note": "飞书远程渠道",
+      "repo": "dsh-external/dsh-feishu-bot"
+    },
+    "dsh-wecom-bot": {
+      "category": "channel",
+      "note": "企业微信远程渠道",
+      "repo": "dsh-external/dsh-wecom-bot"
+    },
+    "dsh-weixin-bot": {
+      "category": "channel",
+      "note": "微信远程渠道",
+      "repo": "dsh-external/dsh-weixin-bot"
+    },
+    "qqbot": {
+      "category": "channel",
+      "note": "QQ 远程渠道",
+      "repo": "dsh-external/qqbot"
+    },
+    "tg-bot": {
+      "category": "channel",
+      "note": "Telegram 远程渠道",
+      "repo": "dsh-external/tg-bot"
+    },
+    "dsh-telegram": {
+      "category": "channel",
+      "note": "Telegram 远程渠道",
+      "repo": "ben7am1n/dsh-telegram"
+    },
+    "dsh-feishu-notify": {
+      "category": "channel",
+      "note": "飞书通知：会话结束/需要等待输入",
+      "repo": "dsh-external/dsh-feishu-notify"
+    },
+    "dsh-ica": {
+      "category": "channel",
+      "note": "icalingua 前端",
+      "repo": "dsh-external/dsh-ica"
+    },
+    "dsh-share": {
+      "category": "channel",
+      "note": "对话分享：一键分享你的对话",
+      "repo": "hellodigua/dsh-share"
+    },
+    "dsh-suggested-replies": {
+      "category": "webui",
+      "note": "预测回复：AI 回复后生成可点击填入草稿的下一步候选",
+      "repo": "dsh-external/dsh-suggested-replies"
+    },
+    "dsh-webbridge": {
+      "category": "browser",
+      "note": "Kimi WebBridge",
+      "repo": "bill9109/dsh-webbridge"
+    },
+    "dsh-oauth-mcp-client": {
+      "category": "agent",
+      "note": "OAuth 2.1 Streamable HTTP MCP 客户端",
+      "repo": "springbrand-lab/dsh-oauth-mcp-client"
+    },
+    "dsh-deep-research": {
+      "category": "agent",
+      "note": "自适应深度研究编排器（官方 workflow）",
+      "repo": "omdsh-dev/dsh-deep-research"
+    },
+    "dsh-data-agent": {
+      "category": "data",
+      "note": "让 AI 帮你连数据库、写 SQL",
+      "repo": "omdsh-dev/dsh-data-agent"
+    },
+    "dsh-kb-sieve": {
+      "category": "data",
+      "note": "知识库插件：可审计 KB 包（references + SQLite FTS5）",
+      "repo": "omdsh-dev/dsh-kb-sieve"
+    },
+    "dsh-loop": {
+      "category": "agent",
+      "note": "定时循环：/loop 命令 + loop 工具 + 活动状态条",
+      "repo": "vlln/dsh-loop"
+    },
+    "dsh-mineru": {
+      "category": "data",
+      "note": "MineRU 文档解析工具",
+      "repo": "dsh-external/dsh-mineru"
+    },
+    "dsh-navbar": {
+      "category": "webui",
+      "note": "对话节点导航条：右缘节点串快速跳转",
+      "repo": "vlln/dsh-navbar"
+    },
+    "dsh-gh-bridge": {
+      "category": "code",
+      "note": "把 macOS Keychain GitHub token 桥进 gh hosts.yml",
+      "repo": "dsh-external/dsh-gh-bridge"
+    },
+    "dsh-code-map": {
+      "category": "code",
+      "note": "代码地图：symbol 索引、文档符号、调用层级、继承树（LSP 之上）",
+      "repo": "dsh-external/dsh-code-map"
+    },
+    "dsh-latex": {
+      "category": "code",
+      "note": "LaTeX 一键编译 PDF（Windows TeX Live）",
+      "repo": "dsh-external/dsh-latex"
+    },
+    "dsh-tui-front-door": {
+      "category": "code",
+      "note": "独立 TUI 前门：ink REPL + 键位引擎 + 会话 seams",
+      "repo": "dsh-external/dsh-tui-front-door"
+    },
+    "dsh-vscode": {
+      "category": "code",
+      "note": "VS Code 聊天集成",
+      "repo": "lonelymoon87/dsh-vscode"
+    },
+    "zotero-wave-rag": {
+      "category": "data",
+      "note": "面向 Zotero 论文库的浪潮式 RAG 细节检索",
+      "repo": "Fisfzy/zotero-wave-rag"
+    },
+    "official-plugins-port": {
+      "category": "collection",
+      "note": "官方 Claude Code / Codex 插件移植（23 个插件）",
+      "repo": "dsh-external/official-plugins-port"
+    },
+    "dsh-claude-move": {
+      "category": "data",
+      "note": "迁移 Claude Code 会话/记忆/技能",
+      "repo": "PerryLink/dsh-claude-move"
+    },
+    "dsh-cyber-sec": {
+      "category": "agent",
+      "note": "授权渗透测试 profile bundle：容器化 bash + 授权 guard + SQLite",
+      "repo": "dsh-external/dsh-cyber-sec"
+    },
+    "dsh-activity-plugin": {
+      "category": "webui",
+      "note": "活动面板",
+      "repo": "dsh-external/dsh-activity-plugin"
+    },
+    "dsh-agent-rp": {
+      "category": "agent",
+      "note": "SillyTavern 迁移与下一代 Agent RP",
+      "repo": "dsh-external/dsh-agent-rp"
+    },
+    "dsh-a2a": {
+      "category": "agent",
+      "note": "Agent2Agent mesh",
+      "repo": "dsh-external/dsh-a2a"
+    },
+    "dsh-cot-summary": {
+      "category": "agent",
+      "note": "CoT 总结",
+      "repo": "dsh-external/dsh-cot-summary"
+    },
+    "dsh-nowledge-mem": {
+      "category": "agent",
+      "note": "Nowledge Mem™ 集成",
+      "repo": "dsh-external/dsh-nowledge-mem"
+    },
+    "dsh-openmaic": {
+      "category": "agent",
+      "note": "生成 OpenMAIC 互动 AI 课程",
+      "repo": "THU-MAIC/dsh-openmaic"
+    },
+    "dsh-qq2006": {
+      "category": "skin",
+      "note": "QQ2006 皮肤：主题注册 + 全局皮肤样式",
+      "repo": "LaplaceYoung/dsh-qq2006"
+    },
+    "dsh-reuse-first": {
+      "category": "agent",
+      "note": "复用优先 Skill",
+      "repo": "dsh-external/dsh-reuse-first"
+    },
+    "dsh-design": {
+      "category": "agent",
+      "note": "DSH 原生 Web/UI 设计 Agent bundle",
+      "repo": "dsh-external/dsh-design"
+    },
+    "dsh-subagent-tree": {
+      "category": "webui",
+      "note": "工作区侧栏树：子代理分支可视化",
+      "repo": "dsh-external/dsh-subagent-tree"
+    },
+    "deep-standard-skill": {
+      "category": "agent",
+      "note": "把工程规范变成会拒绝违规的程序",
+      "repo": "dsh-external/deep-standard-skill"
+    },
+    "dsh-aigc-canvas": {
+      "category": "webui",
+      "note": "AIGC 画布",
+      "repo": "dsh-external/dsh-aigc-canvas"
+    },
+    "dsh-anti-ads": {
+      "category": "skin",
+      "note": "反广告插件",
+      "repo": "dsh-external/dsh-anti-ads"
+    },
+    "7d7d": {
+      "category": "skin",
+      "note": "7k7k 风格 DSH 小游戏平台：HTML5 与 Flash 小游戏",
+      "repo": "omdsh-dev/7d7d"
+    },
+    "chat-width": {
+      "category": "webui",
+      "note": "自由调节正文与输入框展示宽度",
+      "repo": "dsh-external/chat-width"
+    },
+    "ex-setting": {
+      "category": "webui",
+      "note": "DSH 设置扩展",
+      "repo": "omdsh-dev/ex-setting"
+    },
+    "web-components": {
+      "category": "webui",
+      "note": "web-components 支持",
+      "repo": "omdsh-dev/web-components"
+    },
+    "dsh-split-panes": {
+      "category": "webui",
+      "note": "分屏面板",
+      "repo": "lehhair/dsh-split-panes"
+    },
+    "turtle-ui": {
+      "category": "webui",
+      "note": "turtle-ui，as is, no warranty",
+      "repo": "turtle1999/turtle-ui"
+    },
+    "show-bash-command": {
+      "category": "webui",
+      "note": "显示命令具体内容而不是描述",
+      "repo": "dsh-external/show-bash-command"
+    },
+    "ya-workspace-sidebar": {
+      "category": "webui",
+      "note": "工作区侧边栏",
+      "repo": "dsh-external/ya-workspace-sidebar"
+    },
+    "dsh-side-panel": {
+      "category": "webui",
+      "note": "侧边栏：文件浏览器、终端、Git 审查",
+      "repo": "ccq1/dsh-side-panel"
+    },
+    "dsh-selection-chat": {
+      "category": "webui",
+      "note": "选中会话文本 → 加入输入框（不自动发送）",
+      "repo": "dsh-external/dsh-selection-chat"
+    },
+    "dsh-tavern-plugin": {
+      "category": "skin",
+      "note": "小酒馆 Tavern：角色卡、聊天、记忆与朋友圈",
+      "repo": "dsh-external/dsh-tavern-plugin"
+    },
+    "dsh-ui4a": {
+      "category": "webui",
+      "note": "UI4A (UI for Agent) 的 DSH 实现",
+      "repo": "dsh-external/DSH-UI4A"
+    },
+    "dsh-ultra-ui": {
+      "category": "webui",
+      "note": "Ultra UI",
+      "repo": "havingautism/dsh-ultra-ui"
+    },
+    "dsh-drag-and-drop": {
+      "category": "webui",
+      "note": "跨平台文件拖拽与原始路径插入",
+      "repo": "bill9109/dsh-drag-and-drop"
+    },
+    "dsh-custom-css": {
+      "category": "skin",
+      "note": "自定义 CSS",
+      "repo": "AnacondaKC/dsh-custom-css"
+    },
+    "dsh-deepcel": {
+      "category": "skin",
+      "note": "模仿 Excel 的 DSH 皮肤",
+      "repo": "Small-tailqwq/dsh-deepcel"
+    },
+    "dsh-island": {
+      "category": "webui",
+      "note": "Dynamic Island：macOS 刘海面板，codeisland 复刻",
+      "repo": "dsh-external/dsh-island"
+    },
+    "dsh-better-sidebar-plugin-office": {
+      "category": "webui",
+      "note": "better-sidebar 的 Office 扩展",
+      "repo": "dsh-external/dsh-better-sidebar-plugin-office"
+    },
+    "dsh-club": {
+      "category": "channel",
+      "note": "内测用户排行榜（每日自动采集）",
+      "repo": "dsh-external/dsh-club"
+    },
+    "dsh-teamwork": {
+      "category": "agent",
+      "note": "团队协作",
+      "repo": "dsh-external/dsh-teamwork"
+    },
+    "context-doctor": {
+      "category": "agent",
+      "note": "上下文注入审计：统计 AGENTS.md/技能/tool schema 的 token 成本",
+      "repo": "dsh-external/context-doctor"
+    },
+    "browser4-dsh": {
+      "category": "browser",
+      "note": "浏览器插件",
+      "repo": "dsh-external/browser4-dsh"
+    },
+    "dsh-kimi-browser": {
+      "category": "browser",
+      "note": "Kimi 浏览器",
+      "repo": "dsh-external/dsh-kimi-browser"
+    },
+    "cross-harness-cite": {
+      "category": "data",
+      "note": "跨 Harness 引用 codex/claude code 的历史对话",
+      "repo": "dsh-external/cross-harness-cite"
+    },
+    "dsh-auto-blame": {
+      "category": "code",
+      "note": "自动 blame",
+      "repo": "dsh-external/dsh-auto-blame"
+    },
+    "dsh-office": {
+      "category": "code",
+      "note": "Office 文档",
+      "repo": "dsh-external/dsh-office"
+    },
+    "dsh-interpreters": {
+      "category": "code",
+      "note": "解释器",
+      "repo": "dsh-external/dsh-interpreters"
+    },
+    "dsh-my-rsi": {
+      "category": "eco",
+      "note": "RSI 实验与 Cordis 插件（证据驱动）",
+      "repo": "dsh-external/dsh-my-rsi"
+    },
+    "dsh-tool-browser": {
+      "category": "browser",
+      "note": "SDK 玩具箱快照：浏览器控制",
+      "repo": "omdsh-dev/dsh-tool-browser"
+    },
+    "dsh-working-activity": {
+      "category": "webui",
+      "note": "实时工作状态行：俏皮思考文案、运行中的工具、回合总结",
+      "repo": "ccch1mneyyy/dsh-working-activity"
+    },
+    "dsh-cc-tui": {
+      "category": "code",
+      "note": "Claude Code 风格全屏交互终端",
+      "repo": "dsh-external/dsh-cc-tui"
+    },
+    "dsh-web-workflow-visualizer": {
+      "category": "webui",
+      "note": "Workflow 可视化 + 图工程：多 agent 动态工作流白板编辑",
+      "repo": "dsh-external/dsh-web-workflow-visualizer"
+    },
+    "session-teleport": {
+      "category": "agent",
+      "note": "PostgreSQL 单写者会话交接",
+      "repo": "omdsh-dev/session-teleport"
+    },
+    "yet-another-subagent": {
+      "category": "agent",
+      "note": "又一个子代理插件",
+      "repo": "dsh-external/yet-another-subagent"
+    },
+    "mstar-workflow": {
+      "category": "agent",
+      "note": "Skill 驱动的工作流 Agent",
+      "repo": "dsh-external/mstar-workflow"
+    },
+    "dsh-session-hub": {
+      "category": "agent",
+      "note": "跨工具会话互通：显示 opencode/Claude Code/Antigravity 历史会话",
+      "repo": "Asaiuta/dsh-session-hub"
+    },
+    "dsh-superpowers": {
+      "category": "agent",
+      "note": "Superpowers 保留集成",
+      "repo": "codeAnqiang-ma/dsh-superpowers"
+    },
+    "dsh-trace": {
+      "category": "data",
+      "note": "遥测后端：导出 turns、model steps、tool calls",
+      "repo": "vibeinging/dsh-trace"
+    },
+    "recall": {
+      "category": "agent",
+      "note": "切换 Agent 保留记忆：本地优先的跨会话搜索",
+      "repo": "dsh-external/Recall"
+    },
+    "distill": {
+      "category": "agent",
+      "note": "自动对话蒸馏：后台 subagent 反省 + 技能 create/update",
+      "repo": "LoserFox/distill"
+    },
+    "dsh-skills-manager": {
+      "category": "agent",
+      "note": "WebUI 中列出、禁用启用、编辑 skills",
+      "repo": "dsh-external/dsh-skills-manager"
+    },
+    "dsh-agent-session-sources": {
+      "category": "agent",
+      "note": "provider 中立的 agent-session dock + Claude 适配",
+      "repo": "dsh-external/dsh-agent-session-sources"
+    },
+    "qwen-mm-plugins": {
+      "category": "vision",
+      "note": "Qwen 多模态插件支持",
+      "repo": "omdsh-dev/Qwen-MM-Plugins"
+    },
+    "billion-context-dsh": {
+      "category": "agent",
+      "note": "模型驱动的上下文管理（Active Context Pruning / ACP）",
+      "repo": "Tyan66666/billion-context-dsh"
+    },
+    "falsify-dsh": {
+      "category": "agent",
+      "note": "Falsify CLI 适配器",
+      "repo": "shi275773124/falsify-dsh"
+    },
+    "dsh-theme-plugin": {
+      "category": "skin",
+      "note": "DSH Web GUI 主题工作室：5 套内置预设（codex-warm/nord/solarized/graphite/stock）+ 完全可自定义的浅/深配色（强调色、背景、前景、UI 与代码字体、半透明侧栏、对比度），即时热切换并持久化",
+      "repo": "BeiZi6/dsh-theme-plugin",
+      "keep": true
+    },
+    "dsh-opencodego-usage": {
+      "category": "webui",
+      "note": "OpenCodeGo 剩余额度监视器：输入框右下角呼吸灯（按剩余额度绿/黄/红）+ 液态玻璃面板（滚动/周/月三窗口用量与重置时间），每 30 秒自动刷新，Key 自动读取 DSH 凭据",
+      "repo": "BeiZi6/dsh-opencodego-usage",
+      "keep": true
+    },
+    "dsh-vision-bridge": {
+      "category": "vision",
+      "note": "把 Composer 附带图片交给 OpenAI 兼容视觉模型自动描述，转成文本交给 DeepSeek 等纯文本模型",
+      "repo": "ximengxiaolan/dsh-vision-bridge"
+    },
+    "dsh-plugin-writing-guard": {
+      "category": "agent",
+      "note": "论文写作守卫：本地正则检测修改过程残留、防御性写作与 AI 写作痕迹（破折号滥用、不是X而是Y、LLM 高频词、三连排比）；writing_audit / writing_rules 工具，论文写入后增量自动审计（仅反馈新增/已解决问题）",
+      "repo": "xmutfyh/dsh-plugin-writing-guard",
+      "keep": true
+    },
+    "dsh-context": {
+      "category": "webui",
+      "note": "上下文洞察面板：查看模型上下文窗口的组成与变化——构成对照窗口大小、按请求历史趋势、压缩/注入事件、消息级 token 统计",
+      "repo": "bowenliang123/dsh-context",
+      "keep": true
+    },
+    "dsh-subagent-monitor": {
+      "category": "webui",
+      "note": "子代理实时监视面板：侧栏入口 + 右上角卡片，实时展示子代理运行状态、耗时与历史回填",
+      "repo": "Mombrane/dsh-subagent-monitor",
+      "keep": true
+    },
+    "dsh-persist": {
+      "category": "agent",
+      "note": "持久记忆：对话独有笔记、选择性注入、项目记忆、bge-m3 语义 Vault 检索与自动召回",
+      "repo": "tluoluo/dsh-persist",
+      "keep": true
+    },
+    "dsh-tool-vision": {
+      "category": "vision",
+      "note": "本地优先视觉：图片仅发送给本地 VLM（LM Studio/Ollama/vLLM 等），零 API 成本、数据不出本机，产出结构化 JSON 证据",
+      "repo": "gloryxpnv/dsh-tool-vision",
+      "keep": true
+    },
+    "dsh-github-skills": {
+      "category": "code",
+      "note": "Skill 优先的 GitHub 工作流：PR 模板、分支策略等 GitHub 协作技能",
+      "repo": "Starfie1d1272/dsh-github-skills",
+      "keep": true
+    },
+    "dsh-skill-pack": {
+      "category": "devtools",
+      "note": "11 个可共享的工作流技能包：覆盖常用 Agent 工作流场景",
+      "repo": "jeremy9682/dsh-skill-pack",
+      "keep": true
+    }
+  },
+  "manual": [
+    {
+      "repo": "dsh-external/dsh-pi-adapter",
+      "category": null,
+      "note": "Run pi coding-agent extensions (ExtensionAPI) inside DeepSeek Harness via a cord"
+    },
+    {
+      "repo": "dsh-external/dsh-chat-thumb",
+      "category": null,
+      "note": "Chat缩略图"
+    },
+    {
+      "repo": "NoWint/Oh-My-DSH",
+      "category": "collection",
+      "note": "同名兄弟项目：每小时多源扫描（GitHub · GitLab · HN · Reddit · Lobsters · SE）的 DSH 生态目录，已交叉链接"
+    },
+    {
+      "repo": "Aidenwu0209/dsh-PaddleOCR-Skills",
+      "category": "vision",
+      "note": "PaddleOCR 技能：为 DSH 提供原生工具与 GUI 配置的 OCR 能力"
+    },
+    {
+      "repo": "leechen298/Code2Skill",
+      "category": "devtools",
+      "note": "从既有代码生成 Function、MCP、Agent Skill 与离线测试包"
+    },
+    {
+      "repo": "Moximxxx/dsh-find-skill",
+      "category": "devtools",
+      "note": "桥接 vercel-labs/skills 生态的 LLM 驱动技能发现插件"
+    },
+    {
+      "repo": "TohsakaRIN521/dsh-academic-skill",
+      "category": "agent",
+      "note": "学术论文补全技能：补全论文中理论计算数值分析之外的其余部分，减少 AI 引用幻觉"
+    },
+    {
+      "repo": "phoenixlucky/chrome-mcp-bridge-2026-skill",
+      "category": "agent",
+      "note": "为 AI 代理提供稳定可靠的 Streamable HTTP MCP 连接能力"
+    },
+    {
+      "repo": "WeirdSky924/project-change-router-skill",
+      "category": "agent",
+      "note": "项目级变更路由与复用治理：面向 AI 编码代理的变更治理技能"
+    },
+    {
+      "repo": "dongsheng123132/dsh-cad-review",
+      "category": "devtools",
+      "note": "证据优先的 ASCII DXF 检视与确定性 CAD 规则审查：源码哈希实体、图层、坐标与绘图规则证据，离线可用"
+    },
+    {
+      "repo": "cmfok/dsh-feishucard",
+      "category": "channel",
+      "note": "DSH × 飞书桥：官方 SDK 长连接 + 流式回复卡片，per-chat 会话与现场复用保留上下文，npm dsh-feishucard@0.1.0"
+    },
+    {
+      "repo": "drowned-fish1/deepseek-harness-skillx",
+      "category": "devtools",
+      "note": "安全地发现、审计并复用 Skills 的 DSH 插件"
+    },
+    {
+      "repo": "Jesse-njx/dsh-skillport",
+      "category": "devtools",
+      "note": "把 Claude Code、Codex、Cursor 等既有 Skills 一键迁移到 DSH"
+    },
+    {
+      "repo": "niyongsheng/free-vision-skill",
+      "category": "vision",
+      "note": "macOS 本地化识图技能：纯本地视觉能力，无需云端"
+    },
+    {
+      "repo": "PerryLink/dsh-skill-pack-security",
+      "category": "devtools",
+      "note": "面向 DSH 的安全审计技能包（8 个 agent 技能）"
+    },
+    {
+      "repo": "z-col/dsh-SkillsManagePlugins",
+      "category": "devtools",
+      "note": "在 DSH Web 界面可视化查看、编辑、创建与删除 Skills"
+    },
+    {
+      "repo": "winterhuan/dsh-skills-viewer",
+      "category": "devtools",
+      "note": "DSH Skills 设置页只读查看器"
+    },
+    {
+      "repo": "hexbee/dsh-skill-panel",
+      "category": "devtools",
+      "note": "设置页技能管理插件：查看与管理 agent skills"
+    },
+    {
+      "repo": "akqwpeter-prog/dsh-media-skills",
+      "category": "vision",
+      "note": "免费视觉与图像生成技能：粘贴图片即可识图"
+    }
+  ]
 }

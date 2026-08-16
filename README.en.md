@@ -26,26 +26,26 @@ This repository sources data from the GitHub `dsh-plugin` topic, performs period
 ## 3. Ecosystem Statistics
 
 <!-- OMD:stats:START -->
-As of 2026-08-16 10:09 (Beijing Time, UTC+8), this directory curates **1221** plugins across **1587** ecosystem repositories, with **404,082** cumulative stars.
+As of 2026-08-16 18:30 (Beijing Time, UTC+8), this directory curates **1319** plugins across **1666** ecosystem repositories, with **448,463** cumulative stars.
 
 ### Top 10 Curated Plugins
 
 | # | Plugin | Stars | Type | Description |
 |---|---|---|---|---|
-| 1 | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 116387 | Project | DeepSeek Harness 官方仓库：Everything is a Plugin. |
-| 2 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | 86965 | Channel | 🎨 Best DeepSeek Harness Design Plugin. The open-source Claude Desig… |
-| 3 | [amruthpillai/reactive-resume](https://github.com/amruthpillai/reactive-resume) | 40385 | Plugin | A one-of-a-kind resume builder that keeps your privacy in mind. Com… |
-| 4 | [titanwings/colleague-skill](https://github.com/titanwings/colleague-skill) | 22498 | Project | 「同事」Skill：将离别化为温暖的数字生命 1.0 |
-| 5 | [Nagi-ovo/voyager](https://github.com/Nagi-ovo/voyager) | 19393 | Plugin | Enhancement suite for Gemini, AI Studio, Claude & ChatGPT — plus a … |
-| 6 | [tt-a1i/archify](https://github.com/tt-a1i/archify) | 12982 | Plugin | Agent skill for beautiful, verifiable architecture, workflow, seque… |
-| 7 | [freestylefly/awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2) | 10325 | Plugin | Prompt as Code \| GPT-Image2 工业级提示词引擎与模板库，470+ 个案例逆向工程，20+ 套工业级模板，并… |
-| 8 | [YaoApp/yao](https://github.com/YaoApp/yao) | 7575 | Plugin | ✨ All your agents and workspaces in one place, on every device you … |
-| 9 | [anywhere-labs/deepseek-harness-desktop](https://github.com/anywhere-labs/deepseek-harness-desktop) | 6087 | Tool | 为 DeepSeek Harness (DSH) 生态打造的现代化桌面端体验 |
-| 10 | [Q00/ouroboros](https://github.com/Q00/ouroboros) | 5425 | Plugin | Agent OS: the agent gets smarter on its own. We just hold the line:… |
+| 1 | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 123861 | Project | DeepSeek Harness 官方仓库：Everything is a Plugin. |
+| 2 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | 87214 | Channel | 🎨 Best DeepSeek Harness Design Plugin. The open-source Claude Desig… |
+| 3 | [amruthpillai/reactive-resume](https://github.com/amruthpillai/reactive-resume) | 40483 | Plugin | A one-of-a-kind resume builder that keeps your privacy in mind. Com… |
+| 4 | [volcengine/OpenViking](https://github.com/volcengine/OpenViking) | 28575 | Plugin | Self-evolving Context Database for AI Agents. Unify Agent Memory, K… |
+| 5 | [titanwings/colleague-skill](https://github.com/titanwings/colleague-skill) | 22670 | Project | 「同事」Skill：将离别化为温暖的数字生命 1.0 |
+| 6 | [Nagi-ovo/voyager](https://github.com/Nagi-ovo/voyager) | 19452 | Plugin | Enhancement suite for Gemini, AI Studio, Claude & ChatGPT — plus a … |
+| 7 | [tt-a1i/archify](https://github.com/tt-a1i/archify) | 13098 | Plugin | Agent skill for beautiful, verifiable architecture, workflow, seque… |
+| 8 | [freestylefly/awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2) | 10431 | Plugin | Prompt as Code \| GPT-Image2 工业级提示词引擎与模板库，470+ 个案例逆向工程，20+ 套工业级模板，并… |
+| 9 | [anywhere-labs/deepseek-harness-desktop](https://github.com/anywhere-labs/deepseek-harness-desktop) | 7743 | Tool | 为 DeepSeek Harness (DSH) 插件生态打造的现代化桌面端解决方案 |
+| 10 | [YaoApp/yao](https://github.com/YaoApp/yao) | 7602 | Plugin | ✨ All your agents and workspaces in one place, on every device you … |
 
 ### Category Breakdown
 
-`Messaging 136` · `Vision & Multimodal 78` · `Browser & Web 72` · `Web UI Enhancement 291` · `Themes & Fun 101` · `Agent Capabilities 324` · `Coding & Development 89` · `Files & Data 35` · `Dev Tools & Tutorials 45` · `Collections & Distros 28` · `Ecosystem Projects 22`
+`Messaging 150` · `Vision & Multimodal 82` · `Browser & Web 78` · `Web UI Enhancement 318` · `Themes & Fun 110` · `Agent Capabilities 354` · `Coding & Development 90` · `Files & Data 35` · `Dev Tools & Tutorials 51` · `Collections & Distros 26` · `Ecosystem Projects 25`
 
 <!-- OMD:stats:END -->
 
