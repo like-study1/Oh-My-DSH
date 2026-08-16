@@ -1254,6 +1254,36 @@
       "note": "上下文洞察面板：查看模型上下文窗口的组成与变化——构成对照窗口大小、按请求历史趋势、压缩/注入事件、消息级 token 统计",
       "repo": "bowenliang123/dsh-context",
       "keep": true
+    },
+    "dsh-subagent-monitor": {
+      "category": "webui",
+      "note": "子代理实时监视面板：侧栏入口 + 右上角卡片，实时展示子代理运行状态、耗时与历史回填",
+      "repo": "Mombrane/dsh-subagent-monitor",
+      "keep": true
+    },
+    "dsh-persist": {
+      "category": "agent",
+      "note": "持久记忆：对话独有笔记、选择性注入、项目记忆、bge-m3 语义 Vault 检索与自动召回",
+      "repo": "tluoluo/dsh-persist",
+      "keep": true
+    },
+    "dsh-tool-vision": {
+      "category": "vision",
+      "note": "本地优先视觉：图片仅发送给本地 VLM（LM Studio/Ollama/vLLM 等），零 API 成本、数据不出本机，产出结构化 JSON 证据",
+      "repo": "gloryxpnv/dsh-tool-vision",
+      "keep": true
+    },
+    "dsh-github-skills": {
+      "category": "code",
+      "note": "Skill 优先的 GitHub 工作流：PR 模板、分支策略等 GitHub 协作技能",
+      "repo": "Starfie1d1272/dsh-github-skills",
+      "keep": true
+    },
+    "dsh-skill-pack": {
+      "category": "devtools",
+      "note": "11 个可共享的工作流技能包：覆盖常用 Agent 工作流场景",
+      "repo": "jeremy9682/dsh-skill-pack",
+      "keep": true
     }
   },
   "manual": [
