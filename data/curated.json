@@ -4,13 +4,13 @@
     "dsh-ui-font": {
       "category": "skin",
       "note": "DSH 字体插件：正文字体/代码字体/显示比例/行高/字体浏览器，中文字形标记，设置一键生效",
-      "repo": "gaozhiwei521/dsh-ui-font",
+      "repo": "linshufan21/dsh-ui-font",
       "keep": true
     },
     "Deepseek-Harness-Api-monitor": {
       "category": "devtools",
       "note": "DeepSeek Harness API 余额监测插件",
-      "repo": "gaozhiwei521/Deepseek-Harness-Api-monitor",
+      "repo": "linshufan21/Deepseek-Harness-Api-monitor",
       "keep": true
     },
     "modlens": {
