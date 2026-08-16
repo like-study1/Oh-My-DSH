@@ -1,6 +1,12 @@
 {
   "min_stars": 3,
   "overrides": {
+    "dsh-feishu": {
+      "category": "channel",
+      "note": "DeepSeek Harness 的飞书 UI：面板驱动控制台，卡内审批与提问，流式卡片，扫码一键配置",
+      "repo": "PGZXB/dsh-feishu",
+      "keep": true
+    },
     "dsh-ui-font": {
       "category": "skin",
       "note": "DSH 字体插件：正文字体/代码字体/显示比例/行高/字体浏览器，中文字形标记，设置一键生效",
