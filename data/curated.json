@@ -1,6 +1,12 @@
 {
   "min_stars": 3,
   "overrides": {
+    "dsh-verify": {
+      "category": "browser",
+      "note": "独立浏览器验收测试：JSON 清单驱动真实 Chromium，断言计算样式与像素差异，输出 HTML 报告 + 退出码（npm CLI / GitHub Action / MCP Server）",
+      "repo": "263311487-ux/dsh-verify",
+      "keep": true
+    },
     "dsh-ui-font": {
       "category": "skin",
       "note": "DSH 字体插件：正文字体/代码字体/显示比例/行高/字体浏览器，中文字形标记，设置一键生效",
