@@ -1,6 +1,12 @@
 {
   "min_stars": 3,
   "overrides": {
+    "dsh-quota-status": {
+      "category": "webui",
+      "note": "极简配额卡片：DeepSeek 余额四档变色 + 峰谷电价徽标，Kimi 套餐周限/5h 窗口进度条与重置倒计时；中英双语，loopback-only RPC 不出 Key",
+      "repo": "ruby1304/dsh-quota-status",
+      "keep": true
+    },
     "dsh-ui-font": {
       "category": "skin",
       "note": "DSH 字体插件：正文字体/代码字体/显示比例/行高/字体浏览器，中文字形标记，设置一键生效",
