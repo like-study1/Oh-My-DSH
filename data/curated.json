@@ -1,6 +1,12 @@
 {
   "min_stars": 3,
   "overrides": {
+    "dsh-feishu-bridge": {
+      "category": "channel",
+      "note": "安全边界优先的飞书/Lark channel 桥：fail-closed 白名单、webhook 签名/重放校验、远程 bash 审批闸门（超时即拒），ws/webhook 双通道",
+      "repo": "wz-heng/dsh-feishu-bridge",
+      "keep": true
+    },
     "dsh-ui-font": {
       "category": "skin",
       "note": "DSH 字体插件：正文字体/代码字体/显示比例/行高/字体浏览器，中文字形标记，设置一键生效",
