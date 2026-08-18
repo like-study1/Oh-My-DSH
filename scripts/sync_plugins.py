@@ -226,8 +226,10 @@ def main():
     # 1) overrides that live in the snapshot
     for name, ov in overrides.items():
         ent = snap_by_full.get(ov.get("repo", "").lower())
-        if ent:
+        if ent and not ent["archived"]:
             entries[ent["full_name"]] = {**ent, "category": ov.get("category"), "note": ov.get("note") or "", "source": "topic"}
+        elif ent:
+            dropped.append(ent["full_name"])
     # 2) overrides / manual entries outside the snapshot -> repo API
     for name, ov in overrides.items():
         if snap_by_full.get(ov.get("repo", "").lower()):
