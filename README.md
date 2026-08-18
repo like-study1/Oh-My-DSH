@@ -26,26 +26,26 @@ DeepSeek Harness（以下简称 DSH）是由深度求索（DeepSeek AI）开源�
 ## 三、生态统计
 
 <!-- OMD:stats:START -->
-截至 2026-08-18 09:57（北京时间），本目录收录精选插件 **1661** 个，监测生态仓库 **1901** 个，累计获得 Star **571662**。
+截至 2026-08-18 12:52（北京时间），本目录收录精选插件 **1683** 个，监测生态仓库 **1902** 个，累计获得 Star **576533**。
 
 ### 精选插件十强
 
 | 序号 | 插件 | Star | 类型 | 说明 |
 |---|---|---|---|---|
-| 1 | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 151004 | 项目 | DeepSeek Harness 官方仓库：Everything is a Plugin. |
-| 2 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | 88356 | 渠道 | 🎨 Best DeepSeek Harness Design Plugin. The open-source Claude Desig… |
-| 3 | [amruthpillai/reactive-resume](https://github.com/amruthpillai/reactive-resume) | 40846 | 插件 | A one-of-a-kind resume builder that keeps your privacy in mind. Com… |
-| 4 | [esengine/DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix) | 34689 | 插件 | DeepSeek-native AI coding agent for your terminal. Engineered aroun… |
-| 5 | [volcengine/OpenViking](https://github.com/volcengine/OpenViking) | 28908 | 插件 | Self-evolving Context Database for AI Agents. Unify Agent Memory, K… |
-| 6 | [titanwings/colleague-skill](https://github.com/titanwings/colleague-skill) | 23158 | 项目 | 「同事」Skill：将离别化为温暖的数字生命 1.0 |
-| 7 | [Nagi-ovo/voyager](https://github.com/Nagi-ovo/voyager) | 19597 | 插件 | Enhancement suite for Gemini, AI Studio, Claude & ChatGPT — plus a … |
-| 8 | [tt-a1i/archify](https://github.com/tt-a1i/archify) | 13890 | 插件 | Agent skill for beautiful, verifiable architecture, workflow, seque… |
-| 9 | [EverMind-AI/EverOS](https://github.com/EverMind-AI/EverOS) | 12086 | 插件 | One portable memory layer for every AI agent: local-first, Markdown… |
-| 10 | [walkinglabs/learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | 11862 | 教程 | Harness engineering beginner tutorial, from 0 to 1 |
+| 1 | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 153163 | 项目 | DeepSeek Harness 官方仓库：Everything is a Plugin. |
+| 2 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | 88470 | 渠道 | 🎨 Best DeepSeek Harness Design Plugin. The open-source Claude Desig… |
+| 3 | [amruthpillai/reactive-resume](https://github.com/amruthpillai/reactive-resume) | 40881 | 插件 | A one-of-a-kind resume builder that keeps your privacy in mind. Com… |
+| 4 | [esengine/DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix) | 34705 | 插件 | DeepSeek-native AI coding agent for your terminal. Engineered aroun… |
+| 5 | [volcengine/OpenViking](https://github.com/volcengine/OpenViking) | 28939 | 插件 | Self-evolving Context Database for AI Agents. Unify Agent Memory, K… |
+| 6 | [titanwings/colleague-skill](https://github.com/titanwings/colleague-skill) | 23203 | 项目 | 「同事」Skill：将离别化为温暖的数字生命 1.0 |
+| 7 | [Nagi-ovo/voyager](https://github.com/Nagi-ovo/voyager) | 19606 | 插件 | Enhancement suite for Gemini, AI Studio, Claude & ChatGPT — plus a … |
+| 8 | [tt-a1i/archify](https://github.com/tt-a1i/archify) | 13966 | 插件 | Agent skill for beautiful, verifiable architecture, workflow, seque… |
+| 9 | [anywhere-labs/deepseek-harness-desktop](https://github.com/anywhere-labs/deepseek-harness-desktop) | 12267 | 工具 | 为 DeepSeek Harness (DSH) 插件生态打造的现代化桌面端解决方案。万物皆「插件」，桌面本身也是「插件」。 |
+| 10 | [EverMind-AI/EverOS](https://github.com/EverMind-AI/EverOS) | 12099 | 插件 | One portable memory layer for every AI agent: local-first, Markdown… |
 
 ### 分类构成
 
-`消息通讯 196` · `视觉与多模态 104` · `浏览器与网络 98` · `Web UI 增强 401` · `皮肤与娱乐 138` · `Agent 能力 450` · `编码开发 109` · `文件与数据 44` · `开发工具与教程 64` · `精选合集与发行版 29` · `生态项目 28`
+`消息通讯 194` · `视觉与多模态 104` · `浏览器与网络 98` · `Web UI 增强 407` · `皮肤与娱乐 141` · `Agent 能力 458` · `编码开发 113` · `文件与数据 47` · `开发工具与教程 64` · `精选合集与发行版 29` · `生态项目 28`
 
 <!-- OMD:stats:END -->
 
