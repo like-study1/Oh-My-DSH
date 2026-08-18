@@ -1,6 +1,61 @@
 {
   "min_stars": 3,
-  "overrides": {
+  "overrides": {
+    "dsh-whale-musume": {
+      "category": "skin",
+      "note": "DSH 鲸鱼娘桌宠插件：元气鲸鱼娘陪伴编码",
+      "repo": "Sutera-Diffusus/dsh-whale-musume",
+      "keep": true
+},
+
+    "dsh-statusbar": {
+      "category": "webui",
+      "note": "DSH 模块化统计状态栏：进度、耗时、性能、缓存、Token、花费与余额",
+      "repo": "Sutera-Diffusus/dsh-statusbar",
+      "keep": true
+},
+
+    "dsh-windows-notify": {
+      "category": "channel",
+      "note": "DSH Windows 原生通知：系统弹窗、自定义声音与任务栏托盘角标",
+      "repo": "Sutera-Diffusus/dsh-windows-notify",
+      "keep": true
+},
+
+    "dsh-sandbox-tester": {
+      "category": "code",
+      "note": "DSH 进程隔离沙盒测试环境：用于安全验证插件行为",
+      "repo": "Sutera-Diffusus/dsh-sandbox-tester",
+      "keep": true
+},
+
+    "dsh-quota-status": {
+      "category": "webui",
+      "note": "极简配额卡片：DeepSeek 余额四档变色 + 峰谷电价徽标，Kimi 套餐周限/5h 窗口进度条与重置倒计时；中英双语，loopback-only RPC 不出 Key",
+      "repo": "ruby1304/dsh-quota-status",
+      "keep": true
+},
+
+    "dsh-verify": {
+      "repo": "263311487-ux/dsh-verify",
+      "category": "browser",
+      "note": "独立浏览器验收测试：JSON 清单驱动真实 Chromium，断言计算样式与像素差异，输出 HTML 报告 + 退出码（npm CLI / GitHub Action / MCP Server）",
+      "keep": true
+},
+
+    "dsh-feishu-bridge": {
+      "category": "channel",
+      "note": "安全边界优先的飞书/Lark channel 桥：fail-closed 白名单、webhook 签名/重放校验、远程 bash 审批闸门（超时即拒），ws/webhook 双通道",
+      "repo": "wz-heng/dsh-feishu-bridge",
+      "keep": true
+},
+
+    "dsh-skill-cockpit": {
+      "category": "devtools",
+      "note": "技能驾驶舱：全量技能概览、中文备注、搜索、启停、批量导入、试射评分、使用统计、中英双语、批量管理",
+      "repo": "Itailang2333/dsh-skill-cockpit",
+      "keep": true
+},
     "dsh-feishu": {
       "category": "channel",
       "note": "DeepSeek Harness 的飞书 UI：面板驱动控制台，卡内审批与提问，流式卡片，扫码一键配置",
