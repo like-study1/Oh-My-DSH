@@ -10,6 +10,8 @@ on:
 
 permissions:
   contents: write
+  issues: write
+  pull-requests: write
   pages: write
   id-token: write
 
@@ -26,6 +28,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      - name: Maintain community queue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/community_maintenance.py
 
       - name: Run sync script
         env:
