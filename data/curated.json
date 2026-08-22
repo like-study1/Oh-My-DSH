@@ -1357,6 +1357,215 @@
       "note": "11 个可共享的工作流技能包：覆盖常用 Agent 工作流场景",
       "repo": "jeremy9682/dsh-skill-pack",
       "keep": true
+    },
+    "safety-net": {
+
+      "category": "agent",
+
+      "note": "破坏性命令拦截闸门：在 rm -rf、git reset --hard、git push --force 等命令落地前解析语义、判定风险并要求人工确认",
+
+      "repo": "JohnXu22786/safety-net",
+
+      "keep": true
+
+    },
+    "skill-framework": {
+
+      "category": "devtools",
+
+      "note": "Praxis 工程方法论技能库：把设计对话、计划、测试先行、代码评审等工作流固化为符合 Agent Skills 标准的 SKILL.md 技能包",
+
+      "repo": "JohnXu22786/skill-framework",
+
+      "keep": true
+
+    },
+    "context-pruner": {
+
+      "category": "devtools",
+
+      "note": "会话上下文分诊插件：自动识别并处理过期、重复、失败、超大与低价值消息，节约 token 预算，缓解上下文膨胀",
+
+      "repo": "JohnXu22786/context-pruner",
+
+      "keep": true
+
+    },
+    "command-scout": {
+
+      "category": "devtools",
+
+      "note": "发现项目已声明的构建命令（Makefile / package.json / just / deno），作为可调用工具暴露给 agent",
+
+      "repo": "JohnXu22786/command-scout",
+
+      "keep": true
+
+    },
+    "browser-automation": {
+
+      "category": "browser",
+
+      "note": "Web Bridge 浏览器自动化 MCP server：真实浏览器 + 无障碍树快照，agent 免视觉即可精确点击填表截图",
+
+      "repo": "JohnXu22786/browser-automation",
+
+      "keep": true
+
+    },
+    "github-mcp": {
+
+      "category": "devtools",
+
+      "note": "repogate GitHub 工作台 MCP：封装 REST API，让 agent 直接完成仓库查询、issue 管理、PR 创建合并、代码审查与搜索",
+
+      "repo": "JohnXu22786/github-mcp",
+
+      "keep": true
+
+    },
+    "hooks-adapter": {
+
+      "category": "devtools",
+
+      "note": "hooks 配置兼容层：读取 .claude/settings.json / .codex/hooks.json 等 hooks 声明，映射到 dsh 扩展点，支持 shell/webhook/oracle/proxy 四类 handler",
+
+      "repo": "JohnXu22786/hooks-adapter",
+
+      "keep": true
+
+    },
+    "snippet-expander": {
+
+      "category": "devtools",
+
+      "note": "Steno 速记扩展：输入 #tag 发送前自动替换为片段库全文（多库、别名、变量、递归防护）",
+
+      "repo": "JohnXu22786/snippet-expander",
+
+      "keep": true
+
+    },
+    "secret-guard": {
+
+      "category": "agent",
+
+      "note": "安全插件：在文件工具执行前拦截 .env / credentials / 密钥文件读写，并对工具结果做内容掩码兜底",
+
+      "repo": "JohnXu22786/secret-guard",
+
+      "keep": true
+
+    },
+    "spec-driven": {
+
+      "category": "code",
+
+      "note": "keel（龙骨）规格驱动开发纪律技能包：先立规格、验证假设、防过度工程与范围蔓延",
+
+      "repo": "JohnXu22786/spec-driven",
+
+      "keep": true
+
+    },
+    "file-planning": {
+
+      "category": "code",
+
+      "note": "trailmap 磁盘持久化执行规划：计划、执行状态、考察笔记与复盘纪要全部落在 .trail/ 目录，断会话不丢方向",
+
+      "repo": "JohnXu22786/file-planning",
+
+      "keep": true
+
+    },
+    "adversarial-review": {
+
+      "category": "code",
+
+      "note": "gavel-review 对抗式多视角代码审查：多个审查透镜并行攻击式审查，仲裁层合并去重、按严重度分级、只读不改码",
+
+      "repo": "JohnXu22786/adversarial-review",
+
+      "keep": true
+
+    },
+    "docgen": {
+
+      "category": "code",
+
+      "note": "文档工坊技能包：纯提示词（Agent Skills）的 README 生成、PR 描述、changelog 与代码审查，零第三方依赖",
+
+      "repo": "JohnXu22786/docgen",
+
+      "keep": true
+
+    },
+    "docs-retriever": {
+
+      "category": "data",
+
+      "note": "doctrove 版本化文档检索：维护库文档目录索引，让 agent 按需拉取准确、带版本、可溯源的 API 文档片段",
+
+      "repo": "JohnXu22786/docs-retriever",
+
+      "keep": true
+
+    },
+    "worktree-mgr": {
+
+      "category": "code",
+
+      "note": "为 dsh 提供任务隔离工作区（git worktree）能力：并行任务互不干扰",
+
+      "repo": "JohnXu22786/worktree-mgr",
+
+      "keep": true
+
+    },
+    "session-titler": {
+
+      "category": "devtools",
+
+      "note": "两阶段会话题词（自动命名）：先关键词即时生成标题，空闲再用最经济模型精修，后台不打断主流程",
+
+      "repo": "JohnXu22786/session-titler",
+
+      "keep": true
+
+    },
+    "codegraph": {
+
+      "category": "code",
+
+      "note": "代码知识图谱插件：把代码库解析为可查询索引，回答谁调用了此函数、模块依赖什么等结构性问题",
+
+      "repo": "JohnXu22786/codegraph",
+
+      "keep": true
+
+    },
+    "computer-control": {
+
+      "category": "agent",
+
+      "note": "桌面操作插件：截屏、鼠标/键盘注入、可访问性树语义操作，内置急停、允许/拒绝规则与确认流",
+
+      "repo": "JohnXu22786/computer-control",
+
+      "keep": true
+
+    },
+    "model-catalog": {
+
+      "category": "devtools",
+
+      "note": "模型目录自动发现：从 OpenAI 兼容 API host 拉取模型列表、定价与能力，归一化为可直接使用的配置",
+
+      "repo": "JohnXu22786/model-catalog",
+
+      "keep": true
+
     }
   },
   "manual": [
