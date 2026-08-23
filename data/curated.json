@@ -1,6 +1,258 @@
 {
   "min_stars": 3,
   "overrides": {
+    "adversarial-review": {
+      "category": "code",
+      "note": "gavel-review 对抗式多视角代码审查：多透镜并行攻击式审查、静态哨兵、跨视角合并去重，只读不改码",
+      "repo": "JohnXu22786/adversarial-review",
+      "keep": true
+    },
+
+    "apply-patch": {
+      "category": "devtools",
+      "note": "把 git 格式 unified diff 安全应用到真实文件：冲突检测、回滚提示，防止盲目打补丁",
+      "repo": "JohnXu22786/apply-patch",
+      "keep": true
+    },
+
+    "auditrail": {
+      "category": "data",
+      "note": "安全审计与会话取证：完整工具调用链录制（谁/何时/动过哪些文件），支持脱敏回放与规则扫描",
+      "repo": "JohnXu22786/auditrail",
+      "keep": true
+    },
+
+    "bookkeeping": {
+      "category": "data",
+      "note": "会话式记账：分类账本、流水记录与消费统计，对话中直接记账",
+      "repo": "JohnXu22786/bookkeeping",
+      "keep": true
+    },
+
+    "browser-automation": {
+      "category": "browser",
+      "note": "Web Bridge 浏览器自动化 MCP server：真实浏览器 + 无障碍树快照，agent 免视觉即可精确点击填表",
+      "repo": "JohnXu22786/browser-automation",
+      "keep": true
+    },
+
+    "calendar": {
+      "category": "devtools",
+      "note": "CalDAV + iCalendar + RRULE 日历集成 bundle：日程管理、农历/节假日（中文场景）",
+      "repo": "JohnXu22786/calendar",
+      "keep": true
+    },
+
+    "ci-runner": {
+      "category": "devtools",
+      "note": "触发 GitHub Actions 与本地测试流水线，流式回传日志，失败时把日志尾部交给 agent 诊断",
+      "repo": "JohnXu22786/ci-runner",
+      "keep": true
+    },
+
+    "codegraph": {
+      "category": "code",
+      "note": "代码知识图谱插件：把代码库解析为可查询索引，回答谁调用了此函数、模块依赖什么等结构性问题",
+      "repo": "JohnXu22786/codegraph",
+      "keep": true
+    },
+
+    "command-scout": {
+      "category": "devtools",
+      "note": "发现项目已声明的构建命令（Makefile / package.json / just / deno），作为可调用工具暴露给 agent",
+      "repo": "JohnXu22786/command-scout",
+      "keep": true
+    },
+
+    "computer-control": {
+      "category": "agent",
+      "note": "桌面操作插件：截屏、鼠标/键盘注入、可访问性树语义操作，内置急停、允许/拒绝规则与确认流",
+      "repo": "JohnXu22786/computer-control",
+      "keep": true
+    },
+
+    "context-pruner": {
+      "category": "devtools",
+      "note": "会话上下文分诊插件：自动识别并处理过期、重复、失败、超大与低价值消息，节约 token 预算",
+      "repo": "JohnXu22786/context-pruner",
+      "keep": true
+    },
+
+    "db-connector": {
+      "category": "data",
+      "note": "数据库连接器 bundle：SQLite / PostgreSQL 等结构化查询工具，带审计与危险操作防护",
+      "repo": "JohnXu22786/db-connector",
+      "keep": true
+    },
+
+    "docgen": {
+      "category": "code",
+      "note": "文档工坊技能包：纯提示词（Agent Skills）的 README 生成、PR 描述、changelog 与代码审查",
+      "repo": "JohnXu22786/docgen",
+      "keep": true
+    },
+
+    "docindex": {
+      "category": "data",
+      "note": "工作区本地语义索引：增量构建 + 片段查询，稳定可复现的本地代码/文档检索",
+      "repo": "JohnXu22786/docindex",
+      "keep": true
+    },
+
+    "docs-retriever": {
+      "category": "data",
+      "note": "doctrove 版本化文档检索：维护库文档目录索引，让 agent 按需拉取准确、带版本、可溯源的 API 文档片段",
+      "repo": "JohnXu22786/docs-retriever",
+      "keep": true
+    },
+
+    "dsh-web-submit": {
+      "category": "webui",
+      "note": "CLI 任务桥接：让命令行提交的 headless 任务跑在已运行的 dsh Web 进程内，Web UI 实时可见（/x/headless + SSE）",
+      "repo": "JohnXu22786/dsh-web-submit",
+      "keep": true
+    },
+
+    "file-planning": {
+      "category": "code",
+      "note": "trailmap 磁盘持久化执行规划：计划、执行状态、考察笔记与复盘纪要全部落在 .trail/ 目录，断会话不丢方向",
+      "repo": "JohnXu22786/file-planning",
+      "keep": true
+    },
+
+    "github-mcp": {
+      "category": "devtools",
+      "note": "repogate GitHub 工作台 MCP：封装 REST API，让 agent 直接完成仓库查询、issue 管理与代码审查",
+      "repo": "JohnXu22786/github-mcp",
+      "keep": true
+    },
+
+    "headless-json": {
+      "category": "devtools",
+      "note": "headless 模式的结构化机器可读输出：JSON + 稳定退出码，CI 友好",
+      "repo": "JohnXu22786/headless-json",
+      "keep": true
+    },
+
+    "hooks-adapter": {
+      "category": "devtools",
+      "note": "hooks 配置兼容层：读取 .claude/settings.json / .codex/hooks.json 等各家 hook 语义，统一映射到 dsh",
+      "repo": "JohnXu22786/hooks-adapter",
+      "keep": true
+    },
+
+    "market-watch": {
+      "category": "data",
+      "note": "金融市场监控：行情聚合、涨跌提醒，把实时行情变成 agent 可查询的工具",
+      "repo": "JohnXu22786/market-watch",
+      "keep": true
+    },
+
+    "memory-standard": {
+      "category": "data",
+      "note": "Memory Standard 协议（mm）分层记忆：感知/工作/长期记忆库，跨会话可回溯",
+      "repo": "JohnXu22786/memory-standard",
+      "keep": true
+    },
+
+    "model-catalog": {
+      "category": "devtools",
+      "note": "模型目录自动发现：从 OpenAI 兼容 API host 拉取模型列表、定价与能力，归一化为可直接使用的配置",
+      "repo": "JohnXu22786/model-catalog",
+      "keep": true
+    },
+
+    "net-debug": {
+      "category": "devtools",
+      "note": "HTTP 网络调试工具集：请求构造、SSRF 检测、响应分析，排查网络与代理问题",
+      "repo": "JohnXu22786/net-debug",
+      "keep": true
+    },
+
+    "review-gate": {
+      "category": "code",
+      "note": "代码审查闸门：把审查变成结构化 gating 流程——通过/拦截/打回，全流程留痕",
+      "repo": "JohnXu22786/review-gate",
+      "keep": true
+    },
+
+    "rss-digest": {
+      "category": "channel",
+      "note": "RSS/Atom 订阅摘要：定时拉取 + LLM 摘要投递，订阅源一手信息",
+      "repo": "JohnXu22786/rss-digest",
+      "keep": true
+    },
+
+    "safety-net": {
+      "category": "agent",
+      "note": "破坏性命令拦截闸门：在 rm -rf、git reset --hard、git push --force 等命令落地前解析语义、判定风险并要求人工确认",
+      "repo": "JohnXu22786/safety-net",
+      "keep": true
+    },
+
+    "secret-guard": {
+      "category": "agent",
+      "note": "安全插件：在文件工具执行前拦截 .env / credentials / 密钥文件读写，并对工具结果做内容掩码兜底",
+      "repo": "JohnXu22786/secret-guard",
+      "keep": true
+    },
+
+    "semantic-search": {
+      "category": "data",
+      "note": "代码/仓库本地语义搜索：嵌入索引 + 相关片段检索，自然语言找代码",
+      "repo": "JohnXu22786/semantic-search",
+      "keep": true
+    },
+
+    "session-export": {
+      "category": "data",
+      "note": "会话导出、脱敏与合规归档 bundle：把对话历史变成可审计、可分享的产物",
+      "repo": "JohnXu22786/session-export",
+      "keep": true
+    },
+
+    "session-titler": {
+      "category": "devtools",
+      "note": "两阶段会话题词（自动命名）：先关键词即时生成标题，空闲再用最经济模型精修，后台不打断主流程",
+      "repo": "JohnXu22786/session-titler",
+      "keep": true
+    },
+
+    "skill-framework": {
+      "category": "devtools",
+      "note": "Praxis 工程方法论技能库：把设计对话、计划、测试先行、代码评审等工作流固化为符合 Agent Skills 标准的 SKILL.md 技能包",
+      "repo": "JohnXu22786/skill-framework",
+      "keep": true
+    },
+
+    "snippet-expander": {
+      "category": "devtools",
+      "note": "Steno 速记扩展：输入 #tag 发送前自动替换为片段库全文（多库、别名、变量、递归防护）",
+      "repo": "JohnXu22786/snippet-expander",
+      "keep": true
+    },
+
+    "spec-driven": {
+      "category": "code",
+      "note": "keel（龙骨）规格驱动开发纪律技能包：先立规格、验证假设、防过度工程与范围蔓延",
+      "repo": "JohnXu22786/spec-driven",
+      "keep": true
+    },
+
+    "subtitle-studio": {
+      "category": "code",
+      "note": "多语言字幕翻译工作流：SRT/VTT 解析、逐句 LLM 翻译、双语合并，批量断点续跑",
+      "repo": "JohnXu22786/subtitle-studio",
+      "keep": true
+    },
+
+    "worktree-mgr": {
+      "category": "code",
+      "note": "为 dsh 提供任务隔离工作区（git worktree）能力：创建/同步/收尾全生命周期，并行任务互不干扰",
+      "repo": "JohnXu22786/worktree-mgr",
+      "keep": true
+    },
+
     "dsh-whale-musume": {
       "category": "skin",
       "note": "DSH 鲸鱼娘桌宠插件：元气鲸鱼娘陪伴编码",
