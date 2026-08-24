@@ -1,6 +1,12 @@
 {
-  "min_stars": 3,
+  "min_stars": 3,
   "overrides": {
+    "dsh-invoice-downloader": {
+      "category": "data",
+      "note": "本地 IMAP 发票下载、OCR 识别、归档与 Excel 报销汇总的 DSH 插件",
+      "repo": "EthanYoQ/Invoice-Downloader",
+      "keep": true
+    },
     "dsh-whale-musume": {
       "category": "skin",
       "note": "DSH 鲸鱼娘桌宠插件：元气鲸鱼娘陪伴编码",
