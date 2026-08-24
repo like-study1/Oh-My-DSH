@@ -541,6 +541,12 @@
       "note": "让 AI 自动调用 VLM 进行视觉分析",
       "repo": "huashenglian/dsh-her-eyes"
     },
+    "dsh-hermes-bridge": {
+      "category": "channel",
+      "note": "DSH ↔ 微信双向桥：入站调度到按 cwd 常驻的 agent 会话池 + hermes send 零 LLM 出站推送",
+      "repo": "dsh-pulse/dsh-hermes-bridge",
+      "keep": true
+    },
     "dsh-ica": {
       "category": "channel",
       "note": "icalingua 前端",
