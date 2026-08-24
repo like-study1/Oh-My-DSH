@@ -1357,6 +1357,12 @@
       "note": "11 个可共享的工作流技能包：覆盖常用 Agent 工作流场景",
       "repo": "jeremy9682/dsh-skill-pack",
       "keep": true
+    },
+    "dsh-library": {
+      "category": "data",
+      "note": "本地优先文档知识库：library_add/remove/list 与语义+关键词混合检索，引用校验与诊断，SQLite 索引 + 本地嵌入，零模型下载",
+      "repo": "PerryLink/dsh-library",
+      "keep": true
     }
   },
   "manual": [
