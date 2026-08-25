@@ -418,6 +418,12 @@
       "note": "深链：?session=/?workspace= 直接打开指定项目对话",
       "repo": "qyw233/dsh-deeplink"
     },
+    "dsh-deepread": {
+      "repo": "xiehuan123/dsh-deepread",
+      "category": "agent",
+      "note": "证据优先精读插件：图书/文章/PDF/文档集的观点—证据报告、知识地图与回忆问题，含 Host 工具与可选 Web 阅读面板",
+      "keep": true
+    },
     "dsh-design": {
       "category": "agent",
       "note": "DSH 原生 Web/UI 设计 Agent bundle",
@@ -427,6 +433,12 @@
       "category": "devtools",
       "note": "社区维护的非官方桌面客户端：自动复用本机实例、智能连接、托盘常驻",
       "repo": "bruc3van/dsh-desktop"
+    },
+    "dsh-desktop-pet": {
+      "repo": "FenyxHuang/dsh-desktop-pet",
+      "category": "webui",
+      "note": "鲸鱼桌宠：实时反应 agent 状态（思考/工作/出错），API 余额渲染为圆形海平面，支持点击互动与拖拽",
+      "keep": true
     },
     "dsh-diff-viewer": {
       "category": "webui",
@@ -693,6 +705,12 @@
       "category": "agent",
       "note": "Nowledge Mem™ 集成",
       "repo": "dsh-external/dsh-nowledge-mem"
+    },
+    "dsh-nuke-plugin": {
+      "repo": "beijingwahw/dsh-nuke-plugin",
+      "category": "devtools",
+      "note": "事务化强力卸载引擎：validate/preview/execute/undo 四段式 + Saga 回滚、WAL 崩溃自恢复与 hash chain 审计链",
+      "keep": true
     },
     "dsh-oauth-mcp-client": {
       "category": "agent",
