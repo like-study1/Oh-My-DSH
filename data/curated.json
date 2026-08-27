@@ -1253,6 +1253,12 @@
       "note": "实时工作状态行：俏皮思考文案、运行中的工具、回合总结",
       "repo": "ccch1mneyyy/dsh-working-activity"
     },
+    "dsh-worktree": {
+      "repo": "alpacachen/dsh-worktree",
+      "category": "code",
+      "note": "DSH Web 极简 Git worktree 管理：一键创建任务分支 worktree 并打开为 DSH Workspace",
+      "keep": true
+    },
     "dsh-xiaohei": {
       "category": "skin",
       "note": "罗小黑主题插件",
