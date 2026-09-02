@@ -26,26 +26,26 @@ DeepSeek Harness（以下简称 DSH）是由深度求索（DeepSeek AI）开源�
 ## 三、生态统计
 
 <!-- OMD:stats:START -->
-截至 2026-09-02 20:47（北京时间），本目录收录精选插件 **2114** 个，监测生态仓库 **2000** 个，累计获得 Star **958175**。
+截至 2026-09-03 03:23（北京时间），本目录收录精选插件 **2116** 个，监测生态仓库 **2000** 个，累计获得 Star **966966**。
 
 ### 精选插件十强
 
 | 序号 | 插件 | Star | 类型 | 说明 |
 |---|---|---|---|---|
-| 1 | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 209086 | 项目 | DeepSeek Harness 官方仓库：Everything is a Plugin. |
-| 2 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | 93526 | 渠道 | 🎨 Best DeepSeek Harness Design Plugin. The open-source Claude Desig… |
-| 3 | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | 70206 | 插件 | 🌊 The original agent meta-harness. Deploy intelligent multi-player … |
-| 4 | [tt-a1i/archify](https://github.com/tt-a1i/archify) | 43164 | 插件 | Agent skill for beautiful, verifiable architecture, workflow, seque… |
-| 5 | [amruthpillai/reactive-resume](https://github.com/amruthpillai/reactive-resume) | 42094 | 插件 | A one-of-a-kind resume builder that keeps your privacy in mind. Com… |
-| 6 | [esengine/DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix) | 35339 | 插件 | DeepSeek-native AI coding agent for your terminal. Engineered aroun… |
-| 7 | [volcengine/OpenViking](https://github.com/volcengine/OpenViking) | 35104 | 插件 | Self-evolving Context Database for AI Agents. Unify Agent Memory, K… |
-| 8 | [freestylefly/awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2) | 27257 | 插件 | Prompt as Code \| GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并… |
-| 9 | [Molunerfinn/PicGo](https://github.com/Molunerfinn/PicGo) | 27116 | 插件 | :rocket: The Ultimate Image Uploader for Efficient Creators. Suppor… |
-| 10 | [titanwings/distilly](https://github.com/titanwings/distilly) | 24267 | 项目 | 「同事」Skill：将离别化为温暖的数字生命 1.0 |
+| 1 | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 209482 | 项目 | DeepSeek Harness 官方仓库：Everything is a Plugin. |
+| 2 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | 93599 | 渠道 | 🎨 Best DeepSeek Harness Design Plugin. The open-source Claude Desig… |
+| 3 | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | 70235 | 插件 | 🌊 The original agent meta-harness. Deploy intelligent multi-player … |
+| 4 | [tt-a1i/archify](https://github.com/tt-a1i/archify) | 43621 | 插件 | Agent skill for beautiful, verifiable architecture, workflow, seque… |
+| 5 | [amruthpillai/reactive-resume](https://github.com/amruthpillai/reactive-resume) | 42098 | 插件 | A one-of-a-kind resume builder that keeps your privacy in mind. Com… |
+| 6 | [esengine/DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix) | 35355 | 插件 | DeepSeek-native AI coding agent for your terminal. Engineered aroun… |
+| 7 | [volcengine/OpenViking](https://github.com/volcengine/OpenViking) | 35150 | 插件 | Self-evolving Context Database for AI Agents. Unify Agent Memory, K… |
+| 8 | [freestylefly/awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2) | 27331 | 插件 | Prompt as Code \| GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并… |
+| 9 | [Molunerfinn/PicGo](https://github.com/Molunerfinn/PicGo) | 27117 | 插件 | :rocket: The Ultimate Image Uploader for Efficient Creators. Suppor… |
+| 10 | [titanwings/distilly](https://github.com/titanwings/distilly) | 24281 | 项目 | 「同事」Skill：将离别化为温暖的数字生命 1.0 |
 
 ### 分类构成
 
-`消息通讯 249` · `视觉与多模态 130` · `浏览器与网络 132` · `Web UI 增强 498` · `皮肤与娱乐 163` · `Agent 能力 585` · `编码开发 151` · `文件与数据 59` · `开发工具与教程 88` · `精选合集与发行版 31` · `生态项目 28`
+`消息通讯 249` · `视觉与多模态 129` · `浏览器与网络 139` · `Web UI 增强 491` · `皮肤与娱乐 169` · `Agent 能力 581` · `编码开发 151` · `文件与数据 58` · `开发工具与教程 90` · `精选合集与发行版 31` · `生态项目 28`
 
 <!-- OMD:stats:END -->
 
