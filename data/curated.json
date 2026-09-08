@@ -6,12 +6,6 @@
       "note": "7k7k 风格 DSH 小游戏平台：HTML5 与 Flash 小游戏",
       "repo": "omdsh-dev/7d7d"
     },
-    "Deepseek-Harness-Api-monitor": {
-      "category": "devtools",
-      "note": "DeepSeek Harness API 余额监测插件",
-      "repo": "linshufan21/Deepseek-Harness-Api-monitor",
-      "keep": true
-    },
     "abu-cowork": {
       "category": "eco",
       "note": "Claude Cowork 的开源替代：本地优先 AI Agent 桌面",
@@ -173,6 +167,12 @@
       "category": "agent",
       "note": "把工程规范变成会拒绝违规的程序",
       "repo": "dsh-external/deep-standard-skill"
+    },
+    "Deepseek-Harness-Api-monitor": {
+      "category": "devtools",
+      "note": "DeepSeek Harness API 余额监测插件",
+      "repo": "linshufan21/Deepseek-Harness-Api-monitor",
+      "keep": true
     },
     "deepseek-harness-desktop": {
       "category": "devtools",
@@ -1263,6 +1263,12 @@
       "category": "skin",
       "note": "罗小黑主题插件",
       "repo": "opensetk/dsh-xiaohei"
+    },
+    "dsh-xiaomi-tts": {
+      "repo": "ppy-web/dsh-plugin-xiaomi-mimo-tts",
+      "category": "webui",
+      "note": "为 DSH Web 添加 Xiaomi MiMo TTS 语音朗读：助手消息播报、自定义音色与浏览器本地语音兜底，可选 PCM 流式播放",
+      "keep": true
     },
     "dsh-xiaoyao-skins": {
       "category": "skin",
