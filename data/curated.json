@@ -522,6 +522,12 @@
       "note": "git 提交固定使用环境自身作者身份（优先 gh CLI 登录账号）",
       "repo": "LoserFox/dsh-git-identity"
     },
+    "dsh-github": {
+      "category": "code",
+      "note": "GitHub PR/issue 集成 + composite Action 与轮询 PR 审查机器人，写操作全部过审批",
+      "repo": "PerryLink/dsh-github",
+      "keep": true
+    },
     "dsh-github-integration": {
       "category": "code",
       "note": "DSH GitHub 集成插件",
