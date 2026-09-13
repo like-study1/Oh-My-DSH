@@ -1620,6 +1620,132 @@
       "category": "data",
       "note": "面向 Zotero 论文库的浪潮式 RAG 细节检索",
       "repo": "Fisfzy/zotero-wave-rag"
+    },
+    "dsh-talk": {
+      "category": "channel",
+      "note": "语音输入输出：麦克风语音转文字与文字转语音",
+      "repo": "PerryLink/dsh-talk",
+      "keep": true
+    },
+    "dsh-draw": {
+      "category": "vision",
+      "note": "多引擎文生图（OpenAI Images 与智谱 CogView 预设）：按会话配额、引擎故障切换、凭证安全配置",
+      "repo": "PerryLink/dsh-draw",
+      "keep": true
+    },
+    "dsh-click": {
+      "category": "devtools",
+      "note": "Windows 桌面电脑操作工具（点击/输入/按键/截屏）：新鲜度校验、审批门、进程身份核验与脱敏审计",
+      "repo": "PerryLink/dsh-click",
+      "keep": true
+    },
+    "dsh-fast": {
+      "category": "devtools",
+      "note": "性能剖析与 LLM 缓存诊断：上下文工程、延迟剖析与缓存行为报告",
+      "repo": "PerryLink/dsh-fast",
+      "keep": true
+    },
+    "dsh-mask": {
+      "category": "devtools",
+      "note": "PII 脱敏：请求前匿名化姓名/电话/邮箱/证件/密钥，展示层还原，明文不进会话日志",
+      "repo": "PerryLink/dsh-mask",
+      "keep": true
+    },
+    "dsh-observe": {
+      "category": "devtools",
+      "note": "会话事件流导出为 OpenTelemetry OTLP 与 Langfuse 的脱敏 traces/指标，默认关闭",
+      "repo": "PerryLink/dsh-observe",
+      "keep": true
+    },
+    "dsh-session-pin": {
+      "category": "webui",
+      "note": "会话与工作区置顶：行级图钉与换色、会话头开关、已置顶面板、Pin 分组与 /goto",
+      "repo": "PerryLink/dsh-session-pin",
+      "keep": true
+    },
+    "dsh-budget": {
+      "category": "agent",
+      "note": "按插件粒度用量预算与费用上限：按模型记账、会话/月度预算预警阻断、碳足迹估算",
+      "repo": "PerryLink/dsh-budget",
+      "keep": true
+    },
+    "dsh-output-styles": {
+      "category": "webui",
+      "note": "运行时切换模型输出风格（对标 Claude Code outputStyles）+ output.render.* 呈现协议与 /style 命令",
+      "repo": "PerryLink/dsh-output-styles",
+      "keep": true
+    },
+    "dsh-translate": {
+      "category": "devtools",
+      "note": "工具输出修复层：JSON Schema 校验、参数映射与 JSON 修复",
+      "repo": "PerryLink/dsh-translate",
+      "keep": true
+    },
+    "dsh-autotier": {
+      "category": "agent",
+      "note": "自动模型分层路由：一条用户指令进、一条分层决策出，无需手动切换模型",
+      "repo": "PerryLink/dsh-autotier",
+      "keep": true
+    },
+    "dsh-reach": {
+      "category": "channel",
+      "note": "把 DSH 的审批卡与提问卡推送到 IM 渠道（先微信），可在聊天里直接作答",
+      "repo": "PerryLink/dsh-reach",
+      "keep": true
+    },
+    "dsh-team-rooms": {
+      "category": "agent",
+      "note": "持久化跨会话多 Agent 团队房间：成员、消息总线、共享任务板与共享时间线，重启后仍保留",
+      "repo": "PerryLink/dsh-team-rooms",
+      "keep": true
+    },
+    "dsh-ticktick": {
+      "category": "agent",
+      "note": "TickTick（滴答清单）任务桥：会话页头部任务面板与精选代理工具，走官方 TickTick MCP 端点",
+      "repo": "PerryLink/dsh-ticktick",
+      "keep": true
+    },
+    "dsh-local-ai": {
+      "category": "agent",
+      "note": "Ollama 本地模型接入：模型管理、健康检查、基于规则的本地路由与云端回退",
+      "repo": "PerryLink/dsh-local-ai",
+      "keep": true
+    },
+    "dsh-session-sync": {
+      "category": "devtools",
+      "note": "跨设备会话同步：经 git 在多机之间同步会话与设置",
+      "repo": "PerryLink/dsh-session-sync",
+      "keep": true
+    },
+    "dsh-test-drive": {
+      "category": "devtools",
+      "note": "在一次性隔离配置中为 DSH 插件执行安装与冒烟测试，不触碰真实配置",
+      "repo": "PerryLink/dsh-test-drive",
+      "keep": true
+    },
+    "dsh-plugin-kit": {
+      "category": "devtools",
+      "note": "插件编写工具包：共享 Provider 接缝、bundle 骨架与 dsh 插件家族通用约定",
+      "repo": "PerryLink/dsh-plugin-kit",
+      "keep": true
+    },
+    "dsh-plugin-doctor": {
+      "category": "devtools",
+      "note": "插件「完整性 + 运行流畅」检测器：包结构静态检查 R / cordis 契约扫描 K / 沙箱冒烟 D / 清单校验 CC 四层",
+      "repo": "PerryLink/dsh-plugin-doctor",
+      "keep": true
+    },
+    "dsh-cert-mcp": {
+      "category": "devtools",
+      "note": "只读 MCP 服务器：暴露 dsh-plugin-certification 认证注册表（认证等级、快照日期、五维证据）",
+      "repo": "PerryLink/dsh-cert-mcp",
+      "keep": true
+    },
+    "dsh-plugin-upgrade-015": {
+      "category": "devtools",
+      "note": "插件升级技能：0.1.3-alpha.1 → 0.1.5-rc.1 双支线合并 + 零依赖 20 接缝扫描器",
+      "repo": "PerryLink/dsh-plugin-upgrade-015",
+      "keep": true
     }
   },
   "manual": [
