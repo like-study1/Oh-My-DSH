@@ -362,6 +362,18 @@
       "note": "代码地图：symbol 索引、文档符号、调用层级、继承树（LSP 之上）",
       "repo": "dsh-external/dsh-code-map"
     },
+    "dsh-code-review": {
+      "category": "code",
+      "note": "通过 /review 启动原生独立子 Agent，按分支、提交或未提交变更范围审查代码并返回报告",
+      "repo": "MichengAI/dsh-code-review",
+      "keep": true
+    },
+    "dsh-codex-pet": {
+      "category": "webui",
+      "note": "在 DSH Web 中显示可交互宠物，汇总多任务状态与提醒，支持通过 Skill 创建自定义宠物",
+      "repo": "MichengAI/dsh-codex-pet",
+      "keep": true
+    },
     "dsh-companion": {
       "category": "agent",
       "note": "陪伴模式：SOUL 人格 + Hermes 长期记忆，可选 QQ 通道",
@@ -801,6 +813,12 @@
       "note": "Windows PTY 进程检查器（PowerShell CIM + kill 存活探针）",
       "repo": "dsh-external/dsh-pty-windows"
     },
+    "dsh-pua": {
+      "category": "agent",
+      "note": "为 Agent 提供任务推进提示、角色风格、全局与会话配置，以及基于验收结果继续执行的 Loop",
+      "repo": "MichengAI/dsh-pua",
+      "keep": true
+    },
     "dsh-qq2006": {
       "category": "skin",
       "note": "QQ2006 皮肤：主题注册 + 全局皮肤样式",
@@ -907,6 +925,12 @@
       "category": "webui",
       "note": "侧边栏：文件浏览器、终端、Git 审查",
       "repo": "ccq1/dsh-side-panel"
+    },
+    "dsh-simplify": {
+      "category": "code",
+      "note": "通过 /simplify 在选定 Git 变更范围内请求代码简化，支持未跟踪文件、暂存区、提交和指定路径",
+      "repo": "MichengAI/dsh-simplify",
+      "keep": true
     },
     "dsh-skill-cockpit": {
       "category": "devtools",
@@ -1661,6 +1685,12 @@
       "category": "webui",
       "note": "会话与工作区置顶：行级图钉与换色、会话头开关、已置顶面板、Pin 分组与 /goto",
       "repo": "PerryLink/dsh-session-pin",
+      "keep": true
+    },
+    "dsh-btw": {
+      "category": "webui",
+      "note": "基于当前会话上下文回答一次性只读旁问，以独立气泡展示，不执行工具",
+      "repo": "MichengAI/dsh-btw",
       "keep": true
     },
     "dsh-budget": {
