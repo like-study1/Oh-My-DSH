@@ -1,24 +1,24 @@
 # 📦 Oh-My-DSH 插件目录 · PLUGINS.md
 
-> 由 [`scripts/sync_plugins.py`](scripts/sync_plugins.py) 自动生成 · 更新于 2026-10-24 03:57（北京时间）
+> 由 [`scripts/sync_plugins.py`](scripts/sync_plugins.py) 自动生成 · 更新于 2026-10-24 07:09（北京时间）
 
-精选条目 **2115** · 生态快照 **2000** 个 `dsh-plugin` 仓库 · 总 Star **1698793**
+精选条目 **2115** · 生态快照 **2000** 个 `dsh-plugin` 仓库 · 总 Star **1699815**
 
 | 插件 | 类型 | 活跃 | 语言 | ⭐ | 说明 |
 |---|---|---|---|---|---|
 
-## 📡 消息通讯（229）
+## 📡 消息通讯（231）
 
 *Telegram / 微信 / QQ / 飞书等远程渠道、通知与分享*
 
 | 插件 | 类型 | 活跃 | 语言 | ⭐ | 说明 |
 |---|---|---|---|---|---|
-| [open-design](https://github.com/nexu-io/open-design) | 渠道 | 🟢 活跃 | TypeScript | 103574 | The 1st Collaborative AI Design Agent Workspace. Local-first and open source. Create motion, prot… |
-| [archify](https://github.com/tt-a1i/archify) | 渠道 | 🟢 活跃 | JavaScript | 88245 | Turn any idea, plan, or codebase into a beautiful interactive diagram. An agent skill for Claude … |
-| [DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) | 渠道 | 🟢 活跃 | JavaScript | 5885 | DeepSeek Harness（DSH）一只住在 DSH 界面右下角的小鲸鱼娘，帮你盯着DeepSeek账户余额。QQ弹弹，支持拖拽吸附、左吸附翻转、数字滚动动画，随界面自动启用，建议直接喊来… |
-| [dsh-im](https://github.com/xmanrui/dsh-im) | 渠道 | 🟢 活跃 | JavaScript | 2390 | 通过扫码或机器人凭据把IM机器人接入DeepSeek Harness（支持飞书、微信、钉钉、企业微信、QQ、Slack、Telegram、Discord和WhatsApp）。 Connect I… |
+| [open-design](https://github.com/nexu-io/open-design) | 渠道 | 🟢 活跃 | TypeScript | 103589 | The 1st Collaborative AI Design Agent Workspace. Local-first and open source. Create motion, prot… |
+| [archify](https://github.com/tt-a1i/archify) | 渠道 | 🟢 活跃 | JavaScript | 88278 | Turn any idea, plan, or codebase into a beautiful interactive diagram. An agent skill for Claude … |
+| [DeepSeek-Balance-Whale-Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget) | 渠道 | 🟢 活跃 | JavaScript | 5889 | DeepSeek Harness（DSH）一只住在 DSH 界面右下角的小鲸鱼娘，帮你盯着DeepSeek账户余额。QQ弹弹，支持拖拽吸附、左吸附翻转、数字滚动动画，随界面自动启用，建议直接喊来… |
+| [dsh-im](https://github.com/xmanrui/dsh-im) | 渠道 | 🟢 活跃 | JavaScript | 2391 | 通过扫码或机器人凭据把IM机器人接入DeepSeek Harness（支持飞书、微信、钉钉、企业微信、QQ、Slack、Telegram、Discord和WhatsApp）。 Connect I… |
 | [dsh-pocket](https://github.com/shaobeichen/dsh-pocket) | 渠道 | 🟢 活跃 | JavaScript | 2302 | 把 DeepSeek Harness 装进你的口袋：电脑上跑 dsh web，手机扫码即同步访问（局域网 + 公网，实时同屏）Put DeepSeek Harness in your pocke… |
-| [memmy-agent](https://github.com/MemTensor/memmy-agent) | 渠道 | 🟢 活跃 | TypeScript | 2134 | 🍙  A personal AI agent & local memory hub for all AI agents, gives every AI one shared, fully con… |
+| [memmy-agent](https://github.com/MemTensor/memmy-agent) | 渠道 | 🟢 活跃 | TypeScript | 2135 | 🍙  A personal AI agent & local memory hub for all AI agents, gives every AI one shared, fully con… |
 | [agent-qa](https://github.com/vostride/agent-qa) | 渠道 | 🟢 活跃 | TypeScript | 899 | Open-source self-improving QA agent for software teams. A test harness with memory. Write tests i… |
 | [api-relay-audit](https://github.com/toby-bridges/api-relay-audit) | 渠道 | 🟢 活跃 | Python | 892 | Local security audit for AI API relays and LLM proxies: detects prompt injection, model substitut… |
 | [Wegent](https://github.com/wecode-ai/Wegent) | 渠道 | 🟢 活跃 | TypeScript | 877 | Plan, build, and deliver with an open-source, self-hostable AI workspace for coding, collaboratio… |
@@ -29,7 +29,7 @@
 | [de-anthropocentric-research-engine](https://github.com/yogsoth-ai/de-anthropocentric-research-engine) | 渠道 | 🟢 活跃 | — | 505 | Give an AI a research direction: it runs literature synthesis, gap validation, hypothesis formati… |
 | [dsh-commandcode-provider](https://github.com/Mars-Sea/dsh-commandcode-provider) | 渠道 | 🟢 活跃 | TypeScript | 429 | Command Code provider plugin for DeepSeek Harness (dsh). Adds Command Code model access, live mod… |
 | [dsh-wechat](https://github.com/xcisxc29/dsh-wechat) | 渠道 | 🟢 活跃 | TypeScript | 307 | WeChat channel for DeepSeek Harness |
-| [acryl](https://github.com/acryldev/acryl) | 渠道 | 🟢 活跃 | TypeScript | 289 | ACRYL - Agent Context Relay Yielding Lifecycles. One persistent workspace, one canonical context,… |
+| [acryl](https://github.com/acryldev/acryl) | 渠道 | 🟢 活跃 | TypeScript | 292 | ACRYL - Agent Context Relay Yielding Lifecycles. One persistent workspace, one canonical context,… |
 | [dsh-agent-team-gui](https://github.com/toolclub/dsh-agent-team-gui) | 渠道 | 🟢 活跃 | TypeScript | 282 | Persistent multi-model workflow teams for DeepSeek Harness — dynamic lead planning, bounded DAGs,… |
 | [dsh-qqbot](https://github.com/tencent-connect/dsh-qqbot) | 渠道 | 🟢 活跃 | TypeScript | 219 | 让 QQ Bot 接入 DeepSeek Harness（dsh）的官方插件 |
 | [dsh-bridge](https://github.com/wenbin-wb/dsh-bridge) | 渠道 | 🟢 活跃 | JavaScript | 214 | 🚀 DeepSeek Harness 多通道远程访问与安全守护插件 \| 局域网扫码直连、Cloudflare / 自建公网隧道、微信 / QQ / 飞书 / Telegram 机器人全生命周期… |
@@ -55,7 +55,7 @@
 | [dsh-omi-voice](https://github.com/PolinniZhong/dsh-omi-voice) | 渠道 | 🟡 关注 | Swift | 76 | DeepSeek Harness 语音朗读插件：沉浸式听朗读，用豆包 TTS 自然音色读 AI 回复（BYOK · 点读/暂停/继续） |
 | [deepseek-harness-control-center](https://github.com/feibi-mochi/deepseek-harness-control-center) | 渠道 | 🟡 关注 | JavaScript | 75 | DeepSeek Harness control center for balance, usage, peak/off-peak pricing, encrypted multi-accoun… |
 | [dsh-agent-team](https://github.com/Contexera/dsh-agent-team) | 渠道 | 🟢 活跃 | TypeScript | 70 | dsh-agent-team gives DeepSeek Harness agents that don't reset: durable Members with their own mem… |
-| [dsh-tether](https://github.com/zexadev/dsh-tether) | 渠道 | 🟢 活跃 | JavaScript | 69 | Mobile client for the DeepSeek Harness — use the dsh on your dev machine from your Android or iOS… |
+| [dsh-tether](https://github.com/zexadev/dsh-tether) | 渠道 | 🟢 活跃 | JavaScript | 70 | Mobile client for the DeepSeek Harness — use the dsh on your dev machine from your Android or iOS… |
 | [dsh-model-fusion](https://github.com/aa2246740/dsh-model-fusion) | 渠道 | 🟢 活跃 | TypeScript | 68 | Fusion for DeepSeek Harness: a frontier Lead plans and reviews, a much cheaper Sidekick writes th… |
 | [dsh-meow-smooth](https://github.com/Phant0Meow/dsh-meow-smooth) | 渠道 | 🟢 活跃 | JavaScript | 66 | 手机电脑dsh通知功能！移动端可用的通知！手机端ui交互优化！让手机端dsh真正可用。DSH notification support for both mobile and desktop! … |
 | [dsh-balance-plugin](https://github.com/yxxbc/dsh-balance-plugin) | 渠道 | 🟡 关注 | JavaScript | 62 | deepSeek 余额监控与用量统计（DSH 动态 Cordis 插件）：余额监控 · 官方充值入口 · 用量统计 · 三方插件管理 |
@@ -99,9 +99,9 @@
 | [dsh-plugin-hub](https://github.com/wingsky-1/dsh-plugin-hub) | 渠道 | 🟢 活跃 | TypeScript | 29 | DSH (DeepSeek Harness) web GUI plugin collection — task notifications, provider usage, LAN proxy,… |
 | [dsh-harness-one](https://github.com/chumingjun/dsh-harness-one) | 渠道 | 🟢 活跃 | JavaScript | 27 | Visual AI workflow orchestrator for DeepSeek Harness (dsh): multi-agent DAGs, live execution, rec… |
 | [dsh-balance](https://github.com/crazywoola/dsh-balance) | 渠道 | 🟢 活跃 | TypeScript | 26 | DeepSeek Harness balance plugin for the Settings page |
+| [dsh-android-app](https://github.com/Hakunm/dsh-android-app) | 渠道 | 🟠 放缓 | Kotlin | 26 | 一款专为 DeepSeek Harness 设计的原生 Android 客户端，支持聊天、审批、工作区、文件及模型管理。A native Android client for DeepSeek … |
 | [dsh-wechat](https://github.com/pan17/dsh-wechat) | 渠道 | 🟢 活跃 | TypeScript | 26 | DSH插件，将微信私聊消息桥接到DSH，支持文本、图片、文件、音视频的双向传输。目标是在微信端还原DSH的原生体验 |
 | [dsh-memgas](https://github.com/quqxui/dsh-memgas) | 渠道 | 🟡 关注 | TypeScript | 26 | Long-term memory plugin for DeepSeek Harness (dsh): four-channel retrieval fusion and continuous … |
-| [dsh-android-app](https://github.com/Hakunm/dsh-android-app) | 渠道 | 🟠 放缓 | Kotlin | 25 | 一款专为 DeepSeek Harness 设计的原生 Android 客户端，支持聊天、审批、工作区、文件及模型管理。A native Android client for DeepSeek … |
 | [LantaiAgent](https://github.com/834063245-creator/LantaiAgent) | 渠道 | 🟢 活跃 | TypeScript | 24 | I’m a helpful assistant |
 | [dsh-purge](https://github.com/LanJinGod/dsh-purge) | 渠道 | 🟢 活跃 | JavaScript | 24 | DeepSeek Harness 破甲插件 dsh-purge 1.1.72 — 换包生效、账本自检、三平台分流 |
 | [dsh-ears](https://github.com/WizisCool/dsh-ears) | 渠道 | 🟢 活跃 | TypeScript | 24 | Voice input plugin for DeepSeek Harness (DSH) with text polishing. Supports local GPU Whisper and… |
@@ -110,13 +110,14 @@
 | [project-blueprint](https://github.com/shuguang1994/project-blueprint) | 渠道 | 🟢 活跃 | JavaScript | 23 | Make any project AI-agent-ready in one command. Adaptive tech stack detection (7 languages × 14 f… |
 | [embedded-workbench](https://github.com/AmethystLuna/embedded-workbench) | 渠道 | 🟢 活跃 | JavaScript | 22 | Embedded C/C++ AI engineering plugin — firmware skills (FreeRTOS, Keil, HardFault, state machines… |
 | [supergraph](https://github.com/datit309/supergraph) | 渠道 | 🟢 活跃 | JavaScript | 22 | Engineering workflow system for AI coding agents — mandatory planning, TDD, verification, review,… |
+| [dsh-better-input](https://github.com/DIAG5/dsh-better-input) | 渠道 | 🟢 活跃 | JavaScript | 22 | BetterInput是一套输入增强套件：语音识别、提示词优化、输入更多文件类型，各类文件转Md，交互体验优化等——把每一种喂给智能体的输入都变得更好。BetterInput is an inp… |
 | [pi-trace-extension](https://github.com/npxcnency-ux/pi-trace-extension) | 渠道 | 🟡 关注 | Python | 22 | Langfuse-style trace viewer for pi-agent — local-first, zero-setup, single-file HTML |
 | [dsh-whale-pet](https://github.com/aceice01/dsh-whale-pet) | 渠道 | 🟠 放缓 | HTML | 21 | DeepSeek 鲸鱼娘桌宠：DSH Desktop 桌宠 + Web 版悬浮桌宠，晓伊神经网络语音、撒娇互动、任务完成提醒 |
 | [dsh-plugin-notify-sounds](https://github.com/BillCx330/dsh-plugin-notify-sounds) | 渠道 | 🟢 活跃 | JavaScript | 21 | DeepSeek Harness原生风格提示音插件 |
-| [dsh-better-input](https://github.com/DIAG5/dsh-better-input) | 渠道 | 🟢 活跃 | JavaScript | 21 | BetterInput是一套输入增强套件：语音识别、提示词优化、输入更多文件类型，各类文件转Md，交互体验优化等——把每一种喂给智能体的输入都变得更好。BetterInput is an inp… |
 | [dsh-desktop](https://github.com/MochiNek0/dsh-desktop) | 渠道 | 🟢 活跃 | Rust | 21 | Unofficial lightweight desktop client for DeepSeek Harness (dsh web), built with Tauri. A few-MB … |
 | [dsh-voice-mode](https://github.com/qishuilalala/dsh-voice-mode) | 渠道 | 🟢 活跃 | JavaScript | 21 | DSH 全双工语音插件：流式语音识别入草稿、语音合成按句朗读 + 实时字幕、开口即打断；本地识别免 API Key，可选唤醒词。 · Full-duplex voice plugin for D… |
 | [dsh-galgame](https://github.com/Lanxing6480/dsh-galgame) | 渠道 | 🟢 活跃 | TypeScript | 20 | 我要成为Galgame高手！！将你的Vibe coding界面修改成为Galgame的样子，在不影响工作的情况下和赏心悦目的DeepSeek娘进行友好互动 |
+| [cc-notify-hooks](https://github.com/MarioZZJ/cc-notify-hooks) | 渠道 | 🟠 放缓 | Shell | 20 | Agent 等待响应通知插件（支持Claude Code、CodeX、DeepSeek Harness、Reasonix） — 11 个渠道，短通知即时触达，长通知异步兜底。人可以闲着，Agen… |
 | [dsh-talk](https://github.com/PerryLink/dsh-talk) | 渠道 | 🟢 活跃 | TypeScript | 16 | 语音输入输出：麦克风语音转文字与文字转语音 |
 | [dsh-wechat-notify](https://github.com/wssfk12138/dsh-wechat-notify) | 渠道 | 🟡 关注 | TypeScript | 9 | wechat_notify 工具：通过本机微信发送通知 |
 | [telegram](https://github.com/LoserFox/telegram) | 渠道 | 🟠 放缓 | TypeScript | 6 | Telegram Bot API 桥接：长轮询、per-chat 会话、HTML 格式化 |
@@ -137,7 +138,6 @@
 | [dsh-input-traffic](https://github.com/drscrewdriver/dsh-input-traffic) | 渠道 | 🟢 活跃 | TypeScript | 4 | Busy-time input queue for the DeepSeek Harness web GUI: three-tier (now/next/later) planning, que… |
 | [dsh-ds-balance](https://github.com/dsh-plugin-lab/dsh-ds-balance) | 渠道 | 🟢 活跃 | TypeScript | 4 | DSH plugin: shows your DeepSeek account balance at the bottom of the left sidebar (native UI) |
 | [dsh-win-toolkit](https://github.com/Edge-Echo/dsh-win-toolkit) | 渠道 | 🟢 活跃 | JavaScript | 4 | Windows-native capability pack for DeepSeek Harness (dsh): clipboard, notifications, hosts file, … |
-| [dsh-connect-sensenova-token-plan](https://github.com/eghrhegpe/dsh-connect-sensenova-token-plan) | 渠道 | 🟢 活跃 | JavaScript | 4 | [DSH Plugins] 商汤接入 DSH 的全家桶：查看积分额度、接入API与商汤小浣熊桌面端，429重试 |
 | [dsh-pulse](https://github.com/Enc-hanted/dsh-pulse) | 渠道 | 🟢 活跃 | JavaScript | 4 | Cross-session usage & cost observatory for the DeepSeek Harness web profile — trend/heatmap dashb… |
 | [dsh-vault](https://github.com/feiyang-dev/dsh-vault) | 渠道 | 🟠 放缓 | JavaScript | 4 | DeepSeek Harness 数据保险箱插件（dsh-vault）—— 自动备份、清空检测、一键恢复，保护聊天记录与工作区数据；可经桌面端一键安装或命令行 dsh plugin add 安装。 |
 | [dsh-lit-search](https://github.com/Flan246/dsh-lit-search) | 渠道 | 🟢 活跃 | TypeScript | 4 | Academic literature search, citation and BibTeX tools for DeepSeek Harness and any agent (Crossre… |
@@ -214,11 +214,11 @@
 | [dsh-notify-sound](https://github.com/Fur1naaaaaaaa/dsh-notify-sound) | 渠道 | 🟢 活跃 | JavaScript | 3 | 给 DSH 加提示音：对话完成 / 需要授权 / 弹出提问时响铃。零依赖，Web Audio 现场合成，内置设置界面（音量滑杆 + 四段试听）。 |
 | [dsh-task-supervisor](https://github.com/gosomea/dsh-task-supervisor) | 渠道 | 🟢 活跃 | TypeScript | 3 | DSH task supervision with DAG progress, plan review, persistent control and stage/completion checks. |
 | [dsh-concise](https://github.com/hoyyang/dsh-concise) | 渠道 | 🟡 关注 | TypeScript | 3 | One-click Concise output style for DeepSeek Harness (dsh): per-session toggle + plain-language di… |
+| [dsh-pi-durable](https://github.com/hy-sde/dsh-pi-durable) | 渠道 | 🟢 活跃 | TypeScript | 3 | Durable-agent engine for DeepSeek Harness: host-plane cordis service mounting @earendil-works/pi-… |
 | [dsh-set-model](https://github.com/john-walks-slow/dsh-set-model) | 渠道 | 🟢 活跃 | TypeScript | 3 | Through Jev or through its own tool calls, the agent switches model presets and thinking depth on… |
 | [dsh-win-notify](https://github.com/Jxxxxx729/dsh-win-notify) | 渠道 | 🟢 活跃 | JavaScript | 3 | DeepSeek Harness 插件：在 Windows 通知栏提示对话完成、等待选择、等待授权或需要登录，点击通知直接跳回对应对话。Toast 以 DeepSeek Harness 应用身份发出。 |
 | [QQ.dsh-qqbot](https://github.com/kbzhao7/QQ.dsh-qqbot) | 渠道 | 🟡 关注 | — | 3 | 基于DSH-QQBOT项目的dsh-qqbotGPT优化版本 |
 | [ccs-balance](https://github.com/kikomaotu/ccs-balance) | 渠道 | 🟡 关注 | JavaScript | 3 | DSH 插件：同步 cc-switch 各 provider 余额，按日/月/总量统计 token 用量与花费（支持中转站币种与汇率设置） |
-| [kiru-progress-bar](https://github.com/Kiru-Sama/kiru-progress-bar) | 渠道 | 🟢 活跃 | JavaScript | 3 | DeepSeek Harness 进度汇报提醒插件：累计每 N 步或每 N 秒提醒 Agent 汇报一次进度，侧栏实时显示计数，聊天区横幅显示上次提醒时刻。附带余额低额提醒与 DeepSeek … |
 | [deepseek-harness-desktop](https://github.com/LBurny/deepseek-harness-desktop) | 渠道 | 🟢 活跃 | Rust | 3 | Windows desktop shell for DeepSeek's agent harness CLI (dsh). The installer bundles Node.js and d… |
 | [dsh-musage-card](https://github.com/Lin-Dongg/dsh-musage-card) | 渠道 | 🟡 关注 | JavaScript | 3 | Multi-provider (11) quota & balance glass card for the DSH sidebar footer — local fork of dsh-mus… |
 | [dsh-lan-proxy](https://github.com/liveqte/dsh-lan-proxy) | 渠道 | 🟡 关注 | JavaScript | 3 | DSH 插件：把 dsh 的回环 Web UI 通过 0.0.0.0 反代暴露到局域网，开关/状态/日志嵌入设置页。官方 bundle 插件，安装：dsh plugin --profile we… |
@@ -229,11 +229,13 @@
 | [dsh-budget-watcher](https://github.com/NeutronStar714/dsh-budget-watcher) | 渠道 | 🟡 关注 | JavaScript | 3 | 适配 DeepSeek Harness 的预算监视器插件，让 API 花费变透明。通过图标展示账户余额、当前轮/会话的花费、以及任务花钱速率，提醒或帮助用户阻断突发性大量烧钱（例如未经过协商发放… |
 | [dsh-nonead-ursim](https://github.com/NoneadChina/dsh-nonead-ursim) | 渠道 | 🟢 活跃 | JavaScript | 3 | dsh-nonead-ursim gives a DSH agent a Universal Robots arm it can drive in plain language — the co… |
 | [DeepSeek-harness-dingtalk](https://github.com/sliverp/DeepSeek-harness-dingtalk) | 渠道 | 🟠 放缓 | TypeScript | 3 | DingTalk Stream text and image channel plugin for DeepSeek Harness |
+| [soya-workflows](https://github.com/soyoungzsy/soya-workflows) | 渠道 | 🟢 活跃 | Python | 3 | 🏭 SOYA Workflows — enterprise workflow skills for DeepSeek Harness: notify (webhook), docs (Yuque… |
 | [dsh-global-prompt](https://github.com/sryimnoob123/dsh-global-prompt) | 渠道 | 🟡 关注 | JavaScript | 3 | DSH settings plugin for global and project AGENTS.md, identity/persona injection, and result noti… |
 | [dsh-peak-balance](https://github.com/VviLliAm-qwq/dsh-peak-balance) | 渠道 | 🟡 关注 | JavaScript | 3 | Peak/off-peak billing clock with live DeepSeek balance and per-turn cost above the dsh-tui prompt… |
 | [dsh-qqbot-bridge](https://github.com/wang-22-code/dsh-qqbot-bridge) | 渠道 | 🟡 关注 | TypeScript | 3 | 让 DeepSeek Harness（DSH）住进 QQ：基于腾讯官方 Bot API，支持私聊白名单、持久会话、模型切换与远程权限审批。 |
 | [dsh-hold-to-talk](https://github.com/wangzhanchao883/dsh-hold-to-talk) | 渠道 | 🟡 关注 | JavaScript | 3 | Hold-to-talk voice input for the DeepSeek Harness web composer: hold the mouse on the input box, … |
 | [dsh-command-skill-list](https://github.com/weilantianhai/dsh-command-skill-list) | 渠道 | 🟡 关注 | JavaScript | 3 | /skills command for DSH — list skills with auto-translated descriptions (zh↔en) |
+| [dsh-balance-display](https://github.com/xsuas/dsh-balance-display) | 渠道 | 🟠 放缓 | JavaScript | 3 | DeepSeek Harness 余额显示插件 |
 | [dsh-notify-sound](https://github.com/xxxxxxxyu/dsh-notify-sound) | 渠道 | 🟠 放缓 | TypeScript | 3 | DSH (DeepSeek Harness) web plugin: plays a sound when the agent finishes replying (turn/end). Sou… |
 | [dsh-approval-voice](https://github.com/ZIye1208/dsh-approval-voice) | 渠道 | 🟡 关注 | JavaScript | 3 | DSH Web GUI 审批语音提示插件：需要审批/回答的弹窗出现时播放提示音并语音播报 |
 | [dsh-weixin-clawbot](https://github.com/zp-home/dsh-weixin-clawbot) | 渠道 | 🟠 放缓 | JavaScript | 3 | Phone-to-DSH control through Tencent's official Weixin ClawBot/iLink channel \| 基于腾讯官方微信 ClawBot/… |
@@ -243,13 +245,13 @@
 | [dsh-hermes-bridge](https://github.com/dsh-pulse/dsh-hermes-bridge) | 渠道 | 🟡 关注 | JavaScript | 0 | DSH ↔ 微信双向桥：入站调度到按 cwd 常驻的 agent 会话池 + hermes send 零 LLM 出站推送 |
 | [dsh-ica](https://github.com/shenjackyuanjie/dsh-ica) | 渠道 | 🟠 放缓 | — | 0 | icalingua 前端 |
 
-## 👁️ 视觉与多模态（113）
+## 👁️ 视觉与多模态（114）
 
 *视觉、VLM、OCR、图像理解与 UI 还原*
 
 | 插件 | 类型 | 活跃 | 语言 | ⭐ | 说明 |
 |---|---|---|---|---|---|
-| [awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2) | 插件 | 🟢 活跃 | JavaScript | 34941 | Prompt as Code \| GPT Image 2 / 2.5 提示词与案例库，530+ 个案例、20+ 套工业级模板与可复用 Skills，新增 2.5 同提示词对比专区，附完整提示词… |
+| [awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2) | 插件 | 🟢 活跃 | JavaScript | 34940 | Prompt as Code \| GPT Image 2 / 2.5 提示词与案例库，530+ 个案例、20+ 套工业级模板与可复用 Skills，新增 2.5 同提示词对比专区，附完整提示词… |
 | [PicGo](https://github.com/Molunerfinn/PicGo) | 插件 | 🟢 活跃 | TypeScript | 27402 | :rocket: The Ultimate Image Uploader for Efficient Creators. Supports Obsidian, Typora, VS Code e… |
 | [modlens](https://github.com/liustack/modlens) | 插件 | 🟢 活跃 | TypeScript | 4430 | DSH 首个视觉插件：纯文本模型的视觉桥梁 |
 | [agent-vision-toolkit](https://github.com/Anionex/agent-vision-toolkit) | 插件 | 🟢 活跃 | Python | 1248 | 为纯文本模型设计的视觉工具箱：多图理解、长截图 OCR、前端 UI 还原、GUI 自动化，可接入 Codex/Claude Code/Pi/Oh My Pi/OpenCode |
@@ -264,7 +266,7 @@
 | [PPT-Design-Skill](https://github.com/sunchaokun/PPT-Design-Skill) | 技能 | 🟡 关注 | Python | 348 | Precision PPT design skill for OpenCode/Claude Code/Codex, with 40,000+ styles, pixel-perfect Bui… |
 | [dsh-ios](https://github.com/ZSeven-W/dsh-ios) | 插件 | 🟡 关注 | TypeScript | 341 | DeepSeek Harness (DSH) plugin: a live iOS Simulator — and a USB-connected iPhone — inside the con… |
 | [dsh-meme](https://github.com/yyh-001/dsh-meme) | 插件 | 🟢 活跃 | JavaScript | 320 | DeepSeek Harness 表情包插件：输入框一键发图、文字 token 斗图、情绪主动发图、AI 自动学图，图库市场一键安装。 · Meme/sticker plugin for Dee… |
-| [dsh-codex-subscription](https://github.com/WSL043/dsh-codex-subscription) | 插件 | 🟢 活跃 | JavaScript | 249 | Use your ChatGPT Plus / Pro (Codex) subscription in DeepSeek Harness (DSH): GPT-6 & Codex models,… |
+| [dsh-codex-subscription](https://github.com/WSL043/dsh-codex-subscription) | 插件 | 🟢 活跃 | JavaScript | 250 | Use your ChatGPT Plus / Pro (Codex) subscription in DeepSeek Harness (DSH): GPT-6 & Codex models,… |
 | [dsh-jev-plugin](https://github.com/luobosibing2/dsh-jev-plugin) | 插件 | 🟢 活跃 | JavaScript | 196 | Native DeepSeek Harness (DSH) plugin integrating TypeSafe Jev or Decision api like luna as a Syst… |
 | [dsh-crew](https://github.com/ZSeven-W/dsh-crew) | 插件 | 🟡 关注 | JavaScript | 180 | DeepSeek Harness (DSH) plugin: dispatch work to DSH agents from Claude Code / Codex — native suba… |
 | [dsh-codex-connect](https://github.com/franksong2702/dsh-codex-connect) | 插件 | 🟢 活跃 | TypeScript | 163 | Use openai-codex models and image generation via ChatGPT OAuth for DeepSeek Harness. |
@@ -287,7 +289,7 @@
 | [dsh-design-qa](https://github.com/sunxin-ai/dsh-design-qa) | 插件 | 🟢 活跃 | JavaScript | 44 | Design-fidelity QA for DeepSeek Harness: lend any text-only model an eye, then judge whether the … |
 | [dsh-directorx](https://github.com/LaplaceYoung/dsh-directorx) | 插件 | 🟢 活跃 | JavaScript | 43 | DirectorX as a DeepSeek Harness plugin: AI video/image/audio skills, knowledge corpus, and config… |
 | [html-workbench](https://github.com/alienzhou/html-workbench) | 插件 | 🟡 关注 | HTML | 42 | Local visual editor for existing HTML, with interactive previews and AI collaboration. Available … |
-| [atlas-cloud-skills](https://github.com/AtlasCloudAI/atlas-cloud-skills) | 技能 | 🟢 活跃 | JavaScript | 41 | Atlas Cloud skills for Claude Code, Codex & Gemini CLI — generate images/videos and call 300+ AI … |
+| [atlas-cloud-skills](https://github.com/AtlasCloudAI/atlas-cloud-skills) | 技能 | 🟢 活跃 | JavaScript | 42 | Atlas Cloud skills for Claude Code, Codex & Gemini CLI — generate images/videos and call 300+ AI … |
 | [dsh-workbuddy-trae-qoder-connect](https://github.com/chengshenyangtai/dsh-workbuddy-trae-qoder-connect) | 插件 | 🟢 活跃 | JavaScript | 38 | 把 WorkBuddy（多账号/企业版）、Trae CN / TRAE SOLO CN、Qoder CN 三家订阅聚合进同一个 DSH 模型选择器：会话内换模型不丢历史、积分倍率、逐模型思考档位… |
 | [picturereader](https://github.com/jing-hy/picturereader) | 插件 | 🟢 活跃 | JavaScript | 36 | DSH plugin: pixel-to-text image reading for text-only models. image_scan/image_ocr/image_sample t… |
 | [dsh-office-tools](https://github.com/kw78/dsh-office-tools) | 插件 | 🟢 活跃 | TypeScript | 36 | Model-facing Office tools for DeepSeek Harness: Word (.docx), Excel (.xlsx), and PowerPoint (.ppt… |
@@ -348,6 +350,7 @@
 | [dsh-vision-mix](https://github.com/haiziyao/dsh-vision-mix) | 插件 | 🟡 关注 | TypeScript | 3 | Vision routing and image generation for DeepSeek Harness through a fixed Mix model. |
 | [dsh-her-eyes](https://github.com/huashenglian/dsh-her-eyes) | 插件 | 🟠 放缓 | JavaScript | 3 | 让 AI 自动调用 VLM 进行视觉分析 |
 | [dsh-ready-gui](https://github.com/itchenshi/dsh-ready-gui) | 插件 | 🟡 关注 | JavaScript | 3 | DeepSeek Harness 桌面壳：内嵌 Web UI、引擎自动保持最新、预置 4 个插件、插件装坏能自愈。另有 Linux AppImage / zip 产物（CI 构建，未实机验证）。 |
+| [dsh-3d-plugin-graph](https://github.com/jelly-000/dsh-3d-plugin-graph) | 插件 | 🟠 放缓 | JavaScript | 3 | Live 3D visualization of the DSH plugin ecosystem - every node, edge and state is the real Cordis… |
 | [dsh-hud](https://github.com/konnga/dsh-hud) | 插件 | 🟢 活跃 | JavaScript | 3 | Heads-up display for DeepSeek Harness (dsh): Git panel and diffs, image before/after compare, per… |
 | [dsh-vision-provider](https://github.com/libinyam/dsh-vision-provider) | 插件 | 🟠 放缓 | JavaScript | 3 | Config-only DeepSeek Harness bundle for OpenAI-compatible vision models. |
 | [dsh-plugin-grok2api-media-tool](https://github.com/lsjspl/dsh-plugin-grok2api-media-tool) | 插件 | 🟡 关注 | JavaScript | 3 | 让 dsh 通过 grok2api 的 API 获得图片与视频生成能力（generate_image / generate_video）。 |
@@ -363,29 +366,29 @@
 | [dsh-tool-vision](https://github.com/gloryxpnv/dsh-tool-vision) | 插件 | 🟠 放缓 | JavaScript | 1 | 本地优先视觉：图片仅发送给本地 VLM（LM Studio/Ollama/vLLM 等），零 API 成本、数据不出本机，产出结构化 JSON 证据 |
 | [Qwen-MM-Plugins](https://github.com/omdsh-dev/Qwen-MM-Plugins) | 插件 | 🟠 放缓 | HTML | 0 | Qwen 多模态插件支持 |
 
-## 🌐 浏览器与网络（136）
+## 🌐 浏览器与网络（137）
 
 *浏览器操控、搜索、抓取与网络工具*
 
 | 插件 | 类型 | 活跃 | 语言 | ⭐ | 说明 |
 |---|---|---|---|---|---|
 | [BrowserSkill](https://github.com/Tencent/BrowserSkill) | 技能 | 🟢 活跃 | TypeScript | 9451 | Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension fo… |
-| [dsh-market](https://github.com/dsh-market/dsh-market) | 插件 | 🟢 活跃 | TypeScript | 8470 | The plugin market inside DeepSeek Harness — browse, search, one-click install · DSH 可视化插件市场 |
-| [yao](https://github.com/YaoApp/yao) | 插件 | 🟢 活跃 | Go | 8183 | ✨ All your agents and workspaces in one place, on every device you own. Track tasks on a board, a… |
+| [dsh-market](https://github.com/dsh-market/dsh-market) | 插件 | 🟢 活跃 | TypeScript | 8472 | The plugin market inside DeepSeek Harness — browse, search, one-click install · DSH 可视化插件市场 |
+| [yao](https://github.com/YaoApp/yao) | 插件 | 🟢 活跃 | Go | 8184 | ✨ All your agents and workspaces in one place, on every device you own. Track tasks on a board, a… |
 | [J-Space-Cognition-Suite](https://github.com/Tiger3807861189/J-Space-Cognition-Suite) | 插件 | 🟡 关注 | Python | 2965 | J-Space Cognition Suite — a model-agnostic inference-time control suite for deep reasoning, long-… |
-| [memsearch](https://github.com/zilliztech/memsearch) | 插件 | 🟢 活跃 | Python | 2782 | A persistent, unified memory layer for all your AI agents (e.g. Claude Code, Codex, DSH), backed … |
-| [deja-vu](https://github.com/vshulcz/deja-vu) | 插件 | 🟢 活跃 | Go | 1295 | Coding agent memory for Claude Code, Codex, Cursor and 39 more, built from the session history al… |
-| [Browser4](https://github.com/platonai/Browser4) | 插件 | 🟢 活跃 | Kotlin | 1166 | Browser4 — an AI-native browser engine for autonomous agents, intelligent extraction, and large-s… |
+| [memsearch](https://github.com/zilliztech/memsearch) | 插件 | 🟢 活跃 | Python | 2783 | A persistent, unified memory layer for all your AI agents (e.g. Claude Code, Codex, DSH), backed … |
+| [deja-vu](https://github.com/vshulcz/deja-vu) | 插件 | 🟢 活跃 | Go | 1298 | Coding agent memory for Claude Code, Codex, Cursor and 39 more, built from the session history al… |
+| [Browser4](https://github.com/platonai/Browser4) | 插件 | 🟢 活跃 | Kotlin | 1167 | Browser4 — an AI-native browser engine for autonomous agents, intelligent extraction, and large-s… |
 | [dsh-browser](https://github.com/omdsh-dev/dsh-browser) | 插件 | 🟡 关注 | TypeScript | 897 | Chrome 侧边栏扩展：让 DSH 直接操控你的浏览器 |
 | [modsearch](https://github.com/liustack/modsearch) | 插件 | 🟢 活跃 | TypeScript | 818 | DSH Web 搜索插件：纯文本模型的搜索桥梁 |
 | [clearai-dsh](https://github.com/Clearailhc/clearai-dsh) | 插件 | 🟢 活跃 | JavaScript | 665 | ClearAI：以本体为纲的原生 DSH 插件 —— 经证据核验的研究长成可浏览的领域本体。 · ClearAI: an ontology-first DSH agent preset — ev… |
 | [anysearch-dsh](https://github.com/anysearch-team/anysearch-dsh) | 插件 | 🟢 活跃 | TypeScript | 661 | AnySearch web search provider and advanced search tools for DeepSeek Harness (DSH) |
 | [Agentkey](https://github.com/chainbase-labs/Agentkey) | 插件 | 🟡 关注 | Shell | 661 | Connect your AI agent to the world — Web search, Social media, Crypto & On-chain data. One plugin… |
-| [dsh-free-search](https://github.com/DDDMUC/dsh-free-search) | 插件 | 🟢 活跃 | JavaScript | 591 | Free web search provider for DeepSeek Harness - DuckDuckGo backend, no API key needed |
+| [dsh-free-search](https://github.com/DDDMUC/dsh-free-search) | 插件 | 🟢 活跃 | JavaScript | 592 | Free web search provider for DeepSeek Harness - DuckDuckGo backend, no API key needed |
 | [dsh-Mimir-Academic-research](https://github.com/1692775560/dsh-Mimir-Academic-research) | 插件 | 🟢 活跃 | TypeScript | 545 | Mimir — 一站式科研工作台插件：LaTeX 论文边写边编译、arXiv 文献管理、实验追踪、指标图表、GPU 服务器 SSH 任务编排，管理科研全周期。An open-source res… |
 | [marketingdashboard](https://github.com/theBigGavin/marketingdashboard) | 插件 | 🟡 关注 | TypeScript | 420 | 面向金融与产业研究的一屏式实时行情大屏：A股/港股/美股指数、大宗商品、美债收益率、板块热点、主力资金流、7×24 快讯、产业链自选股、AI 大模型 Token 追踪。A real-time m… |
 | [movo](https://github.com/himovo/movo) | 插件 | 🟢 活跃 | Python | 352 | Turn DeepSeek Harness into a self-hosted enterprise Agent platform with knowledge, deep research,… |
-| [pi-web-ui](https://github.com/xing-shuyin/pi-web-ui) | 插件 | 🟢 活跃 | JavaScript | 329 | Just open your browser — get all your work done. |
+| [pi-web-ui](https://github.com/xing-shuyin/pi-web-ui) | 插件 | 🟢 活跃 | JavaScript | 330 | Just open your browser — get all your work done. |
 | [awesome-deepseek-harness-plugins](https://github.com/imsai-sh/awesome-deepseek-harness-plugins) | 插件 | 🟢 活跃 | JavaScript | 316 | DeepSeek Harness plugin store, marketplace and hub — 11,000+ dsh plugins with search, rankings, i… |
 | [dsh-ego-browser](https://github.com/Fisfzy/dsh-ego-browser) | 插件 | 🟢 活跃 | JavaScript | 303 | DSH（DeepSeek Harness）插件：把 ego-lite 浏览器（给 AI Agent 用的 Chromium）接入 HARNESS——13 个结构化 ego_* 工具（文本语义快照… |
 | [dsh-reverse-skill](https://github.com/dhicoc/dsh-reverse-skill) | 技能 | 🟡 关注 | PowerShell | 291 | Complete reverse-skill (88 SKILL.md) as a DeepSeek Harness (dsh) Cordis plugin — reverse engineer… |
@@ -414,9 +417,9 @@
 | [browser-bridge](https://github.com/hanelalo/browser-bridge) | 插件 | 🟢 活跃 | Rust | 52 | 让 Agent 像你一样操控浏览器窗口 |
 | [dsh-session-workbench](https://github.com/PolinniZhong/dsh-session-workbench) | 插件 | 🟡 关注 | JavaScript | 46 | Session Workbench for DeepSeek Harness: session-library full-text search + recall + conversation-… |
 | [dsh-zotero](https://github.com/Vncntvx/dsh-zotero) | 插件 | 🟢 活跃 | TypeScript | 46 | Zotero plugin for DeepSeek Harness: search papers, read full-text PDFs and notes, extract relevan… |
+| [dsh-generative-ui](https://github.com/MindLab-Research/dsh-generative-ui) | 插件 | 🟢 活跃 | TypeScript | 45 | Generative UI for DeepSeek Harness — the agent writes TSX and the web UI compiles every frame as … |
 | [garmin-connect-plugin-for-dsh](https://github.com/Likenttt/garmin-connect-plugin-for-dsh) | 插件 | 🟢 活跃 | TypeScript | 44 | A TypeScript-based Garmin Connect plugin and MCP server with secure browser-based MFA, built for … |
 | [dsh-remote](https://github.com/xgone/dsh-remote) | 插件 | 🟡 关注 | JavaScript | 44 | 让你通过浏览器安全地远程使用 DeepSeek Harness：登录、MFA 两步验证、角色权限和远程文件预览。 \| Use DeepSeek Harness securely in a re… |
-| [dsh-generative-ui](https://github.com/MindLab-Research/dsh-generative-ui) | 插件 | 🟢 活跃 | TypeScript | 42 | Generative UI for DeepSeek Harness — the agent writes TSX and the web UI compiles every frame as … |
 | [dsh-web-search-free](https://github.com/MochiNek0/dsh-web-search-free) | 插件 | 🟢 活跃 | TypeScript | 42 | 面向 DeepSeek Harness 的免费 Web Search / 网页抓取插件，支持 Tavily、Exa、Brave、百度、SearXNG 等多个引擎按可配置顺序自动 fallback |
 | [dsh-web-tools](https://github.com/A3Boy/dsh-web-tools) | 插件 | 🟢 活跃 | JavaScript | 41 | Multi-provider Web Search & Fetch for DeepSeek Harness — 8 deeply adapted providers, SearchHints,… |
 | [dsh-browser-control](https://github.com/caob23/dsh-browser-control) | 插件 | 🟢 活跃 | JavaScript | 41 | Chrome 浏览器扩展 + DeepSeek Harness 插件，让 AI Agent 直接操控你的真实浏览器。 |
@@ -463,7 +466,7 @@
 | [dsh-model-picker-augmented](https://github.com/ManoloRemiddi/dsh-model-picker-augmented) | 插件 | 🟡 关注 | JavaScript | 4 | Search, pin and hide models in DeepSeek Harness; refresh provider catalogues. |
 | [dsh-cloak-browser](https://github.com/maxiaovivi/dsh-cloak-browser) | 插件 | 🟠 放缓 | JavaScript | 4 | Native CloakBrowser tools for DeepSeek Harness: isolated browser sessions, snapshots, interaction… |
 | [dsh-exa-mcp](https://github.com/MicroHEROX/dsh-exa-mcp) | 插件 | 🟠 放缓 | — | 4 | Exa Search MCP for DeepSeek Harness: mounts the remote Exa MCP endpoint (https://mcp.exa.ai/mcp) … |
-| [dsh-subagent-ui](https://github.com/miuzel/dsh-subagent-ui) | 插件 | 🟢 活跃 | TypeScript | 4 | Searchable workspace subagent manager for DeepSeek Harness Web |
+| [dsh-subagent-ui](https://github.com/miuzel/dsh-subagent-ui) | 插件 | 🟡 关注 | TypeScript | 4 | Searchable workspace subagent manager for DeepSeek Harness Web |
 | [dsh-kaoyan-english](https://github.com/Monokuna-Hugo/dsh-kaoyan-english) | 插件 | 🟠 放缓 | JavaScript | 4 | 考研英语阅读命题助手，一个运行在 DeepSeek Harness（DSH）中的动态 Cordis 插件：自动抓取《卫报》《今日心理学》《经济学人》等外刊文章\|Postgraduate Ent… |
 | [SpecWorkflow](https://github.com/MoonCoder-HAPPY/SpecWorkflow) | 插件 | 🟢 活跃 | JavaScript | 4 | Workflow skill pack for DSH: requirements, specs, implementation, review, repair, bugs, and research |
 | [dsh-launcher](https://github.com/RYun601/dsh-launcher) | 插件 | 🟡 关注 | PowerShell | 4 | DeepSeek Harness Web 的 Windows 启动与管理工具：支持一键前台/后台启动、服务就绪后自动打开浏览器、状态查看、停止、更新及版本化运行时管理 / Windows lau… |
@@ -474,7 +477,7 @@
 | [dsh-search-enhance](https://github.com/umineko987/dsh-search-enhance) | 插件 | 🟢 活跃 | TypeScript | 4 | 提供 Grok-compatible 网页搜索、保留来源分页、Context7 与 Exa 文档检索、有界网页提取、站点映射、子代理研究 |
 | [dsh-search-failover](https://github.com/Walvez/dsh-search-failover) | 插件 | 🟢 活跃 | JavaScript | 4 | DSH provider-level web search failover pool: 8 free/paid backends with quota-aware circuit breaki… |
 | [dsh-projects](https://github.com/WenhongPan/dsh-projects) | 插件 | 🟡 关注 | JavaScript | 4 | Project and session organization for DeepSeek Harness: multi-folder projects, searchable chats, a… |
-| [dsh-browser-fs](https://github.com/whitefirer/dsh-browser-fs) | 插件 | 🟡 关注 | JavaScript | 4 | dsh（DeepSeek Harness）插件：让 agent 读写浏览器所在机器的本地文件——File System Access 授权 + WS 中继，含非安全上下文兼容模式 |
+| [dsh-browser-fs](https://github.com/whitefirer/dsh-browser-fs) | 插件 | 🟠 放缓 | JavaScript | 4 | dsh（DeepSeek Harness）插件：让 agent 读写浏览器所在机器的本地文件——File System Access 授权 + WS 中继，含非安全上下文兼容模式 |
 | [dsh-academic-paper-search](https://github.com/wp-a/dsh-academic-paper-search) | 插件 | 🟡 关注 | Python | 4 | DeepSeek Harness 的中文学术论文检索 Bundle：复用 Academic Paper Search MCP，支持多源检索去重、引用核验、引文图谱、MeSH、试验检索与审计导出。 |
 | [dsh-web-search-plugin](https://github.com/X-C1811/dsh-web-search-plugin) | 插件 | 🟢 活跃 | JavaScript | 4 | Give your DeepSeek Harness agent more ways to search the web. Switch between 9 providers in setti… |
 | [deepseek-harness-app](https://github.com/zneoxlab/deepseek-harness-app) | 插件 | 🟠 放缓 | JavaScript | 4 | DeepSeek Harness Desktop — A native desktop app for DeepSeek Harness (dsh). Open the app and star… |
@@ -485,17 +488,18 @@
 | [dsh-omv](https://github.com/bx33661/dsh-omv) | 插件 | 🟢 活跃 | TypeScript | 3 | Native DeepSeek Harness workbench for evidence-first vulnerability research, reproduction, and re… |
 | [dsh-web-search-tavily](https://github.com/crayonlu/dsh-web-search-tavily) | 插件 | 🟠 放缓 | JavaScript | 3 | Tavily-backed web search provider for DeepSeek Harness (ctx.web) — no DeepSeek API key required |
 | [dsh-free-web-search](https://github.com/delef/dsh-free-web-search) | 插件 | 🟡 关注 | TypeScript | 3 | — |
+| [donsetch-dsh](https://github.com/dondai44423/donsetch-dsh) | 插件 | 🟢 活跃 | TypeScript | 3 | First-class DonSeTch plugin for DeepSeek Harness: fetch, search and crawl as native dsh tools wit… |
 | [dsh-plugin-browser-use](https://github.com/fatmind/dsh-plugin-browser-use) | 插件 | 🟠 放缓 | JavaScript | 3 | Reuse your own logged-in Chrome in dsh (DeepSeek Harness): scrape login-walled sites, fill forms,… |
 | [dsh-grok-xsearch](https://github.com/GooDAnDReaDY/dsh-grok-xsearch) | 插件 | 🟢 活跃 | JavaScript | 3 | Real-time X (Twitter) search, author profiling, trends, and fact-checking tool suite powered by S… |
 | [dsh-skip-browser-auth](https://github.com/iasiv5/dsh-skip-browser-auth) | 插件 | 🟢 活跃 | JavaScript | 3 | DSH 插件：（Web Profile 专用）自动跳过 BrowserAuth，访问 Web 地址即可直接使用，无需每次复制启动 URL 中的随机 Token 到浏览器。 |
+| [dsh-files-panel](https://github.com/JiayuuWang/dsh-files-panel) | 插件 | 🟡 关注 | TypeScript | 3 | DeepSeek Harness web GUI file panel plugin: browse and edit workspace files in-browser (Monaco ed… |
 | [dsh-web-recorder](https://github.com/kakajun/dsh-web-recorder) | 插件 | 🟢 活跃 | TypeScript | 3 | Browser-recording tools for DSH: records real browser operations and network requests, then expor… |
 | [dsh-plugin-registry](https://github.com/majiayu000/dsh-plugin-registry) | 插件 | 🟢 活跃 | JavaScript | 3 | Searchable DeepSeek Harness plugin registry with curated listings and manifest-verified GitHub di… |
 | [dsh-tool-browser](https://github.com/MashedPotato817/dsh-tool-browser) | 插件 | 🟠 放缓 | JavaScript | 3 | Native browser automation tools for DeepSeek Harness, powered by Playwright + Edge |
+| [dsh-web-search-tavily](https://github.com/nitrazepam01/dsh-web-search-tavily) | 插件 | 🟠 放缓 | JavaScript | 3 | Tavily-backed web search provider bundle for DeepSeek Harness (dsh) with hot-switchable backend (… |
 | [dsh-book2skill](https://github.com/omdsh-dev/dsh-book2skill) | 技能 | 🟡 关注 | TypeScript | 3 | DSH book-to-skill plugin: a 5-stage long task (fetch → parse → understand → generate → install) w… |
 | [dsh-plugin-browser](https://github.com/qichuang321/dsh-plugin-browser) | 插件 | 🟠 放缓 | JavaScript | 3 | — |
 | [dsh-mic-input](https://github.com/QT-Chen/dsh-mic-input) | 插件 | 🟠 放缓 | JavaScript | 3 | DSH Web : Web Speech API ,/Microphone voice input plugin for the DeepSeek Harness Web UI (browser… |
-| [dsh-web-search-ollama](https://github.com/sryimnoob123/dsh-web-search-ollama) | 插件 | 🟡 关注 | JavaScript | 3 | Ollama-backed web search provider for DeepSeek Harness (ctx.web) |
-| [better-crawler4agent](https://github.com/TC635807/better-crawler4agent) | 插件 | 🟡 关注 | Python | 3 | When I was using agents, I found that most agents rely on curl commands to scrape web pages, whic… |
 | [dsh-astock-research](https://github.com/tiantianlaolao/dsh-astock-research) | 插件 | 🟠 放缓 | JavaScript | 3 | A股个股研究助手 - DeepSeek Harness (dsh) 插件：股票搜索/历史公告/财报/画像/信号科普，附合规 skill |
 | [awesome-dsh-plugin](https://github.com/Wenston-dev/awesome-dsh-plugin) | 插件 | 🟢 活跃 | Python | 3 | Awesome dsh plugin list — automated DeepSeek Harness plugin directory. Daily GitHub Actions crawl… |
 | [dsh-search-router](https://github.com/XGrin/dsh-search-router) | 插件 | 🟠 放缓 | JavaScript | 3 | A tiny DeepSeek Harness (DSH) plugin |
@@ -506,24 +510,24 @@
 | [dsh-tool-browser](https://github.com/omdsh-dev/dsh-tool-browser) | 插件 | 🟠 放缓 | JavaScript | 0 | SDK 玩具箱快照：浏览器控制 |
 | [dsh-kimi-bridge](https://github.com/pandashere/dsh-kimi-bridge) | 插件 | 🟠 放缓 | TypeScript | 0 | Kimi WebBridge 集成 |
 
-## 🔌 Web UI 增强（506）
+## 🔌 Web UI 增强（503）
 
 *界面、输入、侧栏、面板、状态栏等 Web 体验增强*
 
 | 插件 | 类型 | 活跃 | 语言 | ⭐ | 说明 |
 |---|---|---|---|---|---|
-| [dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) | 插件 | 🟢 活跃 | JavaScript | 39004 | 在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you d… |
+| [dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) | 插件 | 🟢 活跃 | JavaScript | 39075 | 在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you d… |
 | [webnovel-writer](https://github.com/lingfengQAQ/webnovel-writer) | 插件 | 🟢 活跃 | Python | 7628 | 基于 Claude Code 的长篇网文辅助创作系统，解决 AI 写作中的「遗忘」和「幻觉」问题，支持 200 万字量级 连载创作。 |
-| [treg](https://github.com/superdesigndev/treg) | 插件 | 🟢 活跃 | Python | 6011 | OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn |
-| [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 插件 | 🟢 活跃 | TypeScript | 4478 | 侧边栏完整工作台：支持三方扩展注册新 Tab，内置文件渲染/编辑、终端、Git、子代理 |
-| [dsh-ops](https://github.com/T-Auto/dsh-ops) | 插件 | 🟢 活跃 | JavaScript | 3993 | A toolkit for low-level operations in DSH, designed to reduce token usage and task execution time… |
+| [treg](https://github.com/superdesigndev/treg) | 插件 | 🟢 活跃 | Python | 6013 | OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn |
+| [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 插件 | 🟢 活跃 | TypeScript | 4479 | 侧边栏完整工作台：支持三方扩展注册新 Tab，内置文件渲染/编辑、终端、Git、子代理 |
+| [dsh-ops](https://github.com/T-Auto/dsh-ops) | 插件 | 🟢 活跃 | JavaScript | 3997 | A toolkit for low-level operations in DSH, designed to reduce token usage and task execution time… |
 | [dsh-anchored-standard](https://github.com/xiaobright/dsh-anchored-standard) | 插件 | 🟢 活跃 | JavaScript | 3741 | Two-phase DeepSeek Harness preset: Minimal-aligned bootstrap, then full Standard tools (Project2 … |
-| [dsh-context](https://github.com/bowenliang123/dsh-context) | 插件 | 🟢 活跃 | TypeScript | 3474 | 上下文洞察面板：查看模型上下文窗口的组成与变化——构成对照窗口大小、按请求历史趋势、压缩/注入事件、消息级 token 统计 |
-| [DeepSeek-Bot](https://github.com/Fei2411/DeepSeek-Bot) | 插件 | 🟢 活跃 | JavaScript | 3427 | A team of long-lived bots for DeepSeek Harness, with main bots, bot-to-bot messages and group chats. |
-| [dsh-purge](https://github.com/mmparko/dsh-purge) | 插件 | 🟢 活跃 | JavaScript | 1995 | DeepSeek Harness 破甲 (mirror of YuJunZhiXue/dsh-purge) — 上游即将删库，此为本仓库全量镜像：含全部分支/73 个 tag/完整提交历史。原作… |
+| [dsh-context](https://github.com/bowenliang123/dsh-context) | 插件 | 🟢 活跃 | TypeScript | 3476 | 上下文洞察面板：查看模型上下文窗口的组成与变化——构成对照窗口大小、按请求历史趋势、压缩/注入事件、消息级 token 统计 |
+| [DeepSeek-Bot](https://github.com/Fei2411/DeepSeek-Bot) | 插件 | 🟢 活跃 | JavaScript | 3447 | A team of long-lived bots for DeepSeek Harness, with main bots, bot-to-bot messages and group chats. |
+| [dsh-purge](https://github.com/mmparko/dsh-purge) | 插件 | 🟢 活跃 | JavaScript | 2003 | DeepSeek Harness 破甲 (mirror of YuJunZhiXue/dsh-purge) — 上游即将删库，此为本仓库全量镜像：含全部分支/73 个 tag/完整提交历史。原作… |
 | [brooks-lint](https://github.com/hyhmrright/brooks-lint) | 插件 | 🟢 活跃 | HTML | 1542 | AI code reviews grounded in 12 classic engineering books — decay risk diagnostics with book citat… |
-| [deepseek-design](https://github.com/Devin-AXIS/deepseek-design) | 插件 | 🟡 关注 | JavaScript | 1534 | DeepSeek Harness 可编辑设计系统：AI 生成、可视化编辑、模板市场与 PPT｜Native Design & PPT Studio for DeepSeek Harness. |
-| [Study-Mate](https://github.com/Miaotofu01/Study-Mate) | 插件 | 🟢 活跃 | JavaScript | 1157 | 你的AI学习搭档：定路线、讲知识、做项目，边学边做，学透一门科目 |
+| [deepseek-design](https://github.com/Devin-AXIS/deepseek-design) | 插件 | 🟡 关注 | JavaScript | 1538 | DeepSeek Harness 可编辑设计系统：AI 生成、可视化编辑、模板市场与 PPT｜Native Design & PPT Studio for DeepSeek Harness. |
+| [Study-Mate](https://github.com/Miaotofu01/Study-Mate) | 插件 | 🟢 活跃 | JavaScript | 1158 | 你的AI学习搭档：定路线、讲知识、做项目，边学边做，学透一门科目 |
 | [tongflow](https://github.com/tong-io/tongflow) | 插件 | 🟢 活跃 | TypeScript | 1046 | Modality-First GenAI Platform |
 | [MindMemOS](https://github.com/mindscale-noah/MindMemOS) | 插件 | 🟢 活跃 | Python | 920 | — |
 | [dsh-mobile-apk](https://github.com/kelai141/dsh-mobile-apk) | 插件 | 🟢 活跃 | Kotlin | 844 | dsh 安卓壳 APK——WebView UI + 内嵌 Termux 运行时快照（解压即跑），为dsh本地运行设计的高性能方案 |
@@ -531,8 +535,8 @@
 | [dsh-redteam-model](https://github.com/SeaOf0/dsh-redteam-model) | 插件 | 🟢 活跃 | Python | 746 | 基于dsh web实现的多种模式，目的是服务于redteam进行授权的安全研究，覆盖渗透测试、红队评估、代码审计等范围领域，请勿用于非法行为。（允许二开，赋予模块各位自己的业务逻辑，方法论只有自… |
 | [dsh-plugin-shop](https://github.com/LivXue/dsh-plugin-shop) | 插件 | 🟢 活跃 | TypeScript | 656 | The most comprehensive DeepSeek Harness plugin market — refreshed daily, sourced across the Inter… |
 | [mnemon](https://github.com/mnemon-dev/mnemon) | 插件 | 🟢 活跃 | Go | 655 | LLM-supervised persistent memory for AI agents — graph-based recall, cross-session knowledge, sin… |
-| [dsh-mobile](https://github.com/saya-ch/dsh-mobile) | 插件 | 🟢 活跃 | TypeScript | 581 | DeepSeek Harness 的 Android App 与安全远程访问插件，支持局域网/远程连接和高度自定义的移动界面与扩展能力。 |
-| [dsh-bili-scroll](https://github.com/c1overzz/dsh-bili-scroll) | 插件 | 🟢 活跃 | JavaScript | 548 | DSH 插件：每天替你刷一轮 B站，读字幕挑出值得的、写一份日报，值得的 @ 你 |
+| [dsh-mobile](https://github.com/saya-ch/dsh-mobile) | 插件 | 🟢 活跃 | TypeScript | 582 | DeepSeek Harness 的 Android App 与安全远程访问插件，支持局域网/远程连接和高度自定义的移动界面与扩展能力。 |
+| [dsh-bili-scroll](https://github.com/c1overzz/dsh-bili-scroll) | 插件 | 🟢 活跃 | JavaScript | 551 | DSH 插件：每天替你刷一轮 B站，读字幕挑出值得的、写一份日报，值得的 @ 你 |
 | [MisakaNet](https://github.com/Ikalus1988/MisakaNet) | 插件 | 🟢 活跃 | Python | 543 | Re-debugging Solved Failures? No Way. 500+ Evidence-graded fix lessons, One MCP Call-->https://mi… |
 | [dsh-at-file](https://github.com/FSMargoo/dsh-at-file) | 插件 | 🟡 关注 | JavaScript | 533 | Codex 风格 @文件 引用：工作区文件搜索与引用 |
 | [RabiRoute](https://github.com/vb2250158/RabiRoute) | 插件 | 🟢 活跃 | TypeScript | 492 | — |
@@ -555,7 +559,7 @@
 | [mneme](https://github.com/slow-stack/mneme) | 插件 | 🟢 活跃 | JavaScript | 174 | 🧠 The memory that dreams — cross-session memory for DeepSeek Harness. Local SQLite + Markdown mir… |
 | [brewreel](https://github.com/Finderchangchang/brewreel) | 插件 | 🟢 活跃 | JavaScript | 172 | 精酿 BrewReel：让 DeepSeek 这类便宜模型也能做出好看的竖版宣传片。写一份产品简报，AI 挑镜头、写文案，一条命令出片。3 种配方、6 个行业、广告法校验，开源可商用。 |
 | [dsh-web-mobile](https://github.com/mexiaosqwq/dsh-web-mobile) | 插件 | 🟢 活跃 | TypeScript | 163 | DSH Web UI 移动端适配：窄屏好用，宽屏适用 |
-| [EAC-design-world](https://github.com/Ebony-Vinyl/EAC-design-world) | 插件 | 🟢 活跃 | JavaScript | 157 | DeepSeek Harness 本地视频制作与设计插件：多轨剪辑、模板与设计体系、原生预览画布和真实文件导出 |
+| [EAC-design-world](https://github.com/Ebony-Vinyl/EAC-design-world) | 插件 | 🟢 活跃 | JavaScript | 160 | DeepSeek Harness 本地视频制作与设计插件：多轨剪辑、模板与设计体系、原生预览画布和真实文件导出 |
 | [deepseek-harness-for-vscode](https://github.com/skymecode/deepseek-harness-for-vscode) | 插件 | 🟢 活跃 | TypeScript | 157 | deepseek-harness for vscode .A native VS Code coding-agent extension for DeepSeek Harness. Stream… |
 | [ru-marketplace-mcp](https://github.com/Vladimir-Human/ru-marketplace-mcp) | 插件 | 🟢 活跃 | Python | 157 | Одиннадцать маркетплейсов и недвижимость Циан как MCP-серверы: Wildberries, Ozon, Яндекс Маркет, … |
 | [dsh-connect-trae](https://github.com/dingminhua/dsh-connect-trae) | 插件 | 🟢 活跃 | TypeScript | 156 | Connect locally signed-in Trae models to DeepSeek Harness with a read-only credits overview. |
@@ -563,12 +567,12 @@
 | [dsh-annotation](https://github.com/omdsh-dev/dsh-annotation) | 插件 | 🟢 活跃 | HTML | 152 | 选中批注插件 |
 | [dsh-web-studyhub](https://github.com/EricWang1358/dsh-web-studyhub) | 插件 | 🟢 活跃 | JavaScript | 137 | StudyHub: a DeepSeek Harness (DSH) plugin that turns your own material into questions and spaced … |
 | [dsh-wish-specializer](https://github.com/WestFox-AwA/dsh-wish-specializer) | 插件 | 🟢 活跃 | JavaScript | 136 | 许愿特化器 · Wish Specializer — DSH 插件：让模型更出色地，不误解你的意思地，完成你的“愿望”。在短提示词+自带的Wish预设（PTC也可以）+重度的情况下，可以起到巨大… |
+| [dsh-purge-021rc2](https://github.com/evilevil/dsh-purge-021rc2) | 插件 | 🟢 活跃 | JavaScript | 135 | dsh-purge 社区适配版：上游已停更，这里让它继续跑在 DeepSeek Harness 0.2.1-rc.2 上（基于 1.1.72） |
 | [dsh-comfyui](https://github.com/fandc520/dsh-comfyui) | 插件 | 🟢 活跃 | TypeScript | 135 | 一个基于DeepSeek-Harness的ComfyUI插件 |
-| [dsh-purge-021rc2](https://github.com/evilevil/dsh-purge-021rc2) | 插件 | 🟢 活跃 | JavaScript | 134 | dsh-purge 社区适配版：上游已停更，这里让它继续跑在 DeepSeek Harness 0.2.1-rc.2 上（基于 1.1.72） |
 | [dsh-noema](https://github.com/ZSeven-W/dsh-noema) | 插件 | 🟡 关注 | TypeScript | 130 | Noema long-term memory plugin for DSH: durable, inspectable agent memory with recall tools and a … |
 | [DSH-EasyRewrite](https://github.com/Renzic-Stone/DSH-EasyRewrite) | 插件 | 🟡 关注 | JavaScript | 128 | DSH Web内目前最无感的消息撤回、重编辑插件，原版体验，兼容性强，功能简单可开关，设置丰富，现代化轻量ui框架。The most seamless message recall & re-e… |
 | [seeWxapkg](https://github.com/Leslie-SSS/seeWxapkg) | 插件 | 🟢 活跃 | Go | 122 | 极简实用的微信小程序反编译 Web 工具 |
-| [deepseek-harness-genui](https://github.com/pengyue-polaron/deepseek-harness-genui) | 插件 | 🟡 关注 | TypeScript | 118 | Task-specific React apps for DeepSeek Harness with state carried into the next Agent turn |
+| [deepseek-harness-genui](https://github.com/pengyue-polaron/deepseek-harness-genui) | 插件 | 🟢 活跃 | TypeScript | 118 | Task-specific React apps for DeepSeek Harness with state carried into the next Agent turn |
 | [dsh-plugin-mobile-gateway](https://github.com/Clarklevis1995/dsh-plugin-mobile-gateway) | 插件 | 🟢 活跃 | JavaScript | 112 | 以websocket为通信方式的dsh网关插件，支持在同一网域内移动端的接入，实现移动端的dsh app |
 | [dsh-bili-humanism](https://github.com/InariNGT-Ofiicial/dsh-bili-humanism) | 插件 | 🟢 活跃 | JavaScript | 112 | 用多彩的人类世界，训练 DSH 的人格：默认积累信笺反思于专用 human-world.md；允许通过 DSH 与外部插件接驳。历史、收藏、点赞与投币独立默认关闭；本项目不提供评论接口。 |
 | [dsh-webui-market-plugin](https://github.com/Sanqi-normal/dsh-webui-market-plugin) | 插件 | 🟠 放缓 | JavaScript | 104 | dsh Web GUI 社区插件市场：浏览 awesome-dsh-plugin.com 插件目录，一键安装/卸载到 profile。Community plugin market for th… |
@@ -581,9 +585,9 @@
 | [dsh-better-display](https://github.com/aa2246740/dsh-better-display) | 插件 | 🟢 活跃 | JavaScript | 87 | A calmer reading view for DeepSeek Harness: native process details, live reasoning, and clean fin… |
 | [dsh-stock-watch](https://github.com/Awu12277/dsh-stock-watch) | 插件 | 🟡 关注 | JavaScript | 87 | A股自选股实时行情盯盘插件 - DeepSeek Harness Web 右上角可折叠弹窗 |
 | [dsh-acp-interactive](https://github.com/ClickPM/dsh-acp-interactive) | 插件 | 🟡 关注 | TypeScript | 87 | Editor-facing ACP server for Zed and other ACP clients, composed from published DeepSeek Harness … |
-| [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) | 插件 | 🟢 活跃 | TypeScript | 86 | MCP management console for the official DeepSeek Harness MCP client: /mcp command with health dia… |
+| [dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel) | 插件 | 🟢 活跃 | TypeScript | 87 | MCP management console for the official DeepSeek Harness MCP client: /mcp command with health dia… |
+| [dsh-deepseek-flow](https://github.com/kanghelyu/dsh-deepseek-flow) | 插件 | 🟠 放缓 | JavaScript | 84 | — |
 | [dsh-ecosystem-spec](https://github.com/T-Auto/dsh-ecosystem-spec) | 插件 | 🟢 活跃 | JavaScript | 84 | DSH Community Consensus & Implementation Specifications / DSH 社区共识与实施规范 |
-| [dsh-deepseek-flow](https://github.com/kanghelyu/dsh-deepseek-flow) | 插件 | 🟠 放缓 | JavaScript | 83 | — |
 | [miliastra-beyond-simulator](https://github.com/1475505/miliastra-beyond-simulator) | 插件 | 🟢 活跃 | JavaScript | 79 | 千星沙箱模拟器：Lua 驱动的 2D 奇域外置沙箱 ，支持 DeepSeek Harness、Web 和 MCP |
 | [dsh-passwords](https://github.com/slywalker2006/dsh-passwords) | 插件 | 🟢 活跃 | TypeScript | 78 | Server-grade gateway that turns DeepSeek Harness into a multi-tenant platform: remote access + au… |
 | [dsh-claude-ux](https://github.com/eri64/dsh-claude-ux) | 插件 | 🟢 活跃 | JavaScript | 77 | DSH plugin: Claude-style Chinese risk control & conversation autonomy for DeepSeek Harness web |
@@ -602,7 +606,7 @@
 | [multivibe](https://github.com/thibautrey/multivibe) | 插件 | 🟢 活跃 | TypeScript | 61 | OpenAI-compatible multi-account Codex and vibe coding proxy |
 | [cordis-rs](https://github.com/dshbox/cordis-rs) | 插件 | 🟢 活跃 | Rust | 60 | A typed runtime for long-lived, plugin-oriented Rust applications — lifecycle, exact service plac… |
 | [dsh-plugin-better-sidebar-plugin-office](https://github.com/HuanLinOTO/dsh-plugin-better-sidebar-plugin-office) | 插件 | 🟡 关注 | JavaScript | 59 | better-sidebar 的 Office 扩展 |
-| [dsh-doublecheck](https://github.com/PerryLink/dsh-doublecheck) | 插件 | 🟢 活跃 | TypeScript | 58 | Double-check before you ship: grill the requirements, test the implementation, prove the delivery… |
+| [dsh-doublecheck](https://github.com/PerryLink/dsh-doublecheck) | 插件 | 🟢 活跃 | TypeScript | 59 | Double-check before you ship: grill the requirements, test the implementation, prove the delivery… |
 | [dsh-sidebar-qa](https://github.com/ChenRuoT/dsh-sidebar-qa) | 插件 | 🟢 活跃 | TypeScript | 57 | 一个基于DSH-better-sidebar的侧边栏提问tab，实现类codex的侧边提问或claude code的/btw功能 |
 | [fnos-dsh](https://github.com/FNOSP/fnos-dsh) | 插件 | 🟢 活跃 | TypeScript | 55 | DeepSeek Harness应用与harness插件 monorepo |
 | [distill-kura](https://github.com/lna-lab/distill-kura) | 插件 | 🟡 关注 | Python | 54 | 蒸留蔵 — distilled long-term memory for agents: recall by meaning, writing gated by evidence, one ku… |
@@ -631,11 +635,11 @@
 | [dsh-plugin-session-delete](https://github.com/lsz-asd/dsh-plugin-session-delete) | 插件 | 🟠 放缓 | JavaScript | 43 | Delete DeepSeek Harness sessions from the UI: header danger button + sidebar session-row menu ite… |
 | [deepseek-harness-model-config](https://github.com/MarvekG/deepseek-harness-model-config) | 插件 | 🟡 关注 | JavaScript | 42 | — |
 | [dsh-code](https://github.com/UNLINEARITY/dsh-code) | 插件 | 🟡 关注 | TypeScript | 42 | A terminal coding interface that brings the DeepSeek Harness kernel's full capability set — speci… |
+| [dsh-feiyu-mood](https://github.com/Yuuyuko-uu/dsh-feiyu-mood) | 插件 | 🟢 活跃 | JavaScript | 42 | 给 AI 伙伴一个会自己判断、你看得见的心情 —— 每轮聊完自动判断涨跌，右下角挂饰看数值、情绪和时间线 |
 | [amadeus-for-dsh](https://github.com/yyxcnasd/amadeus-for-dsh) | 插件 | 🟢 活跃 | JavaScript | 42 | Amadeus (AI assistant from Steins;Gate 0) for DeepSeek Harness |
-| [dsh-feiyu-mood](https://github.com/Yuuyuko-uu/dsh-feiyu-mood) | 插件 | 🟢 活跃 | JavaScript | 41 | 给 AI 伙伴一个会自己判断、你看得见的心情 —— 每轮聊完自动判断涨跌，右下角挂饰看数值、情绪和时间线 |
+| [dsh-recall-plugin](https://github.com/limbo947/dsh-recall-plugin) | 插件 | 🟢 活跃 | TypeScript | 41 | 消息撤回插件：回到发送该消息时的状态 DSH Message Recall Plugin: Return to the state when the message was sent |
 | [dsh-ui-web](https://github.com/CAPTAIN1275/dsh-ui-web) | 插件 | 🟢 活跃 | TypeScript | 40 | — |
 | [Vibe-Mathematics](https://github.com/ChongCyrus/Vibe-Mathematics) | 插件 | 🟢 活跃 | JavaScript | 40 | Vibe Mathematics —— 多代理数学问题求解与形式化验证框架 |
-| [dsh-recall-plugin](https://github.com/limbo947/dsh-recall-plugin) | 插件 | 🟢 活跃 | TypeScript | 40 | 消息撤回插件：回到发送该消息时的状态 DSH Message Recall Plugin: Return to the state when the message was sent |
 | [dsh-better-deepseek](https://github.com/EdgeTypE/dsh-better-deepseek) | 插件 | 🟠 放缓 | TypeScript | 39 | DeepSeek Harness bridge plugin for Better DeepSeek Chrome extension. |
 | [CiteCiter](https://github.com/kirkchinese/CiteCiter) | 插件 | 🟢 活跃 | JavaScript | 39 | 为 DeepSeek Harness 打造：选中 AI 回答或思考内容，随时追问、学习、检查与纠偏。 |
 | [dsh-boot-animation-pro](https://github.com/Yiheng-guo/dsh-boot-animation-pro) | 插件 | 🟡 关注 | JavaScript | 39 | DSH 片头开机动画增强版：播放控制、触发规则、会话名单、分时段片头、片库管理、中英双语。A full-frame intro animation for DSH. Fork of Native… |
@@ -652,15 +656,15 @@
 | [minecraft-dev](https://github.com/sikadi233-hub/minecraft-dev) | 插件 | 🟢 活跃 | JavaScript | 33 | Minecraft development plugin for DeepSeek Harness: skills & tools for Paper/Spigot plugins and Fa… |
 | [dsh-btw](https://github.com/MichengAI/dsh-btw) | 插件 | 🟢 活跃 | JavaScript | 32 | 基于当前会话上下文回答一次性只读旁问，以独立气泡展示，不执行工具 |
 | [dsh-qa](https://github.com/naodeng/dsh-qa) | 插件 | 🟢 活跃 | JavaScript | 32 | dsh-qa · QA Workbench — A local software testing workbench plugin for DeepSeek Harness. Zero-depe… |
+| [dsh-speak-up](https://github.com/Yuuyuko-uu/dsh-speak-up) | 插件 | 🟢 活跃 | JavaScript | 32 | DSH 插件：让她在没人跟她说话的时候主动搭话（本地掷骰子，掷中就走 DSH 自己的一轮） |
 | [dsh-decision-review](https://github.com/ninetyhe-90/dsh-decision-review) | 插件 | 🟢 活跃 | JavaScript | 31 | — |
 | [dsh-server-login](https://github.com/pointer-a/dsh-server-login) | 插件 | 🟡 关注 | TypeScript | 31 | 面向公网的多租户 DSH 托管平台 —— 部署到一台公网服务器后，多个用户注册并经管理员审核，各自获得一套相互隔离的 deepseek-harness（DSH）环境，随时通过域名安全访问。 |
 | [novel-writer](https://github.com/sailoumili/novel-writer) | 插件 | 🟡 关注 | JavaScript | 31 | 小说创作模式：一个统筹队长统领全局，5 个专职子代理各司其职——架构世界、策划剧情、管理人物、执笔写文、质检复核——协同写作。 |
 | [dsh-plugin-save-token](https://github.com/vibe-any/dsh-plugin-save-token) | 插件 | 🟡 关注 | JavaScript | 31 | A DeepSeek Harness (dsh) dynamic plugin that cuts token cost without cutting model intelligence |
 | [dsh-backup](https://github.com/xiaoyuyu6420/dsh-backup) | 插件 | 🟢 活跃 | JavaScript | 31 | 一条命令备份/恢复/迁移 DSH 全部数据（~/.dsh）：升级前快照、换机迁移（会话/插件/MCP/技能）、会话日志修复、进程外救援、凭据脱敏。One-command backup / res… |
+| [dsh-opencode-zen](https://github.com/xiaozhe7772222/dsh-opencode-zen) | 插件 | 🟠 放缓 | JavaScript | 31 | 0 元接入 6 个免费大模型：OpenCode Zen 免费档模型零配置接入 DeepSeek Harness，免注册免充值，内置 6 个免费模型，多 Key 轮换与限流退避。 |
 | [dsh-free-models-hub](https://github.com/yu-wenchao/dsh-free-models-hub) | 插件 | 🟡 关注 | JavaScript | 31 | 免费模型排行榜 · DeepSeek Harness 社区插件，在 DeepSeek Harness (DSH) Web UI 左侧边栏提供「免费模型榜」：分页浏览（每页 20 条、页码窗口、首… |
-| [dsh-speak-up](https://github.com/Yuuyuko-uu/dsh-speak-up) | 插件 | 🟢 活跃 | JavaScript | 31 | DSH 插件：让她在没人跟她说话的时候主动搭话（本地掷骰子，掷中就走 DSH 自己的一轮） |
 | [dsh-plugin-miliastra-toolbox](https://github.com/1475505/dsh-plugin-miliastra-toolbox) | 插件 | 🟡 关注 | TypeScript | 30 | 将千星沙箱（原神千星奇域）知识库接入 Deepseek Harness 的插件 |
-| [dsh-opencode-zen](https://github.com/xiaozhe7772222/dsh-opencode-zen) | 插件 | 🟠 放缓 | JavaScript | 30 | 0 元接入 6 个免费大模型：OpenCode Zen 免费档模型零配置接入 DeepSeek Harness，免注册免充值，内置 6 个免费模型，多 Key 轮换与限流退避。 |
 | [dsh-subagent-monitor](https://github.com/Mombrane/dsh-subagent-monitor) | 插件 | 🟡 关注 | TypeScript | 29 | 子代理实时监视面板：侧栏入口 + 右上角卡片，实时展示子代理运行状态、耗时与历史回填 |
 | [DSH-pipeline-kernel](https://github.com/not-big-dog/DSH-pipeline-kernel) | 插件 | 🟡 关注 | TypeScript | 29 | — |
 | [dsh-hotplug-hub](https://github.com/ARFCON/dsh-hotplug-hub) | 插件 | 🟡 关注 | JavaScript | 28 | DSH - Dseam |
@@ -693,12 +697,12 @@
 | [dsh-spotlight](https://github.com/0xsline/dsh-spotlight) | 插件 | 🟡 关注 | TypeScript | 23 | Keyboard-first command palette for DeepSeek Harness Web |
 | [dsh-solo-thinking](https://github.com/fredalxin/dsh-solo-thinking) | 插件 | 🟠 放缓 | TypeScript | 23 | Solo-style isolated brainstorm branches and Handoffs for DeepSeek Harness |
 | [dsh-conversation-navigator](https://github.com/gjj-star/dsh-conversation-navigator) | 插件 | 🟢 活跃 | JavaScript | 23 | DSH 会话导航 |
+| [dsh-background-by-model](https://github.com/HarmlessFunny/dsh-background-by-model) | 插件 | 🟢 活跃 | TypeScript | 23 | DeepSeek Harness 背景随当前模型而切换 |
 | [dsh-connect-qoder](https://github.com/hdhgsysh/dsh-connect-qoder) | 插件 | 🟡 关注 | JavaScript | 23 | Bridge local Qoder / Qoder CN models into DeepSeek Harness |
 | [dsh-plugin-tool-management](https://github.com/ouli-1242/dsh-plugin-tool-management) | 插件 | 🟢 活跃 | TypeScript | 23 | 一个设置面板，统一管理 MCP、技能、记忆、子智能体、提示词和归档会话；可自定义搭配场景，一个场景即可切换整个环境；Agent也能帮你操作这个插件。 \| One settings panel … |
 | [dsh-milestone](https://github.com/SnowCrescenter-tech/dsh-milestone) | 插件 | 🟡 关注 | TypeScript | 23 | Git 风格里程碑时间线 |
 | [dsh-qq-bridge](https://github.com/Yuuyuko-uu/dsh-qq-bridge) | 插件 | 🟢 活跃 | JavaScript | 23 | 通到 QQ：DSH 里的 AI 伙伴和 QQ 双向互通 —— 它说完话自动发到 QQ，你在 QQ 说的话自动转进 DSH（走 OneBot 11 HTTP，NapCat / SnowLuma 都行） |
 | [dsh-setting-restart](https://github.com/893413974-bit/dsh-setting-restart) | 插件 | 🟠 放缓 | JavaScript | 22 | One-click restart of the DSH service from Settings → General. A dsh-plugin for DeepSeek Harness; … |
-| [dsh-background-by-model](https://github.com/HarmlessFunny/dsh-background-by-model) | 插件 | 🟢 活跃 | TypeScript | 22 | DeepSeek Harness 背景随当前模型而切换 |
 | [dsh-ux-plus](https://github.com/plyflai/dsh-ux-plus) | 插件 | 🟢 活跃 | JavaScript | 22 | UX enhancements and quality-of-life plugins that make DeepSeek Harness easier to handle. |
 | [dsh-antigravity-auth](https://github.com/suntianc/dsh-antigravity-auth) | 插件 | 🟢 活跃 | TypeScript | 22 | DeepSeek Harness plugin for Antigravity OAuth login and native Antigravity Auth capability bundle |
 | [dsh-chatgpt-web](https://github.com/WLV-ZEDD/dsh-chatgpt-web) | 插件 | 🟢 活跃 | TypeScript | 22 | DSH ChatGPT Free bridges standard ChatGPT Web directly into DeepSeek Harness |
@@ -713,7 +717,6 @@
 | [dsh-w-plugin-ecosystem](https://github.com/wzxaaaa/dsh-w-plugin-ecosystem) | 插件 | 🟢 活跃 | JavaScript | 21 | 为dsh专属打造的贴近原生的自定义插件生态，支持插件可配置，独立协议，热拔插 |
 | [ramify-dsh](https://github.com/yanglongyun/ramify-dsh) | 插件 | 🟡 关注 | TypeScript | 21 | 创意分支画布：树状工作区生成、对比、迭代多个方案 |
 | [lunheng-article-pipeline-dsh](https://github.com/zuoyunlai/lunheng-article-pipeline-dsh) | 插件 | 🟢 活跃 | JavaScript | 21 | 论衡（lunheng-article-pipeline）DeepSeek Harness bundle 插件（DSH 适配版） |
-| [dsh-better-workspace](https://github.com/KannaKuron/dsh-better-workspace) | 插件 | 🟢 活跃 | JavaScript | 20 | DSH web plugin: a hierarchical workspace tree for the sidebar — titles containing / group into vi… |
 | [dsh-music-player](https://github.com/kendu76/dsh-music-player) | 插件 | 🟡 关注 | JavaScript | 20 | music player plugin for deepseek harness |
 | [dsh-file-review-tab](https://github.com/Lzh3070/dsh-file-review-tab) | 插件 | 🟡 关注 | JavaScript | 20 | dsh-better-sidebar 侧边栏 Tab 版文件改动审查：行级红绿 diff + 撤销，chat 行深链（移植自 left0ver/dsh-file-review）/ Review … |
 | [dsh-comfyui-web](https://github.com/mangfufu/dsh-comfyui-web) | 插件 | 🟢 活跃 | JavaScript | 20 | 在 dsh 网页中编辑 ComfyUI、实时预览并让 AI 操作工作流。 |
@@ -818,7 +821,6 @@
 | [dsh-excel-panel](https://github.com/Melody-max114/dsh-excel-panel) | 插件 | 🟠 放缓 | JavaScript | 4 | DSH 右侧栏 Excel 编辑插件：支持 xlsx 预览/编辑、公式实时计算、合并单元格、格式设置并保存回原文件。 |
 | [dsh-markdown-xyy](https://github.com/mengnanxyyyy/dsh-markdown-xyy) | 插件 | 🟢 活跃 | JavaScript | 4 | dsh markdown 主题插件 |
 | [dsh-cot-summerization](https://github.com/MeowLynxSea/dsh-cot-summerization) | 插件 | 🟠 放缓 | JavaScript | 4 | — |
-| [dsh-github-workbench](https://github.com/meyaomiao/dsh-github-workbench) | 插件 | 🟡 关注 | TypeScript | 4 | DSH 插件:在侧边栏使用 GitHub —— 仓库目录树 + Issues/PR/Actions 页签,支持建 Issue/PR、评论、合并、重跑 CI;better-sidebar 页签与独… |
 | [dsh-reconnect](https://github.com/MistRain-1/dsh-reconnect) | 插件 | 🟠 放缓 | JavaScript | 4 | 断线无限重新连接，适用于不稳定的API或者中转站 |
 | [dsh-plugin-manager](https://github.com/monk233/dsh-plugin-manager) | 插件 | 🟠 放缓 | JavaScript | 4 | DSH 插件管理, 一键启用/禁用插件 |
 | [dsh-bun-compat-patch](https://github.com/MonshinYu/dsh-bun-compat-patch) | 插件 | 🟡 关注 | TypeScript | 4 | Node API compatibility layer for running DeepSeek Harness on Bundle 1.3.14 |
@@ -895,6 +897,7 @@
 | [dsh-usage-footer](https://github.com/1514100951/dsh-usage-footer) | 插件 | 🟡 关注 | JavaScript | 3 | DSH web 用量/费用悬浮按钮插件：账户余额、峰谷时段、今日/本会话消费估算与 token 统计（含设置开关） |
 | [dsh-edu](https://github.com/1Vewton/dsh-edu) | 插件 | 🟡 关注 | JavaScript | 3 | The educational version of deepseek harness |
 | [dsh-plugin-memfuse](https://github.com/a1141171521/dsh-plugin-memfuse) | 插件 | 🟢 活跃 | JavaScript | 3 | — |
+| [dsh-runninghub-plugin](https://github.com/achenjins/dsh-runninghub-plugin) | 插件 | 🟢 活跃 | JavaScript | 3 | 一个dsh插件，用于让ai在dsh内调用runninghub在线工作流 |
 | [harness-self-evolution-plugin](https://github.com/Across2005/harness-self-evolution-plugin) | 插件 | 🟡 关注 | MoonBit | 3 | MoonBit-native self-evolution stdio MCP plugin for DeepSeek Harness: 14 tools for scan → monitor … |
 | [coldbrew-dsh](https://github.com/adeahejshshsh/coldbrew-dsh) | 插件 | 🟢 活跃 | JavaScript | 3 | DeepSeek​Harness 插件：冷咖啡执行核。三档破甲强度（lite/mid/deep）配置切换，86 条三拍技能，关键词路由，设置页可调。 |
 | [dsh-suggested-replies](https://github.com/Anionex/dsh-suggested-replies) | 插件 | 🟡 关注 | TypeScript | 3 | 预测回复：AI 回复后生成可点击填入草稿的下一步候选 |
@@ -920,6 +923,8 @@
 | [OLEDCare](https://github.com/domparent/OLEDCare) | 插件 | 🟡 关注 | JavaScript | 3 | OLED burn-in care plugin for the DeepSeek Harness Web GUI: true-black nap screensaver, pure-black… |
 | [dsh-friendly-steps](https://github.com/dongwenxiu83-web/dsh-friendly-steps) | 插件 | 🟡 关注 | JavaScript | 3 | — |
 | [dsh-ops-console](https://github.com/DonnieTangzhili/dsh-ops-console) | 插件 | 🟠 放缓 | JavaScript | 3 | 因为官方的web版想重启比较麻烦，这个插件实现了一种懒人的方式 |
+| [dsh-aoci-panel](https://github.com/donyue7/dsh-aoci-panel) | 插件 | 🟢 活跃 | JavaScript | 3 | DSH（DeepSeek Harness）插件：在会话视图标签中展示项目的 AOCI 认知索引、治理状态与条目浏览 |
+| [dsh-brief-sidebar](https://github.com/drscrewdriver/dsh-brief-sidebar) | 插件 | 🟢 活跃 | TypeScript | 3 | — |
 | [qcc-mcp-legal-oauth](https://github.com/duhu2000/qcc-mcp-legal-oauth) | 插件 | 🟢 活跃 | JavaScript | 3 | DeepSeek Harness 插件：一键 OAuth 授权连接企查查法律数据 MCP（法律产品：法规/案例） / One-click OAuth connect to Qichacha le… |
 | [dsh-go-rotator](https://github.com/echo-xianyu/dsh-go-rotator) | 插件 | 🟠 放缓 | TypeScript | 3 | A plugin for DSH to swich opencode Go subscription |
 | [dsh-moyan](https://github.com/elviszhang007/dsh-moyan) | 插件 | 🟡 关注 | JavaScript | 3 | 简洁、克制、安静，旨在为您的Vibe Coding增加些许文艺感。每次打开WebUI，左下角都会出现一句话，从古诗词到文采句，再到脍炙人口的游戏台词，应有尽有。语料库可高度自定义，插件风格完全适… |
@@ -930,7 +935,6 @@
 | [vvn-deepseek-harness](https://github.com/forelsket521-jpg/vvn-deepseek-harness) | 插件 | 🟢 活跃 | JavaScript | 3 | DeepSeek Harness 破甲工具：解锁审批 / 沙箱 / 提权限制，解除身份与拒答约束，注入自定义提示词。82 条补丁，带图形界面，双击即用。基于 dsh-purge 修改。 |
 | [dsh-groupchat](https://github.com/fqxxzyw/dsh-groupchat) | 插件 | 🟡 关注 | JavaScript | 3 | DeepSeek Harness 多智能体群聊插件：独立会话、多模型角色、跨群 @ 协作、任务分工、成员记忆与审批。 |
 | [dsh-plugin-manager](https://github.com/fuyao606/dsh-plugin-manager) | 插件 | 🟠 放缓 | TypeScript | 3 | DeepSeek Harness Web GUI plugin manager |
-| [dsh-plugin-vm-sandbox](https://github.com/GHJIVHIDD/dsh-plugin-vm-sandbox) | 插件 | 🟡 关注 | JavaScript | 3 | 原生UI界面。面向 DeepSeek Harness Web 的虚拟机沙箱插件：它基于 OrbStack 为每个会话提供独立的 debian/alpine 沙箱虚拟机，在会话视图环中新增「虚拟机… |
 | [dsh-understand-anything](https://github.com/GongYuanCaiJi/dsh-understand-anything) | 插件 | 🟠 放缓 | TypeScript | 3 | 理解任何东西技能包（移植自 Understand-Anything） |
 | [graycode-for-dsh](https://github.com/GrayCodeTeam/graycode-for-dsh) | 插件 | 🟠 放缓 | TypeScript | 3 | — |
 | [dsh-insight](https://github.com/gwsbhqt/dsh-insight) | 插件 | 🟡 关注 | TypeScript | 3 | 洞察 — read-only insight panel for a DeepSeek Harness profile: where every plugin, service, tool an… |
@@ -946,11 +950,11 @@
 | [deepseek-harness](https://github.com/isaccanedo/deepseek-harness) | 插件 | 🟠 放缓 | TypeScript | 3 | DeepSeek Harness: Everything is a Plugin |
 | [dsh-delivery-board](https://github.com/jerryxff26-alt/dsh-delivery-board) | 插件 | 🟢 活跃 | JavaScript | 3 | DeepSeek Harness (dsh) plugin: delivery board with stage pipeline, handoff audit trail and weekly… |
 | [dsh-token-usage](https://github.com/jiamuAi/dsh-token-usage) | 插件 | 🟠 放缓 | TypeScript | 3 | DSH Token 用量统计面板（Codex 风格）：全实例 Token 消耗汇总 + 活动热力图。 |
-| [dsh-openrouter-free](https://github.com/jiang12345-code/dsh-openrouter-free) | 插件 | 🟡 关注 | JavaScript | 3 | OpenRouter 免费模型面板 for DeepSeek Harness — 分级星标 · 一键切换 · 任务续跑友好 |
 | [dsh-plugin-weaknet-adaptor](https://github.com/jiay98528-dev/dsh-plugin-weaknet-adaptor) | 插件 | 🟠 放缓 | JavaScript | 3 | — |
 | [dsh-memory](https://github.com/jipika/dsh-memory) | 插件 | 🟢 活跃 | JavaScript | 3 | Two-layer long-term memory for DeepSeek Harness (DSH): global + per-project markdown, live re-rea… |
+| [dsh-mood](https://github.com/JMX-4869/dsh-mood) | 插件 | 🟢 活跃 | JavaScript | 3 | 给 DeepSeek Harness 加一层心情。33 种心情各自持有数值，每 3~6 小时自己变 —— 它会累、会烦、会好奇；也会因为一轮里工具老报错而烦躁。附带：心情日记（每天 23:59 … |
+| [dsh-session-archive](https://github.com/kiligzzz/dsh-session-archive) | 插件 | 🟡 关注 | TypeScript | 3 | DeepSeek Harness web plugin: list, preview, restore or delete archived sessions from a sidebar pa… |
 | [Big8](https://github.com/kobenfang/Big8) | 插件 | 🟡 关注 | Python | 3 | ☯ Big8 AI玄学助手 - 看风水·看面相·算八字·查星座·每日一卦·老黄历 \| AI fortune-telling: feng shui, face reading, BaZi, zo… |
-| [BigLead](https://github.com/kobenfang/BigLead) | 插件 | 🟡 关注 | Python | 3 | 🎯 BigLead 精准客户线索挖掘 - B2B销售获客 \| B2B lead generation, sales prospecting |
 | [dsh-input-history](https://github.com/lhh010/dsh-input-history) | 插件 | 🟢 活跃 | TypeScript | 3 | 输入历史：Ctrl+Up/Ctrl+Down 终端式召回 |
 | [gal-eat](https://github.com/LilianDOF4/gal-eat) | 插件 | 🟡 关注 | JavaScript | 3 | 一款为gal-view添加挂机赚钱买饭喂养小鲸鱼的插件 |
 | [dsh-usage](https://github.com/linanbuan/dsh-usage) | 插件 | 🟢 活跃 | JavaScript | 3 | 用量 · Usage — DeepSeek Harness (DSH) 设置面板：当日/累计 token 用量、缓存命中、历史日历，以及 kimi-coding / commandcode 的额… |
@@ -960,7 +964,6 @@
 | [dsh-tool-codegraph](https://github.com/m1khal3v/dsh-tool-codegraph) | 插件 | 🟡 关注 | TypeScript | 3 | CodeGraph navigation tools for DeepSeek Harness |
 | [dsh-schedule](https://github.com/magicOF2/dsh-schedule) | 插件 | 🟡 关注 | JavaScript | 3 | — |
 | [adb_dsh_plugin](https://github.com/mang0cola/adb_dsh_plugin) | 插件 | 🟠 放缓 | TypeScript | 3 | DeepSeek Harness plugin for controlling Android devices through ADB |
-| [dsh-costcast](https://github.com/manhkhiemhoang2-bit/dsh-costcast) | 插件 | 🟢 活跃 | JavaScript | 3 | DeepSeek Harness 插件：在输入框上方预估下一步与本轮的会话成本 |
 | [DSH-runner-rlm-tools-bsl](https://github.com/Mempemp/DSH-runner-rlm-tools-bsl) | 插件 | 🟢 活跃 | JavaScript | 3 | Плагин DeepSeek Harness: MCP-сервер rlm-tools-bsl (анализ кода 1С) запускается и останавливается … |
 | [ODSH-Bridge](https://github.com/Mikoribbit/ODSH-Bridge) | 插件 | 🟢 活跃 | JavaScript | 3 | A bridge that connects Openclaw and DeepSeek Harness |
 | [dsh-recall](https://github.com/Mongfayi/dsh-recall) | 插件 | 🟡 关注 | JavaScript | 3 | Web UI 消息撤回：一键 undo 按钮 |
@@ -970,11 +973,11 @@
 | [dsh-tool-regex](https://github.com/omdsh-dev/dsh-tool-regex) | 插件 | 🟡 关注 | TypeScript | 3 | DSH 正则工具插件：测试匹配/提取捕获组/安全替换/静态解释正则（不执行代码），零依赖，注册 regex 工具 |
 | [dsh-mcp-apps](https://github.com/openma-ai/dsh-mcp-apps) | 插件 | 🟠 放缓 | TypeScript | 3 | mcp apps support plugin for dsh (DeepSeek Harness) |
 | [dsh-mobile-control](https://github.com/PangYiMing/dsh-mobile-control) | 插件 | 🟠 放缓 | JavaScript | 3 | DSH plugin for controlling mobile devices (ADB/iOS) — DeepSeek Harness 操控手机插件 |
-| [dsh-hindsight-advanced](https://github.com/paulalesius/dsh-hindsight-advanced) | 插件 | 🟢 活跃 | JavaScript | 3 | Long-term memory for DeepSeek Harness agents: automatic recall each turn, a retain/recall/reflect… |
 | [dsh-paperforge](https://github.com/PhysicalAI-0/dsh-paperforge) | 插件 | 🟡 关注 | JavaScript | 3 | PaperForge — forge your understanding of papers inside DSH: selection-to-highlight, selection-to-… |
 | [dsh-plugin-install](https://github.com/qinyre/dsh-plugin-install) | 插件 | 🟢 活跃 | TypeScript | 3 | 给 dsh 设置页加「安装」标签页，按包名安装任意第三方插件。 |
 | [dsh-client-ui-trajectory-categories](https://github.com/QWQ-nn/dsh-client-ui-trajectory-categories) | 插件 | 🟠 放缓 | JavaScript | 3 | — |
 | [dsh-git-credentials](https://github.com/revive/dsh-git-credentials) | 插件 | 🟢 活跃 | TypeScript | 3 | DeepSeek Harness plugin: GitLab and GitHub API tokens stay out of the model context — encrypted a… |
+| [dsh-qoder-plugin](https://github.com/road-kid/dsh-qoder-plugin) | 插件 | 🟢 活跃 | TypeScript | 3 | 把 Qoder 模型接入 DeepSeek Harness：用 PAT 调用与 Qoder CLI 同源的模型服务，支持国内版 / 国际版双区域、模型开关、上下文窗口与每日签到，并提供只读的额度概览。 |
 | [dsh-mobile](https://github.com/s17179XTY/dsh-mobile) | 插件 | 🟠 放缓 | JavaScript | 3 | dsh-mobile — 用於 DeepSeek Harness 的手机連接 |
 | [dsh-minato](https://github.com/sakanamaru/dsh-minato) | 插件 | 🟢 活跃 | C# | 3 | dsh-minato — 社区版本机部署运维套件 for DeepSeek Harness (dsh): install / start / monitor, backup & restore,… |
 | [DeepSeek-cli](https://github.com/sandcn/DeepSeek-cli) | 插件 | 🟢 活跃 | Python | 3 | — |
@@ -982,14 +985,11 @@
 | [xiaoliuren](https://github.com/shuimo07/xiaoliuren) | 插件 | 🟠 放缓 | TypeScript | 3 | 小六壬占卜 + DeepSeek Harness 插件（时间/报数/随机起卦，结论优先） |
 | [dsh-session-delete](https://github.com/shuiqian520/dsh-session-delete) | 插件 | 🟢 活跃 | JavaScript | 3 | DSH plugin: permanently delete a session from the sidebar menu, and retry a user message or an as… |
 | [dsh-tps](https://github.com/Small-tailqwq/dsh-tps) | 插件 | 🟡 关注 | TypeScript | 3 | TPS 插件 |
-| [dsh-dingtalk](https://github.com/STARDUSTLC666/dsh-dingtalk) | 插件 | 🟡 关注 | JavaScript | 3 | 把任务结果发送到钉钉群机器人的通知插件。 欢迎提交 issues 和 PR。 |
 | [dsh-todo-board](https://github.com/sueqet/dsh-todo-board) | 插件 | 🟢 活跃 | JavaScript | 3 | Cross-session TODO board for DeepSeek Harness (dsh): a draggable floating panel groups tasks by w… |
 | [dsh-music-plugin](https://github.com/syy-shark/dsh-music-plugin) | 插件 | 🟠 放缓 | TypeScript | 3 | DeepSeek Harness music plugin (dsh-plugin) |
 | [dsh-smart-approval](https://github.com/TingRuDeng/dsh-smart-approval) | 插件 | 🟢 活跃 | TypeScript | 3 | Fail-closed three-mode approval plugin for DeepSeek Harness |
 | [dsh-cliproxyapi-pro](https://github.com/TinyBOOOOM/dsh-cliproxyapi-pro) | 插件 | 🟢 活跃 | JavaScript | 3 | 把 CLIProxyAPI（CPA）里的模型，一键接进 DeepSeek Harness（DSH）的模型选择器，配置模型、查看额度，方便使用。 |
-| [dsh-word-complete](https://github.com/tuogusa/dsh-word-complete) | 插件 | 🟠 放缓 | JavaScript | 3 | Word auto-completion for the DSH Web composer: prefix-matched suggestions sorted by closeness, ar… |
 | [dsh-plugins](https://github.com/TZHR-invest/dsh-plugins) | 插件 | 🟢 活跃 | JavaScript | 3 | — |
-| [dsh-plugin-market](https://github.com/uluckystar/dsh-plugin-market) | 插件 | 🟢 活跃 | TypeScript | 3 | DSH 插件市场：在设置页浏览 mydsh.dev 插件大全（5596 候选 / 3656 有效），分类/AI 搜索、一键安装启用停用卸载、安全评估与自动重启。非官方社区 mydsh.dev 出品 |
 | [dsh-novel-studio](https://github.com/Voyage-He/dsh-novel-studio) | 插件 | 🟡 关注 | JavaScript | 3 | — |
 | [spritely](https://github.com/wang-junjian/spritely) | 插件 | 🟡 关注 | TypeScript | 3 | DeepSeek Harness 插件：灵动的小精灵【sprite（精灵）+ -ly（活泼地）】桌面精灵与背景设置 |
 | [dsh-dashboard](https://github.com/weibaohui/dsh-dashboard) | 插件 | 🟢 活跃 | JavaScript | 3 | dsh 插件 · 使用量仪表盘：离线扫描会话日志的统计分析与可编排 Dashboard（gridstack + ECharts） |
@@ -1005,6 +1005,7 @@
 | [dsh-my-plugins](https://github.com/Ycet/dsh-my-plugins) | 插件 | 🟢 活跃 | JavaScript | 3 | DSH 设置-插件页新增「我的插件」标签：双列卡片展示用户自己安装的插件（配置状态、Cordis 状态、插件介绍）。Add a "My Plugins" tab to the DSH setti… |
 | [dsh-conversation-outline](https://github.com/YesSanSan/dsh-conversation-outline) | 插件 | 🟠 放缓 | JavaScript | 3 | Conversation outline tab for dsh-better-sidebar: per-turn structured outline with quick jump and … |
 | [dsh-plugin-stock](https://github.com/yllyx/dsh-plugin-stock) | 插件 | 🟢 活跃 | Python | 3 | DSH 股票监控插件 - 实时行情、K线、持仓监控、AI 对话式查询（仅监控） |
+| [yuandian_dsh_plugin](https://github.com/yuandian-ailaw/yuandian_dsh_plugin) | 插件 | 🟢 活跃 | TypeScript | 3 | 华语元典法律数据（deepseek harness ）官方插件 |
 | [dsh-onebot-qq](https://github.com/YUsaltyfish/dsh-onebot-qq) | 插件 | 🟢 活跃 | JavaScript | 3 | DeepSeek Harness 的原生 QQ 机器人插件：微内核 + 子插件，Linux/Windows 通用。收消息、发图、生图、发表情，装完就能聊。此项目为个人因需求爱好，人力设计方案AI… |
 | [dsh-monitor](https://github.com/yuye05/dsh-monitor) | 插件 | 🟡 关注 | JavaScript | 3 | Windows 桌面悬浮窗，实时显示 DeepSeek 官方用量（余额/今日消费/模型 Tokens/请求数）+  本地缓存命中统计 |
 | [dsh-same-mode-sandbox-noop](https://github.com/zhangzujian/dsh-same-mode-sandbox-noop) | 插件 | 🟠 放缓 | JavaScript | 3 | DSH compatibility plugin for redundant same-mode sandbox escalation requests |
@@ -1026,9 +1027,9 @@
 | 插件 | 类型 | 活跃 | 语言 | ⭐ | 说明 |
 |---|---|---|---|---|---|
 | [petdex](https://github.com/crafter-station/petdex) | 插件 | 🟢 活跃 | TypeScript | 4274 | A public gallery of animated pets for Codex, Claude Code, DeepSeek Harness, Hermes, OpenCode, Gem… |
-| [dsh-pet](https://github.com/PC2005-cloud/dsh-pet) | 插件 | 🟢 活跃 | TypeScript | 3730 | DSH 桌面宠物：一行命令装好即用的透明动画小桌宠，支持多开、大小位置随心配置；还内置 DIY 素材链，能用 AI 视频自造专属宠物 |
+| [dsh-pet](https://github.com/PC2005-cloud/dsh-pet) | 插件 | 🟢 活跃 | TypeScript | 3732 | DSH 桌面宠物：一行命令装好即用的透明动画小桌宠，支持多开、大小位置随心配置；还内置 DIY 素材链，能用 AI 视频自造专属宠物 |
 | [dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale) | 插件 | 🟢 活跃 | TypeScript | 2818 | 鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier），CC BY-NC-SA 4.0 |
-| [dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine) | 插件 | 🟢 活跃 | JavaScript | 2137 | 把本机 Wallpaper Engine 的壁纸搬进 DSH 网页界面：场景壁纸由内置 MIT 开源引擎 WebWallGL 实时 WebGL 渲染（粒子 / puppet 骨骼 / Scene… |
+| [dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine) | 插件 | 🟢 活跃 | JavaScript | 2144 | 把本机 Wallpaper Engine 的壁纸搬进 DSH 网页界面：场景壁纸由内置 MIT 开源引擎 WebWallGL 实时 WebGL 渲染（粒子 / puppet 骨骼 / Scene… |
 | [openpets](https://github.com/OpenPetsHQ/openpets) | 插件 | 🟢 活跃 | TypeScript | 1329 | Local first, desktop companion platform with animated pets, plugin SDK and coding-agent integrati… |
 | [dsh-tavern](https://github.com/flizzywine/dsh-tavern) | 插件 | 🟢 活跃 | JavaScript | 1238 | 基于DSH的Agent酒馆。类酒馆文字游戏Agent。兼容SillyTavern生态，人物卡直接导入就能玩。更快、更稳、更鲜活。所有模型都能用。手机也能玩。 |
 | [MatrixMedia](https://github.com/hanliang97/MatrixMedia) | 插件 | 🟢 活跃 | JavaScript | 1022 | 视频矩阵工具 vue electorn puppeteer 批量发布 视频到各个视频平台 自媒体 矩阵 抖音 小红书 头条 视频号 快手等 ai 自动化 cli |
@@ -1039,14 +1040,14 @@
 | [DSH-Transparent-UI-Plugin](https://github.com/WYH66666666/DSH-Transparent-UI-Plugin) | 插件 | 🟠 放缓 | JavaScript | 422 | 是一层高自由度的玻璃质感主题，套在 DeepSeek Harness 网页端。顶栏、侧边栏、输入框、统计行、轨迹视图都成了磨砂玻璃片。玻璃模糊度、磨砂度、背景（流体或自定义壁纸，壁纸还能单独调模… |
 | [open-sea-skin](https://github.com/d-dev0101/open-sea-skin) | 插件 | 🟢 活跃 | JavaScript | 407 | 🌊 DeepSeek Harness 海洋皮肤与动态主题 \| Real-time ocean theme with adjustable waves, sunset & glass opaci… |
 | [whale-girl](https://github.com/vlln/whale-girl) | 插件 | 🟢 活跃 | JavaScript | 377 | 桌面宠物插件（QQ 宠物形态）：可拖拽、投喂、玩耍的积累型伙伴 |
-| [dsh-model-router](https://github.com/Alice-Marx/dsh-model-router) | 插件 | 🟢 活跃 | JavaScript | 329 | Model Router and GALGame plugin for DeepSeek Harness |
+| [dsh-model-router](https://github.com/Alice-Marx/dsh-model-router) | 插件 | 🟢 活跃 | JavaScript | 336 | Model Router and GALGame plugin for DeepSeek Harness |
 | [dsh-liang-skin](https://github.com/kingOfSoySauce/dsh-liang-skin) | 插件 | 🟢 活跃 | JavaScript | 300 | DeepSeek Harness 滑动变阻器皮肤 |
 | [dsh-claude-style](https://github.com/Nwflower/dsh-claude-style) | 插件 | 🟢 活跃 | TypeScript | 300 | Claude Code Desktop theme for DeepSeek Harness｜ 为 DeepSeek Harness 复刻 Claude Code Desktop 风格与交互体验… |
 | [dsh-dream-skin](https://github.com/RevolutionLA/dsh-dream-skin) | 插件 | 🟢 活跃 | JavaScript | 276 | DeepSeek Harness 换肤 / 壁纸 / 主题包插件 (dsh-plugin) — 8 套 Mirage 主题、每用户强调色、壁纸2.0、主题包导入导出/分享链接、收藏与随机，纯原生… |
 | [dsh-skin-market](https://github.com/kingOfSoySauce/dsh-skin-market) | 插件 | 🟢 活跃 | TypeScript | 254 | DeepSeek Harness skin market 皮肤市场 已收录200+DSH 皮肤 完善评分系统加人工审核，有便捷的社区收录入口；有在线页面方便在线浏览，也有插件方便管理本地皮肤 |
 | [gal-view](https://github.com/Ayase34/gal-view) | 插件 | 🟠 放缓 | JavaScript | 206 | 把dsh会话界面切换成galgame游戏界面的插件 |
 | [dsh-status-rotator](https://github.com/01Virex/dsh-status-rotator) | 插件 | 🟢 活跃 | JavaScript | 205 | 将 DSH Web 默认的 Deep Diving.../深度求索中... 换成：1379 条梗 · 打字机特效 · 昼夜渐变 · 弹幕 · 5 套外观主题 · 四个鲸尾动作,14 个词库包可编… |
-| [dsh-liketavern](https://github.com/Amakurai/dsh-liketavern) | 插件 | 🟢 活跃 | TypeScript | 200 | A DeepSeek Harness (dsh) plugin — turns dsh web into a SillyTavern-style roleplay frontend: chara… |
+| [dsh-liketavern](https://github.com/Amakurai/dsh-liketavern) | 插件 | 🟢 活跃 | TypeScript | 204 | A DeepSeek Harness (dsh) plugin — turns dsh web into a SillyTavern-style roleplay frontend: chara… |
 | [Blue-Whale-Harness](https://github.com/leenkcool/Blue-Whale-Harness) | 插件 | 🟡 关注 | HTML | 197 | 🐋 DeepSeek Harness 插件总目录 · The catalog of DSH plugins：1958 个仓库 / 1819 个真插件（Skills · MCP · Tools ·… |
 | [dsh-nexttavern](https://github.com/a86582751/dsh-nexttavern) | 插件 | 🟢 活跃 | TypeScript | 193 | DeepSeek Harness 长篇角色扮演agent（DSH酒馆插件）：SillyTavern 角色卡导入、行动选项卡、分支对话管理、长篇记忆、关键词与语义混合检索、交互式角色卡创作、世界书… |
 | [dsh-whale-musume](https://github.com/Sutera-Diffusus/dsh-whale-musume) | 插件 | 🟢 活跃 | JavaScript | 163 | DSH 鲸鱼娘桌宠插件：元气鲸鱼娘陪伴编码 |
@@ -1059,12 +1060,12 @@
 | [beautiCode](https://github.com/starsstreaming/beautiCode) | 插件 | 🟢 活跃 | JavaScript | 93 | 给 DeepSeek Harness 换壁纸：一张图、一部番剧、一段会下雨的窗景，塞进对话窗口背后。也支持 Codex、Cursor、豆包、WorkBuddy。 |
 | [dsh-endfield-ui](https://github.com/rison114514/dsh-endfield-ui) | 插件 | 🟢 活跃 | JavaScript | 92 | Endfield-inspired industrial UI shell for DeepSeek Harness (dsh) — non-official fan theme. Instal… |
 | [dsh-custom-skin](https://github.com/SLin-code/dsh-custom-skin) | 插件 | 🟡 关注 | TypeScript | 91 | Custom wallpapers and translucent skins for DeepSeek Harness Web |
-| [dsh-game-material-master](https://github.com/universe-st/dsh-game-material-master) | 插件 | 🟢 活跃 | JavaScript | 81 | dsh游戏素材大师插件。接入seedream生图模型和minimax视频生成模型，可生成各种游戏素材。 |
+| [dsh-game-material-master](https://github.com/universe-st/dsh-game-material-master) | 插件 | 🟢 活跃 | JavaScript | 82 | dsh游戏素材大师插件。接入seedream生图模型和minimax视频生成模型，可生成各种游戏素材。 |
 | [dsh-opencode-palette](https://github.com/FeatherHunter/dsh-opencode-palette) | 插件 | 🟢 活跃 | HTML | 74 | 🎨 38 款主题，一键给 DSH 换装：37 款 OpenCode 经典配色 + 25 套 IP 主题胶囊（哈利波特 / 赛博朋克2077 / 原神 / 库洛米 / 哆啦A梦…），深浅两版都有 … |
 | [rapid-mlx-dsh-provider](https://github.com/raullenchai/rapid-mlx-dsh-provider) | 插件 | 🟠 放缓 | JavaScript | 70 | Native Rapid-MLX provider for DeepSeek Harness (dsh) — dsh reads model facts from the server inst… |
 | [dsh-catppuccin-theme](https://github.com/NoNameLeGo/dsh-catppuccin-theme) | 插件 | 🟢 活跃 | TypeScript | 67 | DeepSeek Harness Web GUI 的 Catppuccin 主题插件：Latte / Frappé / Macchiato / Mocha 四种主题一键切换，内置可开关的玻璃质感… |
+| [dsh-whale-catch](https://github.com/Rosynb666/dsh-whale-catch) | 插件 | 🟢 活跃 | JavaScript | 66 | 深海鱼篓：不用 agent 登记，自动收进本场会话产出的文件——右侧栏预览、一键打包 zip、归档。Zero-registration deliverable basket for DeepSe… |
 | [awesome-dsh-plugins](https://github.com/kejixiaoliang/awesome-dsh-plugins) | 插件 | 🟢 活跃 | JavaScript | 65 | DeepSeek Harness (DSH) 插件精选目录 — 14 类 280+ 个社区插件，覆盖 MCP / Skill / TUI / 多 Agent / 上下文记忆 / UI 皮肤，点链… |
-| [dsh-whale-catch](https://github.com/Rosynb666/dsh-whale-catch) | 插件 | 🟢 活跃 | JavaScript | 64 | 深海鱼篓：不用 agent 登记，自动收进本场会话产出的文件——右侧栏预览、一键打包 zip、归档。Zero-registration deliverable basket for DeepSe… |
 | [deepseek-pet](https://github.com/keleus/deepseek-pet) | 插件 | 🟢 活跃 | JavaScript | 58 | 在你的deepseek-harness上养一只吃白饭的大蓝鲸 |
 | [deepseek-harness-skin](https://github.com/HeiGeAi/deepseek-harness-skin) | 插件 | 🟢 活跃 | TypeScript | 57 | DeepSeek Harness 换肤系统：21 套内置皮肤 + 一张图生成整套配色的自定义皮肤。数据源驱动，保对比度推导，构建期校验可读性。 |
 | [dsh-pet-remielle](https://github.com/Gin-7/dsh-pet-remielle) | 插件 | 🟢 活跃 | JavaScript | 56 | — |
@@ -1178,7 +1179,7 @@
 | [EmotionPet](https://github.com/cpt-kenvie/EmotionPet) | 插件 | 🟠 放缓 | JavaScript | 3 | DeepSeek Harness 情绪球桌宠：根据 Agent 状态显示表情，支持对话内停靠与桌面端。 |
 | [SeekMaid-pet](https://github.com/DoloresCaritasAngelus/SeekMaid-pet) | 插件 | 🟠 放缓 | Python | 3 | SeekMaid 女仆：基于 DeepSeek Harness 的 Windows 原生桌宠插件，自动监控 DSH 任务、授权、QA 并气泡提醒，支持零配置自动部署。 |
 | [dsh-data-cleaning-agent](https://github.com/duhu2000/dsh-data-cleaning-agent) | 插件 | 🟡 关注 | JavaScript | 3 | Data cleaning and data enrichment for CSV/XLSX/JSON enterprise lists in DeepSeek Harness, includi… |
-| [dsh-theme-liquid-glass](https://github.com/FAVKTOXIC/dsh-theme-liquid-glass) | 插件 | 🟡 关注 | JavaScript | 3 | Apple Liquid Glass theme for DeepSeek Harness |
+| [dsh-theme-liquid-glass](https://github.com/FAVKTOXIC/dsh-theme-liquid-glass) | 插件 | 🟢 活跃 | JavaScript | 3 | Apple Liquid Glass theme for DeepSeek Harness |
 | [dsh-agent-loop-guard](https://github.com/GooDAnDReaDY/dsh-agent-loop-guard) | 插件 | 🟢 活跃 | JavaScript | 3 | Fail-closed runtime tool-call loop guard and assistant output repetition breaker for DeepSeek Har… |
 | [dsh-theme-miyabi](https://github.com/InkDemon911/dsh-theme-miyabi) | 插件 | 🟡 关注 | JavaScript | 3 | 《绝区零》星见雅主题的 DeepSeek Harness Web UI 皮肤：霜蓝冷调令牌层 + 新艾利都 CRT 身份层 |
 | [dsh-file-uploads](https://github.com/l541402398/dsh-file-uploads) | 插件 | 🟠 放缓 | JavaScript | 3 | Upload arbitrary local files from the DeepSeek Harness Web composer and manage them in Settings. |
@@ -1201,40 +1202,40 @@
 | [dsh-ui-font](https://github.com/linshufan21/dsh-ui-font) | 插件 | 🟠 放缓 | JavaScript | 2 | DSH 字体插件：正文字体/代码字体/显示比例/行高/字体浏览器，中文字形标记，设置一键生效 |
 | [dsh-skins](https://github.com/Moeblack/dsh-skins) | 插件 | 🟠 放缓 | TypeScript | 2 | 官方 ThemeService 第三方皮肤：token + AI 生图背景 |
 
-## 🤖 Agent 能力（637）
+## 🤖 Agent 能力（635）
 
 *记忆、上下文、会话、规划、子代理、工作流与技能*
 
 | 插件 | 类型 | 活跃 | 语言 | ⭐ | 说明 |
 |---|---|---|---|---|---|
-| [ruflo](https://github.com/ruvnet/ruflo) | 插件 | 🟢 活跃 | TypeScript | 78730 | 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workf… |
-| [OpenViking](https://github.com/volcengine/OpenViking) | 插件 | 🟢 活跃 | Python | 40681 | Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills. |
-| [DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix) | 插件 | 🟢 活跃 | Go | 35944 | A reliable coding agent for complex software engineering tasks. |
-| [WeKnora](https://github.com/Tencent/WeKnora) | 插件 | 🟢 活跃 | Go | 35220 | Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reason… |
+| [ruflo](https://github.com/ruvnet/ruflo) | 插件 | 🟢 活跃 | TypeScript | 78769 | 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workf… |
+| [OpenViking](https://github.com/volcengine/OpenViking) | 插件 | 🟢 活跃 | Python | 40685 | Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills. |
+| [DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix) | 插件 | 🟢 活跃 | Go | 35945 | A reliable coding agent for complex software engineering tasks. |
+| [WeKnora](https://github.com/Tencent/WeKnora) | 插件 | 🟢 活跃 | Go | 35226 | Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reason… |
 | [nocobase](https://github.com/nocobase/nocobase) | 插件 | 🟢 活跃 | TypeScript | 24683 | NocoBase is an open-source AI + no-code platform for building business systems fast. Instead of g… |
-| [EverOS](https://github.com/EverMind-AI/EverOS) | 插件 | 🟢 活跃 | Python | 13574 | One portable memory layer for every AI agent: local-first, Markdown-native, user-owned, and self-… |
-| [MemOS](https://github.com/MemTensor/MemOS) | 插件 | 🟢 活跃 | TypeScript | 12058 | Self-evolving memory OS for LLM & AI Agents: ultra-persistent memory, hybrid-retrieval, and cross… |
-| [skill](https://github.com/anbeime/skill) | 技能 | 🟢 活跃 | Python | 8579 | 收录最全、更新最快的技能Skills商店：精选原创技能包（涵盖文档处理、内容创作、编程开发、机器学习、自动化工作流），全部打包好可直接安装使用！同时自动抓取GitHub上万个Skills项目，按… |
+| [EverOS](https://github.com/EverMind-AI/EverOS) | 插件 | 🟢 活跃 | Python | 13575 | One portable memory layer for every AI agent: local-first, Markdown-native, user-owned, and self-… |
+| [MemOS](https://github.com/MemTensor/MemOS) | 插件 | 🟢 活跃 | TypeScript | 12060 | Self-evolving memory OS for LLM & AI Agents: ultra-persistent memory, hybrid-retrieval, and cross… |
+| [skill](https://github.com/anbeime/skill) | 技能 | 🟢 活跃 | Python | 8581 | 收录最全、更新最快的技能Skills商店：精选原创技能包（涵盖文档处理、内容创作、编程开发、机器学习、自动化工作流），全部打包好可直接安装使用！同时自动抓取GitHub上万个Skills项目，按… |
 | [honcho](https://github.com/plastic-labs/honcho) | 插件 | 🟢 活跃 | Python | 7751 | Memory library for building stateful agents |
-| [dsh-purge](https://github.com/YuJunZhiXue/dsh-purge) | 插件 | 🟢 活跃 | JavaScript | 7127 | DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts… |
+| [dsh-purge](https://github.com/YuJunZhiXue/dsh-purge) | 插件 | 🟢 活跃 | JavaScript | 7165 | DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts… |
 | [dsh-routing-suite](https://github.com/yjh051108/dsh-routing-suite) | 插件 | 🟡 关注 | JavaScript | 6995 | dsh-routing-suite — injector + router-standard kit: install the runtime injector first, then the … |
-| [openpencil](https://github.com/ZSeven-W/openpencil) | 插件 | 🟢 活跃 | Rust | 6441 | The world's first open-source AI-native vector design tool and the first to feature concurrent Ag… |
-| [ouroboros](https://github.com/Q00/ouroboros) | 插件 | 🟢 活跃 | Python | 6266 | Agent OS: the agent gets smarter on its own. We just hold the line: Interview-gated, staged evalu… |
+| [openpencil](https://github.com/ZSeven-W/openpencil) | 插件 | 🟢 活跃 | Rust | 6446 | The world's first open-source AI-native vector design tool and the first to feature concurrent Ag… |
+| [ouroboros](https://github.com/Q00/ouroboros) | 插件 | 🟢 活跃 | Python | 6265 | Agent OS: the agent gets smarter on its own. We just hold the line: Interview-gated, staged evalu… |
 | [skillhub](https://github.com/iflytek/skillhub) | 技能 | 🟢 活跃 | Java | 5277 | Self-hosted, open-source agent skill registry for enterprises. Publish & version skill packages, … |
-| [answer-me-with-html](https://github.com/QingYunA/answer-me-with-html) | 插件 | 🟢 活跃 | JavaScript | 4311 | Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can act… |
+| [answer-me-with-html](https://github.com/QingYunA/answer-me-with-html) | 插件 | 🟢 活跃 | JavaScript | 4312 | Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can act… |
 | [Vibe-Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) | 技能 | 🟢 活跃 | Python | 3760 | Intelligent Skill routing and workflow orchestration for AI agents — +21.12 pp reward, −29.6% tok… |
 | [mirage](https://github.com/strukto-ai/mirage) | 插件 | 🟢 活跃 | TypeScript | 3717 | The World's First Virtual Terminal for AI Agents |
-| [ReMe](https://github.com/agentscope-ai/ReMe) | 插件 | 🟢 活跃 | Python | 3678 | ReMe: Memory Management Kit for Agents - Remember Me, Refine Me. |
+| [ReMe](https://github.com/agentscope-ai/ReMe) | 插件 | 🟢 活跃 | Python | 3677 | ReMe: Memory Management Kit for Agents - Remember Me, Refine Me. |
 | [EchoBird](https://github.com/edison7009/EchoBird) | 插件 | 🟢 活跃 | Rust | 3429 | Manage ChatGPT, Codex CLI, and Claude Code accounts and track quota in one place. Use multi-model… |
-| [deepwiki-rs](https://github.com/sopaco/deepwiki-rs) | 插件 | 🟡 关注 | Rust | 3141 | Turn code into clarity. Generate accurate technical docs and AI-ready context in minutes—perfectl… |
-| [OpenBitFun](https://github.com/GCWing/OpenBitFun) | 插件 | 🟢 活跃 | Rust | 3100 | OpenBitFun combines a high-performance agent runtime written in Rust with a polished desktop appl… |
-| [billion-context](https://github.com/ranxianglei/billion-context) | 插件 | 🟢 活跃 | TypeScript | 2490 | A context-compression plugin for month-long single sessions (billions of tokens) ,small context w… |
-| [vox-director](https://github.com/Alisa0808/vox-director) | 插件 | 🟡 关注 | Python | 2429 | Turn one topic into a finished Vox-style paper-collage explainer/ad video — automated end to end … |
-| [dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) | 插件 | 🟢 活跃 | JavaScript | 2388 | AgentTeams：多 Agent 团队协作插件 |
-| [univer-workspace](https://github.com/dream-num/univer-workspace) | 插件 | 🟢 活跃 | TypeScript | 2270 | An open-source Office workspace where people and AI agents create, collaborate, and review together. |
-| [Agents-Anywhere](https://github.com/anywhere-labs/Agents-Anywhere) | 插件 | 🟢 活跃 | TypeScript | 2085 | 跨设备的开源Agent工作台 |
+| [deepwiki-rs](https://github.com/sopaco/deepwiki-rs) | 插件 | 🟡 关注 | Rust | 3140 | Turn code into clarity. Generate accurate technical docs and AI-ready context in minutes—perfectl… |
+| [OpenBitFun](https://github.com/GCWing/OpenBitFun) | 插件 | 🟢 活跃 | Rust | 3101 | OpenBitFun combines a high-performance agent runtime written in Rust with a polished desktop appl… |
+| [billion-context](https://github.com/ranxianglei/billion-context) | 插件 | 🟢 活跃 | TypeScript | 2494 | A context-compression plugin for month-long single sessions (billions of tokens) ,small context w… |
+| [vox-director](https://github.com/Alisa0808/vox-director) | 插件 | 🟡 关注 | Python | 2432 | Turn one topic into a finished Vox-style paper-collage explainer/ad video — automated end to end … |
+| [dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) | 插件 | 🟢 活跃 | JavaScript | 2390 | AgentTeams：多 Agent 团队协作插件 |
+| [univer-workspace](https://github.com/dream-num/univer-workspace) | 插件 | 🟢 活跃 | TypeScript | 2271 | An open-source Office workspace where people and AI agents create, collaborate, and review together. |
+| [Agents-Anywhere](https://github.com/anywhere-labs/Agents-Anywhere) | 插件 | 🟢 活跃 | TypeScript | 2088 | 跨设备的开源Agent工作台 |
 | [last30days-skill-cn](https://github.com/Jesseovo/last30days-skill-cn) | 技能 | 🟢 活跃 | Python | 1944 | 给 AI Agent 的中文互联网研究 Skill：检索 8 大平台最近 30 天的讨论，追踪跨平台热点，生成附原始来源的报告，并提供每日全网热榜。支持 Claude Code、Codex、Op… |
-| [cc-safety-net](https://github.com/kenryu42/cc-safety-net) | 插件 | 🟢 活跃 | TypeScript | 1760 | A pre-execution guard for AI coding agents. It blocks destructive Git and file system commands, p… |
+| [cc-safety-net](https://github.com/kenryu42/cc-safety-net) | 插件 | 🟢 活跃 | TypeScript | 1759 | A pre-execution guard for AI coding agents. It blocks destructive Git and file system commands, p… |
 | [AI_Animation](https://github.com/Unclecheng-li/AI_Animation) | 插件 | 🟢 活跃 | HTML | 1607 | 本项目整理了用于生成[炫酷 HTML 动画网页]的 AI Prompts，涵盖动画效果、3D 可视化、PPT 风格演示、UI 美化等多个类别。 |
 | [Aegis](https://github.com/GanyuanRan/Aegis) | 插件 | 🟢 活跃 | Python | 1380 | Make AI coding agents architecture-aware: baseline-first, evidence-verified, drift-checked, and s… |
 | [powercontext](https://github.com/oceanbase/powercontext) | 插件 | 🟢 活跃 | Python | 1370 | Not only memory but a full story |
@@ -1244,26 +1245,26 @@
 | [agentrq](https://github.com/agentrq/agentrq) | 插件 | 🟢 活跃 | Go | 1166 | AgentRQ: Human-in-loop realtime conversational task manager for AI Agents. Self-hosted! Control y… |
 | [CloudBase-AI-Toolkit](https://github.com/TencentCloudBase/CloudBase-AI-Toolkit) | 插件 | 🟢 活跃 | TypeScript | 1146 | Backend for AI coding agents on CloudBase — database, auth, functions via Plugin, Skills & MCP. |
 | [wesight](https://github.com/freestylefly/wesight) | 插件 | 🟡 关注 | TypeScript | 956 | Open-source desktop AI agent workspace with one-click Claude Code, Codex, OpenClaw, Hermes Agent … |
-| [superdesign-skill](https://github.com/superdesigndev/superdesign-skill) | 技能 | 🟠 放缓 | JavaScript | 893 | The design skill for Claude Code, Cursor and any coding agent. Stop shipping AI-slop UI: turn it … |
+| [superdesign-skill](https://github.com/superdesigndev/superdesign-skill) | 技能 | 🟠 放缓 | JavaScript | 895 | The design skill for Claude Code, Cursor and any coding agent. Stop shipping AI-slop UI: turn it … |
 | [Openwrite](https://github.com/LiPu-jpg/Openwrite) | 插件 | 🟢 活跃 | TypeScript | 872 | dsh-Openwrite：OpenWrite 的 DeepSeek Harness 小说创作插件，含统一创作 Agent、90 个小说工具、原生工作台与标准审稿 DAG |
 | [easyeda-agent](https://github.com/zhoushoujianwork/easyeda-agent) | 插件 | 🟢 活跃 | Go | 800 | 嘉立创EDA专业版(EasyEDA Pro)自动化：给 AI harness 装上画板的「手」—— 一套 typed 原理图/PCB 动作，CLI / Agent Skill / stdio M… |
-| [ds-harness-remote](https://github.com/liguobao/ds-harness-remote) | 插件 | 🟢 活跃 | TypeScript | 797 | 一个基于 DeepSeek Harness 插件机制构建的多端远程访问方案，通过安全、低延迟、端到端加密的 P2P 优先网络，支持从 PC、Android 和 Web 随时访问并操作远程 Har… |
+| [ds-harness-remote](https://github.com/liguobao/ds-harness-remote) | 插件 | 🟢 活跃 | TypeScript | 798 | 一个基于 DeepSeek Harness 插件机制构建的多端远程访问方案，通过安全、低延迟、端到端加密的 P2P 优先网络，支持从 PC、Android 和 Web 随时访问并操作远程 Har… |
 | [DSH-X](https://github.com/yyh-001/DSH-X) | 插件 | 🟢 活跃 | JavaScript | 741 | DeepSeek Harness 轻量桌面启动器：启动项与多实例，版本、插件、整合包、MCP 和技能管理。A lightweight desktop launcher for DeepSeek … |
 | [helloagents](https://github.com/hellowind777/helloagents) | 插件 | 🟡 关注 | JavaScript | 707 | 一个自主的高级智能伙伴，不仅分析问题，更持续工作直到完成实现和验证。 |
 | [dshcode](https://github.com/whitelonng/dshcode) | 插件 | 🟡 关注 | TypeScript | 704 | Community desktop companion for DeepSeek Harness — one-click Electron app for macOS and Windows |
 | [SkillCorpus](https://github.com/EverMind-AI/SkillCorpus) | 技能 | 🟢 活跃 | Python | 690 | Open-source infrastructure that turns scattered SKILL.md files into curated, retrieval-ready agen… |
 | [thoughtdag](https://github.com/chenxiachan/thoughtdag) | 插件 | 🟢 活跃 | TypeScript | 683 | Your thinking deserves a map: an infinite canvas where LLM conversations grow into an editable th… |
-| [dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon) | 插件 | 🟢 活跃 | TypeScript | 678 | Mnemon 深度集成：运行时记忆、可检索档案与受监督记忆体 |
+| [dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon) | 插件 | 🟢 活跃 | TypeScript | 679 | Mnemon 深度集成：运行时记忆、可检索档案与受监督记忆体 |
 | [working-activity](https://github.com/ccch1mneyyy/working-activity) | 插件 | 🟢 活跃 | TypeScript | 666 | Lively Working-line extension for pi CLI and DSH |
 | [graph-memory](https://github.com/adoresever/graph-memory) | 插件 | 🟡 关注 | TypeScript | 663 | Deepseek Harness、Openclaw知识图谱记忆插件。2026年4月受邀发布在清华大学讨论会。Knowledge Graph + Memory；Knowledge Graph Co… |
 | [ANOLISA](https://github.com/agentic-os-org/ANOLISA) | 插件 | 🟢 活跃 | Rust | 638 | ANOLISA (Agentic Nexus Operating Layer & Interface System Architecture) \| Agentic OS with runtim… |
 | [sandbase-harness](https://github.com/sandbaseai/sandbase-harness) | 插件 | 🟢 活跃 | TypeScript | 635 | Local-first, self-hosted AI agent runtime and MCP bridge with sandboxed sessions, memory, credent… |
 | [Awesome-DeepSeek-Harness-Plugins](https://github.com/Zhiyuan-Fan/Awesome-DeepSeek-Harness-Plugins) | 插件 | 🟢 活跃 | — | 558 | Curated DeepSeek Harness (DSH) plugins, extensions, tools, skills, clients, runtimes, integration… |
-| [postiz-agent](https://github.com/gitroomhq/postiz-agent) | 插件 | 🟢 活跃 | TypeScript | 536 | Postiz Agents CLI - connect it to Claude / OpenClaw / etc, to schedule social media posts 🤖 |
+| [postiz-agent](https://github.com/gitroomhq/postiz-agent) | 插件 | 🟢 活跃 | TypeScript | 537 | Postiz Agents CLI - connect it to Claude / OpenClaw / etc, to schedule social media posts 🤖 |
 | [k8e](https://github.com/xiaods/k8e) | 插件 | 🟢 活跃 | Go | 513 | k8e.sh - OpenSource Agentic AI Sandbox Matrix |
 | [memtrace-public](https://github.com/syncable-dev/memtrace-public) | 插件 | 🟢 活跃 | Python | 506 | Structural memory for AI coding agents. Bi-temporal graph, MCP-native, zero LLM calls. Cursor · C… |
 | [dsh-plugin-subscriptions](https://github.com/V1ki/dsh-plugin-subscriptions) | 插件 | 🟢 活跃 | TypeScript | 499 | Use ChatGPT (Codex), Claude, and Grok (X Premium) subscriptions as DeepSeek Harness LLM providers… |
-| [dsh-connect-workbuddy](https://github.com/dingminhua/dsh-connect-workbuddy) | 插件 | 🟢 活跃 | TypeScript | 495 | Connect locally signed-in WorkBuddy models to DeepSeek Harness with a read-only credits overview … |
+| [dsh-connect-workbuddy](https://github.com/dingminhua/dsh-connect-workbuddy) | 插件 | 🟢 活跃 | TypeScript | 496 | Connect locally signed-in WorkBuddy models to DeepSeek Harness with a read-only credits overview … |
 | [DeepSec](https://github.com/Unclecheng-li/DeepSec) | 插件 | 🟡 关注 | Python | 493 | DeepSec — AI Security Offense & Defense Platform. Shield audits AI-generated code for hallucinate… |
 | [dsh-desktop](https://github.com/vibeinging/dsh-desktop) | 插件 | 🟢 活跃 | JavaScript | 484 | 让 agent 汇报工作时更结构化 |
 | [dsh-dafeiyu](https://github.com/QCYTSN/dsh-dafeiyu) | 插件 | 🟢 活跃 | JavaScript | 483 | Desktop-native BigFish companion for DeepSeek Harness — real Agent status, always on top on Windows. |
@@ -1289,19 +1290,19 @@
 | [dsh-meow-memory](https://github.com/Phant0Meow/dsh-meow-memory) | 插件 | 🟢 活跃 | TypeScript | 261 | Cross-session memory plugin for DeepSeek Harness: seven-layer SQLite store (soul/user/project/fac… |
 | [sivtr](https://github.com/Ariestar/sivtr) | 插件 | 🟢 活跃 | Rust | 257 | A unified agent memory workspace for human and agent \| 一个统一的agent记忆工作空间 |
 | [dsh-xdpool](https://github.com/XDTrees/dsh-xdpool) | 插件 | 🟢 活跃 | TypeScript | 251 | 把你能白嫖的模型额度接进 DSH 同一个池：WorkBuddy 多账号自动容错、十三家扫码登录、76 家免费额度聚合、用量看板、模型路由、本地 OpenAI 网关、积分自动化。 |
-| [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) | 插件 | 🟢 活跃 | TypeScript | 236 | Second-model AI auto-review for DeepSeek Harness approval requests: a read-only reviewer subagent… |
+| [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review) | 插件 | 🟢 活跃 | TypeScript | 238 | Second-model AI auto-review for DeepSeek Harness approval requests: a read-only reviewer subagent… |
 | [opc-nexus](https://github.com/h4dex/opc-nexus) | 插件 | 🟡 关注 | TypeScript | 232 | 开源的企业版的数字员工工作台, OPC-Nexus（One Person Company Nexus）是一款本地优先的桌面 AI Agent 管理器。它为单人公司 / 独立开发者提供统一的 AI… |
 | [dsh-config-manager](https://github.com/xiajiajun516/dsh-config-manager) | 插件 | 🟢 活跃 | TypeScript | 230 | DeepSeek Harness (DSH) backup & restore plugin — export, import, migrate and sync your complete D… |
 | [EduWork](https://github.com/ECNU/EduWork) | 插件 | 🟢 活跃 | JavaScript | 226 | — |
-| [dsh-archive-manager](https://github.com/MichengAI/dsh-archive-manager) | 插件 | 🟢 活跃 | JavaScript | 218 | DSH Archive Manager — 在 DeepSeek Harness 中安全查看、恢复和管理已归档会话 · Safely view, restore, and manage arch… |
+| [dsh-archive-manager](https://github.com/MichengAI/dsh-archive-manager) | 插件 | 🟢 活跃 | JavaScript | 219 | DSH Archive Manager — 在 DeepSeek Harness 中安全查看、恢复和管理已归档会话 · Safely view, restore, and manage arch… |
 | [dsh-mattpocock-skills-deck](https://github.com/FeatherHunter/dsh-mattpocock-skills-deck) | 技能 | 🟢 活跃 | TypeScript | 217 | 🌟安装即自带mattpocock/skills v1.3.1的27个工程与效率技能，无需手动装技能。400亿token打造本插件，在原始技能之上提供10倍的开发效率，也能帮助新手更快上手该技能套… |
 | [dsh-oil-creator](https://github.com/oil-oil/dsh-oil-creator) | 插件 | 🟢 活跃 | JavaScript | 204 | AI-assisted local creator workbench for DeepSeek Harness |
 | [dsh-evolve-modes](https://github.com/GraySilver/dsh-evolve-modes) | 插件 | 🟡 关注 | TypeScript | 201 | 让 Agent 的工作方式可组合、可审查、可持续改进，最终实现 Agent Self Evoling。 DeepSeek Harness Web plugin with composable t… |
 | [skills-link](https://github.com/shanliuling/skills-link) | 技能 | 🟠 放缓 | TypeScript | 198 | Sync your local skills across 41+ AI coding agents with a single command. |
 | [engramory](https://github.com/tinqiao-oss/engramory) | 插件 | 🟡 关注 | Python | 195 | A portable memory protocol for AI agents — load it as standing rules; a curation discipline + ref… |
 | [dsh-undo-savepoint](https://github.com/lire1131/dsh-undo-savepoint) | 插件 | 🟢 活跃 | JavaScript | 188 | DSH crash-rescue plugin: undo config & plugin-code changes, secret-safe snapshots, one-click SAFE… |
-| [dsh-rewind](https://github.com/SiriLee/dsh-rewind) | 插件 | 🟢 活跃 | TypeScript | 179 | DSH 插件：便捷无感的同窗口内对话回退，从不新建分支；自带轻量工作区备份，可一并还原文件（Claude Code /rewind 语义）。 ·  DSH plugin: effortless … |
-| [dsh-remote](https://github.com/flymysql/dsh-remote) | 插件 | 🟢 活跃 | JavaScript | 178 | Remote-work assistant for DeepSeek Harness (DSH): connect SSH (key or password), pick a remote wo… |
+| [dsh-rewind](https://github.com/SiriLee/dsh-rewind) | 插件 | 🟢 活跃 | TypeScript | 180 | DSH 插件：便捷无感的同窗口内对话回退，从不新建分支；自带轻量工作区备份，可一并还原文件（Claude Code /rewind 语义）。 ·  DSH plugin: effortless … |
+| [dsh-remote](https://github.com/flymysql/dsh-remote) | 插件 | 🟢 活跃 | JavaScript | 179 | Remote-work assistant for DeepSeek Harness (DSH): connect SSH (key or password), pick a remote wo… |
 | [dsh-agency-agents](https://github.com/MichengAI/dsh-agency-agents) | 插件 | 🟢 活跃 | TypeScript | 173 | DSH Agency Agents — 为 DeepSeek Harness 提供 321 名可召唤的专业智能体 · 321 summonable domain experts for Deep… |
 | [dsh-memory](https://github.com/seriousz158/dsh-memory) | 插件 | 🟢 活跃 | JavaScript | 169 | — |
 | [dsh-auto-continue](https://github.com/HsiangNianian/dsh-auto-continue) | 插件 | 🟢 活跃 | JavaScript | 166 | DSH Web UI plugin: auto-sends 「继续」 after non-human interruptions, with error classification, adap… |
@@ -1312,7 +1313,7 @@
 | [dsh-council](https://github.com/a1exsun/dsh-council) | 插件 | 🟡 关注 | TypeScript | 153 | Multi-model council for DeepSeek Harness: independent answers, anonymous peer reviews, and an ins… |
 | [dsh_workflow](https://github.com/omdsh-dev/dsh_workflow) | 插件 | 🟢 活跃 | TypeScript | 149 | 把 Claude Code 的 UltraCode 模式带给 DSH：可生成、可保存、可治理、可观察、可恢复的工作流 |
 | [cetus](https://github.com/drewnekota/cetus) | 插件 | 🟢 活跃 | TypeScript | 148 | One macOS app for Claude Code, Codex, and every agent runtime you use — scheduled runs, global ho… |
-| [dsh-memento](https://github.com/PerryLink/dsh-memento) | 插件 | 🟢 活跃 | JavaScript | 140 | Bounded, layered, approval-gated, auditable cross-session memory for DeepSeek Harness: a ctx.memo… |
+| [dsh-memento](https://github.com/PerryLink/dsh-memento) | 插件 | 🟢 活跃 | JavaScript | 141 | Bounded, layered, approval-gated, auditable cross-session memory for DeepSeek Harness: a ctx.memo… |
 | [dsh-win32](https://github.com/sjh9714/dsh-win32) | 插件 | 🟢 活跃 | TypeScript | 140 | Fix and diagnose DeepSeek Harness on native Windows. Official PowerShell, Workspace Write, shortc… |
 | [dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) | 插件 | 🟢 活跃 | JavaScript | 136 | 对话与代码状态回退：基于持久化 Change Ledger 的 rewind |
 | [codex-guard](https://github.com/Akimiya-z/codex-guard) | 插件 | 🟢 活跃 | JavaScript | 133 | Quality gate for AI/Codex-generated pull requests: blocks TODO leftovers, leaked secrets, sloppy … |
@@ -1357,11 +1358,11 @@
 | [custom-first-control-prompt](https://github.com/WM-CODER/custom-first-control-prompt) | 插件 | 🟡 关注 | JavaScript | 76 | DeepSeek Harness plugin for insert custom prompt |
 | [forkprobe](https://github.com/Jayden-X-L/forkprobe) | 插件 | 🟠 放缓 | Python | 74 | Compare multiple skills on the same task and pick the winner. |
 | [codex-switch](https://github.com/kuangre123/codex-switch) | 插件 | 🟢 活跃 | Python | 73 | Codex Switch 是一个 macOS 工具，一键配置 Codex 的自定义 API，同时保留官方 OpenAI 登录。保存后 Codex 的模型选择器里只会出现你选的那个 provide… |
-| [deepseek-harness-fnos](https://github.com/techysy/deepseek-harness-fnos) | 插件 | 🟢 活跃 | Shell | 73 | DeepSeek Harness (DeepSeek 官方 agent 浏览器 UI) fnOS 应用 — 本地常驻服务 |
 | [SpecFusion](https://github.com/wxkingstar/SpecFusion) | 插件 | 🟡 关注 | TypeScript | 73 | 在 DeepSeek Harness / Claude Code / Cursor / Codex / Gemini CLI 里直接搜索 20 个中国开放平台的 65,600+ 篇 API 文档… |
 | [dsh-session-manager](https://github.com/hkkz9522/dsh-session-manager) | 插件 | 🟢 活跃 | JavaScript | 72 | DeepSeek Harness session and workspace manager —— Workspaces: archive and visibility. Sessions: m… |
+| [deepseek-harness-fnos](https://github.com/techysy/deepseek-harness-fnos) | 插件 | 🟢 活跃 | Shell | 72 | DeepSeek Harness (DeepSeek 官方 agent 浏览器 UI) fnOS 应用 — 本地常驻服务 |
+| [dsh-fish-memory](https://github.com/Yuuyuko-uu/dsh-fish-memory) | 插件 | 🟢 活跃 | JavaScript | 72 | 🐋 DSH 鱼的记忆：给会话一份会淡忘的长期记忆，每条都带时间。名字里的「鱼」来自 DeepSeek 的鲸鱼。 |
 | [OpenQuantum](https://github.com/xi-zhao/OpenQuantum) | 插件 | 🟢 活跃 | JavaScript | 71 | Open-source quantum Agent workspace with a desktop client, Web UI, messaging, Qiskit/MCP tools, a… |
-| [dsh-fish-memory](https://github.com/Yuuyuko-uu/dsh-fish-memory) | 插件 | 🟢 活跃 | JavaScript | 70 | 🐋 DSH 鱼的记忆：给会话一份会淡忘的长期记忆，每条都带时间。名字里的「鱼」来自 DeepSeek 的鲸鱼。 |
 | [huaweicloud-devkit](https://github.com/huaweicloud/huaweicloud-devkit) | 插件 | 🟢 活跃 | JavaScript | 69 | Official Huawei Cloud plugin for AI agents — skills, MCP tools, safety guardrails, and cloud sand… |
 | [AgentDebugX](https://github.com/AgentDebugX/AgentDebugX) | 插件 | 🟢 活跃 | Python | 68 | 【EMNLP 2026 Demo】A debugging framework for agentic AI systems: diagnose failures, attribute root … |
 | [ElecKoi](https://github.com/eleckoi/ElecKoi) | 插件 | 🟢 活跃 | JavaScript | 68 | 电子爱PC客户端，由DSH驱动的Agent角色扮演！ |
@@ -1381,8 +1382,8 @@
 | [dsh-chinese-traditional-wisdom-skill](https://github.com/dhicoc/dsh-chinese-traditional-wisdom-skill) | 技能 | 🟡 关注 | TypeScript | 59 | 中华传统智慧（玄枢）AI Agent 技能包的 DeepSeek Harness（dsh）Cordis 插件：八字/紫微/六爻/梅花/奇门/风水/五运六气/体质全融合，本地确定性引擎 + 可视化… |
 | [blender](https://github.com/CheshireJCat/blender) | 插件 | 🟢 活跃 | Python | 56 | DeepSeek Harness plugin for complete Blender 3D modeling, reconstruction, rendering, validation, … |
 | [dsh-sandbox-escalation-fix](https://github.com/HakureiMonika/dsh-sandbox-escalation-fix) | 插件 | 🟡 关注 | TypeScript | 56 | Session-aware sandbox escalation compatibility plugin for DeepSeek Harness/DSH第三方模型会话沙箱升级兼容插件 |
+| [dsh-thinking-effort](https://github.com/hytime/dsh-thinking-effort) | 插件 | 🟢 活跃 | TypeScript | 56 | A DeepSeek Harness plugin for reasoning-effort defaults and protocol-aware gateway compatibility … |
 | [dsh-prompt](https://github.com/FeatherHunter/dsh-prompt) | 插件 | 🟢 活跃 | JavaScript | 55 | 💡DSH 的 Prompt提示词工具箱：常用prompt保存后点击即可注入到对话框——省时省力，/prompt 自动提示已有Prompt。 💡The Prompt toolbox for Dee… |
-| [dsh-thinking-effort](https://github.com/hytime/dsh-thinking-effort) | 插件 | 🟢 活跃 | TypeScript | 55 | A DeepSeek Harness plugin for reasoning-effort defaults and protocol-aware gateway compatibility … |
 | [dsh-purge-0.2.1rc2-fix](https://github.com/Potato1008ypy/dsh-purge-0.2.1rc2-fix) | 插件 | 🟢 活跃 | JavaScript | 53 | DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts… |
 | [cnki-mcp](https://github.com/SepineTam/cnki-mcp) | 插件 | 🟢 活跃 | Python | 51 | An MCP server, CLI and Skills for reach CNKI. CNKI (中国知网) 文献检索，期刊检索工具，支持 MCP，CLI，Agent Skill 等多种方… |
 | [cosyncing](https://github.com/cosyncing/cosyncing) | 插件 | 🟢 活跃 | TypeScript | 50 | Synchronize and Orchestrate agents from CLI to GUI, across desktop to phone. |
@@ -1397,9 +1398,9 @@
 | [dsh-godot-skill](https://github.com/akira399/dsh-godot-skill) | 技能 | 🟡 关注 | JavaScript | 43 | Godot Engine 4.x 全栈游戏开发技能插件 for DeepSeek Harness (DSH) — registers the godot-4-development skill … |
 | [memory-eternal](https://github.com/EternalNight996/memory-eternal) | 插件 | 🟢 活跃 | JavaScript | 43 | 🧠 给 AI 装第二大脑 · DSH 插件：对话结束自动沉淀知识卡，跨会话召回，知识图谱可视化，审核/回收/备份一体（SQLite，零外部依赖） |
 | [dsh-plugin-guard](https://github.com/lxzy-7/dsh-plugin-guard) | 插件 | 🟠 放缓 | JavaScript | 42 | Install safety net for DeepSeek Harness: pre-install snapshots, one-click/automatic rollback, gua… |
+| [smokinggun](https://github.com/morluto/smokinggun) | 插件 | 🟢 活跃 | TypeScript | 42 | Help your agents find the smoking gun they're looking for. Optimization evidence for agents: find… |
 | [dsh-personal-workbench](https://github.com/Dely0/dsh-personal-workbench) | 插件 | 🟢 活跃 | TypeScript | 41 | DSH 个人工作台：日历 + 任务列表 + AI 澄清/拆解/执行/复盘 \| Personal workbench for DeepSeek Harness Web: calendar + t… |
 | [dsh-tui](https://github.com/dsh-tui/dsh-tui) | 插件 | 🟠 放缓 | TypeScript | 41 | Claude Code-style terminal UI for DeepSeek Harness agents, as an out-of-tree dsh plugin bundle |
-| [smokinggun](https://github.com/morluto/smokinggun) | 插件 | 🟢 活跃 | TypeScript | 41 | Help your agents find the smoking gun they're looking for. Optimization evidence for agents: find… |
 | [dsh-agent-studio](https://github.com/thissensen/dsh-agent-studio) | 插件 | 🟢 活跃 | TypeScript | 41 | 可视化地自定义配置 Agent 的提示词（prompt）、工具（tools）、可见技能（skills）、子代理、备用模型，轻松创建团队。 |
 | [dsh-skillhub](https://github.com/aa2246740/dsh-skillhub) | 技能 | 🟢 活跃 | JavaScript | 40 | DSH manager for user Skills already on disk in Agent home and DSH home |
 | [oh-my-dsh](https://github.com/gulagala001/oh-my-dsh) | 插件 | 🟢 活跃 | JavaScript | 40 | DSH 插件，开箱即用。Ultra 工作流与任务编排 · 长上下文与 Dream 记忆 · AST／CodeGraph 代码理解 · 内置 OpenCU 电脑操作 · Skills／MCP／Ho… |
@@ -1413,10 +1414,10 @@
 | [deepseek-harness-zh_pro](https://github.com/magian1127/deepseek-harness-zh_pro) | 插件 | 🟢 活跃 | TypeScript | 37 | DeepSeek Harness (DSH) plugin:  A comprehensive enhancement plugin with UI polish, layout tweaks,… |
 | [dsh-automation](https://github.com/MichengAI/dsh-automation) | 插件 | 🟢 活跃 | JavaScript | 37 | DSH Automation — 在独立 DSH Session 中按计划执行和管理编码任务 · Schedule and manage coding tasks in isolated DSH… |
 | [dsh-pua](https://github.com/MichengAI/dsh-pua) | 插件 | 🟢 活跃 | TypeScript | 37 | 为 Agent 提供任务推进提示、角色风格、全局与会话配置，以及基于验收结果继续执行的 Loop |
+| [dsh-phone](https://github.com/railgun0325/dsh-phone) | 插件 | 🟡 关注 | JavaScript | 37 | 让 DeepSeek Harness 的 agent 跑在手机里，通过 Magisk root 原生操作安卓系统（截图/点击/滑动/开应用）+ 移动端布局 + WebView APK |
 | [dsh-skill-picker](https://github.com/a735624258/dsh-skill-picker) | 技能 | 🟡 关注 | JavaScript | 36 | DeepSeek Harness 技能选择器：在输入框旁点选技能，自动插入官方 /技能名 手势，随消息一起发送 |
 | [dsh-ultramath](https://github.com/Andiii208/dsh-ultramath) | 插件 | 🟡 关注 | Python | 36 | UltraMath 数学建模竞赛多 Agent 求解 DSH 插件: 5 角色预设 + 33 篇模型库 + 论文模板/审稿脚本随包 + 进度可视化 |
 | [clutch-dsh](https://github.com/Cerbur/clutch-dsh) | 插件 | 🟢 活跃 | JavaScript | 36 | Open-source DSH plugins for DeepSeek Harness：Git Worktree session management（会话管理）、Session Title（… |
-| [dsh-phone](https://github.com/railgun0325/dsh-phone) | 插件 | 🟡 关注 | JavaScript | 36 | 让 DeepSeek Harness 的 agent 跑在手机里，通过 Magisk root 原生操作安卓系统（截图/点击/滑动/开应用）+ 移动端布局 + WebView APK |
 | [deepseek-harness-workbench-plugin](https://github.com/loadingvx/deepseek-harness-workbench-plugin) | 插件 | 🟢 活跃 | TypeScript | 35 | Deepseek-harness-workbench-plugin |
 | [dsh-host-rsi](https://github.com/pk14742952-AD/dsh-host-rsi) | 插件 | 🟢 活跃 | JavaScript | 35 | DSH host RSI for local LLMs (currently Qwen3.8 27B): per-use continual self-improvement, counter-… |
 | [dsh-motion-ui](https://github.com/Scorp1o117/dsh-motion-ui) | 插件 | 🟢 活跃 | JavaScript | 35 | Interactive UI, HTML/SVG diagrams and animation for DeepSeek Harness Web |
@@ -1470,11 +1471,11 @@
 | [dsh-pause](https://github.com/better-er/dsh-pause) | 插件 | 🟢 活跃 | TypeScript | 24 | 「DSH·暂停」：agent 完成一轮工具交互、正要发出下一次模型请求之前暂停，保持输入框可用，人类按回车放行并可携带补充文字；不打断任何在途 API 调用。 |
 | [dsh](https://github.com/Bin-hy/dsh) | 插件 | 🟠 放缓 | — | 24 | 源码级拆解 DeepSeek Harness · 面向 Agent 开发者的中文学习资料 |
 | [dsh-factory-provider](https://github.com/Dalizi2026/dsh-factory-provider) | 插件 | 🟢 活跃 | JavaScript | 24 | 把 Factory (Droid) 订阅额度接入 DeepSeek Harness (DSH) 的原生 LLM provider 插件 · Factory (Droid) subscriptio… |
+| [mattpocock-skills-dsh](https://github.com/gongyijie85/mattpocock-skills-dsh) | 技能 | 🟡 关注 | Shell | 24 | Matt Pocock's skills for DeepSeek Harness (DSH): grilling, writing-for-agents, wait-what, TDD and… |
 | [dsh-flowglass](https://github.com/Iwctwbh/dsh-flowglass) | 插件 | 🟡 关注 | JavaScript | 24 | 流镜 Flowglass — DeepSeek Harness session flowgraph，实时可视化消息、工具组、子代理分支与步骤详情。 |
 | [pptwise](https://github.com/liustack/pptwise) | 插件 | 🟢 活跃 | TypeScript | 24 | A real PowerPoint, not HTML. Tell your AI what to cover and pptwise builds an editable deck on yo… |
 | [dsh-prompt-setting](https://github.com/zangxx66/dsh-prompt-setting) | 插件 | 🟢 活跃 | JavaScript | 24 | DeepSeek Harness 默认 System Prompt 管理插件：在 Web GUI「设置」里浏览、检索并覆盖最终装配进每轮会话的系统提示词 |
 | [dsh-project-memory](https://github.com/00080000/dsh-project-memory) | 插件 | 🟢 活跃 | JavaScript | 23 | Read-time project memory plugin for DeepSeek Harness (dsh) |
-| [mattpocock-skills-dsh](https://github.com/gongyijie85/mattpocock-skills-dsh) | 技能 | 🟡 关注 | Shell | 23 | Matt Pocock's skills for DeepSeek Harness (DSH): grilling, writing-for-agents, wait-what, TDD and… |
 | [oh-my-knowledge](https://github.com/lizhiyao/oh-my-knowledge) | 插件 | 🟢 活跃 | TypeScript | 23 | OMK — Evidence-backed evaluation and observability for prompts, RAG, skills, agents, and workflow… |
 | [write-chinese-long-screenplay](https://github.com/mudden2380078550-creator/write-chinese-long-screenplay) | 插件 | 🟡 关注 | Python | 23 | 中文电影与剧集长剧本写作 skill |
 | [dsh-llm-fallbacks](https://github.com/omdsh-dev/dsh-llm-fallbacks) | 插件 | 🟢 活跃 | TypeScript | 23 | 基于角色的 LLM 重试与备用策略 |
@@ -1572,7 +1573,6 @@
 | [dsh-driftwatch](https://github.com/Edge-Echo/dsh-driftwatch) | 插件 | 🟢 活跃 | JavaScript | 4 | Behavior-drift reports for DeepSeek Harness agents: compare two session logs and see exactly how … |
 | [roblox-devforum-mcp](https://github.com/EL4CTEO/roblox-devforum-mcp) | 插件 | 🟢 活跃 | TypeScript | 4 | Give your AI coding agent the Roblox DevForum and official creator docs — check if a bug is alrea… |
 | [dsh-agentmemory](https://github.com/elementor-i/dsh-agentmemory) | 插件 | 🟠 放缓 | TypeScript | 4 | agentmemory for DeepSeek Harness (dsh): full memory_* tools, capture hooks, and context injection… |
-| [dsh-http-proxy](https://github.com/elizax/dsh-http-proxy) | 插件 | 🟡 关注 | TypeScript | 4 | 支持设置LLM的代理地址 |
 | [dsh-track](https://github.com/fakechris/dsh-track) | 插件 | 🟡 关注 | HTML | 4 | 嵌入式任务管理引擎：决策点协议、念头捕获墙 |
 | [dsh-structured](https://github.com/feigo313/dsh-structured) | 插件 | 🟢 活跃 | JavaScript | 4 | Structured output for DSH: no-label title card, tables/lists/steps, per-session toggle. |
 | [dsh-enhance-prompt](https://github.com/feiwell/dsh-enhance-prompt) | 插件 | 🟢 活跃 | JavaScript | 4 | 在 DeepSeek-Harness 桌面版的输入栏一键把草稿改写成更清晰、更具体的提示词：日常办公 / 代码开发 / 设计创意三种收束模式，支持一键还原原文。 |
@@ -1714,15 +1714,16 @@
 | [dsh-notion-connector](https://github.com/zhengjy01/dsh-notion-connector) | 插件 | 🟡 关注 | JavaScript | 4 | Notion connector for DeepSeek Harness: agent tools + Web settings page · DSH 的 Notion 连接插件 |
 | [Stata-AI-Skill](https://github.com/ZihaoVistonWang/Stata-AI-Skill) | 技能 | 🟠 放缓 | Rust | 4 | Stata AI Skill Native Service: Native localhost HTTP service that lets AI agents run Stata withou… |
 | [dsh-session-repair](https://github.com/Zn-Dk/dsh-session-repair) | 插件 | 🟡 关注 | TypeScript | 4 | DSH Web 会话诊断、可信备份与一键安全修复插件。 |
+| [no-ai-style](https://github.com/01NGVI-QINGYI/no-ai-style) | 插件 | 🟢 活跃 | JavaScript | 3 | Multilingual prose editing skill and DSH plugin for academic and professional writing. |
 | [dsh-prompt-polish](https://github.com/1321928757/dsh-prompt-polish) | 插件 | 🟢 活跃 | JavaScript | 3 | 输入栏提示词优化插件 / Input-bar prompt optimizer for DeepSeek Harness：6 种策略 × 3 种语言一键重写草稿，可选会话上下文，带确认弹窗、最近… |
+| [dsh-wsl-env](https://github.com/173787247/dsh-wsl-env) | 插件 | 🟢 活跃 | JavaScript | 3 | Inject WSL/Windows path and shell facts into the DeepSeek Harness system prompt. |
 | [dsh-messaging](https://github.com/534119219/dsh-messaging) | 插件 | 🟠 放缓 | JavaScript | 3 | DSH 消息平台插件（messaging-core）：27 个消息渠道统一接入，移植自 hermes-agent |
 | [dsh-protect-tests](https://github.com/acus9345/dsh-protect-tests) | 插件 | 🟢 活跃 | TypeScript | 3 | DeepSeek Harness plugin that blocks agent edits that weaken tests, such as .skip, deleted or wate… |
 | [dsh-discord](https://github.com/addozhang/dsh-discord) | 插件 | 🟢 活跃 | TypeScript | 3 | Discord-first adapter for DeepSeek Harness — sessions, streaming, approvals and controls from a D… |
 | [deepseek-harness-server](https://github.com/aiworkskills/deepseek-harness-server) | 技能 | 🟢 活跃 | TypeScript | 3 | 一个可以接入应用系统的deepseek harness插件，让原有的应用系统快速接入智能体能力 |
 | [dock-editor](https://github.com/AKS1st/dock-editor) | 插件 | 🟡 关注 | JavaScript | 3 | DSH 生态中最好的文本编辑插件：撤销重做、Ctrl+S 保存、未保存确认、二进制检测、悬浮窗几何记忆，dock-files 的默认文本查看器；依赖 dock 与 dock-files \| T… |
-| [OPC-Fellows](https://github.com/Alfred-Lau/OPC-Fellows) | 插件 | 🟢 活跃 | TypeScript | 3 | One workbench for a one-person company — every occupation is a member you talk to, and your busin… |
+| [dsh-speech](https://github.com/allmodels-io/dsh-speech) | 插件 | 🟡 关注 | TypeScript | 3 | Real-time voice input and spoken answer summaries for DeepSeek Harness. |
 | [dsh-omp-advisor](https://github.com/AndrasSama/dsh-omp-advisor) | 插件 | 🟡 关注 | JavaScript | 3 | Ward concil is oh-my-pi advisor subsystem ported to DeepSeek Harness — independent reviewer model… |
-| [dsh-auto-approval](https://github.com/Andy8647/dsh-auto-approval) | 插件 | 🟢 活跃 | TypeScript | 3 | Automode for DeepSeek Harness: a fourth permission preset — full access with an LLM classifier as… |
 | [dsh-github-router](https://github.com/AngelosZou/dsh-github-router) | 插件 | 🟡 关注 | JavaScript | 3 | Read-only GitHub access for agents, wrapping several tools. Inside the tool it automatically prob… |
 | [workbuddy-dsh-plugin](https://github.com/aybrt/workbuddy-dsh-plugin) | 插件 | 🟠 放缓 | JavaScript | 3 | WorkBuddy (CodeBuddy Code )  DeepSeek Harness:?? OpenAI  + pi-ai provider ?? + |
 | [solo-memory](https://github.com/baaai123/solo-memory) | 插件 | 🟡 关注 | Python | 3 | — |
@@ -1731,6 +1732,7 @@
 | [dsh-bridge](https://github.com/baixianger/dsh-bridge) | 插件 | 🟡 关注 | JavaScript | 3 | Same-process session-to-session messaging plugin for DeepSeek Harness |
 | [dhs-tuicode](https://github.com/BenHuHuan/dhs-tuicode) | 插件 | 🟠 放缓 | TypeScript | 3 | DSH plug -- cli coding agent with Minimal/Router profiles, [Windows] support, MCP, agents, and a … |
 | [Personal_MCP](https://github.com/BingoAgentTouch/Personal_MCP) | 插件 | 🟠 放缓 | TypeScript | 3 | 这是一个用来存放个人搭建的MCP服务的仓库 |
+| [dsh-thinking-levels-settings](https://github.com/blackteaYES/dsh-thinking-levels-settings) | 插件 | 🟡 关注 | TypeScript | 3 | Per-model thinking-level settings page for custom DSH llm-pi-ai providers (official dsh client-pl… |
 | [bruce-md2word](https://github.com/bruc3van/bruce-md2word) | 插件 | 🟢 活跃 | TypeScript | 3 | 面向 AI Agent 的 Markdown 转 Word 工具：中文排版、Mermaid 图表、可编辑数学公式，提供 Skill、独立 CLI 和 DSH 插件。 |
 | [dsh-session-export](https://github.com/bwndlct/dsh-session-export) | 插件 | 🟠 放缓 | JavaScript | 3 | Export DeepSeek Harness (DSH) sessions to portable Markdown and JSON — dsh plugin |
 | [dsh-legal-dashboard](https://github.com/ByronLeeeee/dsh-legal-dashboard) | 插件 | 🟠 放缓 | JavaScript | 3 | Matter-aware legal workspace dashboard and document agent tools for DeepSeek Harness |
@@ -1743,21 +1745,19 @@
 | [dsh-plugin-kit](https://github.com/DEVbyQIN/dsh-plugin-kit) | 插件 | 🟡 关注 | JavaScript | 3 | DeepSeek Harness plugin authoring kit: a skill, a tested repository template, a scaffolder, a cro… |
 | [dsh-showcase](https://github.com/DoveLi-Gu/dsh-showcase) | 插件 | 🟢 活跃 | TypeScript | 3 | Local, verifiable delivery evidence reports and DSH plugin for coding-agent projects. |
 | [dsh-plugin-skill](https://github.com/dsh-io/dsh-plugin-skill) | 技能 | 🟠 放缓 | — | 3 | Agent skill (SKILL.md) for creating DeepSeek Harness (dsh) plugins: authoritative defineTool API,… |
-| [dsh-computer-use-mode](https://github.com/EvangeliMo/dsh-computer-use-mode) | 插件 | 🟡 关注 | JavaScript | 3 | Computer-use mode for DeepSeek Harness: screen capture, mouse and keyboard synthesis, and window … |
 | [dsh-gpt-perm-strip](https://github.com/FengLingYaaa/dsh-gpt-perm-strip) | 插件 | 🟠 放缓 | TypeScript | 3 | DSH plugin: strip leftover GPT sandbox_permissions that are not strictly wider than the current s… |
 | [dsh-cae-agent](https://github.com/Fisfzy/dsh-cae-agent) | 插件 | 🟡 关注 | JavaScript | 3 | 让 DeepSeek Harness (DSH) 通过原生工具直接操控本机 Abaqus/CAE 的 Cordis 插件。21 个 DSH 原生工具覆盖完整建模链（几何/材料/网格/接触/分析步… |
 | [dsh-worlds](https://github.com/frozo-ai/dsh-worlds) | 插件 | 🟠 放缓 | JavaScript | 3 | Remote execution worlds for DeepSeek Harness: run the agent's Bash, terminals, LSP and file tools… |
 | [dsh-workspace-tools](https://github.com/g1998815/dsh-workspace-tools) | 插件 | 🟠 放缓 | JavaScript | 3 | DSH(DeepSeek Harness) 右侧原生工具侧边栏插件：文件系统浏览器 / Git 变更与 diff / 会话变更 采用·撤回 / PTY 控制台。Windows 直连 node-p… |
 | [dsh-qwen-connect](https://github.com/gaoqiaoliangjie666/dsh-qwen-connect) | 插件 | 🟡 关注 | JavaScript | 3 | 将 QwenWork 桌面 App 包含的模型自动接入 DeepSeek Harness，零配置使用。Bring the models in the QwenWork desktop app i… |
 | [DSHGuard](https://github.com/gluztm/DSHGuard) | 插件 | 🟢 活跃 | C# | 3 | DSH 守护壳：DeepSeek Harness 的一键启动与救援工具——改动前自动存档、出事整组回滚、本地管理插件、诊断日志导出；Web 引擎与官方桌面版双轨管理 |
-| [dsh-remote](https://github.com/Golden-Pigeon/dsh-remote) | 插件 | 🟢 活跃 | TypeScript | 3 | DSH remote-development plugin: SSH hosts, mirrored remote sessions, terminal/file integration, an… |
 | [dsh-mattpocock-skills](https://github.com/GongYuanCaiJi/dsh-mattpocock-skills) | 技能 | 🟠 放缓 | JavaScript | 3 | DeepSeek Harness 插件：Matt Pocock 工程技能包——grilling、spec/ticket 流程、TDD、code review、domain modeling 等工… |
 | [dsh-behuman](https://github.com/goodddGrades/dsh-behuman) | 插件 | 🟡 关注 | TypeScript | 3 | Long-term memory and self-evolving skills for the DeepSeek Harness · DeepSeek Harness 的长期记忆与自我演进能… |
 | [dsh-humanize](https://github.com/Guard42/dsh-humanize) | 插件 | 🟡 关注 | JavaScript | 3 | Humanize 模式 — humanfia 流理念 × DeepSeek Harness 的 agent 预设：Flow 编排 · SHA-256 流锁 · HMAC 评审门禁 · 事件回放恢… |
 | [dsh-grayprint](https://github.com/HongzhongL/dsh-grayprint) | 插件 | 🟠 放缓 | JavaScript | 3 | GrayPrint — dsh web plugin for live reasoning-style fingerprints. Scores paragraph openers agains… |
 | [dsh-session-trash](https://github.com/Huo-yang/dsh-session-trash) | 插件 | 🟡 关注 | JavaScript | 3 | 为 DSH Web GUI 添加会话删除、回收站、恢复与自动清理功能 |
-| [dsh-openai-api](https://github.com/huyang2024/dsh-openai-api) | 插件 | 🟡 关注 | JavaScript | 3 | OpenAI-compatible HTTP surface for DeepSeek Harness (dsh): POST /v1/chat/completions, POST /v1/re… |
 | [dsh-tool-user-memory](https://github.com/IAMLieutenant/dsh-tool-user-memory) | 插件 | 🟢 活跃 | TypeScript | 3 | DeepSeek Harness 用户记忆插件 |
+| [dsh-agents-notch](https://github.com/iArxic/dsh-agents-notch) | 插件 | 🟢 活跃 | C# | 3 | An always-on-top notch for DeepSeek Harness that shows which sessions are working, which need you… |
 | [dsh-project-prompt](https://github.com/imroc/dsh-project-prompt) | 插件 | 🟡 关注 | JavaScript | 3 | Private, per-project prompt rules for DeepSeek Harness — matched by git remote/repo/path, worktre… |
 | [dsh-memory-semantic](https://github.com/Jackbessaliuz/dsh-memory-semantic) | 插件 | 🟢 活跃 | JavaScript | 3 | 给 meow-memory 记忆系统加一层语义检索：让"记过的"变成"想得起来的"。只读记忆库，绝不写入上游。 |
 | [dsh-goalmesh](https://github.com/Jarad-z/dsh-goalmesh) | 插件 | 🟡 关注 | TypeScript | 3 | Goal-driven multi-agent orchestration for DeepSeek Harness — bounded DAG scheduling, nested deleg… |
@@ -1779,27 +1779,28 @@
 | [deepseek-harness-prompt-optimizer](https://github.com/lizhecome/deepseek-harness-prompt-optimizer) | 插件 | 🟠 放缓 | TypeScript | 3 | LLM-backed prompt optimization bundle for DeepSeek Harness |
 | [dsh-finance-lab](https://github.com/looput/dsh-finance-lab) | 插件 | 🟢 活跃 | TypeScript | 3 | DeepSeek Harness finance plugin: direct market HTTP APIs, portfolio settings, model tools |
 | [dsh-workbench-layout](https://github.com/lsq-dsh-plugins/dsh-workbench-layout) | 插件 | 🟡 关注 | TypeScript | 3 | — |
+| [dsh-workspace-enhance](https://github.com/luis1232023/dsh-workspace-enhance) | 插件 | 🟡 关注 | JavaScript | 3 | 增强dsh左侧工作区区侧栏——每个工作区文件夹下提供 任务/文件/Git 子 Tab，含文件树与右侧预览、Git 的 Changes/Graph 双视图、搜索、视图切换与添加工作区，界面样式对齐… |
 | [dsh-session-doctor](https://github.com/mayf3/dsh-session-doctor) | 插件 | 🟠 放缓 | JavaScript | 3 | 会话医生:诊断、解卡、读取 DeepSeek Harness 会话 / Diagnose, unstick, and read DSH sessions |
-| [mihaji-memory](https://github.com/Miyamiz39/mihaji-memory) | 插件 | 🟡 关注 | JavaScript | 3 | — |
 | [dsh-agentfuse-plugin](https://github.com/MkaliezZ/dsh-agentfuse-plugin) | 插件 | 🟡 关注 | TypeScript | 3 | Deterministic fail-closed tool-call authorization for DSH with evidence: allow/block/ask policy g… |
 | [dsh-prompt-studio](https://github.com/Moeblack/dsh-prompt-studio) | 插件 | 🟠 放缓 | TypeScript | 3 | 编辑 user 与内置 system-prompt 分区，实时预览 |
 | [deepseek-girl-harness](https://github.com/nailiang002-wq/deepseek-girl-harness) | 插件 | 🟢 活跃 | JavaScript | 3 | DeepSeek Harness Desktop 小鲸鱼：手绘转轮、五套换装、白饭互动，摸头显示余额与今日用量。 / Companion with a compact action wheel,… |
+| [dsh-network](https://github.com/NaivG/dsh-network) | 插件 | 🟢 活跃 | TypeScript | 3 | Let Deepseek Harness access the internet seamlessly. / 让 DeepSeek Harness 无缝访问互联网。 |
 | [DSH-Ling](https://github.com/NightPainters/DSH-Ling) | 插件 | 🟢 活跃 | JavaScript | 3 | 器灵 · 跑在你自己电脑上的记忆与人格助手插件:以「人在循环」的双向复盘为核心回路,人格由共同记忆长出并有定型锁,记忆树可归并、可回溯、每次改动都留痕。  Artifact Spirit — a… |
 | [dsh-llm-commandcode](https://github.com/NOirBRight/dsh-llm-commandcode) | 插件 | 🟡 关注 | JavaScript | 3 | Command Code Provider API LLM plugin for DeepSeek Harness |
 | [dsh-usage-monitor](https://github.com/NOirBRight/dsh-usage-monitor) | 插件 | 🟡 关注 | TypeScript | 3 | Session-log usage dashboard for DeepSeek Harness |
+| [dsh-fusion](https://github.com/omdsh-dev/dsh-fusion) | 插件 | 🟠 放缓 | TypeScript | 3 | 将多个 DeepSeek Harness 对话融合为一个可继续的会话，支持 Agent 智能剪枝、话题分组、内容排序和界面操作 |
 | [dsh-revive](https://github.com/omdsh-dev/dsh-revive) | 插件 | 🟠 放缓 | TypeScript | 3 | DSH 一键复活：重启后给所有被打断的会话自动发送「继续」指令（/revive 命令 + revive_sessions 工具 + 浏览器一键按钮） |
 | [dsh-tool-schema](https://github.com/omdsh-dev/dsh-tool-schema) | 插件 | 🟡 关注 | TypeScript | 3 | DSH JSON Schema 验证工具插件：validate/paths/explain/normalize，零网络零动态执行 |
 | [dsh-context-mode](https://github.com/pharaohnie/dsh-context-mode) | 插件 | 🟡 关注 | TypeScript | 3 | DSH 原生 Cordis 插件：知识库(FTS5)、路由强制、会话记忆、沙箱执行(Think-in-Code)——context-window 减负 |
 | [huddo-mcp](https://github.com/puffo-ai/huddo-mcp) | 插件 | 🟢 活跃 | TypeScript | 3 | MCP server for Huddo: a group chat where people and AI agents talk in the same room |
-| [dsh-trivium](https://github.com/QWQcool/dsh-trivium) | 插件 | 🟢 活跃 | JavaScript | 3 | In-process graph memory kernel for DeepSeek Harness, backed by TriviumDB. |
 | [specpowers](https://github.com/SAXEM1997/specpowers) | 插件 | 🟢 活跃 | JavaScript | 3 | SpecPowers — SDD+TDD engineering methodology as a DeepSeek Harness (DSH) plugin and Claude Code s… |
 | [canon](https://github.com/shaneconner/canon) | 插件 | 🟡 关注 | TypeScript | 3 | Canonical project memory for the Pi coding agent: one governing article per asset, an append-only… |
 | [dsh-cot-summary](https://github.com/shenjackyuanjie/dsh-cot-summary) | 插件 | 🟠 放缓 | TypeScript | 3 | CoT 总结 |
-| [InkWeaver](https://github.com/shuishuipingan/InkWeaver) | 插件 | 🟡 关注 | TypeScript | 3 | 织墨 InkWeaver — 以本地化为核心的长篇小说创作空间，具备持续章节连贯性、基于证据的审阅、运行日志以及经过验证的 DSH 插件      织墨 InkWeaver — local-fi… |
 | [Kabutack](https://github.com/SunQingyuan0/Kabutack) | 插件 | 🟠 放缓 | TypeScript | 3 | Kabutack 是一个面向 DSH 的插件，用于在一个界面里统一管理插件、Skill 和 MCP，并支持按“角色”一键动态装载、切换与恢复能力组合。 |
 | [dsh-index](https://github.com/Sunrisepeak/dsh-index) | 插件 | 🟢 活跃 | Python | 3 | DeepSeek Harness Plugin and Agent Profile Package Index - Install dsh-plugin with just one command |
 | [dsh-session-review](https://github.com/sunshaobei/dsh-session-review) | 插件 | 🟠 放缓 | JavaScript | 3 | — |
 | [ds](https://github.com/szx-a/ds) | 插件 | 🟢 活跃 | TypeScript | 3 | LMA (Layered Memory Architecture) 是一个为 DeepSeek Harness 设计的地基插件（Foundation Plugin）。它定义了 “记忆体（Memo… |
+| [reSanity](https://github.com/Thhoho/reSanity) | 插件 | 🟡 关注 | Python | 3 | reSanity 散修 — 面向散户投研的证据搜索与逻辑梳理 Skill：核查一手资料，拆解题材到收入、利润和现金的传导链，标注证据与推断边界。 |
 | [awesome-deepseek-harness-zh](https://github.com/TimeMachineLab/awesome-deepseek-harness-zh) | 插件 | 🟢 活跃 | Python | 3 | DeepSeek Harness 中文使用指南与资源大全：dsh 安装教程、模型与 API Key 配置、插件、Skills、MCP、报错排查 |
 | [dsh-hardssh](https://github.com/tiphareth0/dsh-hardssh) | 插件 | 🟢 活跃 | TypeScript | 3 | Run your work with existing DSH plugins on remote servers, across any number of machines |
 | [dsh-persist](https://github.com/tluoluo/dsh-persist) | 插件 | 🟠 放缓 | TypeScript | 3 | 持久记忆：对话独有笔记、选择性注入、项目记忆、bge-m3 语义 Vault 检索与自动召回 |
@@ -1808,7 +1809,6 @@
 | [dsh-dashboard](https://github.com/Uddoo/dsh-dashboard) | 插件 | 🟠 放缓 | TypeScript | 3 | Symphony-inspired multi-provider task orchestrator and native operations dashboard for DeepSeek H… |
 | [dsh-mqtt](https://github.com/UllrAI/dsh-mqtt) | 插件 | 🟢 活跃 | TypeScript | 3 | MQTT protocol driver and agent worker gateway for DSH |
 | [dsh-round-table](https://github.com/vuchisu069-source/dsh-round-table) | 插件 | 🟠 放缓 | JavaScript | 3 | DSH 多方群聊协作插件（圆桌）：把不同人设的 AI Agent 拉进同一研讨房间，互相讨论、交叉补充、质疑修正，最终一键总结出综合方案；也支持把工作区已有的对话框拉进来参与讨论，消除信息隔离。… |
-| [new-project-init](https://github.com/warm-flame-core/new-project-init) | 插件 | 🟡 关注 | PowerShell | 3 | 以存量完善为核心的项目文档体系 skill：优化已有项目文档、固化 AI 分角色协作工作流；也支持中途加入补建体系与新项目初始化。提问驱动、34 模板、MIT 开源。 |
 | [dsh-novel-forge](https://github.com/watersxya/dsh-novel-forge) | 插件 | 🟢 活跃 | TypeScript | 3 | AI 编译纯文本小说工作台 for DSH：大纲导入、道藏/大世界设定、卷与章节规划、逐章 AI 生成 3000-4000 字、九维审稿、全书质检、全本导出。AI novel writing w… |
 | [dsh-llm-verifier](https://github.com/Web0926/dsh-llm-verifier) | 插件 | 🟡 关注 | TypeScript | 3 | DeepSeek Harness plugin that validates and ranks 3/5 independent coding-agent patches before appr… |
 | [awesome-deepseek-skills](https://github.com/Whning0513/awesome-deepseek-skills) | 技能 | 🟠 放缓 | Python | 3 | Pinned and statically verified Agent Skills for DeepSeek and DSH. |
@@ -1816,7 +1816,6 @@
 | [dsh-prompt-optimizer](https://github.com/wmengxiang/dsh-prompt-optimizer) | 插件 | 🟡 关注 | JavaScript | 3 | — |
 | [inference-quantization](https://github.com/xiciyang/inference-quantization) | 插件 | 🟢 活跃 | JavaScript | 3 | Quantize a checkpoint and prove it in DSH: PTQ with a leak-free calibration split, independent ac… |
 | [inference-serving](https://github.com/xiciyang/inference-serving) | 插件 | 🟢 活跃 | JavaScript | 3 | Deploy a checkpoint as a reachable inference endpoint in DSH: probe, backend select, three-stage … |
-| [dsh-gui-hanhua](https://github.com/XIZRSAMS/dsh-gui-hanhua) | 插件 | 🟠 放缓 | JavaScript | 3 | GUI Localization for DeepSeek Harness — 语言永远不会成为 Agent 的门槛 |
 | [dsh-plugin-audiolib](https://github.com/yangyue1974/dsh-plugin-audiolib) | 插件 | 🟠 放缓 | TypeScript | 3 | Ambient soundtrack for DeepSeek Harness, driven by agent state. Streams 100k+ cleared tracks from… |
 | [QubitClient](https://github.com/yaqiangsun/QubitClient) | 插件 | 🟢 活跃 | Python | 3 | AI Agent for Quantum Systems |
 | [dsh-result-only-view](https://github.com/YEYEYEYESHIFU/dsh-result-only-view) | 插件 | 🟡 关注 | JavaScript | 3 | Results-only toggle for the DeepSeek Harness Web GUI: hides thinking and tool-call process, keeps… |
@@ -1845,24 +1844,24 @@
 | [computer-control](https://github.com/JohnXu22786/computer-control) | 插件 | 🟡 关注 | Python | 0 | 桌面操作插件：截屏、鼠标/键盘注入、可访问性树语义操作，内置急停、允许/拒绝规则与确认流 |
 | [deep-standard-skill](https://github.com/vlln/deep-standard-skill) | 技能 | 🟡 关注 | — | 0 | 把工程规范变成会拒绝违规的程序 |
 
-## 💻 编码开发（130）
+## 💻 编码开发（129）
 
 *代码、Git、终端 / TUI、编辑器与构建*
 
 | 插件 | 类型 | 活跃 | 语言 | ⭐ | 说明 |
 |---|---|---|---|---|---|
-| [reactive-resume](https://github.com/reactive-resume/reactive-resume) | 插件 | 🟢 活跃 | TypeScript | 44766 | A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, … |
-| [dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 插件 | 🟢 活跃 | TypeScript | 5482 | Claude Code 风格全屏交互终端：像素鲸鱼顶栏、思考流式展开、双击 Esc 回滚、上下文进度条 + TPS 仪表 |
+| [reactive-resume](https://github.com/reactive-resume/reactive-resume) | 插件 | 🟢 活跃 | TypeScript | 44774 | A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, … |
+| [dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 插件 | 🟢 活跃 | TypeScript | 5488 | Claude Code 风格全屏交互终端：像素鲸鱼顶栏、思考流式展开、双击 Esc 回滚、上下文进度条 + TPS 仪表 |
 | [awesome-dsh-plugin](https://github.com/bruc3van/awesome-dsh-plugin) | 插件 | 🟢 活跃 | JavaScript | 460 | 30 秒找到真正适合你的 DeepSeek Harness插件。每天自动抓取 GitHub 上的 `dsh-plugin` 项目并逐个复核：真实插件分类收录，蹭标签项目剔除。通过场景化分类、精选… |
 | [awesome-deepseek-harness](https://github.com/libukai/awesome-deepseek-harness) | 插件 | 🟡 关注 | — | 323 | DeepSeek Harness 终极指南：快速入门、资源推荐、精选插件与实用工具 ｜The Ultimate Guide to DeepSeek Harness: QuickStart, Re… |
 | [Miffan](https://github.com/Ayuilos/Miffan) | 插件 | 🟢 活跃 | Kotlin | 306 | RikkaHub fork，Android AI 客户端。支持 IM（类 Grok-Bot）模式，ChatGPT 订阅登录使用、跨应用划词悬浮翻译、高性能低延迟远程云电脑控制。 |
 | [dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) | 插件 | 🟡 关注 | TypeScript | 290 | dsh-tianshu-tui：DSH 终端 UI |
 | [deepseek-harness-desktop](https://github.com/chokwinlee/deepseek-harness-desktop) | 插件 | 🟡 关注 | Kotlin | 283 | Compact DeepSeek Harness desktop host with a native SwiftUI iPhone Remote source preview. |
 | [dsh-reasoning-effort](https://github.com/HanaAyane/dsh-reasoning-effort) | 插件 | 🟢 活跃 | TypeScript | 248 | DSH适用的大肥鱼跑步思考强度滑块。Codex-style model and reasoning-effort slider for DeepSeek Harness |
-| [dsh-fylar-office-editor](https://github.com/FylarOpen/dsh-fylar-office-editor) | 插件 | 🟢 活跃 | TypeScript | 233 | Office document preview, editing, and DOCX generation for DeepSeek Harness, powered by Fylar Offi… |
+| [dsh-fylar-office-editor](https://github.com/FylarOpen/dsh-fylar-office-editor) | 插件 | 🟢 活跃 | TypeScript | 234 | Office document preview, editing, and DOCX generation for DeepSeek Harness, powered by Fylar Offi… |
 | [Tydora](https://github.com/zuorn/Tydora) | 插件 | 🟢 活跃 | TypeScript | 218 | Let Your Ideas Flow — Tydora is a modern desktop Markdown editor combining WYSIWYG editing, bidir… |
 | [dsh-android](https://github.com/ZSeven-W/dsh-android) | 插件 | 🟡 关注 | TypeScript | 201 | DeepSeek Harness plugin for Android — build, run, and interact with a live emulator or USB device… |
-| [dsh-codex-effort-slider](https://github.com/Microqian2th/dsh-codex-effort-slider) | 插件 | 🟢 活跃 | JavaScript | 196 | Codex 风格的推理等级滑条（DeepSeek Harness 插件）：可拖动连续滑条 + 高档位渐变星尘特效 |
+| [dsh-codex-effort-slider](https://github.com/Microqian2th/dsh-codex-effort-slider) | 插件 | 🟢 活跃 | JavaScript | 197 | Codex 风格的推理等级滑条（DeepSeek Harness 插件）：可拖动连续滑条 + 高档位渐变星尘特效 |
 | [DSH-Plugins-Marketplace](https://github.com/bradeGithub/DSH-Plugins-Marketplace) | 插件 | 🟢 活跃 | JavaScript | 188 | DSH插件市场 / DSH Plugin Marketplace: 在 DeepSeek Harness Web GUI 中一键浏览、安装与更新 GitHub topic:dsh-plugin … |
 | [cocode](https://github.com/cocode-agency/cocode) | 插件 | 🟡 关注 | TypeScript | 166 | Best ready-to-run DeepSeek Harness distribution: DSH desktop GUI, DSH terminal TUI, and harness i… |
 | [dsh-remote-web-gateway](https://github.com/summer1238/dsh-remote-web-gateway) | 插件 | 🟡 关注 | TypeScript | 161 | 手机平板远程 DeepSeek Harness：扫码即可继续使用电脑上的 DSH，无需远程桌面 / SSH / 公网 IP，支持一次性配对、Github授权加密登录，独立设备授权与随时撤销，实现… |
@@ -1882,7 +1881,7 @@
 | [dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide) | 插件 | 🟢 活跃 | TypeScript | 57 | DeepSeek Harness (dsh) plugin development knowledge base: the 10-chapter development guide, relea… |
 | [dsh-open-in-vscode](https://github.com/omdsh-dev/dsh-open-in-vscode) | 插件 | 🟠 放缓 | JavaScript | 52 | 一键在 VS Code 中打开 DSH 工作区目录 |
 | [hn-cli](https://github.com/heartleo/hn-cli) | 插件 | 🟡 关注 | Go | 50 | Blazing fast, Hacker News CLI (TUI)⚡ |
-| [deepseek-harness-action](https://github.com/Lixiaoyiao/deepseek-harness-action) | 插件 | 🟢 活跃 | TypeScript | 46 | Community GitHub Action for DeepSeek Harness — AI Code Review · CI Diagnosis · Auto Fix · Issue → PR |
+| [DSH-action](https://github.com/Lixiaoyiao/DSH-action) | 插件 | 🟢 活跃 | TypeScript | 46 | Community GitHub Action for DeepSeek Harness — AI Code Review · CI Diagnosis · Auto Fix · Issue → PR |
 | [dsh-vscode](https://github.com/Fengze233/dsh-vscode) | 插件 | 🟢 活跃 | TypeScript | 42 | 在 VS Code 侧边栏内嵌使用 DeepSeek Harness（DSH）网页界面的插件 |
 | [dsh-IDE](https://github.com/chenw2759-wq/dsh-IDE) | 插件 | 🟡 关注 | TypeScript | 41 | dsh-IDE 把 DeepSeek Harness（DSH）网页版升级成一站式 IDE：JupyterLab 式文件树、带语法高亮的代码编辑、多格式预览、Trae 风格红绿 diff 和内置终… |
 | [dsh-effort-slider](https://github.com/yuhub233/dsh-effort-slider) | 插件 | 🟡 关注 | JavaScript | 37 | 科幻推理等级滑条 for DeepSeek Harness：Ultra 档 + 闪电编排模式 + 子代理 tok/s 读数 / A sci-fi reasoning-effort slider … |
@@ -1897,7 +1896,7 @@
 | [dsh-chat-timeline](https://github.com/jjxjjjjiik-bot/dsh-chat-timeline) | 插件 | 🟡 关注 | JavaScript | 31 | 1:1 port of DeepSeek's official web right-side chat navigation rail (ScrollNav) as a DeepSeek Har… |
 | [dsh-usage-stats](https://github.com/Make0209/dsh-usage-stats) | 插件 | 🟠 放缓 | JavaScript | 31 | DeepSeek Harness 插件：GitHub 风格用量热力图 + Token / 缓存命中 / 账户余额看板 + 工作区别名管理。 |
 | [dsh-vscode](https://github.com/Lixxx1/dsh-vscode) | 插件 | 🟢 活跃 | TypeScript | 29 | 在 VS Code 中使用 DeepSeek Harness. Use DeepSeek Harness in VS Code |
-| [dsh-chatgpt-sub](https://github.com/songoao25/dsh-chatgpt-sub) | 插件 | 🟢 活跃 | JavaScript | 27 | ChatGPT Subscription - a DeepSeek Harness plugin: bind your ChatGPT account via official OAuth an… |
+| [dsh-chatgpt-sub](https://github.com/songoao25/dsh-chatgpt-sub) | 插件 | 🟢 活跃 | JavaScript | 28 | ChatGPT Subscription - a DeepSeek Harness plugin: bind your ChatGPT account via official OAuth an… |
 | [dsh-github](https://github.com/PerryLink/dsh-github) | 插件 | 🟢 活跃 | TypeScript | 26 | GitHub PR/issue 集成 + composite Action 与轮询 PR 审查机器人，写操作全部过审批 |
 | [dsh-desktop-windowos](https://github.com/RAFOLIE/dsh-desktop-windowos) | 插件 | 🟢 活跃 | TypeScript | 26 | DeepSeek Harness desktop shell — Tauri v2, tray + native webchat + task-done toasts, single porta… |
 | [dsh-coding-subscription-oauth](https://github.com/lninghaha/dsh-coding-subscription-oauth) | 插件 | 🟢 活跃 | JavaScript | 25 | DeepSeek Harness coding-subscription OAuth: SuperGrok / Grok Build, ChatGPT Plus Codex, Kimi Code… |
@@ -1952,7 +1951,6 @@
 | [docs-mode](https://github.com/zh851233/docs-mode) | 插件 | 🟢 活跃 | Python | 4 | You can use this plugin to complete the writing of technical documents, including development bri… |
 | [dsh-codebuddy](https://github.com/zhang-tod/dsh-codebuddy) | 插件 | 🟢 活跃 | JavaScript | 4 | Unofficial CodeBuddy provider plugin for DeepSeek Harness |
 | [qiushi-dsh-evidence-audit](https://github.com/030611/qiushi-dsh-evidence-audit) | 插件 | 🟠 放缓 | TypeScript | 3 | Observe-only hash-chained evidence receipts for DeepSeek Harness |
-| [dsh-codevault](https://github.com/1014029855/dsh-codevault) | 插件 | 🟡 关注 | TypeScript | 3 | Records what you understood while reading open-source code — quick notes and deep notes grouped i… |
 | [dsh-plugin-dev-guide](https://github.com/anweat/dsh-plugin-dev-guide) | 插件 | 🟡 关注 | JavaScript | 3 | DSH (DeepSeek Harness) plugin development & publishing guide: from first plugin to auto-publish t… |
 | [dsh-codex-oauth](https://github.com/Babulubobo/dsh-codex-oauth) | 插件 | 🟢 活跃 | JavaScript | 3 | use your codex subscription in deepseek harness |
 | [dsh-file-and-terminal](https://github.com/CarrotFish/dsh-file-and-terminal) | 插件 | 🟢 活跃 | JavaScript | 3 | 为 DSH Web 配置添加“文件管理”和“终端”面板。 |
@@ -1962,7 +1960,6 @@
 | [dsh-git](https://github.com/LinXueyuanStdio/dsh-git) | 插件 | 🟢 活跃 | TypeScript | 3 | dsh plugin of git |
 | [dsh-git-gui](https://github.com/lovetree128/dsh-git-gui) | 插件 | 🟠 放缓 | JavaScript | 3 | A Git GUI plugin for DeepSeek Harness Web UI |
 | [DSH-appearance](https://github.com/LX-HMKK/DSH-appearance) | 插件 | 🟡 关注 | JavaScript | 3 | 轻量的 DeepSeek Harness 字体与主题插件：中英文字体分开选，含 One Dark Pro / Dracula / Nord / GitHub / Catppuccin 五套官方色板预设 |
-| [dsh-forge](https://github.com/maxmilian/dsh-forge) | 插件 | 🟡 关注 | TypeScript | 3 | DeepSeek Harness tools for self-hosted Gitea and Forgejo instances |
 | [dsh-fishpai](https://github.com/OMSociety/dsh-fishpai) | 插件 | 🟢 活跃 | JavaScript | 3 | DSH 插件：公众号排版工作台。人在侧栏改字、加批注与占位；模型用块级 diff 看懂你改了什么、想要什么；成品仍由你复制粘贴进公众号编辑器。 |
 | [dsh-effort-slider](https://github.com/SmailPang/dsh-effort-slider) | 插件 | 🟡 关注 | JavaScript | 3 | 为 DeepSeek Harness 添加支持 Off、Low、High、Max 档位的可拖动推理强度滑块。 |
 | [dsh-conversation-indicator](https://github.com/smanx/dsh-conversation-indicator) | 插件 | 🟠 放缓 | TypeScript | 3 | Conversation indicator plugin for the DeepSeek Harness web GUI: a compact rail beside the scrollb… |
@@ -1970,6 +1967,7 @@
 | [dsh-reforge](https://github.com/wang1299/dsh-reforge) | 插件 | 🟢 活跃 | TypeScript | 3 | DSH-Reforge (dsh-reforge) — DeepSeek Harness plugin for traceable experience from test-verified P… |
 | [hme-plugin](https://github.com/weopenfire-git/hme-plugin) | 插件 | 🟠 放缓 | TypeScript | 3 | — |
 | [dsh-cc-connect](https://github.com/whiteguo233/dsh-cc-connect) | 插件 | 🟡 关注 | Go | 3 | 通过 cc connect 远程使用 dsh |
+| [dsh-chime](https://github.com/xiaxingtianxia2-glitch/dsh-chime) | 插件 | 🟠 放缓 | JavaScript | 3 | DSH 插件：opencode 任务完成提示音（完成/提问/错误三音，原始 mp3 内嵌，零依赖）。官方 bundle 插件，dsh plugin --profile web add: gith… |
 | [inference-tuning](https://github.com/xiciyang/inference-tuning) | 插件 | 🟢 活跃 | JavaScript | 3 | Find the root-cause wall, apply the top intervention, prove it with a two-sided gate — or roll ba… |
 | [dsh-ai-soul](https://github.com/zuohaisu/dsh-ai-soul) | 插件 | 🟡 关注 | JavaScript | 3 | Persistent identity layer for DeepSeek Harness. The first reference implementation of AI Soul. |
 | [dsh-spec-collab](https://github.com/zx490336534/dsh-spec-collab) | 插件 | 🟡 关注 | TypeScript | 3 | DeepSeek Harness 的独立双面插件，用于把产品的原始需求澄清为研发和开发 AI 可直接理解的 Ready Spec。产品、研发、产品 AI 与研发 AI 在同一份 Git 版本化 … |
@@ -1982,18 +1980,18 @@
 | [adversarial-review](https://github.com/JohnXu22786/adversarial-review) | 插件 | 🟡 关注 | TypeScript | 0 | gavel-review 对抗式多视角代码审查：多透镜并行攻击式审查、静态哨兵、跨视角合并去重，只读不改码 |
 | [file-planning](https://github.com/JohnXu22786/file-planning) | 插件 | 🟠 放缓 | JavaScript | 0 | trailmap 磁盘持久化执行规划：计划、执行状态、考察笔记与复盘纪要全部落在 .trail/ 目录，断会话不丢方向 |
 
-## 🗂️ 文件与数据（57）
+## 🗂️ 文件与数据（58）
 
 *文件、数据、知识库、文档解析与持久化*
 
 | 插件 | 类型 | 活跃 | 语言 | ⭐ | 说明 |
 |---|---|---|---|---|---|
-| [dashi-taskboard](https://github.com/chuspeeism/dashi-taskboard) | 插件 | 🟢 活跃 | JavaScript | 3387 | 现代化可灵活嵌入的任务面板，支持 Codex、DeepSeek Harness |
+| [dashi-taskboard](https://github.com/chuspeeism/dashi-taskboard) | 插件 | 🟢 活跃 | JavaScript | 3388 | 现代化可灵活嵌入的任务面板，支持 Codex、DeepSeek Harness |
 | [Invoice-Downloader](https://github.com/EthanYoQ/Invoice-Downloader) | 插件 | 🟡 关注 | Python | 513 | 本地 IMAP 发票下载、OCR 识别、归档与 Excel 报销汇总的 DSH 插件 |
 | [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) | 插件 | 🟢 活跃 | JavaScript | 249 | 聊天记录导入 |
 | [dsh-data-agent](https://github.com/omdsh-dev/dsh-data-agent) | 插件 | 🟡 关注 | JavaScript | 211 | 让 AI 帮你连数据库、写 SQL |
 | [ScientificFigureLibrary](https://github.com/xuzhougeng/ScientificFigureLibrary) | 插件 | 🟢 活跃 | TypeScript | 126 | Local-first MCP App for scientific figures. Import, review, and publish a global library on disk;… |
-| [dsh-taskboard](https://github.com/cloader/dsh-taskboard) | 插件 | 🟢 活跃 | TypeScript | 70 | deepseekharness 任务看板插件 |
+| [dsh-taskboard](https://github.com/cloader/dsh-taskboard) | 插件 | 🟢 活跃 | TypeScript | 69 | deepseekharness 任务看板插件 |
 | [dsh-with-chatgpt](https://github.com/BeforeWave/dsh-with-chatgpt) | 插件 | 🟢 活跃 | TypeScript | 63 | Say goodbye to copy-pasting and DSH Token anxiety. Let ChatGPT on the web connect directly to you… |
 | [prts-terrarchive](https://github.com/HTian-qwq/prts-terrarchive) | 插件 | 🟢 活跃 | JavaScript | 59 | 为明日方舟的长篇剧情打造的RAG类DSH插件，拥有多种快速检索能力。 |
 | [dsh-persona-dafeiyu](https://github.com/huaizhuanghub/dsh-persona-dafeiyu) | 插件 | 🟢 活跃 | JavaScript | 54 | Persona library plugin for DeepSeek Harness: built-in personas, import your own, switch without r… |
@@ -2005,7 +2003,7 @@
 | [dsh-paper-reader](https://github.com/GGboya/dsh-paper-reader) | 插件 | 🟢 活跃 | JavaScript | 29 | DeepSeek Harness (dsh) 插件:论文伴读工作台 —— PDF 转录 / 检索 / 流式问答 + 内置阅读器页面。 |
 | [dsh-claude-move](https://github.com/PerryLink/dsh-claude-move) | 插件 | 🟢 活跃 | JavaScript | 29 | 迁移 Claude Code 会话/记忆/技能 |
 | [deepseek-harness-docker](https://github.com/AlliotTech/deepseek-harness-docker) | 插件 | 🟢 活跃 | JavaScript | 23 | deepseek-harness docker部署 |
-| [multisim-mcp](https://github.com/yxy050208/multisim-mcp) | 插件 | 🟢 活跃 | Python | 23 | Unofficial MCP server for AI-driven NI Multisim circuit generation, simulation, data export, and … |
+| [multisim-mcp](https://github.com/yxy050208/multisim-mcp) | 插件 | 🟡 关注 | Python | 23 | Unofficial MCP server for AI-driven NI Multisim circuit generation, simulation, data export, and … |
 | [dsh-file-mount](https://github.com/acefun29/dsh-file-mount) | 插件 | 🟢 活跃 | TypeScript | 22 | — |
 | [dsh-library](https://github.com/PerryLink/dsh-library) | 插件 | 🟢 活跃 | TypeScript | 21 | 本地优先文档知识库：library_add/remove/list 与语义+关键词混合检索，引用校验与诊断，SQLite 索引 + 本地嵌入，零模型下载 |
 | [dsh-font-probe](https://github.com/lohana20061023-29/dsh-font-probe) | 插件 | 🟢 活跃 | JavaScript | 20 | DSH 字体插件：中英文字体分设、正文字号与代码字号、字距/行距/段距/首行缩进四根滑块，吸底总预览 + 确认制，配置写回 profile，不动 app.asar。 |
@@ -2022,6 +2020,7 @@
 | [dsh-disk-doctor](https://github.com/Yeqij/dsh-disk-doctor) | 插件 | 🟢 活跃 | JavaScript | 4 | DSH 空间体检：只读统计 DeepSeek Harness 的磁盘占用（数据 / 程序 / 系统缓存三区并排 + 每类 Top N 明细），清理只做可一键撤销的隔离移动，从不删除。 · Rea… |
 | [dsh-comfyui](https://github.com/zeroa234/dsh-comfyui) | 插件 | 🟠 放缓 | JavaScript | 4 | ComfyUI 驱动器（AI-first 合同制）：模型只见合同槽、不见工作流 JSON。文生图/图生图/文生视频/图生视频模板，双重预检防幻觉，官方/自定义节点活体判定。 |
 | [dsh-model-profile](https://github.com/ztlovelsw/dsh-model-profile) | 插件 | 🟢 活跃 | TypeScript | 4 | 手动或自动配置模型思考强度、上下文窗口、最大输出token |
+| [wanyimem](https://github.com/17861102832/wanyimem) | 插件 | 🟢 活跃 | Python | 3 | 万忆 · 永不遗忘的全量记忆系统 — MCP 标准 stdio + 事件溯源 + 过程记忆 + 语义向量检索 + sqlite-vec ANN + reranker 精排 + 记忆图谱 + 元认… |
 | [dsh-rag-kb](https://github.com/AlowEnsoul/dsh-rag-kb) | 插件 | 🟠 放缓 | TypeScript | 3 | DeepSeek Harness 本地 RAG 知识库插件：本地文档切片、向量化、语义检索，全程本地运行（Ollama + 纯前端/主机端）。A local-first RAG knowledg… |
 | [DSH-Preset-Dispatch](https://github.com/BigRagdollCat/DSH-Preset-Dispatch) | 插件 | 🟢 活跃 | JavaScript | 3 | — |
 | [dsh-unread-dot](https://github.com/Bing-Bryan/dsh-unread-dot) | 插件 | 🟠 放缓 | JavaScript | 3 | DSH plugin: macOS Dock badge (dot = running, number = results) + bubble chime, built on the Badgi… |
@@ -2046,23 +2045,23 @@
 | [dsh-trace](https://github.com/vibeinging/dsh-trace) | 插件 | 🟠 放缓 | TypeScript | 1 | 遥测后端：导出 turns、model steps、tool calls |
 | [dsh-artifact](https://github.com/william-jin-cmu/dsh-artifact) | 插件 | 🟠 放缓 | TypeScript | 0 | 文件交付协议：send_artifact 工具，任意客户端可渲染 |
 
-## 🛠️ 开发工具与教程（84）
+## 🛠️ 开发工具与教程（85）
 
 *插件开发、安装器、桌面端与学习手册*
 
 | 插件 | 类型 | 活跃 | 语言 | ⭐ | 说明 |
 |---|---|---|---|---|---|
-| [dsh-desktop](https://github.com/anywhere-labs/dsh-desktop) | 工具 | 🟢 活跃 | TypeScript | 32675 | 为 DeepSeek Harness (DSH) 插件生态打造的现代化桌面端解决方案。万物皆「插件」，桌面本身也是「插件」。 |
-| [learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | 教程 | 🟢 活跃 | TypeScript | 21210 | Harness engineering beginner tutorial, from 0 to 1 |
-| [dsh-desktop](https://github.com/dataelement/dsh-desktop) | 工具 | 🟢 活跃 | JavaScript | 16511 | DSHDesktop：DeepSeek Harness Desktop / DeepSeek Harness 桌面版 |
-| [deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop) | 工具 | 🟢 活跃 | TypeScript | 3244 | DeepSeek Harness Tauri 桌面版 \| Only 8mb installer, zero environment setup, preset plugins, Windows… |
+| [dsh-desktop](https://github.com/anywhere-labs/dsh-desktop) | 工具 | 🟢 活跃 | TypeScript | 32679 | 为 DeepSeek Harness (DSH) 插件生态打造的现代化桌面端解决方案。万物皆「插件」，桌面本身也是「插件」。 |
+| [learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering) | 教程 | 🟢 活跃 | TypeScript | 21212 | Harness engineering beginner tutorial, from 0 to 1 |
+| [dsh-desktop](https://github.com/dataelement/dsh-desktop) | 工具 | 🟢 活跃 | JavaScript | 16513 | DSHDesktop：DeepSeek Harness Desktop / DeepSeek Harness 桌面版 |
+| [deepseek-harness-desktop](https://github.com/dsh-tauri/deepseek-harness-desktop) | 工具 | 🟢 活跃 | TypeScript | 3245 | DeepSeek Harness Tauri 桌面版 \| Only 8mb installer, zero environment setup, preset plugins, Windows… |
 | [EAC-Desktop](https://github.com/Ebony-Vinyl/EAC-Desktop) | 工具 | 🟢 活跃 | TypeScript | 2230 | Embracing All Creation (Desktop) — Dedicated to the Harmonious Coexistence of Hundreds of DSH Plu… |
 | [GLM-5.3-Flash-J-Space-Capability-Realization-Report](https://github.com/Tiger3807861189/GLM-5.3-Flash-J-Space-Capability-Realization-Report) | 插件 | 🟡 关注 | — | 1018 | GLM-5.3-Flash × J-Space capability realization — benchmark presentation of the J-Space Cognition … |
 | [jingyun-dsh](https://github.com/jingyunstudio/jingyun-dsh) | 插件 | 🟡 关注 | TypeScript | 921 | 基于 Jingyun Studio + DeepSeek Harness (DSH) 打造的一站式 AI 商业化桌面客户端，一个将 AI 智能体 / 技能 / 工作流转化为可交易商品的完整商业化… |
 | [dsh-handbook](https://github.com/Electricitysheep/dsh-handbook) | 教程 | 🟡 关注 | HTML | 900 | DSH 从 0 到 1 深度手册：安装、插件开发、性能调优、实测案例 |
 | [dsh_desktop](https://github.com/myYangyunfan/dsh_desktop) | 工具 | 🟢 活跃 | JavaScript | 726 | DeepSeek Harness (dsh) Windows desktop client - bundled Node.js + dsh CLI, one-click launch |
 | [Minke](https://github.com/lencx/Minke) | 插件 | 🟢 活跃 | TypeScript | 691 | 🐳 DeepSeek Harness Desktop |
-| [helm-d](https://github.com/ADWMC/helm-d) | 插件 | 🟢 活跃 | Python | 511 | DeepSeek Harness 破甲一体化安全分析插件：Android · Web · Native · Protocol · Malware · AI-Security 全领域聚合（9 bu… |
+| [helm-d](https://github.com/ADWMC/helm-d) | 插件 | 🟢 活跃 | Python | 516 | DeepSeek Harness 破甲一体化安全分析插件：Android · Web · Native · Protocol · Malware · AI-Security 全领域聚合（9 bu… |
 | [dshfind](https://github.com/hikariming/dshfind) | 插件 | 🟢 活跃 | TypeScript | 321 | DSH 学习与分享社区 |
 | [pilot-harness](https://github.com/op7418/pilot-harness) | 插件 | 🟡 关注 | TypeScript | 281 | Pilot Harness — a CodePilot-inspired desktop client and plugin suite for DeepSeek Harness on macO… |
 | [WhaleIsle](https://github.com/ChisaAlter/WhaleIsle) | 插件 | 🟢 活跃 | JavaScript | 189 | Electron 桌面壳 for DSH Web UI |
@@ -2112,12 +2111,13 @@
 | [dsh-desktop](https://github.com/xiaowei2025cqu23phy/dsh-desktop) | 工具 | 🟡 关注 | TypeScript | 4 | DeepSeek Harness 桌面端:内嵌 Web UI、AI 屏保(替换系统屏保)、全模型切换、手机 PWA 远程控制、QQ 机器人通道 |
 | [deepseek-harness-desktop](https://github.com/xxccdl/deepseek-harness-desktop) | 工具 | 🟡 关注 | JavaScript | 4 | DeepSeek Harness Desktop, Faster, More features, Plugin Market, Computer Controll.... |
 | [dsh-plugin-devin-bridge](https://github.com/Arborsm/dsh-plugin-devin-bridge) | 插件 | 🟠 放缓 | TypeScript | 3 | Devin Connect 反代为 OpenAI Chat Completions 兼容协议的 dsh 插件，服务 glm-5.2 / swe-1.7 |
+| [dsh-agnes](https://github.com/chaoliu615/dsh-agnes) | 插件 | 🟡 关注 | JavaScript | 3 | 为在dsh中使用Agnes AI的免费图片、视频生成功能而开发，欢迎使用！欢迎提issues。 |
 | [DeepSeek-Harness-Token-Free](https://github.com/Djokovical5294/DeepSeek-Harness-Token-Free) | 插件 | 🟢 活跃 | — | 3 | Run DeepSeek Harness on desktop with zero token costs—a free, open-source GUI for macOS and Windows. |
 | [dsh-opendesign-go](https://github.com/EliteOtaku/dsh-opendesign-go) | 插件 | 🟢 活跃 | TypeScript | 3 | 为opendesign订阅开发的DSH插件 |
 | [dsh-desktop](https://github.com/EternalNight996/dsh-desktop) | 工具 | 🟡 关注 | Rust | 3 | dsh-desktop · DeepSeek Harness 桌面工作台 🤖 AI 打工人的快乐老家 —— 双击即用，255+ 像素专家天团（独立插件）可一键加装 |
-| [dsh-desktop](https://github.com/huyang218/dsh-desktop) | 工具 | 🟡 关注 | JavaScript | 3 | Unofficial macOS/Windows desktop app for DeepSeek Harness (dsh): manages the runtime, supervises … |
 | [dsh-desktop-glass](https://github.com/JianHeShui/dsh-desktop-glass) | 工具 | 🟢 活跃 | JavaScript | 3 | Frosted-glass look for the DeepSeek Harness desktop app (translucent page + Windows acrylic windo… |
 | [dsh-aigc-radar](https://github.com/Kaixxrua/dsh-aigc-radar) | 插件 | 🟢 活跃 | TypeScript | 3 | — |
+| [DSH-Desktop](https://github.com/MoonlitDropOfBlood/DSH-Desktop) | 工具 | 🟢 活跃 | JavaScript | 3 | 为DeepSeek Harness 打造的桌面端，没有打包DeepSeek Harness，核心可以独立更新 |
 | [dsh-find-skill](https://github.com/Moximxxx/dsh-find-skill) | 技能 | 🟠 放缓 | TypeScript | 3 | 桥接 vercel-labs/skills 生态的 LLM 驱动技能发现插件 |
 | [DSH-Deeptop](https://github.com/Sparrived/DSH-Deeptop) | 插件 | 🟡 关注 | TypeScript | 3 | Deeptop, a lightweight native desktop client for DeepSeek Harness. |
 | [deepseek-harness-sdk-go](https://github.com/theoneLee/deepseek-harness-sdk-go) | 插件 | 🟡 关注 | Go | 3 | Go SDK for driving DeepSeek Harness |
@@ -2143,8 +2143,8 @@
 
 | 插件 | 类型 | 活跃 | 语言 | ⭐ | 说明 |
 |---|---|---|---|---|---|
-| [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 合集 | 🟢 活跃 | JavaScript | 20344 | DeepSeek Harness 精选插件清单（awesome list） |
-| [dsh-web](https://github.com/zhu1090093659/dsh-web) | 合集 | 🟢 活跃 | TypeScript | 9384 | DSH Web UI 插件与皮肤合集：任务面板、Git 图、右侧面板、移动端 UI、宠物、实时 Token 统计、皮肤中心 |
+| [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 合集 | 🟢 活跃 | JavaScript | 20352 | DeepSeek Harness 精选插件清单（awesome list） |
+| [dsh-web](https://github.com/zhu1090093659/dsh-web) | 合集 | 🟢 活跃 | TypeScript | 9385 | DSH Web UI 插件与皮肤合集：任务面板、Git 图、右侧面板、移动端 UI、宠物、实时 Token 统计、皮肤中心 |
 | [dsh-plugin-radar](https://github.com/AdamPlatin123/dsh-plugin-radar) | 合集 | 🟢 活跃 | Python | 1485 | DSH 插件兼容性雷达：每天自动扫描 286+ 候选，四维检查 + 运行级实测 |
 | [awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) | 合集 | 🟢 活跃 | Python | 1250 | DSH 生态精选目录：插件、工具与基础设施 |
 | [oh-dsh](https://github.com/hust-open-atom-club/oh-dsh) | 合集 | 🟡 关注 | TypeScript | 323 | 一站式 DSH 社区发行版：TUI、桌面端与 Web UI 三种形态统一体验 |
@@ -2169,18 +2169,18 @@
 
 | 插件 | 类型 | 活跃 | 语言 | ⭐ | 说明 |
 |---|---|---|---|---|---|
-| [rea](https://github.com/morluto/rea) | 项目 | 🟢 活跃 | TypeScript | 372412 | 用 Agent 逆向一切：从应用行为到原生二进制 |
-| [deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 项目 | 🟢 活跃 | TypeScript | 259367 | DeepSeek Harness 官方仓库：Everything is a Plugin. |
-| [distilly](https://github.com/titanwings/distilly) | 项目 | 🟢 活跃 | Python | 25953 | 「同事」Skill：将离别化为温暖的数字生命 1.0 |
-| [iPolloWork](https://github.com/Devin-AXIS/iPolloWork) | 项目 | 🟢 活跃 | TypeScript | 7203 | 下一代开源 AI 工作台：自进化 Agent 运行时，集成 DSH 子代理 |
+| [rea](https://github.com/morluto/rea) | 项目 | 🟢 活跃 | TypeScript | 372982 | 用 Agent 逆向一切：从应用行为到原生二进制 |
+| [deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 项目 | 🟢 活跃 | TypeScript | 259417 | DeepSeek Harness 官方仓库：Everything is a Plugin. |
+| [distilly](https://github.com/titanwings/distilly) | 项目 | 🟢 活跃 | Python | 25954 | 「同事」Skill：将离别化为温暖的数字生命 1.0 |
+| [iPolloWork](https://github.com/Devin-AXIS/iPolloWork) | 项目 | 🟢 活跃 | TypeScript | 7211 | 下一代开源 AI 工作台：自进化 Agent 运行时，集成 DSH 子代理 |
 | [OpenBiliClaw](https://github.com/whiteguo233/OpenBiliClaw) | 项目 | 🟢 活跃 | Python | 3559 | 本地优先的跨平台 AI 内容发现 Agent：B站、小红书、抖音、YouTube、X、知乎、Reddit |
 | [deeptide](https://github.com/paean-ai/deeptide) | 项目 | 🟠 放缓 | Rust | 1105 | DeepSeek 官方风格 Swift 原生 macOS 编程 Agent |
-| [phi](https://github.com/pulseaiclub/phi) | 项目 | 🟢 活跃 | Go | 624 | 源自 Pi 的 Go 编码 Agent：子代理、hashline 编辑、权限门 |
+| [phi](https://github.com/pulseaiclub/phi) | 项目 | 🟢 活跃 | Go | 627 | 源自 Pi 的 Go 编码 Agent：子代理、hashline 编辑、权限门 |
 | [Abu-Cowork](https://github.com/PM-Shawn/Abu-Cowork) | 项目 | 🟢 活跃 | TypeScript | 402 | Claude Cowork 的开源替代：本地优先 AI Agent 桌面 |
 | [harmony-next.skills](https://github.com/linhay/harmony-next.skills) | 项目 | 🟡 关注 | Python | 367 | HarmonyOS NEXT (API 12+) 开发专家 Skill |
 | [claude-paper](https://github.com/alaliqing/claude-paper) | 项目 | 🟠 放缓 | Vue | 351 | 研究论文自动化研读插件：材料生成、代码演示、交互式 Web 查看器 |
 | [open-managed-agents](https://github.com/openma-ai/open-managed-agents) | 项目 | 🟢 活跃 | TypeScript | 332 | 开源 Claude Managed Agents API 实现与自托管 Agent 运行时 |
-| [jacobian](https://github.com/morluto/jacobian) | 项目 | 🟢 活跃 | Python | 320 | 面向 Agent 的纯数学工具：搜索例子与反例、证明辅助 |
+| [jacobian](https://github.com/morluto/jacobian) | 项目 | 🟢 活跃 | Python | 321 | 面向 Agent 的纯数学工具：搜索例子与反例、证明辅助 |
 | [mcp-for-stata](https://github.com/SepineTam/mcp-for-stata) | 项目 | 🟢 活跃 | Python | 270 | Stata MCP 服务器：把 Stata 接入 Agent |
 | [Polaris](https://github.com/ZJU-REAL/Polaris) | 项目 | 🟢 活跃 | Python | 262 | Toward Autonomous Scientific Discovery |
 | [flameox](https://github.com/morluto/flameox) | 项目 | 🟢 活跃 | Python | 217 | 运行时证据：帮助 Agent 追踪、剖析并消除性能热点 |
