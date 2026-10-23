@@ -669,6 +669,12 @@
       "note": "定时循环：/loop 命令 + loop 工具 + 活动状态条",
       "repo": "vlln/dsh-loop"
     },
+    "dsh-mcp-tools": {
+      "category": "devtools",
+      "note": "DSH 设置内的 MCP 服务器与工具管理器：添加 streamable-http / stdio 服务器、Postman 式逐行请求头、连通性测试、逐工具开关（停用的工具不会注册进模型）",
+      "repo": "hxlog/dsh-mcp-tools",
+      "keep": true
+    },
     "dsh-memory-evolve": {
       "category": "agent",
       "note": "跨会话长期记忆 + 后台自我进化：五轨记忆、git 分支感知、回合内自我审查",
