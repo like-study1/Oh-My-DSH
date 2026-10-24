@@ -26,26 +26,26 @@ DeepSeek Harness（以下简称 DSH）是由深度求索（DeepSeek AI）开源�
 ## 三、生态统计
 
 <!-- OMD:stats:START -->
-截至 2026-10-24 07:09（北京时间），本目录收录精选插件 **2115** 个，监测生态仓库 **2000** 个，累计获得 Star **1699815**。
+截至 2026-10-24 12:38（北京时间），本目录收录精选插件 **2094** 个，监测生态仓库 **1977** 个，累计获得 Star **1702918**。
 
 ### 精选插件十强
 
 | 序号 | 插件 | Star | 类型 | 说明 |
 |---|---|---|---|---|
-| 1 | [morluto/rea](https://github.com/morluto/rea) | 372982 | 项目 | 用 Agent 逆向一切：从应用行为到原生二进制 |
-| 2 | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 259417 | 项目 | DeepSeek Harness 官方仓库：Everything is a Plugin. |
-| 3 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | 103589 | 渠道 | The 1st Collaborative AI Design Agent Workspace. Local-first and op… |
-| 4 | [tt-a1i/archify](https://github.com/tt-a1i/archify) | 88278 | 渠道 | Turn any idea, plan, or codebase into a beautiful interactive diagr… |
-| 5 | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | 78769 | 插件 | 🌊 The original agent harness. Deploy intelligent multi-player swarm… |
-| 6 | [reactive-resume/reactive-resume](https://github.com/reactive-resume/reactive-resume) | 44774 | 插件 | A one-of-a-kind resume builder that keeps your privacy in mind. Com… |
-| 7 | [volcengine/OpenViking](https://github.com/volcengine/OpenViking) | 40685 | 插件 | Self-evolving Context Database for AI Agents. Unify Agent Memory, K… |
-| 8 | [Ebony-Vinyl/dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) | 39075 | 插件 | 在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K… |
-| 9 | [esengine/DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix) | 35945 | 插件 | A reliable coding agent for complex software engineering tasks. |
-| 10 | [Tencent/WeKnora](https://github.com/Tencent/WeKnora) | 35226 | 插件 | Open-source LLM knowledge platform: turn raw documents into a query… |
+| 1 | [morluto/rea](https://github.com/morluto/rea) | 373967 | 项目 | 用 Agent 逆向一切：从应用行为到原生二进制 |
+| 2 | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 259629 | 项目 | DeepSeek Harness 官方仓库：Everything is a Plugin. |
+| 3 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | 103621 | 渠道 | The 1st Collaborative AI Design Agent Workspace. Local-first and op… |
+| 4 | [tt-a1i/archify](https://github.com/tt-a1i/archify) | 88359 | 渠道 | Turn any idea, plan, or codebase into a beautiful interactive diagr… |
+| 5 | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | 78823 | 插件 | 🌊 The original agent harness. Deploy intelligent multi-player swarm… |
+| 6 | [reactive-resume/reactive-resume](https://github.com/reactive-resume/reactive-resume) | 44783 | 插件 | A one-of-a-kind resume builder that keeps your privacy in mind. Com… |
+| 7 | [volcengine/OpenViking](https://github.com/volcengine/OpenViking) | 40702 | 插件 | Self-evolving Context Database for AI Agents. Unify Agent Memory, K… |
+| 8 | [Ebony-Vinyl/dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) | 39564 | 插件 | 在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K… |
+| 9 | [esengine/DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix) | 35944 | 插件 | A reliable coding agent for complex software engineering tasks. |
+| 10 | [Tencent/WeKnora](https://github.com/Tencent/WeKnora) | 35244 | 插件 | Open-source LLM knowledge platform: turn raw documents into a query… |
 
 ### 分类构成
 
-`消息通讯 231` · `视觉与多模态 114` · `浏览器与网络 137` · `Web UI 增强 503` · `皮肤与娱乐 175` · `Agent 能力 635` · `编码开发 129` · `文件与数据 58` · `开发工具与教程 85` · `精选合集与发行版 19` · `生态项目 29`
+`消息通讯 229` · `视觉与多模态 114` · `浏览器与网络 137` · `Web UI 增强 493` · `皮肤与娱乐 172` · `Agent 能力 629` · `编码开发 130` · `文件与数据 58` · `开发工具与教程 84` · `精选合集与发行版 19` · `生态项目 29`
 
 <!-- OMD:stats:END -->
 
