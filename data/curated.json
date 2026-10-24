@@ -1787,6 +1787,12 @@
       "note": "插件升级技能：0.1.3-alpha.1 → 0.1.5-rc.1 双支线合并 + 零依赖 20 接缝扫描器",
       "repo": "PerryLink/dsh-plugin-upgrade-015",
       "keep": true
+    },
+    "dsh-version-guard": {
+      "repo": "skyjjgw/dsh-version-guard",
+      "category": "devtools",
+      "note": "记录插件版本与 profile 配置快照，在 DSH 无法启动时通过独立恢复页回退到已知可用配置。",
+      "keep": true
     }
   },
   "manual": [
