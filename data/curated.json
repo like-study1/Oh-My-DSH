@@ -1641,6 +1641,11 @@
       "note": "工作区侧边栏",
       "repo": "dsh-external/ya-workspace-sidebar"
     },
+    "ybkkasi": {
+      "category": "devtools",
+      "note": "企业 AI 资产治理台：把 MCP / Skill / Agent / AI 应用统一成可管可算可审的台账（生命周期、权限点、部门×Agent×Skill 成本归因、审计）",
+      "repo": "01men/ybkkasi"
+    },
     "yet-another-subagent": {
       "category": "agent",
       "note": "又一个子代理插件",
