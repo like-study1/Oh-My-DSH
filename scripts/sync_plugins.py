@@ -156,10 +156,18 @@ def repo_entry(data):
         "owner": data["owner"]["login"], "homepage": data.get("homepage") or "",
     }
 
+def _keyword_hit(hay, pattern):
+    # "lan" is a LAN/remote-control keyword, but as a bare substring it also
+    # hits "balance", "plan" and "language", which put balance
+    # widgets and planning plugins into the Messaging category.
+    if pattern == "lan":
+        return re.search(r"(?<![a-z])lan(?![a-z])", hay) is not None
+    return pattern in hay
+
 def classify(name, desc):
     hay = f"{name} {desc}".lower()
     for cat, pats in RULES:
-        if any(p in hay for p in pats):
+        if any(_keyword_hit(hay, p) for p in pats):
             return cat
     nm = name.lower()
     for eco in ECO_NAMES:
