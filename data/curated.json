@@ -1793,6 +1793,12 @@
       "category": "devtools",
       "note": "记录插件版本与 profile 配置快照，在 DSH 无法启动时通过独立恢复页回退到已知可用配置。",
       "keep": true
+    },
+    "dsh-craft-your-textbook": {
+      "category": "agent",
+      "note": "造书工作台：把教材 PDF 加工成 AI 老师能直接上课的教学蓝本或一本能读的教材，六阶段流水线、关键决定等用户拍板",
+      "repo": "xx-hub/dsh-craft-your-textbook",
+      "keep": true
     }
   },
   "manual": [
