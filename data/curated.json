@@ -1793,6 +1793,24 @@
       "category": "devtools",
       "note": "记录插件版本与 profile 配置快照，在 DSH 无法启动时通过独立恢复页回退到已知可用配置。",
       "keep": true
+    },
+    "kadaliao-dsh-images": {
+      "repo": "kadaliao/dsh-images",
+      "category": "vision",
+      "note": "给模型一个 generate_image 工具，用你供应商的生图模型出图；「图片」面板收成图库，每张图标出费用，支持参考图改图和循环 GIF",
+      "keep": true
+    },
+    "kadaliao-dsh-prompt-en": {
+      "repo": "kadaliao/dsh-prompt-en",
+      "category": "webui",
+      "note": "每条 prompt 下方一行英文：其他语言给出译文，英文给出纠错和更地道的说法；生词本用 /vocab 复习",
+      "keep": true
+    },
+    "kadaliao-dsh-atlas": {
+      "repo": "kadaliao/dsh-atlas",
+      "category": "webui",
+      "note": "把 macOS「照片」图库放到夜色地球上：足迹、可回放的旅行航线、往年今天，模型能搜照片、移动地图（只读）",
+      "keep": true
     }
   },
   "manual": [
