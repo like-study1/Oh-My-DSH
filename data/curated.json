@@ -1793,6 +1793,12 @@
       "category": "devtools",
       "note": "记录插件版本与 profile 配置快照，在 DSH 无法启动时通过独立恢复页回退到已知可用配置。",
       "keep": true
+    },
+    "dsh-decode": {
+      "category": "code",
+      "note": "点 yes 之前先问清代码：回答带和文字联动的交互式 UML 图（8 种），指段落图跟着高亮、点图文字跳过去；代码引文回原文件核对；只读不改码",
+      "repo": "kvenux/dsh-decode",
+      "keep": true
     }
   },
   "manual": [
