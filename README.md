@@ -26,26 +26,26 @@ DeepSeek Harness（以下简称 DSH）是由深度求索（DeepSeek AI）开源�
 ## 三、生态统计
 
 <!-- OMD:stats:START -->
-截至 2026-11-26 08:22（北京时间），本目录收录精选插件 **2149** 个，监测生态仓库 **2000** 个，累计获得 Star **2298485**。
+截至 2026-11-26 21:54（北京时间），本目录收录精选插件 **2149** 个，监测生态仓库 **2000** 个，累计获得 Star **2331067**。
 
 ### 精选插件十强
 
 | 序号 | 插件 | Star | 类型 | 说明 |
 |---|---|---|---|---|
-| 1 | [morluto/rea](https://github.com/morluto/rea) | 478459 | 项目 | 用 Agent 逆向一切：从应用行为到原生二进制 |
-| 2 | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 287064 | 项目 | DeepSeek Harness 官方仓库：Everything is a Plugin. |
-| 3 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | 109491 | 渠道 | The 1st Collaborative AI Design Agent Workspace. Local-first and op… |
-| 4 | [tt-a1i/archify](https://github.com/tt-a1i/archify) | 99913 | 渠道 | Turn any idea, plan, or codebase into an interactive diagram or one… |
-| 5 | [Ebony-Vinyl/dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) | 87099 | 插件 | 在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K… |
-| 6 | [tw93/Mole](https://github.com/tw93/Mole) | 76195 | 插件 | 🐹 Open-source Mac and PC cleaner. Keep your machine clean, light, a… |
-| 7 | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | 75099 | 技能 | AI agent skill that researches any topic across Reddit, X, YouTube,… |
-| 8 | [reactive-resume/reactive-resume](https://github.com/reactive-resume/reactive-resume) | 46111 | 插件 | A one-of-a-kind resume builder that keeps your privacy in mind. Com… |
-| 9 | [volcengine/OpenViking](https://github.com/volcengine/OpenViking) | 42775 | 插件 | Self-evolving Context Database for AI Agents. Unify Agent Memory, K… |
-| 10 | [alchaincyf/nuwa-skill](https://github.com/alchaincyf/nuwa-skill) | 39029 | 技能 | 你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how anyone th… |
+| 1 | [morluto/rea](https://github.com/morluto/rea) | 479266 | 项目 | 用 Agent 逆向一切：从应用行为到原生二进制 |
+| 2 | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 287422 | 项目 | DeepSeek Harness 官方仓库：Everything is a Plugin. |
+| 3 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | 109620 | 渠道 | The 1st Collaborative AI Design Agent Workspace. Local-first and op… |
+| 4 | [tt-a1i/archify](https://github.com/tt-a1i/archify) | 100329 | 渠道 | Turn any idea, plan, or codebase into an interactive diagram or one… |
+| 5 | [Ebony-Vinyl/dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) | 87835 | 插件 | 在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K… |
+| 6 | [tw93/Mole](https://github.com/tw93/Mole) | 76287 | 插件 | 🐹 Open-source Mac and PC cleaner. Keep your machine clean, light, a… |
+| 7 | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | 75491 | 技能 | AI agent skill that researches any topic across Reddit, X, YouTube,… |
+| 8 | [reactive-resume/reactive-resume](https://github.com/reactive-resume/reactive-resume) | 46124 | 插件 | A one-of-a-kind resume builder that keeps your privacy in mind. Com… |
+| 9 | [volcengine/OpenViking](https://github.com/volcengine/OpenViking) | 42857 | 插件 | Self-evolving Context Database for AI Agents. Unify Agent Memory, K… |
+| 10 | [alchaincyf/nuwa-skill](https://github.com/alchaincyf/nuwa-skill) | 39078 | 技能 | 你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how anyone th… |
 
 ### 分类构成
 
-`消息通讯 230` · `视觉与多模态 125` · `浏览器与网络 141` · `Web UI 增强 536` · `皮肤与娱乐 162` · `Agent 能力 620` · `编码开发 133` · `文件与数据 66` · `开发工具与教程 88` · `精选合集与发行版 19` · `生态项目 29`
+`消息通讯 231` · `视觉与多模态 128` · `浏览器与网络 140` · `Web UI 增强 533` · `皮肤与娱乐 160` · `Agent 能力 621` · `编码开发 134` · `文件与数据 66` · `开发工具与教程 88` · `精选合集与发行版 18` · `生态项目 30`
 
 <!-- OMD:stats:END -->
 
