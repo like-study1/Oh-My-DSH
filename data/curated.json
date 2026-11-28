@@ -690,6 +690,12 @@
       "note": "Git 风格里程碑时间线",
       "repo": "SnowCrescenter-tech/dsh-milestone"
     },
+    "dsh-mishu": {
+      "category": "channel",
+      "note": "小秘书：分诊 GitHub 未读通知，已解决的替你关掉；交代一句就记下账单、续费、证件到期与生日，到点提醒",
+      "repo": "AIcivilization/dsh-mishu",
+      "keep": true
+    },
     "dsh-mineru": {
       "category": "data",
       "note": "MineRU 文档解析工具",
