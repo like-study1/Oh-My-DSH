@@ -342,6 +342,12 @@
       "note": "标记探索起点，配合 rewind 折叠探索过程",
       "repo": "dsh-external/dsh-checkpoint"
     },
+    "dsh-checkpoint-rewind": {
+      "category": "agent",
+      "note": "Claude Code /rewind 等价：变更型工具执行前捕获 git 工作区快照、轮次边界 fork 会话、一条 /rewind 恢复文件并回退会话",
+      "repo": "PerryLink/dsh-checkpoint-rewind",
+      "keep": true
+    },
     "dsh-claude-move": {
       "category": "data",
       "note": "迁移 Claude Code 会话/记忆/技能",
@@ -434,6 +440,12 @@
       "repo": "xiehuan123/dsh-deepread",
       "category": "agent",
       "note": "证据优先精读插件：图书/文章/PDF/文档集的观点—证据报告、知识地图与回忆问题，含 Host 工具与可选 Web 阅读面板",
+      "keep": true
+    },
+    "dsh-defend": {
+      "category": "agent",
+      "note": "提示词注入、越狱与密钥泄露检测：allow/ask/block 分层拦截、脱敏审计事件与危险删除命令门禁",
+      "repo": "PerryLink/dsh-defend",
       "keep": true
     },
     "dsh-design": {
@@ -669,10 +681,22 @@
       "note": "定时循环：/loop 命令 + loop 工具 + 活动状态条",
       "repo": "vlln/dsh-loop"
     },
+    "dsh-mcp-panel": {
+      "category": "devtools",
+      "note": "官方 MCP 客户端管理控制台：/mcp 命令与设置页页签的服务增删改、工具试用台、健康诊断",
+      "repo": "PerryLink/dsh-mcp-panel",
+      "keep": true
+    },
     "dsh-mcp-tools": {
       "category": "devtools",
       "note": "DSH 设置内的 MCP 服务器与工具管理器：添加 streamable-http / stdio 服务器、Postman 式逐行请求头、连通性测试、逐工具开关（停用的工具不会注册进模型）",
       "repo": "hxlog/dsh-mcp-tools",
+      "keep": true
+    },
+    "dsh-memento": {
+      "category": "agent",
+      "note": "有界、分层、审批门、可审计的跨会话记忆：ctx.memory 服务 + 零依赖 SQLite + memory 工具 + 冻结快照注入",
+      "repo": "PerryLink/dsh-memento",
       "keep": true
     },
     "dsh-memory-evolve": {
@@ -771,6 +795,12 @@
       "category": "webui",
       "note": "文件输入增强：Ctrl+V 粘贴 + 拖拽 + 选择文件",
       "repo": "lhh010/dsh-paste-input"
+    },
+    "dsh-permission-rules": {
+      "category": "agent",
+      "note": "Claude Code 风格声明式权限规则：按序 allow/deny/ask 的 YAML 规则，匹配工具名、参数与工作区路径，带审计与热重载",
+      "repo": "PerryLink/dsh-permission-rules",
+      "keep": true
     },
     "dsh-persist": {
       "category": "agent",
